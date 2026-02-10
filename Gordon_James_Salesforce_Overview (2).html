@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gordon James Realty - Salesforce Platform Overview</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+        
+        .meta {
+            background: #f8f9fa;
+            padding: 20px 40px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .meta p {
+            margin: 5px 0;
+            color: #666;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        h2 {
+            color: #667eea;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #667eea;
+            font-size: 1.8em;
+        }
+        
+        h3 {
+            color: #764ba2;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+        
+        h4 {
+            color: #555;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        ul, ol {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .highlight-box {
+            background: #f0f4ff;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .highlight-box h3 {
+            margin-top: 0;
+            color: #667eea;
+        }
+        
+        .capabilities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .capability-card {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            padding: 15px;
+            border-radius: 8px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .capability-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .capability-card h4 {
+            margin: 0 0 10px 0;
+            color: #667eea;
+        }
+        
+        .integration-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .integration-item {
+            background: white;
+            border: 2px solid #e0e0e0;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .integration-item h4 {
+            color: #764ba2;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        
+        .integration-item p {
+            font-size: 0.9em;
+            color: #666;
+            margin: 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.95em;
+        }
+        
+        table th {
+            background: #667eea;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        table td {
+            padding: 12px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        table tr:hover {
+            background: #f8f9fa;
+        }
+        
+        .flow-diagram {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            overflow-x: auto;
+        }
+        
+        .checkmark {
+            color: #28a745;
+            font-weight: bold;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .stat-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+        
+        .footer {
+            background: #f8f9fa;
+            padding: 30px 40px;
+            border-top: 1px solid #e0e0e0;
+            text-align: center;
+            color: #666;
+            margin-top: 40px;
+        }
+        
+        .page-break {
+            page-break-after: always;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Gordon James Realty</h1>
+            <p>Salesforce Platform Overview</p>
+        </div>
+        
+        <div class="meta">
+            <p><strong>Prepared for:</strong> Continuum</p>
+            <p><strong>Organization:</strong> Gordon James Realty</p>
+        </div>
+        
+        <div class="content">
+            <h2>Executive Summary</h2>
+            <p>This document provides a comprehensive overview of Gordon James Realty's Salesforce-based property management platform. The system manages the complete lifecycle of residential and HOA/commercial properties, from advertising and tenant placement through lease management, maintenance coordination, and owner accounting.</p>
+            
+            <div class="highlight-box" style="background: #f0f4ff; border-left: 4px solid #667eea;">
+                <h3 style="color: #667eea;">Architectural Philosophy</h3>
+                <p>The platform is <strong>modular, API-driven, and designed to operate independently</strong> of specific accounting or payment providers. Business logic lives primarily in Salesforce, while external services are replaceable via integrations. This architecture ensures flexibility and reduces vendor lock-in.</p>
+            </div>
+            
+            <div class="highlight-box">
+                <h3>Key Capabilities</h3>
+                <ul>
+                    <li>Complete property and lease lifecycle management</li>
+                    <li>Automated work order processing with AI-powered summaries and invoice reading</li>
+                    <li>Three work order workflows: client-submitted, internal direct, and project-based</li>
+                    <li>AI-powered financial management with 80% reduction in manual data entry</li>
+                    <li>GL Variable structure for complete client financial separation</li>
+                    <li>Multi-level approval workflows with client threshold routing</li>
+                    <li>Integrated tenant placement and showing coordination</li>
+                    <li>Multi-unit building and HOA/commercial property support with contract management</li>
+                    <li>Full accounting integration via AcctSeed and Workato</li>
+                    <li>Automated payments processing through Forte (ACH and credit card)</li>
+                    <li>Stripe integration for resale document fees and virtual card management</li>
+                    <li>Expensify credit card tracking with automatic client billing</li>
+                    <li>Weekly bank reconciliation with Bank United integration</li>
+                    <li>Automated monthly financial close and report distribution</li>
+                    <li>Document management, e-signatures (DocuSign & Box Sign), and automated merging</li>
+                    <li>Customer portal access via Magentrix for clients and owners</li>
+                    <li>AI-powered document processing with OpenAI and Google Document AI</li>
+                    <li>Automated physical mail delivery via Lob.com</li>
+                </ul>
+            </div>
+            
+            <h2>Primary Functional Areas</h2>
+            <p>The platform supports six core operational areas:</p>
+            
+            <table style="margin-top: 20px;">
+                <thead>
+                    <tr>
+                        <th>Area</th>
+                        <th>What it Covers</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Property & Building</strong></td>
+                        <td>Units, buildings, ownership context, property metadata, compliance, warranties, seasonal maintenance</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Leasing & Tenancy</strong></td>
+                        <td>Leases, tenants/contacts, renewals, sublets, notices, internal notes, payment configuration metadata</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Moves</strong></td>
+                        <td>Move-in/move-out workflows, evaluations, key handoffs, inspector assignments</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Maintenance & Projects</strong></td>
+                        <td>Work orders, recurring maintenance, tasks, vendor coordination, customer quotes, help tickets, Calendar Activity V2 for scheduling and close-outs</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Marketing & Showings</strong></td>
+                        <td>Advertising/listings, viewings, appointment slots, showing agent payments</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Scheduling</strong></td>
+                        <td>Unified calendar activities and job/viewing task schedules via Calendar Activity V2</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h2 style="margin-top: 40px;">Out of Scope</h2>
+            <p>This document intentionally excludes:</p>
+            <ul>
+                <li>AcctSeed financial objects (GL accounts, journal entries, bank reconciliation mechanics)</li>
+                <li>Generic Salesforce standard objects (unless directly referenced by property management functionality)</li>
+                <li>Detailed AcctSeed internals (except where Calendar Activity V2 integrates for payment readiness)</li>
+            </ul>
+
+            <h2>System Architecture</h2>
+            <p>The Salesforce platform consists of four main layers working together:</p>
+            
+            <div class="capabilities-grid">
+                <div class="capability-card">
+                    <h4>User Interface Layer</h4>
+                    <p>Record pages, custom actions, and Skuid (custom pages for billing, work orders, and data entry)</p>
+                </div>
+                <div class="capability-card">
+                    <h4>Automation Layer</h4>
+                    <p>Automated workflows (Flows), custom business logic (Apex triggers), and AI-powered document processing</p>
+                </div>
+                <div class="capability-card">
+                    <h4>Data Layer</h4>
+                    <p>Custom objects for properties, leases, tenants, work orders, contracts, notices, mailings, and resale documents</p>
+                </div>
+                <div class="capability-card">
+                    <h4>Integration Layer</h4>
+                    <p>Connections to payments, accounting, documents, AI processing, customer portals, and physical mail delivery</p>
+                </div>
+            </div>
+
+            <h2>Core Business Objects</h2>
+            
+            <h3>Property Management Foundation</h3>
+            
+            <h4>Properties & Buildings</h4>
+            <ul>
+                <li><strong>Property (Property_1__c)</strong> — Individual rental units or properties</li>
+                <li><strong>Building (Building__c)</strong> — Multi-unit buildings containing multiple properties</li>
+                <li>Links to owners (Accounts), advertising, leases, work orders, and maintenance contracts</li>
+            </ul>
+            
+            <h4>Leases & Tenants</h4>
+            <ul>
+                <li><strong>Lease (Lease_1__c)</strong> — Rental agreements connecting properties to tenants</li>
+                <li><strong>Tenant (Tenant_1__c)</strong> — Current and prospective tenants</li>
+                <li>Tracks lease terms, renewals, notices, payment configurations, and move-in/move-out details</li>
+            </ul>
+            
+            <h4>Move Management</h4>
+            <ul>
+                <li><strong>Move (Move_1__c)</strong> — Move-in and move-out coordination</li>
+                <li>Record types for: Rental Move-In, Rental Move-Out, Owner Move-Out, HOA Moves</li>
+                <li>Connected to evaluations, key handoff, and turnover work orders</li>
+            </ul>
+            
+            <h4>Work Orders & Maintenance</h4>
+            <ul>
+                <li><strong>Work Order V2 (Work_Order_V2__c)</strong> — Primary work order object for all maintenance and jobs</li>
+                <li><strong>Recurring Work Order (Recurring_Work_Order__c)</strong> — Scheduled maintenance jobs</li>
+                <li><strong>Calendar Activity V2 (Calendar_Activity_V2__c)</strong> — Work order activities, close-out forms to vendors, integrated with AcctSeed for payments</li>
+                <li><strong>Seasonal Maintenance (Seasonal_Maintenance__c)</strong> — Seasonal maintenance planning and tracking</li>
+                <li>Handles cleaning, turnover work, seasonal maintenance, repairs, and vendor billing</li>
+                <li>AI-powered work order summaries and invoice processing via OpenAI and Google Document AI</li>
+            </ul>
+            
+            <h4>Tenant Placement</h4>
+            <ul>
+                <li><strong>Advertising (Advertising__c)</strong> — Property listings and marketing</li>
+                <li><strong>Viewings (Viewings__c)</strong> — Scheduled property showings</li>
+                <li><strong>Appointment Slots</strong> — Showing time management</li>
+                <li>Tracks showing agents and commission payments</li>
+            </ul>
+            
+            <h4>HOA & Property Management</h4>
+            <ul>
+                <li><strong>Contract (Contract__c)</strong> — Manages contracts for HOA clients</li>
+                <li><strong>Notice (Notice__c)</strong> — Generates and sends notices to clients (owners and tenants)</li>
+                <li><strong>Mailing (Mailing__c)</strong> — Physical mail generation and delivery via Lob.com integration</li>
+                <li><strong>Resale Document (Resale_Document__c)</strong> — Manages resale packets for property transactions</li>
+                <li><strong>Accounting Workflow (Accounting_Workflow__c)</strong> — Custom object for invoice and cash receipt processing prior to AcctSeed integration; bridges AI-powered document processing with accounting approval workflows</li>
+            </ul>
+
+            <h2>Key System Relationships</h2>
+            
+            <div class="flow-diagram">
+<pre>Account (Owner/Client)
+    └── Building (Multi-unit properties)
+        └── Property (Individual units)
+            ├── Advertising → Viewings → Tenant Placement
+            ├── Lease
+            │   ├── Tenants (Primary, Secondary, Guarantors)
+            │   ├── Move-In Record
+            │   ├── Move-Out Record
+            │   ├── Notices
+            │   └── Renewals
+            ├── Work Orders (Work_Order_V2__c)
+            │   ├── Calendar Activities V2 (vendor close-out forms)
+            │   ├── Tasks & Subtasks
+            │   ├── Recurring Jobs
+            │   └── AI-Generated Summaries
+            ├── Contracts (HOA contracts)
+            ├── Seasonal Maintenance Plans
+            └── Resale Documents</pre>
+            </div>
+            
+            <h3>Key Business Flows</h3>
+            <ol>
+                <li><strong>Tenant Placement:</strong> Property → Advertising → Viewings → Tenant Application → Lease</li>
+                <li><strong>Move-In:</strong> Lease Created → Move-In Record → Evaluation → Keys Provided</li>
+                <li><strong>Maintenance:</strong> Work Order Request → AI Summary → Vendor Assignment → Job Completion → Calendar Activity V2 Close-Out → Billing (AcctSeed)</li>
+                <li><strong>Move-Out:</strong> Notice Sent → Move-Out Record → Evaluation → Turnover Work Order → Re-Advertisement</li>
+                <li><strong>Contract Management:</strong> Contract Created → Box Sign for Signatures → Linked to Properties</li>
+                <li><strong>Physical Mail:</strong> Mailing Record Created → Sent via Lob.com → Tracking Updated</li>
+            </ol>
+
+            <div class="page-break"></div>
+
+            <h2>Integration Ecosystem</h2>
+            
+            <p>Integrations keep Salesforce focused on workflow and system-of-record functions while connecting best-in-class tools for payments, documents, portals, and automation.</p>
+
+            <h3>Integration Details</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>System</th>
+                        <th>Why it Exists</th>
+                        <th>Typical Touchpoints</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Workato</strong></td>
+                        <td>Integration platform to sync and orchestrate updates across Salesforce and downstream systems</td>
+                        <td>Work orders, moves, viewings/calendar, customer quotes, internal billing/payable metadata</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Box + Box Sign</strong></td>
+                        <td>Document storage and sharing; quote signature workflows</td>
+                        <td>Property record files, invoices/check stubs, job documents; quote approvals</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Forte</strong></td>
+                        <td>ACH and credit card payment processing</td>
+                        <td>Payment events for tenant/owner/vendor flows; lease payment configuration</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AcctSeed</strong></td>
+                        <td>Accounting, vendor payments, and financial posting</td>
+                        <td>Calendar Activity V2 ties activities/close-outs to payment readiness</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Skuid</strong></td>
+                        <td>Primary internal UI for operational workflows</td>
+                        <td>Work orders, billing screens, close-outs, data entry forms</td>
+                    </tr>
+                    <tr>
+                        <td><strong>DocuSign</strong></td>
+                        <td>Lease signing and lease package execution</td>
+                        <td>Lease lifecycle, renewals, countersignature tracking</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Expensify</strong></td>
+                        <td>Credit card and expense management</td>
+                        <td>Corporate card transactions, expense reports, vendor expense tracking</td>
+                    </tr>
+                    <tr>
+                        <td><strong>OpenAI</strong></td>
+                        <td>Work order summaries and text extraction</td>
+                        <td>Work orders, ticket notes, communications summaries</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Google Document AI</strong></td>
+                        <td>Invoice and cash receipt extraction (structured fields)</td>
+                        <td>Invoices, cash receipts, check images ingested to Salesforce</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cloud Convert</strong></td>
+                        <td>Automatic document merging and PDF assembly</td>
+                        <td>Packet assembly (resale packets, combined documents)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Magentrix</strong></td>
+                        <td>Customer portals for owners/boards/clients</td>
+                        <td>External access to selected Salesforce records and documents</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Invoice Ninja</strong></td>
+                        <td>Creation of client-facing quotes</td>
+                        <td>Quote objects and client-facing quote PDFs</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Lob.com</strong></td>
+                        <td>Physical mail fulfillment</td>
+                        <td>Mailing records trigger printing and mailing of notices/letters</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Stripe</strong></td>
+                        <td>Payment processing for resale documents and virtual card management</td>
+                        <td>Resale document fee collection; virtual card creation with auto-approval and client billing</td>
+                    </tr>
+                    <tr>
+                        <td><strong>HelpScout</strong></td>
+                        <td>Support and communications for customer/tenant workflows</td>
+                        <td>Notice sending, support context tied to work orders</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Bitly</strong></td>
+                        <td>Short links for evaluations and renewals</td>
+                        <td>Links generated for move and renewal workflows</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2 style="margin-top: 50px;">Key Business Processes</h2>
+            
+            <h3>Work Order Processing Flows</h3>
+            <p>The system supports three distinct work order workflows depending on the source and complexity:</p>
+            
+            <div class="flow-cards">
+                <div class="flow-card">
+                    <h3>1️⃣ Client-Submitted Work Orders</h3>
+                    <h4 style="margin-top: 15px;">Path A: Direct Assignment</h4>
+                    <p style="font-size: 0.95em; margin-bottom: 10px;"><em>For routine or emergency work</em></p>
+                    <ol style="font-size: 0.9em;">
+                        <li>Work order created (Work_Order_V2__c)</li>
+                        <li>AI generates summary (OpenAI)</li>
+                        <li>Vendor directly assigned</li>
+                        <li>Tasks created → Job scheduled</li>
+                        <li>Work completed</li>
+                        <li>Calendar Activity V2 close-out</li>
+                        <li>AI processes invoice</li>
+                        <li>Payment via AcctSeed/Forte</li>
+                        <li>Client auto-billed</li>
+                    </ol>
+                    
+                    <h4 style="margin-top: 15px;">Path B: Quote Required</h4>
+                    <p style="font-size: 0.95em; margin-bottom: 10px;"><em>For significant work</em></p>
+                    <ol style="font-size: 0.9em;">
+                        <li>Work order created</li>
+                        <li>Vendor quotes requested</li>
+                        <li>Quotes signed via Box Sign</li>
+                        <li>Sent to client via Magentrix</li>
+                        <li>Client approves</li>
+                        <li>Continue with Path A steps 3-9</li>
+                    </ol>
+                </div>
+                
+                <div class="flow-card">
+                    <h3>2️⃣ Internal Direct Work Orders</h3>
+                    <p style="font-size: 0.95em; margin-bottom: 10px;"><em>Staff-scheduled routine maintenance</em></p>
+                    <ol style="font-size: 0.9em;">
+                        <li>User creates work order directly</li>
+                        <li>Vendor assigned</li>
+                        <li>Tasks created</li>
+                        <li>Standard workflow: schedule → complete → close-out → billing</li>
+                    </ol>
+                </div>
+                
+                <div class="flow-card">
+                    <h3>3️⃣ Project-Based Work Orders</h3>
+                    <p style="font-size: 0.95em; margin-bottom: 10px;"><em>Complex projects requiring review</em></p>
+                    <ol style="font-size: 0.9em;">
+                        <li>Project record created</li>
+                        <li>Asset management reviews scope</li>
+                        <li>Project approved</li>
+                        <li>Quotes scheduled from vendors</li>
+                        <li>Best quote selected</li>
+                        <li>Work order created from project</li>
+                        <li>Vendor assigned</li>
+                        <li>Continue with standard workflow</li>
+                    </ol>
+                </div>
+            </div>
+            
+            <h3 style="margin-top: 40px;">Credit Card & Expense Management Process</h3>
+            <p>The platform manages two types of corporate credit cards through Expensify integration:</p>
+            
+            <table style="margin-top: 20px;">
+                <thead>
+                    <tr>
+                        <th>Card Type</th>
+                        <th>Users</th>
+                        <th>Process</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Chase Company Cards</strong></td>
+                        <td>Senior Management</td>
+                        <td>Monthly reconciliation through Expensify → Synced to AcctSeed</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Expensify Corporate Cards</strong></td>
+                        <td>Field Maintenance Team</td>
+                        <td>Real-time expense tracking with receipt scanning and automatic client billing</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h4 style="margin-top: 25px;">Expensify Corporate Card Workflow:</h4>
+            <div class="flow-diagram">
+<pre><strong>Purchase Made:</strong>
+1. Field team member uses Expensify card
+2. Receipt scan REQUIRED in Expensify app
+3. User tags to:
+   - Property/HOA account (required)
+   - Work Order (if applicable)
+
+<strong>Billing Path A - WITH Work Order:</strong>
+1. Expense tagged to work order
+2. Vendor completes work + submits Calendar Activity V2 close-out
+3. Accounting reviews work order
+4. Material costs included in client pricing
+5. Client billed for labor + materials via AcctSeed
+
+<strong>Billing Path B - WITHOUT Work Order:</strong>
+1. Expense tagged to property only
+2. Weekly Expensify report submitted
+3. Client AUTOMATICALLY BILLED for expense amount
+4. Synced to AcctSeed via Workato</pre>
+            </div>
+            
+            <h3 style="margin-top: 40px;">Stripe Payment & Virtual Card Process</h3>
+            <p>Stripe serves two critical functions:</p>
+            
+            <div class="flow-cards">
+                <div class="flow-card">
+                    <h3>Function 1: Resale Document Fees</h3>
+                    <ol style="font-size: 0.9em;">
+                        <li>Resale document request created</li>
+                        <li>Payment link generated via Stripe</li>
+                        <li>Client pays resale document fee</li>
+                        <li>Payment confirmation triggers processing</li>
+                        <li>Resale packet assembled and delivered</li>
+                    </ol>
+                </div>
+                
+                <div class="flow-card">
+                    <h3>Function 2: Virtual Card Management</h3>
+                    <ol style="font-size: 0.9em;">
+                        <li>User requests virtual card</li>
+                        <li>Selects HOA/Property + amount</li>
+                        <li>Approval: Auto (below threshold) or Accounting</li>
+                        <li>Stripe API creates SINGLE-USE card</li>
+                        <li>Purchase completed</li>
+                        <li>Card AUTOMATICALLY DEACTIVATED</li>
+                        <li>Receipt upload REQUIRED for next card</li>
+                        <li>Client automatically billed</li>
+                    </ol>
+                    <p style="font-size: 0.85em; margin-top: 10px; color: #666;"><strong>Key Controls:</strong> One card at a time, receipt required, automatic billing, fraud prevention</p>
+                </div>
+            </div>
+            
+            <h2 style="margin-top: 60px;">Financial Management & Reporting</h2>
+            
+            <h3>GL Variable Structure</h3>
+            <div class="highlight-box" style="background: #f0f9ff; border-left: 4px solid #0284c7;">
+                <h4 style="color: #0284c7;">Organizational Accounting Framework</h4>
+                <ul>
+                    <li>Each HOA client and company entity has a <strong>unique GL Variable</strong> assigned in AcctSeed</li>
+                    <li>GL Variables enable complete financial separation and reporting by client</li>
+                    <li>All transactions, invoices, and payments tagged to specific GL Variables</li>
+                    <li>Financial reports generated independently for each GL Variable</li>
+                </ul>
+            </div>
+            
+            <h3 style="margin-top: 30px;">Accounting Landing Page</h3>
+            <p>Custom Skuid-based interface providing accounting team and account managers with centralized access to:</p>
+            <ul>
+                <li>Pending invoice/cash receipt approvals</li>
+                <li>Payables ready for review</li>
+                <li>Payables ready to be paid</li>
+                <li>Bank reconciliation status</li>
+                <li>Financial report generation tools</li>
+                <li>Approval thresholds and client approval requirements</li>
+            </ul>
+            
+            <h3 style="margin-top: 40px;">Invoice & Cash Receipt Processing Workflow</h3>
+            <p><strong>End-to-End Automated Processing:</strong></p>
+            
+            <div class="flow-diagram">
+<pre><strong>1. Document Receipt & Scanning:</strong>
+   - Invoices/checks received via mail
+   - Office staff scans documents
+   - Uploaded to designated Box folder
+
+<strong>2. AI-Powered Document Processing (Workato orchestration):</strong>
+   - Box upload triggers Workato workflow
+   - Google Document AI extracts structured data
+     (vendor, invoice #, date, amounts, terms)
+   - OpenAI interprets non-structured data
+   - Pinecone + Cohere match vendor/client to Salesforce
+   - High-confidence matching reduces manual entry
+
+<strong>3. Accounting Workflow Record Creation:</strong>
+   - Accounting_Workflow__c custom object created
+   - Contains parsed data, matched vendor/client, GL Variable
+   - Serves as review queue before AcctSeed entry
+
+<strong>4. Accounting Team Review & Approval:</strong>
+   - Team reviews on landing page
+   - Validates AI matching and data
+   - Approves → Creates AcctSeed Cash Receipt or Payable
+
+<strong>5. Account Manager Review (Payables only):</strong>
+   - Views "payables ready to be reviewed"
+   - Reviews business purpose and GL Variable
+   - Client Approval Threshold Check:
+     → Below threshold: Account manager approves
+     → Above threshold: Routed to client via Magentrix
+   - After approval → "payables ready to be paid"
+
+<strong>6. Payment Processing:</strong>
+   - Accounting manager final approval
+   - Payment triggered:
+     → eCheck via Forte
+     → Physical check manually printed</pre>
+            </div>
+            
+            <div class="highlight-box" style="margin-top: 20px;">
+                <h4>Key Benefits</h4>
+                <ul>
+                    <li>AI reduces manual data entry by ~80%</li>
+                    <li>Vector embeddings ensure accurate vendor matching</li>
+                    <li>Multi-level approval workflow prevents unauthorized payments</li>
+                    <li>Client approval thresholds embedded in process</li>
+                    <li>Complete audit trail from scanned document to payment</li>
+                </ul>
+            </div>
+            
+            <h3 style="margin-top: 40px;">Weekly Bank Reconciliation Process</h3>
+            <p><strong>Bank United Integration:</strong></p>
+            
+            <table style="margin-top: 20px;">
+                <thead>
+                    <tr>
+                        <th>Step</th>
+                        <th>Process</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>1. Transaction Download</strong></td>
+                        <td>Mass download from Bank United → CSV upload to Salesforce</td>
+                    </tr>
+                    <tr>
+                        <td><strong>2. Transaction Matching</strong></td>
+                        <td>Team matches existing AcctSeed transactions or creates new ones</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3. Exception Handling</strong></td>
+                        <td>Unmatched transactions flagged → Investigation → Manual matching or journal entries</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h3 style="margin-top: 40px;">Monthly Financial Close & Reporting</h3>
+            
+            <h4>10th of Month: Report Generation</h4>
+            <ol>
+                <li><strong>Financial Report Process Execution</strong>
+                    <ul>
+                        <li>Accounting team runs process in Salesforce</li>
+                        <li>AcctSeed generates PDF statements by GL Variable:
+                            <ul>
+                                <li>Income statement (P&L)</li>
+                                <li>Balance sheet</li>
+                                <li>Cash flow statement</li>
+                                <li>General ledger detail</li>
+                                <li>AR/AP aging</li>
+                            </ul>
+                        </li>
+                        <li>Reports stored in Box, linked to accounts</li>
+                    </ul>
+                </li>
+                <li><strong>Report Review</strong>
+                    <ul>
+                        <li>Accounting team validates accuracy</li>
+                        <li>Confirms GL Variable assignments</li>
+                        <li>Verifies all transactions posted</li>
+                    </ul>
+                </li>
+            </ol>
+            
+            <h4>15th of Month: Automatic Distribution</h4>
+            <ol start="3">
+                <li><strong>Automated Client Delivery</strong>
+                    <ul>
+                        <li>Reports automatically sent to clients</li>
+                        <li>Email with Box shared links</li>
+                        <li>Access via Magentrix portal</li>
+                        <li>Notifications to account managers</li>
+                    </ul>
+                </li>
+            </ol>
+            
+            <h3 style="margin-top: 40px;">Pre-Paid Invoice Processing</h3>
+            <p><strong>Automated Pre-Payment Tracking:</strong></p>
+            
+            <div class="flow-diagram">
+<pre><strong>Process Flow:</strong>
+1. Pre-paid invoices uploaded to Box folder → Triggers Workato
+
+2. AI Document Processing:
+   - Google Document AI reads invoice details
+   - OpenAI interprets payment terms
+   - Pinecone + Cohere matches to Salesforce records
+   - Updates Salesforce with pre-payment info
+
+3. Transaction Matching:
+   - System searches for matching AcctSeed transactions
+   - Links pre-paid invoice to transaction
+   - Updates GL coding
+
+4. Month-End Reconciliation:
+   - Unmatched transactions flagged
+   - Accounting team manually reviews
+   - Ensures all pre-payments applied
+   - Prevents duplicate payment</pre>
+            </div>
+            
+            <div class="highlight-box" style="margin-top: 20px;">
+                <h4>Financial Controls Summary</h4>
+                <ul>
+                    <li><strong>GL Variable Separation:</strong> Complete financial isolation by client</li>
+                    <li><strong>AI-Powered Processing:</strong> 80% reduction in manual data entry</li>
+                    <li><strong>Multi-Level Approvals:</strong> Accounting team → Account manager → Client (threshold-based)</li>
+                    <li><strong>Weekly Bank Rec:</strong> Continuous reconciliation prevents month-end surprises</li>
+                    <li><strong>Monthly Close:</strong> Automated report generation and distribution</li>
+                    <li><strong>Pre-Payment Tracking:</strong> Prevents duplicate billing and ensures proper application</li>
+                    <li><strong>Complete Audit Trail:</strong> From scanned document to payment to financial statement</li>
+                </ul>
+            </div>
+
+            <h2>Data Volume & Scale</h2>
+            
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <div class="stat-number">780+</div>
+                    <div class="stat-label">Total Custom Objects</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">~50</div>
+                    <div class="stat-label">Core PM Objects</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">200+</div>
+                    <div class="stat-label">Automated Flows</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">395</div>
+                    <div class="stat-label">Apex Classes</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">132</div>
+                    <div class="stat-label">Apex Triggers</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">15,203</div>
+                    <div class="stat-label">Total Files</div>
+                </div>
+            </div>
+
+            <h2>System Highlights for Transition</h2>
+            
+            <div class="highlight-box">
+                <h3>Strengths</h3>
+                <ul>
+                    <li><span class="checkmark">✓</span> <strong>Comprehensive automation</strong> — Minimal manual data entry, AI-powered document processing</li>
+                    <li><span class="checkmark">✓</span> <strong>Integrated ecosystem</strong> — Payments, accounting, documents, AI processing, and customer portals all connected</li>
+                    <li><span class="checkmark">✓</span> <strong>Three work order workflows</strong> — Client-submitted, internal direct, and project-based paths for all scenarios</li>
+                    <li><span class="checkmark">✓</span> <strong>Automated client billing</strong> — Expensify expenses and Stripe virtual cards trigger automatic invoicing</li>
+                    <li><span class="checkmark">✓</span> <strong>Robust move management</strong> — Complete move-in/move-out lifecycle tracking</li>
+                    <li><span class="checkmark">✓</span> <strong>Multi-property type support</strong> — Residential, multi-unit, HOA, and commercial</li>
+                    <li><span class="checkmark">✓</span> <strong>Advanced e-signature</strong> — DocuSign for leases, Box Sign for quotes</li>
+                    <li><span class="checkmark">✓</span> <strong>AI-powered processing</strong> — Automated invoice reading and work order summaries</li>
+                    <li><span class="checkmark">✓</span> <strong>Customer portal access</strong> — Magentrix provides client self-service</li>
+                    <li><span class="checkmark">✓</span> <strong>Virtual card controls</strong> — Single-use Stripe cards with receipt requirements</li>
+                </ul>
+            </div>
+
+            <h3>Key Dependencies</h3>
+            <ul>
+                <li><strong>Workato</strong> for accounting integration (critical)</li>
+                <li><strong>Forte</strong> for payment processing (credit card and ACH)</li>
+                <li><strong>Box</strong> for document storage and Box Sign signatures</li>
+                <li><strong>AcctSeed</strong> for financial management</li>
+                <li><strong>Skuid</strong> for enhanced user interfaces</li>
+                <li><strong>OpenAI & Google Document AI</strong> for intelligent document processing</li>
+                <li><strong>Cloud Convert</strong> for document merging</li>
+                <li><strong>DocuSign</strong> for lease signatures</li>
+                <li><strong>Magentrix</strong> for customer portals</li>
+                <li><strong>Invoice Ninja</strong> for client quotes</li>
+                <li><strong>Stripe</strong> for virtual cards and resale document fees</li>
+                <li><strong>Expensify</strong> for credit card tracking and automatic client billing</li>
+                <li><strong>Lob.com</strong> for physical mail delivery</li>
+            </ul>
+
+            <h2>Most Frequently Used Objects</h2>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Object</th>
+                        <th>Purpose</th>
+                        <th>Key Relationships</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Property_1__c</td>
+                        <td>Property/Unit</td>
+                        <td>Account, Building, Lease, Work Orders, Advertising, Contracts</td>
+                    </tr>
+                    <tr>
+                        <td>Lease_1__c</td>
+                        <td>Rental Agreement</td>
+                        <td>Property, Tenant, Moves, Notices, Renewals</td>
+                    </tr>
+                    <tr>
+                        <td>Tenant_1__c</td>
+                        <td>Tenant Record</td>
+                        <td>Lease, Property, Contact, Viewings</td>
+                    </tr>
+                    <tr>
+                        <td>Work_Order_V2__c</td>
+                        <td>Work Order/Job</td>
+                        <td>Property, Move, Lease, Vendor, Calendar Activity V2, Seasonal Maintenance</td>
+                    </tr>
+                    <tr>
+                        <td>Calendar_Activity_V2__c</td>
+                        <td>Work Order Activities</td>
+                        <td>Work Order, Vendor, AcctSeed (payments)</td>
+                    </tr>
+                    <tr>
+                        <td>Move_1__c</td>
+                        <td>Move-In/Move-Out</td>
+                        <td>Property, Lease, Evaluation, Keys, Work Orders</td>
+                    </tr>
+                    <tr>
+                        <td>Advertising__c</td>
+                        <td>Property Listing</td>
+                        <td>Property, Viewings</td>
+                    </tr>
+                    <tr>
+                        <td>Viewings__c</td>
+                        <td>Property Showing</td>
+                        <td>Advertising, Showing Agent, Appointments</td>
+                    </tr>
+                    <tr>
+                        <td>Building__c</td>
+                        <td>Multi-Unit Building</td>
+                        <td>Account, Properties</td>
+                    </tr>
+                    <tr>
+                        <td>Contract__c</td>
+                        <td>HOA Contracts</td>
+                        <td>Properties, Account</td>
+                    </tr>
+                    <tr>
+                        <td>Notice__c</td>
+                        <td>Client Notices</td>
+                        <td>Lease, Property, Account</td>
+                    </tr>
+                    <tr>
+                        <td>Mailing__c</td>
+                        <td>Physical Mail</td>
+                        <td>Linked to Lob.com for delivery</td>
+                    </tr>
+                    <tr>
+                        <td>Resale_Document__c</td>
+                        <td>Resale Packets</td>
+                        <td>Property, Documents</td>
+                    </tr>
+                    <tr>
+                        <td>Seasonal_Maintenance__c</td>
+                        <td>Seasonal Planning</td>
+                        <td>Property, Work Orders</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Support & Documentation</h2>
+            <p><strong>Metadata Location:</strong> Complete org metadata has been retrieved and is available in the <code>force-app</code> directory of the Salesforce project.</p>
+            
+            <h3>Key Directories</h3>
+            <ul>
+                <li><code>/force-app/main/default/objects/</code> — Custom object definitions and field metadata</li>
+                <li><code>/force-app/main/default/flows/</code> — Flow automation definitions</li>
+                <li><code>/force-app/main/default/triggers/</code> — Apex trigger code</li>
+                <li><code>/force-app/main/default/classes/</code> — Apex class code</li>
+            </ul>
+            
+            <h3>Technical Details</h3>
+            <ul>
+                <li><strong>Platform:</strong> Salesforce (Production org)</li>
+                <li><strong>API Version:</strong> 62.0</li>
+                <li><strong>Org ID:</strong> 00DPd000000RYGCTMA5</li>
+            </ul>
+        </div>
+        
+        <div class="footer">
+            <p><strong>Gordon James Realty - Salesforce Platform Overview</strong></p>
+            <p>Prepared for Continuum</p>
+        </div>
+    </div>
+</body>
+</html>
