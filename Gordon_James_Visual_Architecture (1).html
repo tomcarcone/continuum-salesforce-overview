@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gordon James - System Architecture Visual Guide</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: #333;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            color: white;
+            padding: 60px 20px;
+            margin-bottom: 30px;
+        }
+        
+        .header h1 {
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header p {
+            font-size: 1.3em;
+            opacity: 0.95;
+        }
+        
+        .diagram-section {
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .diagram-section h2 {
+            color: #1e3c72;
+            font-size: 2.2em;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #2a5298;
+        }
+        
+        .diagram-section p {
+            color: #666;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .mermaid {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border: 2px solid #e0e0e0;
+        }
+        
+        .legend {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .legend h3 {
+            color: #856404;
+            margin-bottom: 10px;
+        }
+        
+        .legend ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .legend li {
+            padding: 5px 0;
+            color: #856404;
+        }
+        
+        .legend li::before {
+            content: "▶ ";
+            color: #ffc107;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        
+        .stats-visual {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .stat-number {
+            font-size: 3em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .stat-label {
+            font-size: 1em;
+            opacity: 0.95;
+        }
+        
+        .integration-visual {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        
+        .integration-card {
+            background: white;
+            border: 3px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .integration-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+        }
+        
+        .integration-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .integration-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+        
+        .integration-card h3 {
+            color: #1e3c72;
+            margin-bottom: 10px;
+            font-size: 1.4em;
+        }
+        
+        .integration-card p {
+            color: #666;
+            font-size: 0.95em;
+            margin: 0;
+        }
+        
+        .flow-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .flow-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 5px solid #667eea;
+        }
+        
+        .flow-card h3 {
+            color: #1e3c72;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .flow-card ol {
+            margin-left: 20px;
+        }
+        
+        .flow-card li {
+            margin: 8px 0;
+            color: #444;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 30px 0;
+        }
+        
+        .highlight-box h3 {
+            color: white;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        
+        .highlight-box ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .highlight-box li {
+            padding: 8px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .highlight-box li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #ffc107;
+        }
+        
+        .page-break {
+            page-break-after: always;
+        }
+        
+        @media print {
+            body {
+                background: white;
+            }
+            .stat-card, .integration-card {
+                break-inside: avoid;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            .diagram-section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏢 Gordon James Realty</h1>
+            <p>Visual System Architecture Guide</p>
+            <p style="font-size: 0.9em; margin-top: 10px;">Property Management Platform Overview</p>
+            <p style="font-size: 0.85em; margin-top: 10px; opacity: 0.9;">Prepared for Continuum</p>
+        </div>
+
+        <!-- System Scale -->
+        <div class="diagram-section">
+            <h2>🎯 Architectural Philosophy</h2>
+            <div class="highlight-box">
+                <h3 style="color: white;">Platform Design Principles</h3>
+                <ul>
+                    <li><strong>Modular & API-Driven</strong> — Business logic lives in Salesforce; external services are replaceable via integrations</li>
+                    <li><strong>Provider Independence</strong> — Platform operates independently of specific accounting or payment providers</li>
+                    <li><strong>Reduced Vendor Lock-In</strong> — Integrations can be swapped without disrupting core business logic</li>
+                    <li><strong>Operational Focus</strong> — System of record for properties, leases, tenants, work orders, and compliance</li>
+                </ul>
+            </div>
+            
+            <div style="background: #fff3cd; border-left: 4px solid #ffc107; padding: 20px; margin: 20px 0; border-radius: 4px;">
+                <h3 style="color: #856404; margin-bottom: 10px;">Out of Scope</h3>
+                <p style="color: #856404; margin: 0;">This document intentionally excludes AcctSeed financial objects (GL accounts, journal entries, bank reconciliation) and generic Salesforce standard objects unless directly referenced by property management functionality.</p>
+            </div>
+        </div>
+
+        <!-- System Scale -->
+        <div class="diagram-section">
+            <h2>📊 Platform Scale & Metrics</h2>
+            <p>The Gordon James Salesforce platform is a comprehensive, enterprise-grade property management system with extensive automation and integrations.</p>
+            
+            <div class="stats-visual">
+                <div class="stat-card">
+                    <div class="stat-number">780+</div>
+                    <div class="stat-label">Custom Objects</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">~60</div>
+                    <div class="stat-label">Core PM Objects</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">200+</div>
+                    <div class="stat-label">Automated Flows</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">132</div>
+                    <div class="stat-label">Apex Triggers</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">395</div>
+                    <div class="stat-label">Apex Classes</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">15</div>
+                    <div class="stat-label">External Integrations</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- High-Level Architecture -->
+        <div class="diagram-section">
+            <h2>🏗️ System Architecture - Four-Layer Design</h2>
+            <p>The platform is built on a modern four-layer architecture that separates concerns and enables scalability.</p>
+            
+            <div class="mermaid">
+graph TB
+    subgraph UI["🖥️ USER INTERFACE LAYER"]
+        A1[Record Pages]
+        A2[Quick Actions]
+        A3[Custom Buttons]
+        A4[Skuid Custom Pages]
+    end
+    
+    subgraph AUTO["⚙️ AUTOMATION LAYER"]
+        B1[Flows - 200+]
+        B2[Apex Triggers - 132]
+        B3[Apex Classes - 395]
+        B4[Scheduled Jobs]
+        B5[AI Processing]
+    end
+    
+    subgraph DATA["💾 DATA LAYER"]
+        C1[Properties & Buildings]
+        C2[Leases & Tenants]
+        C3[Work Orders V2]
+        C4[Viewings & Advertising]
+        C5[Financial Records]
+        C6[Contracts & Notices]
+        C7[Mailings & Resale Docs]
+    end
+    
+    subgraph INT["🔌 INTEGRATION LAYER"]
+        D1[Workato]
+        D2[Box + Box Sign]
+        D3[Forte]
+        D4[AcctSeed]
+        D5[DocuSign]
+        D6[AI OpenAI/Google]
+        D7[Magentrix]
+        D8[Lob.com]
+    end
+    
+    UI --> AUTO
+    AUTO --> DATA
+    DATA --> INT
+    INT -.Sync.-> DATA
+    
+    style UI fill:#e3f2fd
+    style AUTO fill:#fff3e0
+    style DATA fill:#f3e5f5
+    style INT fill:#e8f5e9
+            </div>
+        </div>
+
+        <div class="page-break"></div>
+
+        <!-- Core Data Model -->
+        <div class="diagram-section">
+            <h2>🗂️ Core Data Model - Entity Relationships</h2>
+            <p>The heart of the system: how properties, leases, tenants, and work orders connect together.</p>
+            
+            <div class="mermaid">
+erDiagram
+    ACCOUNT ||--o{ BUILDING : owns
+    ACCOUNT ||--o{ PROPERTY : owns
+    BUILDING ||--o{ PROPERTY : contains
+    
+    PROPERTY ||--o{ LEASE : "has active/past"
+    PROPERTY ||--o{ ADVERTISING : "is listed via"
+    PROPERTY ||--o{ WORK_ORDER_V2 : "requires"
+    PROPERTY ||--o{ CONTRACT : "may have"
+    PROPERTY ||--o{ SEASONAL_MAINT : "has plans for"
+    PROPERTY ||--o{ RESALE_DOC : "may have"
+    
+    LEASE ||--o{ TENANT : "includes"
+    LEASE ||--o| MOVE_IN : "starts with"
+    LEASE ||--o| MOVE_OUT : "ends with"
+    LEASE ||--o{ NOTICE : "generates"
+    LEASE ||--o{ RENEWAL : "may renew via"
+    
+    ADVERTISING ||--o{ VIEWING : "generates"
+    VIEWING }o--|| AGENT : "shown by"
+    
+    MOVE_IN ||--o| EVALUATION : "includes"
+    MOVE_OUT ||--o| EVALUATION : "includes"
+    
+    WORK_ORDER_V2 ||--o{ CALENDAR_ACT_V2 : "tracked via"
+    WORK_ORDER_V2 ||--o{ TASK : "contains"
+    WORK_ORDER_V2 }o--|| VENDOR : "assigned to"
+    WORK_ORDER_V2 }o--o| MOVE_OUT : "may trigger from"
+    WORK_ORDER_V2 }o--o| RECURRING_WO : "may be part of"
+    WORK_ORDER_V2 }o--o| SEASONAL_MAINT : "linked to"
+    
+    CALENDAR_ACT_V2 }o--|| ACCTSEED : "syncs payments to"
+    
+    NOTICE ||--o| MAILING : "may send via"
+    MAILING }o--|| LOB : "delivered by"
+    
+    TENANT }o--|| CONTACT : "links to"
+    AGENT }o--|| CONTACT : "is a"
+    
+    ACCOUNT {
+        string Name
+        string Type
+        string Owner_Type
+    }
+    
+    PROPERTY {
+        string Address
+        string Status
+        decimal Rent_Amount
+        date Available_Date
+    }
+    
+    LEASE {
+        date Start_Date
+        date End_Date
+        decimal Rent
+        string Status
+    }
+    
+    WORK_ORDER_V2 {
+        string Type
+        string Status
+        decimal Amount
+        date Due_Date
+        text AI_Summary
+    }
+    
+    CONTRACT {
+        string Contract_Type
+        date Start_Date
+        date End_Date
+        string Status
+    }
+    
+    NOTICE {
+        string Type
+        date Sent_Date
+        string Recipient
+    }
+    
+    MAILING {
+        string Type
+        date Sent_Date
+        string Tracking_ID
+    }
+            </div>
+            
+            <div class="legend">
+                <h3>📌 Key Relationships</h3>
+                <ul>
+                    <li><strong>One-to-Many:</strong> One property can have multiple leases over time</li>
+                    <li><strong>Many-to-One:</strong> Multiple properties can belong to one building</li>
+                    <li><strong>Optional:</strong> Work orders may or may not be linked to a move-out</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="page-break"></div>
+
+        <!-- Business Process Flows -->
+        <div class="diagram-section">
+            <h2>🔄 Key Business Process Flows</h2>
+            <p>Visual representation of the four main business processes that drive daily operations.</p>
+            
+            <div class="flow-cards">
+                <div class="flow-card">
+                    <h3>1️⃣ Tenant Placement</h3>
+                    <ol>
+                        <li>Property becomes available</li>
+                        <li>Create advertising listing</li>
+                        <li>Schedule viewings</li>
+                        <li>Receive applications</li>
+                        <li>Create lease agreement</li>
+                        <li>Schedule move-in</li>
+                    </ol>
+                </div>
+                
+                <div class="flow-card">
+                    <h3>2️⃣ Move-In Process</h3>
+                    <ol>
+                        <li>Lease signed & activated</li>
+                        <li>Create move-in record</li>
+                        <li>Schedule move-in inspection</li>
+                        <li>Complete evaluation form</li>
+                        <li>Provide keys to tenant</li>
+                        <li>Activate utilities</li>
+                    </ol>
+                </div>
+                
+                <div class="flow-card">
+                    <h3>3️⃣ Maintenance Request</h3>
+                    <ol>
+                        <li>Work order created (Work_Order_V2__c)</li>
+                        <li>AI generates work order summary</li>
+                        <li>Vendor selected & quoted (Box Sign)</li>
+                        <li>Owner approval (if needed)</li>
+                        <li>Job scheduled</li>
+                        <li>Work completed</li>
+                        <li>Calendar Activity V2 close-out</li>
+                        <li>Invoice processed (AI reading) & paid via AcctSeed</li>
+                    </ol>
+                </div>
+                
+                <div class="flow-card">
+                    <h3>4️⃣ Move-Out & Turnover</h3>
+                    <ol>
+                        <li>Notice received from tenant</li>
+                        <li>Create move-out record</li>
+                        <li>Schedule move-out inspection</li>
+                        <li>Complete evaluation</li>
+                        <li>Generate turnover work order</li>
+                        <li>Re-advertise property</li>
+                    </ol>
+                </div>
+            </div>
+            
+            <h3 style="margin-top: 40px; margin-bottom: 20px; color: #1e3c72;">Tenant Lifecycle Visualization</h3>
+            <div class="mermaid">
+flowchart LR
+    Start([Property Available]) --> Advertise[Create Advertisement]
+    Advertise --> Showing[Schedule Viewings]
+    Showing --> Apply[Tenant Application]
+    Apply --> Lease[Create Lease]
+    Lease --> MoveIn[Move-In Process]
+    MoveIn --> Active[Active Tenancy]
+    Active --> Maint[Maintenance Requests]
+    Maint --> Active
+    Active --> Notice[Notice Given]
+    Notice --> MoveOut[Move-Out Process]
+    MoveOut --> Turnover[Turnover Work]
+    Turnover --> Start
+    
+    style Start fill:#4caf50,color:#fff
+    style Active fill:#2196f3,color:#fff
+    style MoveOut fill:#ff9800,color:#fff
+    style Turnover fill:#f44336,color:#fff
+            </div>
+        </div>
+
+        <div class="page-break"></div>
+
+        <!-- Integration Ecosystem -->
+        <div class="diagram-section">
+            <h2>🔌 Integration Ecosystem</h2>
+            <p>Integrations keep Salesforce focused on workflow and system-of-record functions while connecting best-in-class tools for payments, documents, portals, and automation.</p>
+            
+            <div class="integration-visual">
+                <div class="integration-card">
+                    <div class="integration-icon">🔄</div>
+                    <h3>Workato</h3>
+                    <p><strong>Why it Exists</strong></p>
+                    <p>Sync and orchestrate updates across Salesforce and downstream systems</p>
+                </div>
+                
+                <div class="integration-card">
+                    <div class="integration-icon">📦</div>
+                    <h3>Box + Box Sign</h3>
+                    <p><strong>Why it Exists</strong></p>
+                    <p>Document storage, sharing, and quote signature workflows</p>
+                </div>
+                
+                <div class="integration-card">
+                    <div class="integration-icon">💳</div>
+                    <h3>Forte</h3>
+                    <p><strong>Why it Exists</strong></p>
+                    <p>ACH and credit card payment processing</p>
+                </div>
+                
+                <div class="integration-card">
+                    <div class="integration-icon">💰</div>
+                    <h3>AcctSeed</h3>
+                    <p><strong>Why it Exists</strong></p>
+                    <p>Accounting, vendor payments, and financial posting</p>
+                </div>
+                
+                <div class="integration-card">
+                    <div class="integration-icon">🎨</div>
+                    <h3>Skuid</h3>
+                    <p><strong>Why it Exists</strong></p>
+                    <p>Primary internal UI for operational workflows</p>
+                </div>
+                
+                <div class="integration-card">
+                    <div class="integration-icon">✍️</div>
+                    <h3>DocuSign</h3>
+                    <p><strong>Why it Exists</strong></p>
+                    <p>Lease signing and lease package execution</p>
+                </div>
+                
+                <div class="integration-card">
+                    <div class="integration-icon">💼</div>
+                    <h3>Expensify</h3>
+                    <p><strong>Why it Exists</strong></p>
+                    <p>Credit card and expense management</p>
+                </div>
+                
+                <div class="integration-card">
+                    <div class="integration-icon">🤖</div>
+                    <h3>OpenAI + Google AI</h3>
+                    <p><strong>Why it Exists</strong></p>
+                    <p>Work order summaries and document field extraction</p>
+                </div>
+                
+                <div class="integration-card">
+                    <div class="integration-icon">🔀</div>
+                    <h3>Cloud Convert</h3>
+                    <p><strong>Why it Exists</strong></p>
+                    <p>Automatic document merging and PDF assembly</p>
+                </div>
+                
+                <div class="integration-card">
+                    <div class="integration-icon">🌐</div>
+                    <h3>Magentrix</h3>
+                    <p><strong>Why it Exists</strong></p>
+                    <p>Customer portals for owners, boards, and clients</p>
+                </div>
+                
+                <div class="integration-card">
+                    <div class="integration-icon">📄</div>
+                    <h3>Invoice Ninja</h3>
+                    <p><strong>Why it Exists</strong></p>
+                    <p>Creation of client-facing quotes</p>
+                </div>
+                
+                <div class="integration-card">
+                    <div class="integration-icon">✉️</div>
+                    <h3>Lob.com</h3>
+                    <p><strong>Why it Exists</strong></p>
+                    <p>Physical mail fulfillment with tracking</p>
+                </div>
+                
+                <div class="integration-card">
+                    <div class="integration-icon">💳</div>
+                    <h3>Stripe</h3>
+                    <p><strong>Why it Exists</strong></p>
+                    <p>Resale document fees and virtual card management</p>
+                </div>
+                
+                <div class="integration-card">
+                    <div class="integration-icon">💬</div>
+                    <h3>HelpScout</h3>
+                    <p><strong>Why it Exists</strong></p>
+                    <p>Support and communications for customer/tenant workflows</p>
+                </div>
+                
+                <div class="integration-card">
+                    <div class="integration-icon">🔗</div>
+                    <h3>Bitly</h3>
+                    <p><strong>Why it Exists</strong></p>
+                    <p>Short links for evaluations and renewals</p>
+                </div>
+            </div>
+            
+            <h3 style="margin-top: 40px; margin-bottom: 20px; color: #1e3c72;">Integration Flow Diagram</h3>
+            <div class="mermaid">
+graph TB
+    SF[Salesforce Core]
+    
+    SF <-->|Work Orders<br/>Moves<br/>Viewings| WK[Workato]
+    SF <-->|Documents<br/>Files<br/>Signatures| BOX[Box + Box Sign]
+    SF <-->|Payments<br/>ACH<br/>Credit Card| FT[Forte]
+    SF <-->|Accounting<br/>GL/AP/AR| AS[AcctSeed]
+    SF <-->|Support<br/>Emails<br/>Tickets| HS[HelpScout]
+    SF <-->|Short Links<br/>Tracking| BL[Bitly]
+    SF <-->|AI Processing<br/>Summaries| AI[OpenAI + Google AI]
+    SF <-->|Lease<br/>Signatures| DS[DocuSign]
+    SF <-->|Customer<br/>Portals| MX[Magentrix]
+    SF <-->|Physical<br/>Mail| LB[Lob.com]
+    SF <-->|Document<br/>Merging| CC[Cloud Convert]
+    SF <-->|Client<br/>Quotes| IN[Invoice Ninja]
+    SF <-->|Expenses<br/>Credit Cards| EX[Expensify]
+    SF <-->|Custom<br/>Pages| SK[Skuid]
+    SF <-->|Virtual Cards<br/>Resale Fees| ST[Stripe]
+    
+    WK -->|Sync| AS
+    WK -->|Sync| EX
+    BOX -->|Storage| CC
+    
+    style SF fill:#1e3c72,color:#fff,stroke:#fff,stroke-width:3px
+    style WK fill:#ff6b6b
+    style BOX fill:#4ecdc4
+    style FT fill:#45b7d1
+    style AS fill:#f9ca24
+    style AI fill:#a29bfe
+    style DS fill:#6c5ce7
+    style MX fill:#fd79a8
+    style LB fill:#fdcb6e
+    style CC fill:#00b894
+    style ST fill:#ff6b6b
+            </div>
+        </div>
+
+        <div class="page-break"></div>
+
+        <!-- Work Order Flow -->
+        <div class="diagram-section">
+            <h2>🔧 Work Order Processing - Three Workflows</h2>
+            <p>The system supports three distinct work order workflows depending on source and complexity.</p>
+            
+            <h3 style="margin-top: 30px;">1️⃣ Client-Submitted Work Orders</h3>
+            <p>When clients (owners, tenants, HOA boards) submit maintenance requests:</p>
+            
+            <div class="mermaid">
+flowchart TD
+    Start([Client Submits Request]) --> CreateWO[Create Work Order V2]
+    CreateWO --> AIGen[AI Generates Summary]
+    AIGen --> Decision{Scope & Nature}
+    
+    Decision -->|Routine/Emergency<br/>Direct Work| PathA[Path A: Direct Assignment]
+    Decision -->|Significant Work<br/>Needs Quote| PathB[Path B: Quote Required]
+    
+    PathA --> Assign[Assign Vendor]
+    
+    PathB --> GetQuotes[Request Vendor Quotes]
+    GetQuotes --> BoxSign[Quotes Signed via Box Sign]
+    BoxSign --> SendClient[Send to Client via Magentrix]
+    SendClient --> ClientApprove[Client Approves Quote]
+    ClientApprove --> Assign
+    
+    Assign --> CreateTasks[Create Work Tasks]
+    CreateTasks --> Schedule[Schedule Job]
+    Schedule --> Complete[Work Completed]
+    Complete --> CalAct[Calendar Activity V2 Close-Out]
+    CalAct --> AIInvoice[AI Processes Invoice]
+    AIInvoice --> Payment[Payment via AcctSeed/Forte]
+    Payment --> BillClient[Client Auto-Billed]
+    BillClient --> Done([Complete])
+    
+    style Start fill:#4caf50,color:#fff
+    style Done fill:#2196f3,color:#fff
+    style AIGen fill:#a29bfe,color:#fff
+    style AIInvoice fill:#a29bfe,color:#fff
+    style Decision fill:#ff9800,color:#fff
+            </div>
+            
+            <h3 style="margin-top: 40px;">2️⃣ Internal Direct Work Orders</h3>
+            <p>Staff schedules routine maintenance or inspections:</p>
+            
+            <div class="mermaid">
+flowchart LR
+    Start([Staff Creates WO]) --> Assign[Assign Vendor]
+    Assign --> Tasks[Create Tasks]
+    Tasks --> Standard[Standard Workflow]
+    Standard --> Done([Complete])
+    
+    style Start fill:#4caf50,color:#fff
+    style Done fill:#2196f3,color:#fff
+            </div>
+            
+            <h3 style="margin-top: 40px;">3️⃣ Project-Based Work Orders</h3>
+            <p>Complex projects requiring asset management review:</p>
+            
+            <div class="mermaid">
+flowchart TD
+    Start([Project Need Identified]) --> CreateProj[Create Project Record]
+    CreateProj --> Review[Asset Mgmt Reviews Scope]
+    Review --> Approve{Approved?}
+    Approve -->|No| Reject([Rejected])
+    Approve -->|Yes| ScheduleQuotes[Schedule Vendor Quotes]
+    ScheduleQuotes --> GetQuotes[Vendors Submit Quotes]
+    GetQuotes --> SelectBest[Best Quote Selected]
+    SelectBest --> CreateWO[Create Work Order]
+    CreateWO --> Assign[Assign Vendor]
+    Assign --> Standard[Standard Workflow]
+    Standard --> Done([Complete])
+    
+    style Start fill:#4caf50,color:#fff
+    style Done fill:#2196f3,color:#fff
+    style Reject fill:#f44336,color:#fff
+    style Approve fill:#ff9800,color:#fff
+            </div>
+        </div>
+
+        <div class="page-break"></div>
+
+        <!-- Expensify Credit Card Process -->
+        <div class="diagram-section">
+            <h2>💳 Credit Card & Expense Management</h2>
+            <p>Two types of corporate credit cards managed through Expensify integration:</p>
+            
+            <table style="margin-top: 20px;">
+                <thead>
+                    <tr>
+                        <th>Card Type</th>
+                        <th>Users</th>
+                        <th>Process</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Chase Company Cards</strong></td>
+                        <td>Senior Management</td>
+                        <td>Monthly reconciliation → Synced to AcctSeed</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Expensify Corporate Cards</strong></td>
+                        <td>Field Maintenance Team</td>
+                        <td>Real-time tracking with receipt scanning and automatic client billing</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h3 style="margin-top: 30px;">Expensify Corporate Card Workflow</h3>
+            
+            <div class="mermaid">
+flowchart TD
+    Purchase([Purchase Made]) --> Receipt[Receipt Scan REQUIRED]
+    Receipt --> Tag{Tagging}
+    
+    Tag --> Property[Tag to Property/HOA]
+    Property --> WOCheck{Work Order<br/>Tagged?}
+    
+    WOCheck -->|Yes - With WO| WOPath[Path A: With Work Order]
+    WOCheck -->|No - Property Only| NoWOPath[Path B: No Work Order]
+    
+    WOPath --> VendorWork[Vendor Completes Work]
+    VendorWork --> CloseOut[Calendar Activity V2 Close-Out]
+    CloseOut --> AcctReview[Accounting Reviews WO]
+    AcctReview --> IncludeMaterial[Material Costs Included in Pricing]
+    IncludeMaterial --> BillLabor[Client Billed: Labor + Materials]
+    BillLabor --> Done([Complete])
+    
+    NoWOPath --> WeeklyReport[Weekly Expensify Report]
+    WeeklyReport --> AutoBill[Client AUTOMATICALLY BILLED]
+    AutoBill --> Sync[Synced to AcctSeed via Workato]
+    Sync --> Done
+    
+    style Purchase fill:#4caf50,color:#fff
+    style Done fill:#2196f3,color:#fff
+    style WOCheck fill:#ff9800,color:#fff
+    style AutoBill fill:#f44336,color:#fff
+            </div>
+        </div>
+
+        <div class="page-break"></div>
+
+        <!-- Stripe Process -->
+        <div class="diagram-section">
+            <h2>💰 Stripe Payment & Virtual Card System</h2>
+            <p>Stripe serves two critical functions in the platform:</p>
+            
+            <h3 style="margin-top: 30px;">Function 1: Resale Document Fee Collection</h3>
+            
+            <div class="mermaid">
+flowchart LR
+    Request([Resale Doc Request]) --> Generate[Generate Payment Link]
+    Generate --> ClientPay[Client Pays via Stripe]
+    ClientPay --> Confirm[Payment Confirmed]
+    Confirm --> Process[Assemble Resale Packet]
+    Process --> Deliver[Deliver to Client]
+    Deliver --> Done([Complete])
+    
+    style Request fill:#4caf50,color:#fff
+    style Done fill:#2196f3,color:#fff
+            </div>
+            
+            <h3 style="margin-top: 40px;">Function 2: Virtual Card Management</h3>
+            <p style="margin-bottom: 20px;">Single-use virtual cards for client purchases with automatic billing:</p>
+            
+            <div class="mermaid">
+flowchart TD
+    Request([User Requests Virtual Card]) --> Select[Select HOA/Property + Amount]
+    Select --> Approval{Approval Check}
+    
+    Approval -->|Below Threshold| Auto[Auto-Approved]
+    Approval -->|Above Threshold| AcctApprove[Accounting Approves]
+    
+    Auto --> Create[Stripe API: Create Single-Use Card]
+    AcctApprove --> Create
+    
+    Create --> Use[User Makes Purchase]
+    Use --> Deactivate[Card AUTOMATICALLY DEACTIVATED]
+    Deactivate --> ReceiptReq[Receipt Upload REQUIRED]
+    ReceiptReq --> ClientBill[Client Automatically Billed]
+    ClientBill --> NextReq{Request<br/>Next Card?}
+    
+    NextReq -->|Yes| CheckReceipt{Receipt<br/>Uploaded?}
+    CheckReceipt -->|No| Block([BLOCKED - Upload Receipt])
+    CheckReceipt -->|Yes| Request
+    NextReq -->|No| Done([Complete])
+    
+    style Request fill:#4caf50,color:#fff
+    style Done fill:#2196f3,color:#fff
+    style Block fill:#f44336,color:#fff
+    style Approval fill:#ff9800,color:#fff
+    style Deactivate fill:#ff9800,color:#fff
+            </div>
+            
+            <div class="highlight-box" style="margin-top: 30px;">
+                <h3>Virtual Card Security Controls</h3>
+                <ul>
+                    <li><strong>Single-Use Only:</strong> Card automatically deactivated after one purchase</li>
+                    <li><strong>One Card at a Time:</strong> Cannot request another card without uploading receipt</li>
+                    <li><strong>Approval Workflow:</strong> Amount-based auto-approval prevents unauthorized spending</li>
+                    <li><strong>Automatic Billing:</strong> Client billed immediately for purchase amount</li>
+                    <li><strong>Fraud Prevention:</strong> Deactivation via API reduces risk of card reuse</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="page-break"></div>
+
+        <!-- Financial Management -->
+        <div class="diagram-section">
+            <h2>💰 Financial Management & Reporting</h2>
+            <p>Comprehensive accounting system with AI-powered document processing and multi-level approval workflows.</p>
+            
+            <h3 style="margin-top: 30px;">GL Variable Structure</h3>
+            <div class="highlight-box">
+                <h4>Organizational Accounting Framework</h4>
+                <ul>
+                    <li>Each HOA client and company entity has <strong>unique GL Variable</strong> in AcctSeed</li>
+                    <li>Complete financial separation and reporting by client</li>
+                    <li>All transactions tagged to specific GL Variables</li>
+                    <li>Independent financial statements per GL Variable</li>
+                </ul>
+            </div>
+            
+            <h3 style="margin-top: 40px;">Invoice & Cash Receipt Processing</h3>
+            <p>End-to-end automated processing with AI-powered document reading:</p>
+            
+            <div class="mermaid">
+flowchart TD
+    Mail([Mail Received]) --> Scan[Office Staff Scans]
+    Scan --> BoxUpload[Upload to Box]
+    BoxUpload --> Workato[Workato Triggered]
+    
+    Workato --> GoogleAI[Google Document AI Extraction]
+    GoogleAI --> OpenAI[OpenAI Interpretation]
+    OpenAI --> Pinecone[Pinecone + Cohere Matching]
+    Pinecone --> CreateAW[Create Accounting_Workflow__c]
+    
+    CreateAW --> AcctReview[Accounting Team Reviews]
+    AcctReview --> ValidateAI{Validate AI<br/>Matching?}
+    ValidateAI -->|Issues| ManualFix[Manual Correction]
+    ManualFix --> AcctReview
+    ValidateAI -->|Approved| CreateAS[Create AcctSeed Record]
+    
+    CreateAS --> Type{Record Type}
+    Type -->|Cash Receipt| Done([Complete])
+    Type -->|Payable| AMReview[Account Manager Reviews]
+    
+    AMReview --> Threshold{Approval<br/>Threshold?}
+    Threshold -->|Below| AMApprove[AM Approves]
+    Threshold -->|Above| ClientApprove[Client Approves via Magentrix]
+    
+    AMApprove --> ReadyPay[Payables Ready to Pay]
+    ClientApprove --> ReadyPay
+    
+    ReadyPay --> AcctMgr[Accounting Manager Approves]
+    AcctMgr --> PaymentType{Payment<br/>Type?}
+    
+    PaymentType -->|eCheck| Forte[Send via Forte]
+    PaymentType -->|Check| Print[Print Check]
+    
+    Forte --> Done
+    Print --> Done
+    
+    style Mail fill:#4caf50,color:#fff
+    style Done fill:#2196f3,color:#fff
+    style GoogleAI fill:#a29bfe,color:#fff
+    style OpenAI fill:#a29bfe,color:#fff
+    style Pinecone fill:#a29bfe,color:#fff
+    style ValidateAI fill:#ff9800,color:#fff
+    style Threshold fill:#ff9800,color:#fff
+            </div>
+            
+            <div class="highlight-box" style="margin-top: 30px;">
+                <h3>AI Processing Benefits</h3>
+                <ul>
+                    <li><strong>80% Reduction</strong> in manual data entry</li>
+                    <li><strong>Vector Embeddings</strong> ensure accurate vendor matching via Pinecone + Cohere</li>
+                    <li><strong>Multi-Level Approvals</strong> prevent unauthorized payments</li>
+                    <li><strong>Client Thresholds</strong> automatically route large payables for approval</li>
+                    <li><strong>Complete Audit Trail</strong> from scanned document to payment</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="page-break"></div>
+
+        <!-- Bank Reconciliation -->
+        <div class="diagram-section">
+            <h2>🏦 Weekly Bank Reconciliation</h2>
+            <p>Automated matching process with Bank United integration:</p>
+            
+            <div class="mermaid">
+flowchart LR
+    Download([Bank United Download]) --> Upload[Upload to Salesforce]
+    Upload --> Review[Team Reviews Transactions]
+    Review --> Match{Transaction<br/>Match?}
+    
+    Match -->|Exists| Link[Match to AcctSeed Transaction]
+    Match -->|New| Create[Create AcctSeed Transaction]
+    Match -->|Unclear| Flag[Flag for Investigation]
+    
+    Link --> Complete([Weekly Rec Complete])
+    Create --> Complete
+    Flag --> Investigate[Team Investigates]
+    Investigate --> Resolve[Manual Match or Journal Entry]
+    Resolve --> Complete
+    
+    style Download fill:#4caf50,color:#fff
+    style Complete fill:#2196f3,color:#fff
+    style Match fill:#ff9800,color:#fff
+            </div>
+        </div>
+
+        <div class="page-break"></div>
+
+        <!-- Monthly Financial Close -->
+        <div class="diagram-section">
+            <h2>📊 Monthly Financial Close & Reporting</h2>
+            <p>Automated monthly close process with report generation and distribution:</p>
+            
+            <div class="mermaid">
+flowchart TD
+    Start([Month End Approaches]) --> Day10[10th of Month]
+    
+    Day10 --> Generate[Run Financial Report Process]
+    Generate --> AcctSeed[AcctSeed Generates PDFs by GL Variable]
+    
+    AcctSeed --> Reports[Report Package Created]
+    Reports --> Types["• Income Statement<br/>• Balance Sheet<br/>• Cash Flow<br/>• GL Detail<br/>• AR/AP Aging"]
+    
+    Types --> Store[Store in Box]
+    Store --> Link[Link to Account Records]
+    Link --> TeamReview[Accounting Team Reviews]
+    
+    TeamReview --> Validate{Reports<br/>Accurate?}
+    Validate -->|Issues| Fix[Correct Issues]
+    Fix --> TeamReview
+    Validate -->|Approved| Wait[Wait for 15th]
+    
+    Wait --> Day15[15th of Month]
+    Day15 --> AutoSend[Automatic Distribution]
+    
+    AutoSend --> Email[Email with Box Links]
+    AutoSend --> Portal[Posted to Magentrix Portal]
+    AutoSend --> Notify[Notify Account Managers]
+    
+    Email --> ClientAccess([Clients Access Reports])
+    Portal --> ClientAccess
+    
+    style Start fill:#4caf50,color:#fff
+    style ClientAccess fill:#2196f3,color:#fff
+    style Validate fill:#ff9800,color:#fff
+    style Day10 fill:#ff9800,color:#fff
+    style Day15 fill:#ff9800,color:#fff
+            </div>
+        </div>
+
+        <div class="page-break"></div>
+
+        <!-- Pre-Paid Invoice Processing -->
+        <div class="diagram-section">
+            <h2>💵 Pre-Paid Invoice Processing</h2>
+            <p>Automated tracking and matching to prevent duplicate payments:</p>
+            
+            <div class="mermaid">
+flowchart TD
+    Upload([Upload to Box Folder]) --> Workato[Workato Triggered]
+    
+    Workato --> GoogleAI[Google Document AI]
+    GoogleAI --> ReadInvoice[Read Invoice Details]
+    ReadInvoice --> OpenAI[OpenAI Interprets Terms]
+    OpenAI --> Match[Pinecone + Cohere Matching]
+    
+    Match --> UpdateSF[Update Salesforce Record]
+    UpdateSF --> Search[Search AcctSeed Transactions]
+    
+    Search --> Found{Transaction<br/>Found?}
+    
+    Found -->|Yes| Link[Link Invoice to Transaction]
+    Found -->|No| Pending[Mark as Unmatched]
+    
+    Link --> UpdateGL[Update GL Coding]
+    UpdateGL --> Done([Complete])
+    
+    Pending --> MonthEnd{Month<br/>End?}
+    MonthEnd -->|No| Wait[Continue Monitoring]
+    Wait --> Search
+    
+    MonthEnd -->|Yes| ManualReview[Accounting Team Manual Review]
+    ManualReview --> Resolve[Match or Adjust]
+    Resolve --> Prevent[Prevent Duplicate Payment]
+    Prevent --> Done
+    
+    style Upload fill:#4caf50,color:#fff
+    style Done fill:#2196f3,color:#fff
+    style GoogleAI fill:#a29bfe,color:#fff
+    style OpenAI fill:#a29bfe,color:#fff
+    style Match fill:#a29bfe,color:#fff
+    style Found fill:#ff9800,color:#fff
+    style MonthEnd fill:#ff9800,color:#fff
+            </div>
+            
+            <div class="highlight-box" style="margin-top: 30px;">
+                <h3>Financial Management Controls</h3>
+                <ul>
+                    <li><strong>GL Variable Isolation:</strong> Complete financial separation by client entity</li>
+                    <li><strong>AI-Powered Entry:</strong> 80% reduction in manual invoice processing</li>
+                    <li><strong>Multi-Level Approvals:</strong> Accounting → Account Manager → Client (threshold-based)</li>
+                    <li><strong>Weekly Bank Reconciliation:</strong> Continuous matching prevents surprises</li>
+                    <li><strong>Automated Monthly Close:</strong> Report generation and distribution on schedule</li>
+                    <li><strong>Pre-Payment Tracking:</strong> Prevents duplicate billing and ensures proper application</li>
+                    <li><strong>Complete Audit Trail:</strong> From scanned document through payment to financial statement</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="page-break"></div>
+
+        <!-- Automation Layers -->
+        <div class="diagram-section">
+            <h2>⚡ Automation Architecture</h2>
+            <p>How the system automates business processes through multiple automation layers working together.</p>
+            
+            <div class="mermaid">
+graph LR
+    subgraph Triggers["TRIGGERS (Before/After)"]
+        T1[Property Trigger]
+        T2[Move Trigger]
+        T3[Work Order Trigger]
+        T4[Viewing Trigger]
+    end
+    
+    subgraph Flows["FLOWS (After Record)"]
+        F1[Property Flows]
+        F2[Lease Flows]
+        F3[Work Order Flows]
+        F4[Calendar Flows]
+        F5[Notice Flows]
+    end
+    
+    subgraph Invocable["INVOCABLE APEX"]
+        I1[Box Actions]
+        I2[Bitly Links]
+        I3[Workato Triggers]
+        I4[Payment Processing]
+    end
+    
+    subgraph Scheduled["SCHEDULED JOBS"]
+        S1[Recurring WO Generator]
+        S2[Payment Batches]
+        S3[Notice Generation]
+        S4[Key Tracking]
+    end
+    
+    T1 --> F1
+    T2 --> F2
+    T3 --> F3
+    T4 --> F4
+    
+    F1 --> I1
+    F2 --> I2
+    F3 --> I3
+    F4 --> I1
+    F5 --> I2
+    
+    S1 --> F3
+    S2 --> I4
+    S3 --> F5
+    
+    style Triggers fill:#e3f2fd
+    style Flows fill:#fff3e0
+    style Invocable fill:#f3e5f5
+    style Scheduled fill:#e8f5e9
+            </div>
+            
+            <div class="legend">
+                <h3>📌 Automation Execution Order</h3>
+                <ul>
+                    <li><strong>Triggers fire first:</strong> Validate and prepare data before save</li>
+                    <li><strong>Flows run after save:</strong> Orchestrate complex business logic</li>
+                    <li><strong>Invocable Apex:</strong> Called by Flows for external system interactions</li>
+                    <li><strong>Scheduled Jobs:</strong> Run on timers for recurring operations</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- System Strengths -->
+        <div class="diagram-section">
+            <h2>✨ System Strengths</h2>
+            
+            <div class="highlight-box">
+                <h3>Why This Platform Excels</h3>
+                <ul>
+                    <li><strong>Comprehensive Automation</strong> — 200+ flows eliminate manual data entry and reduce errors</li>
+                    <li><strong>Integrated Ecosystem</strong> — Payments, accounting, documents, AI processing, and portals work together seamlessly</li>
+                    <li><strong>AI-Powered Financial Processing</strong> — 80% reduction in manual invoice entry with Google Document AI, OpenAI, Pinecone, and Cohere</li>
+                    <li><strong>GL Variable Isolation</strong> — Complete financial separation by client with independent reporting</li>
+                    <li><strong>Multi-Level Approval Workflows</strong> — Accounting team → Account manager → Client threshold-based routing</li>
+                    <li><strong>Three Work Order Workflows</strong> — Client-submitted, internal direct, and project-based paths for all scenarios</li>
+                    <li><strong>Automated Client Billing</strong> — Expensify expenses and Stripe virtual cards trigger automatic invoicing</li>
+                    <li><strong>Weekly Bank Reconciliation</strong> — Continuous Bank United integration prevents month-end surprises</li>
+                    <li><strong>Automated Monthly Close</strong> — Financial reports generated on 10th, distributed on 15th automatically</li>
+                    <li><strong>Complete Move Management</strong> — Tracks entire move-in/move-out lifecycle with evaluations</li>
+                    <li><strong>Multi-Property Support</strong> — Residential, multi-unit buildings, HOA, and commercial properties</li>
+                    <li><strong>Dual E-Signature</strong> — DocuSign for leases, Box Sign for quotes</li>
+                    <li><strong>Customer Portal</strong> — Magentrix provides self-service access for owners and clients</li>
+                    <li><strong>Virtual Card Controls</strong> — Single-use Stripe cards with receipt requirements and automatic deactivation</li>
+                    <li><strong>Document Automation</strong> — Box automatically creates folders, Cloud Convert merges documents</li>
+                    <li><strong>Physical Mail Integration</strong> — Lob.com automates notice mailing with tracking</li>
+                    <li><strong>Scalable Architecture</strong> — Four-layer design supports growth and future enhancements</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Critical Dependencies -->
+        <div class="diagram-section">
+            <h2>⚠️ Critical System Dependencies</h2>
+            <p>These integrations are essential for daily operations and must be maintained during any transition.</p>
+            
+            <div class="mermaid">
+graph TD
+    Core[Salesforce Core Platform]
+    
+    Core -.Critical.-> W[Workato<br/>Accounting Sync]
+    Core -.Critical.-> FT[Forte<br/>Payment Processing]
+    Core -.Critical.-> A[AcctSeed<br/>Financial System]
+    Core -.Important.-> B[Box + Box Sign<br/>Documents & Signatures]
+    Core -.Important.-> SK[Skuid<br/>Custom UI]
+    Core -.Important.-> DS[DocuSign<br/>Lease Signatures]
+    Core -.Important.-> AI[OpenAI + Google AI<br/>AI Processing]
+    Core -.Important.-> MX[Magentrix<br/>Customer Portals]
+    Core -.Supporting.-> CC[Cloud Convert<br/>Document Merging]
+    Core -.Supporting.-> IN[Invoice Ninja<br/>Quote Generation]
+    Core -.Supporting.-> LB[Lob.com<br/>Physical Mail]
+    Core -.Supporting.-> ST[Stripe<br/>Virtual Cards & Fees]
+    Core -.Supporting.-> H[HelpScout<br/>Support]
+    Core -.Supporting.-> Bi[Bitly<br/>Link Tracking]
+    Core -.Supporting.-> EX[Expensify<br/>Expenses]
+    
+    W --> A
+    W --> EX
+    
+    style Core fill:#1e3c72,color:#fff,stroke:#fff,stroke-width:4px
+    style W fill:#f44336,color:#fff
+    style FT fill:#f44336,color:#fff
+    style A fill:#f44336,color:#fff
+    style B fill:#ff9800,color:#fff
+    style SK fill:#ff9800,color:#fff
+    style DS fill:#ff9800,color:#fff
+    style AI fill:#ff9800,color:#fff
+    style MX fill:#ff9800,color:#fff
+    style CC fill:#4caf50,color:#fff
+    style IN fill:#4caf50,color:#fff
+    style LB fill:#4caf50,color:#fff
+    style ST fill:#4caf50,color:#fff
+    style H fill:#4caf50,color:#fff
+    style Bi fill:#4caf50,color:#fff
+    style EX fill:#4caf50,color:#fff
+            </div>
+            
+            <div class="legend">
+                <h3>📌 Dependency Levels</h3>
+                <ul>
+                    <li><strong>🔴 Critical:</strong> System cannot function without these (Workato, Forte, AcctSeed)</li>
+                    <li><strong>🟠 Important:</strong> Major features impacted if unavailable (Box/Box Sign, Skuid, DocuSign, OpenAI/Google AI, Magentrix)</li>
+                    <li><strong>🟢 Supporting:</strong> Enhance functionality but workarounds exist (Cloud Convert, Invoice Ninja, Lob.com, Stripe, HelpScout, Bitly, Expensify)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="diagram-section" style="text-align: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+            <h2 style="color: white; border-bottom: 2px solid white;">Gordon James Realty - Salesforce Platform</h2>
+            <p style="color: white;">Visual Architecture Guide</p>
+            <p style="color: white; margin-top: 10px;">Prepared for Continuum</p>
+        </div>
+    </div>
+
+    <script>
+        mermaid.initialize({ 
+            startOnLoad: true,
+            theme: 'default',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis'
+            },
+            er: {
+                useMaxWidth: true
+            }
+        });
+    </script>
+</body>
+</html>
