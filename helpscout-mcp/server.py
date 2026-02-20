@@ -275,6 +275,8 @@ async def list_articles(
 # ---------------------------------------------------------------------------
 
 if __name__ == "__main__":
+    import uvicorn
+
     transport = os.environ.get("MCP_TRANSPORT", "streamable-http")
     host = os.environ.get("HOST", "0.0.0.0")
     port = int(os.environ.get("PORT", "8000"))
@@ -283,10 +285,7 @@ if __name__ == "__main__":
         # Useful for local testing with the MCP Inspector
         mcp.run(transport="stdio")
     else:
-        # Remote HTTP transport — required for Claude's "Ask your org" connector
-        mcp.run(
-            transport="streamable-http",
-            host=host,
-            port=port,
-            path="/mcp",
-        )
+        # Remote HTTP transport — required for Claude's "Ask your org" connector.
+        # streamable_http_app() returns a Starlette app mounted at /mcp.
+        app = mcp.streamable_http_app()
+        uvicorn.run(app, host=host, port=port)
