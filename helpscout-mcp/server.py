@@ -89,7 +89,6 @@ async def search_articles(
     params: dict = {
         "query": query,
         "status": "published",
-        "visibility": "public",
         "page": page,
         "pageSize": min(page_size, 100),
     }
@@ -192,7 +191,7 @@ async def list_collections(page: int = 1) -> str:
     async with httpx.AsyncClient(timeout=15.0) as client:
         resp = await client.get(
             f"{BASE_URL}/collections",
-            params={"page": page, "visibility": "public", "order": "asc"},
+            params={"page": page, "order": "asc"},
             auth=AUTH,
         )
         resp.raise_for_status()
