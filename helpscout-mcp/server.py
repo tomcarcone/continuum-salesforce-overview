@@ -16,10 +16,14 @@ import os
 import httpx
 from typing import Optional
 from mcp.server.fastmcp import FastMCP
+from mcp.server.fastmcp.server import TransportSecuritySettings
 
 # ---------------------------------------------------------------------------
 # Server initialisation
 # ---------------------------------------------------------------------------
+
+_host = os.environ.get("HOST", "0.0.0.0")
+_port = int(os.environ.get("PORT", "8000"))
 
 mcp = FastMCP(
     name="HelpScout Docs",
@@ -29,6 +33,14 @@ mcp = FastMCP(
         "get_article to read the full content of a specific article, "
         "list_collections to browse top-level sections, and list_articles "
         "to enumerate articles within a collection."
+    ),
+    host=_host,
+    port=_port,
+    # Disable DNS rebinding protection — the server runs behind Render's
+    # TLS-terminating reverse proxy, so the Host header will be the public
+    # Render domain rather than localhost. Render's proxy handles security.
+    transport_security=TransportSecuritySettings(
+        enable_dns_rebinding_protection=False,
     ),
 )
 
@@ -275,34 +287,13 @@ async def list_articles(
 # ---------------------------------------------------------------------------
 
 if __name__ == "__main__":
-    import uvicorn
-
     transport = os.environ.get("MCP_TRANSPORT", "streamable-http")
-    host = os.environ.get("HOST", "0.0.0.0")
-    port = int(os.environ.get("PORT", "8000"))
 
     if transport == "stdio":
         # Useful for local testing with the MCP Inspector
         mcp.run(transport="stdio")
     else:
         # Remote HTTP transport — required for Claude's "Ask your org" connector.
-        # streamable_http_app() mounts the handler at /mcp (Starlette Mount).
-        starlette_app = mcp.streamable_http_app()
-        # Starlette Mount requires a trailing slash (/mcp/), but reverse
-        # proxies like Render/Cloudflare strip trailing slashes, causing an
-        # infinite redirect loop. Fix: disable redirects and normalise the
-        # path in a lightweight ASGI wrapper so /mcp and /mcp/ both work.
-        starlette_app.router.redirect_slashes = False
-
-        import logging
-        logger = logging.getLogger("mcp.proxy")
-
-        async def app(scope, receive, send):
-            if scope.get("type") == "http":
-                path = scope.get("path", "")
-                logger.info("ASGI scope path=%r raw_path=%r", path, scope.get("raw_path"))
-                if path == "/mcp":
-                    scope = {**scope, "path": "/mcp/", "raw_path": b"/mcp/"}
-            await starlette_app(scope, receive, send)
-
-        uvicorn.run(app, host=host, port=port)
+        # host/port are read from the FastMCP settings (set above from env vars).
+        # The MCP endpoint is served at /mcp.
+        mcp.run(transport="streamable-http")
