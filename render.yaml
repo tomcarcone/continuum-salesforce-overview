@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: helpscout-mcp
+    runtime: docker
+    dockerfilePath: ./helpscout-mcp/Dockerfile
+    dockerContext: ./helpscout-mcp
+    plan: free
+    envVars:
+      - key: HELPSCOUT_API_KEY
+        sync: false
+      - key: PORT
+        value: 8000
+      - key: HOST
+        value: 0.0.0.0
