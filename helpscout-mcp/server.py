@@ -286,6 +286,19 @@ if __name__ == "__main__":
         mcp.run(transport="stdio")
     else:
         # Remote HTTP transport — required for Claude's "Ask your org" connector.
-        # streamable_http_app() returns a Starlette app mounted at /mcp.
-        app = mcp.streamable_http_app()
+        # streamable_http_app() mounts the handler at /mcp (Starlette Mount).
+        starlette_app = mcp.streamable_http_app()
+        # Starlette Mount requires a trailing slash (/mcp/), but reverse
+        # proxies like Render/Cloudflare strip trailing slashes, causing an
+        # infinite redirect loop. Fix: disable redirects and normalise the
+        # path in a lightweight ASGI wrapper so /mcp and /mcp/ both work.
+        starlette_app.router.redirect_slashes = False
+
+        async def app(scope, receive, send):
+            if scope.get("type") == "http":
+                path = scope.get("path", "")
+                if path == "/mcp":
+                    scope = {**scope, "path": "/mcp/", "raw_path": b"/mcp/"}
+            await starlette_app(scope, receive, send)
+
         uvicorn.run(app, host=host, port=port)
