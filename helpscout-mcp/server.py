@@ -294,9 +294,13 @@ if __name__ == "__main__":
         # path in a lightweight ASGI wrapper so /mcp and /mcp/ both work.
         starlette_app.router.redirect_slashes = False
 
+        import logging
+        logger = logging.getLogger("mcp.proxy")
+
         async def app(scope, receive, send):
             if scope.get("type") == "http":
                 path = scope.get("path", "")
+                logger.info("ASGI scope path=%r raw_path=%r", path, scope.get("raw_path"))
                 if path == "/mcp":
                     scope = {**scope, "path": "/mcp/", "raw_path": b"/mcp/"}
             await starlette_app(scope, receive, send)
