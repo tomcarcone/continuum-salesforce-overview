@@ -1,0 +1,478 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much will I pay in closing costs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Closings costs will vary, but sellers and buyers in DC can expect to pay between 3 and 5% of the total sales price. As part of our service, you will receive a detailed net proceeds calculator that allows you to determine expected closings costs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much can my property sell for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "As part of our standard service, we will provide an in-depth comparative market analysis to aid in setting a list price for your property. We will recommend a sales price based on current market conditions, comparable properties that sold in the area, our current portfolio of properties, the amenities of the property, and its as-is condition. Additionally, we are able to recommend repairs and improvements that would increase your return and manage contractors to perform the work. Effectively ..."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I stage the property? If so, how much does this usually cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The date overwhelmingly says yes. Stats show that staging your property leads to faster property sales and higher offer prices. Premier staging allows potential buyers to picture themselves in the home, shows unique layouts as usable spaces, and highlights the best features while distracting from its flaws. We have vetted staging vendors for you to choose from and our team will provide you with multiple quotes and staging packages to choose from."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long will it take to sell my property?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The days on market depend on multiple factors, including the size, location, overall condition, asking price compared to similar properties in the neighborhood, and the time of year. While it is impossible to predict exactly how long it will take, we do everything possible to quickly find well-qualified buyers Gordon James Realty provides owners with a comparative market analysis and uses it to help owners arrive at a competitive sales price that maximizes returns and minimizes vacancy. We ma..."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "My tenant\u2019s lease isn\u2019t over yet. Can I still sell my property?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We've already worked with hundreds of clients to sell their tenant occupied properties. With our extensive experience in tenant relationships, we help to negotiate with your residents to ensure a favorable outcome for all parties. DC in particular has laws such as The Tenant Opportunity To Purchase Act that can complicate the sales process. Our agents have had extensive training in the navigation of these laws so we can help to make the complicated process of selling your rental property seam..."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Gordon James Realty offer special pricing for current clients?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Gordon James Brokerage preferred package - previously only available to institutional investors - is now available to current clients. If you utilized our company for any other real estate services, as a valued client, you're eligible for preferred pricing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are there any upfront costs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our Gordon James Mint service fronts the cost of services that can increase the value of your home. From staging to painting to cosmetic renovations, no payment will be collected until your home sells. No upfront cost, no interest charged ever."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much are your commission fees?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Standard brokerage commissions paid by sellers range from 2.5% - 3% to the buyer\u2019s agent and 3% to the listing agent. Gordon James Brokerage preferred package -previously only available to institutional investors - is now available to current residential clients. As a valued property management client, you're eligible for preferred pricing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide me with a report of activity on my property?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our team places an emphasis on responsiveness and proactive communication. We outline next steps and important information to ensure you have clarity on the process every step of the way. Once your property is listed, we communicate on a regularly scheduled basis, based on your preference, to keep you informed on the activities surrounding the sale."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the benefits of selling with Gordon James Realty?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our customized approach, responsiveness, reliance on technology and expertise mean you can relax and reap the rewards of selling your home with a brokerage you can trust. When you partner with Gordon James, you put yourself in a position to maximize the profit of your home, while selling it at the fastest pace possible. We have a carefully vetted network of vendors and contractors available to provide high-quality service at a low price. Our team of highly skilled contractors handles renovati..."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What makes you different from other realtors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "As Washington, D.C., Northern Virginia, and Maryland\u2019s premier real estate firm, we pride ourselves on providing the highest quality professional service to clients. Our approach always focuses on the client first. Our continued commitment to the evolution of our business and the knowledge of our team allows us to be thought leaders in the industry. To that end, we always employ cutting-edge industry technology, while relying on proven systems, data and effective marketing techniques to ensur..."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does your typical client look like?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We purchase and sell properties for many types of clients, from seasoned property investors who own dozens of properties or mixed use commercial properties to individual homeowners. Our specialty is legacy clients - beginning with the purchase or sale of their properties and continuing to serve them for all their real estate needs. A crucial part of the decision to sell is determining the state of current market conditions. That\u2019s where our team comes in. We can create a detailed comparative ..."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are you Licensed Realtors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, at Gordon James Realty all members of our team are licensed in the District of Columbia, Virginia and Maryland. As licensed agents we understand and follow all applicable laws and be well versed in the practical aspects of buying and selling properties, including marketing, contract enforcement and negotiation. When you hire Gordon James, you can rest assured that your interests are represented with qualified, experienced professionals."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does your fee structure look like?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Because every community operates differently and has specific needs, pricing is dependent on a number of different factors. Some of these factors include the number of units and whether the building has an onsite building manager, elevators, concierge, building engineers, etc. To receive a proposal for your community, please reach out to our team."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you have maintenance personnel on your staff?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we do. This allows us to handle repairs quickly and efficiently. Many minor repairs that arise frequently are often overlooked by management companies who utilize an unlicensed handyman. However, these smaller repair items contribute to the overall look and feel of the building. Our maintenance staff allows us to take care of these items quickly and for a competitive price to contribute to the upkeep and aesthetics of your community. Although we have licensed, in-house maintenance staff,..."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many people on your team are involved with the management of one community?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Board members of a community will have one senior portfolio manager as a dedicated point of contact to provide quick, streamlined communication. Our managers have a team of administrative coordinators to support them to help facilitate the necessary ongoing activities for each building."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do owners in the building access important documents and pay their monthly HOA fees?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In order to efficiently serve the community, we provide an online portal that provides real-time data and information. Owners can log on at any time to make payments and access important documents. Board members also have access to a special portal that allows them to monitor and manage the outstanding priority items, unit owner account statements, resident and vendor contact information, and the rental list directly from the portal. It also provides the notification function that allows the ..."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "We are a self managed community. What are the benefits of bringing on a professional management company?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Board members play a crucial role in the operation of your community. Handling the day-to-day tasks of managing a building can cause burnout for these volunteers, who often have busy lives and full time jobs outside of their roles as board members. At Gordon James Realty, we\u2019re adept at handling the routine work that\u2019s involved with property management \u2014 from record keeping to rule enforcement to contract analysis. You maintain control, while we do the heavy lifting and ensure the work gets d..."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How are building financials handled?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Financial management is a top priority for homeowner and condo associations. But it\u2019s often complex, with many pieces to consider including resident dues, fines, bills and budgets. Because each association operates differently, and we\u2019ll work with you to determine an accounting and reporting structure that best fits the needs of your community. We\u2019ll leverage our wealth of experience in budget management for homeowner and condo associations\u2013 as well as the latest technology \u2014 to ensure your f..."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "We currently have a management company but would like to switch. how would the transition work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If you have an existing management company, we\u2019ll work with them to provide a seamless transition. Our team will connect directly with your current managers to obtain all necessary data and historical documents for archives and daily operational use. During an initial onboarding call with your designated portfolio manager, they will outline detailed steps to the transition process as well as the expected timeline. We facilitate the entire process."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide owners with a report of activity on my building?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our team places an emphasis on responsiveness and proactive communication. Other companies have a team approach with multiple points of contact, which can cause confusion for board members and owners. At Gordon James, there is streamlined communication, with each community having their own senior portfolio manager and one point of contact. Our portfolio managers outline next steps and important information to ensure you have clarity on the process and ongoing repairs every step of the way. In..."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What makes you different from other management companies?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "With over 50 years of combined experience, Gordon James Realty is built on the premise of proactive management \u2013 taking this approach versus a reactive approach to HOA management that provides our clients with a higher level service and one that our current clients have come to expect. This aligns with our vision of protecting and maintaining the integrity of the building and the community that we work with by taking the workload off from the Board. Rather than reaching out to multiple points..."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does your typical client look like?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The team has experience in managing over 60 communities throughout DC, Northern Virginia, and NYC that range in size from 4 to 185 units, with the majority of our portfolio including buildings of 90 units or more."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are you Licensed Property Managers? What certifications does your team have?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We pride ourselves on a highly trained, accredited team that provides our clients with unparalleled expertise and guidance. All senior portfolio managers are CMCA, AMS and LEED Certified. All of our property managers are licensed in the District of Columbia, and our Northern Virginia property managers hold real estate licenses. Our senior portfolio managers have in-depth knowledge of all federal laws, as well as those in each jurisdiction we serve (including the DC Condominium Act), ensuring ..."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "I would like to move out of my house in one month, when should we start the process?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gordon James Realty advises owners to start listing their property 30 to 45 days in advance of their target lease-up date. With our well-researched pricing recommendations and cutting-edge marketing, including posting your property on more than a dozen websites, we help our client\u2019s rentals stand out and rent quickly. &nbsp;Responsible tenants often begin looking for their new home at least 30 days out, so this preferred time frame allows owners to capitalize on the best, largest pool of pote..."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does Gordon James Realty need to start managing my property?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our partnership begins with discussing your property and management needs and executing a property management agreement. If your property is &nbsp;in the District of Columbia, the property must be registered with the DCRA, and we will provide detailed information to get you started with this process. In addition, we will need: Completed new client questionnaire, which we send after the contract is signed Keys to the property, including mailbox keys, if applicable"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I allow pets?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gordon James Realty defers to the owner of the property for their preference when setting a pet policy. Most of our owners do accept pets. However, we understand if an owner prefers not to allow pets, and will enforce a no-pet policy when desired. About 75 percent of renters nationwide own pets, so allowing pets can increase the pool of potential tenants and may decrease turnover. To ensure a tenant\u2019s pets are well behaved and cared for, we ask prior landlords. We charge a $250 pet deposit to..."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I Cancel My Utilities For My Rental Property After I Move Out?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We recommend that rental property owners leave the utilities in their name at least 5 days after the new lease begins to allow a period of time for the tenant to transfer the utilities until they can be transferred to the new tenant. If you cancel, there is a risk of damage during cold weather (i.e. plumbing, appliances, sump pumps, appliances) and it is difficult to show a property without heat, air conditioning or electricity. It is also far easier to transfer utilities than it is to have u..."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much can my property lease for monthly?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "As part of our standard leasing service, we will provide an in-depth market analysis to aid in setting rental rates for your property. We will recommend a rental price based on current market conditions, previous properties that rented in the area, our current portfolio of properties, the amenities of the property, and its as-is condition. Additionally, we are able to recommend repairs and improvements that would increase your return and manage contractors to perform the work. Effectively mar..."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I leave the house partially furnished?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Owners may choose to market their property furnished, however, in our experience there is a much larger market for unfurnished rentals in the D.C. metro area. While furnished properties may command higher rents, people who have or buy their own furnishings usually plan to stay longer term. In addition, it is important to consider that furnishings may get worn by even the most careful tenants."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long will it take to rent my property?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "How long it takes to rent a property depends on multiple factors, including the size, location, overall condition, asking price compared to similar properties in the neighborhood, and the time of year. &nbsp;While it is impossible to predict exactly how long it will take, we do everything possible to quickly find well-qualified renters. Gordon James Realty provides owners with a rental analysis and uses it to help owners arrive at a competitive rental price. We may also recommend small repair..."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "We are still living in the home. Do we need to be out of the home to try to rent it out?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You do not need to move out first. If an owner is still living in the property, we are happy to coordinate showing times that are most convenient for the owner. We do encourage owners to be sure the property is clean and clutter-free prior to showings for prospective tenants As part of our marketing services for your rental, we help ensure the property is in optimal condition and priced well. That improves the chances the home will lease quickly, minimizing any disruption or hassle involved i..."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How will my property be shown?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When showing rental property, we do not give keys or lockbox combinations to prospective tenants. Your property will only be shown to pre-qualified tenants accompanied by one of our professional leasing agents who has in-depth knowledge about your rental home. Our agents take their responsibility to market and care for your property seriously. We also respond quickly to interested tenants to minimize the length of the vacancy."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who pays advertising costs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The leasing fee is covered by the property owner. This fee covers all advertising fees under our lease-up or placement service, so there are no added fees to advertise your vacancy. We create a professional advertising campaign, taking pictures of your property with a high-definition LR camera and wide-angle lens. We post the advertisements on more than 13 different websites, ensuring we show your home in the best light and attract the largest possible pool of qualified tenants. To capitalize..."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will I need to change my insurance coverage?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gordon James Realty recommends that all of our property owners to consult directly with their insurance agent to be certain they are carrying adequate insurance for their property needs. Homeowners often need to switch from their current insurance policy to a landlord insurance policy, which typically offers greater liability coverage and extended protection in case of damage to income property and the resulting loss of rental income. Our leases require that tenants obtain renter\u2019s insurance ..."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What Is done after a resident moves out?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gordon James Realty performs a move-out inspection of the property, usually within a day after the resident moves out. During the inspection, we compare the condition of the property to its documented condition when the tenant moved in, recording it with digital pictures and/or video. &nbsp;We are experienced at determining the difference between \u201cnormal wear and tear\u201d and damages that can legally be charged to the former resident. We follow all legal requirements for documenting deductions f..."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens when a tenant\u2019s lease is about to expire?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "As your management company, we are proactive to prevent loss of rental income. Instead of waiting to see if tenants give notice, we always contact tenants at least 60 days prior to the lease expiration to confirm whether they will renew their lease. If they wish to renew, we perform a new market analysis to determine the appropriate rent. When the analysis favors an increase, we negotiate the renewal with the tenants and have them sign the new lease. If tenants are moving out, we will check w..."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the tenant have my contact details?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most clients request that their contact details are withheld from tenants. We will only give your contact details to your tenants if you ask us to do so. However, we do not recommend that landlords share their information. As your management company, we consider it our duty to look after the premises and respond to tenant inquiries, and we will inform you of issues as necessary. Tenant relations are part of the services we provide."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if tenants break their lease?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The tenant cannot legally break their lease unless there is a specific provision added to the lease. There are times when it makes sense to allow a tenant to break their lease if they cover the cost of finding a new tenant. But this rarely happens and the owner is required to approve. If tenants &nbsp;break their lease, they must pay rent until the property is leased to a new tenant or until their lease expires. In addition, they may pay advertising costs, real estate commissions and other co..."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much money do you collect from residents before allowing them to move-In?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When a resident signs a lease for your property, they are required to electronically pay one month\u2019s rent to cover the security deposit. The security deposit will be held by Gordon James Realty in an interest-bearing escrow account. Tenants must also pay their first month\u2019s rent before taking possession of the property."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you determine if a tenant Is qualified?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gordon James Realty is very thorough and diligent when vetting prospective residents, because we know comprehensive tenant screening is the best protection against problems. As we work for you, we look for the same qualifications as you would \u2013 tenants with income and employment to afford the property, good credit and a track record as a respectful, responsible renter. To that end, our professionally trained staff processes all applications, and our technology and expertise allow us to check ..."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Gordon James require that I keep a reserve fund?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Unlike most management companies, we do not require our clients to provide reserve funds. We try to keep the accounting simple for our owners by paying for expenses related to properties from the rental income. After tenants pay their rent we subtract expenses incurred during the prior month and disburse remaining funds to owners. If the expense is incurred after the disbursement is sent to the owner, the outstanding balance will be deducted from the rent collected in the following month. Of ..."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "If the tenant has a maintenance problem, how do they get it resolved?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tenants have access an online portal where they can submit routine maintenance requests and pay rent. Our Property Administrators then follow up on all tenant maintenance requests, ensuring that needed repairs are made to preserve your property value and keep residents satisfied with their tenancy. We respond to all non-emergency maintenance requests within 24 hours. We respond immediately when tenants contact us about emergencies that may result in damage to the property."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if I want to use my contractor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An owner may use their own contractor, and we are happy to work with the your choice of service provider to coordinate work on your property. But we know finding reputable contractors can sometimes be challenging, especially from out of town. When an owner doesn\u2019t have a plumber, electrician or other contractor, we can draw on our network of reliable, qualified contractors to perform needed maintenance work and rental home repairs. Because of our connections and &nbsp;the volume of work we ov..."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I know you won\u2019t spend large sums of money on repairs or updates?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In the management agreement, we work with owners to set a dollar amount which we cannot exceed without owner approval, except in cases of emergencies. The maintenance limit is set at a minimum of $450 and will determine how often owners will be contacted regarding maintenance issues. Regardless of the cost of the repair, detailed information will be included in the online portal. We also help keep maintenance and repair costs low by using our in-house maintenance division and network of relia..."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Gordon James Realty offer special pricing for investors who own more than one rental property?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we offer reduced fees for owners of multiple properties. Discounted pricing starts at 4 properties and fees decrease as the number of properties increases."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are there any upfront costs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. There are no upfront costs to hire Gordon James Realty. We only get paid a fee when tenants pay rent on your property. Our fee schedule is simple, and there are no hidden costs.To manage your property, we charge 8.5 percent of the monthly rent, which is collected only when rent is collected on your property. That fee covers our full suite of management services. For our comprehensive leasing services, we charge 90 percent of one month\u2019s rent. We believe our services are a great value for ..."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "If my property is vacant, do I still pay a management fee?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. We only charge a management fee when rent is collected. No fee is payable when your rental property is vacant. We offer a simple fee structure, and we do not have hidden fees."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much are your Property Management fees?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gordon James Realty believes in a simple, straightforward fee structure, so you know exactly what to expect. We do not have hidden fees or startup costs. We provide value to our clients, and we think you\u2019ll find our rates are competitive in the D.C. metro area. Our two basic property management fees are: Management Fee. Our fee to manage your property is based on a percentage of the gross monthly rent collected, which covers our comprehensive services, including collecting rents, lease enforc..."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "I\u2019m unhappy with my current management company. Will switching require signing new leases with my tenants and Lot of other hassles?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No! Your tenants\u2019 leases will remain in force when you switch to a new management company. And our clients have been pleasantly surprised by how seamless the transition process to Gordon James is. Once you decide to work with our company, you only have to copy us on an e-mail notifying your current management company. We take over from there. If you have a current tenant, we will have the security deposit transferred and will coordinate picking up any keys and documents related to the propert..."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can Gordon James pay my bills?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "As a full-service rental management company, we gladly help manage the financial aspects of your investment property, including paying associated bills, such as insurance, homeowners association dues and utilities. We know this service can be especially helpful for property owners living overseas. We can pay all bills except property taxes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I lose control of my property once you start to manage It?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "As your partner, we have your best interest in mind. Before signing up with our company, we map out what it is like working with a property manager and what the relationship will look like. This helps to set expectations for you, as the owner, and for our company, so both sides ensure it will be a good fit. In addition, we also give owners 24-hour access to information about their property through our online portal, so you can check on it at any time. And we\u2019re always here to discuss your pro..."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can Gordon James Realty help me buy or sell my investment property?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our first priority is managing properties. But we do have licensed agents experienced with investment property in the DC metro area who will be happy to help you sell or buy rental properties in Northern Virginia or Washington DC. But unlike many of our competitors, we don\u2019t require that you use our agents. If you have an established relationship with another Realtor, we can assist you by working with them to make it a smooth transition."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide me with a report of activity on my property?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we provide a monthly report of rent and other income received, and maintenance, repairs, and other expenses incurred. Management reports may be viewed 24 hours a day from any computer or mobile device by logging in to our secure online client portal. Through the portal, owners can also see real-time information about their properties, access important property and tax documents and communicate with the management team. Owners may also call whenever they have a question or concern about t..."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How will Gordon James Realty help improve my long-term property value?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hiring a property management company to manage your rental property may cost more in the short term than managing it yourself. But our experience and ability to find qualified tenants, maximize rental income and care for your property pays dividends in the long run. Our careful tenant screening helps to prevent costly problems and ensure that your property will continue to earn rent. If resident issues do occur, we catch them early, helping to avoid future property damage and increasing the l..."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the benefits of Property Management with Gordon James Realty?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The staff at Gordon James Realty are experts in the industry. &nbsp;One of the major benefits of quality property management is having someone you trust to take care of all the details. With over 30 years of combined real estate experience, and our continued investment in technology and better systems, our customer satisfaction is one of the highest in the industry. We handle all aspects of managing your rental property. We advertise the property, screen prospective residents, negotiate lease..."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the Gordon James Realty philosophy of managing properties?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "As Washington, D.C., Northern Virginia, and Maryland\u2019s premier property management company, we pride ourselves on providing the highest quality professional service to both clients and residents. Our approach always focuses on the client first. Our continued commitment to the evolution of our business and the knowledge of our team allows us to be thought leaders in the property management industry. To that end, we always employ cutting-edge industry technology, while relying on proven systems..."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does your typical client look like?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We manage properties for many types of clients, from seasoned property investors who own dozens of properties or mixed use commercial properties to individual homeowners moving away for a finite period of time. We work for property owners living all over the world as members of the military or foreign service and for local clients who simply want to shed the time-consuming work of managing their rentals. Our property management clients own single-family homes, multi-family homes and condomini..."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are you Licensed Property Managers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, at Gordon James Realty all of our property managers are licensed in the District of Columbia, and our Northern Virginia property managers hold real estate licenses. As licensed agents and property managers, we must understand and follow all applicable laws and be well versed in the practical aspects of managing properties, including marketing, lease enforcement and maintenance. But we don\u2019t stop with the requirements. We are also members of the National Association of Residential Propert..."
+      }
+    }
+  ]
+}
