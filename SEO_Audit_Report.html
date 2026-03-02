@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gordon James Realty - Comprehensive SEO & AI SEO Audit Report</title>
+    <style>
+        :root {
+            --primary: #1a365d;
+            --accent: #2b6cb0;
+            --success: #38a169;
+            --warning: #d69e2e;
+            --danger: #e53e3e;
+            --bg: #f7fafc;
+            --card-bg: #ffffff;
+            --text: #2d3748;
+            --text-light: #718096;
+            --border: #e2e8f0;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        .header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        .header h1 { font-size: 2.2rem; margin-bottom: 0.5rem; }
+        .header p { opacity: 0.9; font-size: 1.1rem; }
+        .header .date { opacity: 0.7; margin-top: 0.5rem; font-size: 0.9rem; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 2rem; }
+
+        /* Score Overview */
+        .score-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .score-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            border-top: 4px solid var(--border);
+        }
+        .score-card.critical { border-top-color: var(--danger); }
+        .score-card.warning { border-top-color: var(--warning); }
+        .score-card.good { border-top-color: var(--success); }
+        .score-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 0.5rem 0;
+        }
+        .score-card.critical .score-value { color: var(--danger); }
+        .score-card.warning .score-value { color: var(--warning); }
+        .score-card.good .score-value { color: var(--success); }
+        .score-label { font-size: 0.85rem; color: var(--text-light); text-transform: uppercase; letter-spacing: 0.05em; }
+        .score-detail { font-size: 0.8rem; color: var(--text-light); margin-top: 0.3rem; }
+
+        /* Sections */
+        .section {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .section h2 {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--border);
+        }
+        .section h3 {
+            font-size: 1.15rem;
+            color: var(--accent);
+            margin: 1.2rem 0 0.5rem;
+        }
+
+        /* Issue Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+        th {
+            background: var(--primary);
+            color: white;
+            padding: 0.75rem 1rem;
+            text-align: left;
+            font-weight: 600;
+        }
+        td {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid var(--border);
+            vertical-align: top;
+        }
+        tr:hover { background: #f0f4f8; }
+
+        /* Priority Badges */
+        .badge {
+            display: inline-block;
+            padding: 0.15rem 0.6rem;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .badge-critical { background: #fed7d7; color: var(--danger); }
+        .badge-high { background: #feebc8; color: #c05621; }
+        .badge-medium { background: #fefcbf; color: #975a16; }
+        .badge-low { background: #c6f6d5; color: #276749; }
+
+        /* Checklists */
+        .checklist { list-style: none; padding: 0; }
+        .checklist li {
+            padding: 0.5rem 0;
+            padding-left: 1.8rem;
+            position: relative;
+            border-bottom: 1px solid #f0f4f8;
+        }
+        .checklist li::before {
+            position: absolute;
+            left: 0;
+            font-size: 1.1rem;
+        }
+        .checklist li.pass::before { content: "✅"; }
+        .checklist li.fail::before { content: "❌"; }
+        .checklist li.warn::before { content: "⚠️"; }
+        .checklist li.info::before { content: "ℹ️"; }
+
+        /* Code blocks */
+        code {
+            background: #edf2f7;
+            padding: 0.15rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-family: 'Menlo', 'Consolas', monospace;
+        }
+        pre {
+            background: #1a202c;
+            color: #e2e8f0;
+            padding: 1.2rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-size: 0.8rem;
+            line-height: 1.5;
+            margin: 1rem 0;
+        }
+
+        /* Impact Box */
+        .impact-box {
+            background: #ebf8ff;
+            border-left: 4px solid var(--accent);
+            padding: 1rem 1.2rem;
+            border-radius: 0 8px 8px 0;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+        .impact-box strong { color: var(--primary); }
+
+        .toc { columns: 2; column-gap: 2rem; }
+        .toc a { color: var(--accent); text-decoration: none; display: block; padding: 0.3rem 0; }
+        .toc a:hover { text-decoration: underline; }
+
+        @media (max-width: 768px) {
+            .score-grid { grid-template-columns: repeat(2, 1fr); }
+            .toc { columns: 1; }
+            .container { padding: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Gordon James Realty - SEO & AI SEO Audit</h1>
+    <p>Comprehensive Technical, On-Page, and AI Optimization Analysis</p>
+    <p class="date">Audit Date: March 2, 2026 | Domain: www.gordonjamesrealty.com | Platform: Webflow</p>
+</div>
+
+<div class="container">
+
+<!-- Executive Summary Scores -->
+<div class="score-grid">
+    <div class="score-card warning">
+        <div class="score-label">Technical SEO</div>
+        <div class="score-value">4/10</div>
+        <div class="score-detail">Schema, meta tags, structured data all missing</div>
+    </div>
+    <div class="score-card warning">
+        <div class="score-label">On-Page SEO</div>
+        <div class="score-value">6/10</div>
+        <div class="score-detail">Good content volume, weak optimization</div>
+    </div>
+    <div class="score-card good">
+        <div class="score-label">Content Quality</div>
+        <div class="score-value">7/10</div>
+        <div class="score-detail">454+ articles, strong topical authority</div>
+    </div>
+    <div class="score-card critical">
+        <div class="score-label">AI SEO Readiness</div>
+        <div class="score-value">3/10</div>
+        <div class="score-detail">No structured data for AI consumption</div>
+    </div>
+    <div class="score-card warning">
+        <div class="score-label">Local SEO</div>
+        <div class="score-value">5/10</div>
+        <div class="score-detail">NAP present, no LocalBusiness schema</div>
+    </div>
+</div>
+
+<!-- Table of Contents -->
+<div class="section">
+    <h2>Table of Contents</h2>
+    <div class="toc">
+        <a href="#exec">1. Executive Summary</a>
+        <a href="#technical">2. Technical SEO Issues</a>
+        <a href="#onpage">3. On-Page SEO Analysis</a>
+        <a href="#schema">4. Schema & Structured Data (Critical)</a>
+        <a href="#ai-seo">5. AI SEO & LLM Optimization</a>
+        <a href="#local">6. Local SEO</a>
+        <a href="#content">7. Content & Knowledge Hub</a>
+        <a href="#sitemap">8. Sitemap & Crawlability</a>
+        <a href="#social">9. Social & Sharing Tags</a>
+        <a href="#accessibility">10. Accessibility & Image SEO</a>
+        <a href="#neighborhood">11. Neighborhood Guides</a>
+        <a href="#quick-wins">12. Quick Wins (Do These First)</a>
+        <a href="#roadmap">13. Full Implementation Roadmap</a>
+        <a href="#webflow">14. Webflow-Specific Implementation Guide</a>
+    </div>
+</div>
+
+<!-- 1. EXECUTIVE SUMMARY -->
+<div class="section" id="exec">
+    <h2>1. Executive Summary</h2>
+    <p>Gordon James Realty has a <strong>strong content foundation</strong> with 454+ Knowledge Hub articles, 27 neighborhood guides, and comprehensive service pages. However, the site is significantly underperforming in search due to <strong>critical technical SEO gaps</strong> that prevent Google, Bing, and AI systems from fully understanding and surfacing your content.</p>
+
+    <h3>The Core Problem</h3>
+    <p>Your site has excellent content that Google and AI systems <strong>cannot properly interpret</strong> because it lacks the structured data markup that tells machines what your content means. Think of it like having a library full of great books, but no catalog system — the books exist, but nobody can find them efficiently.</p>
+
+    <h3>Biggest Opportunities</h3>
+    <div class="impact-box">
+        <strong>Estimated Impact of Fixing These Issues:</strong><br>
+        Implementing schema markup, meta descriptions, and AI SEO optimizations across your 515 indexed pages could significantly improve your visibility in both traditional search results and AI-generated answers (ChatGPT, Google AI Overviews, Perplexity, etc.).
+    </div>
+
+    <h3>What's Working Well</h3>
+    <ul class="checklist">
+        <li class="pass">Massive content library: 454+ blog articles across 5 categories</li>
+        <li class="pass">Consistent NAP (Name, Address, Phone) across the site</li>
+        <li class="pass">Strong internal linking architecture</li>
+        <li class="pass">Professional association badges (NARPM, NAR, CAMICB, BBB)</li>
+        <li class="pass">Client testimonials on multiple pages</li>
+        <li class="pass">Clean URL structure with descriptive slugs</li>
+        <li class="pass">Good title tags on service pages</li>
+        <li class="pass">27 neighborhood guide pages for local targeting</li>
+        <li class="pass">Regular content publishing cadence (articles dated through Feb 2026)</li>
+        <li class="pass">Clear service categorization and site hierarchy</li>
+    </ul>
+
+    <h3>What Needs Immediate Attention</h3>
+    <ul class="checklist">
+        <li class="fail">Zero schema markup (JSON-LD) on any page</li>
+        <li class="fail">Missing meta descriptions on most/all pages</li>
+        <li class="fail">No Open Graph or Twitter Card tags</li>
+        <li class="fail">No FAQ schema on the FAQ page (huge missed opportunity)</li>
+        <li class="fail">No Article/BlogPosting schema on 454+ blog posts</li>
+        <li class="fail">No author attribution on blog content</li>
+        <li class="fail">Missing image alt text across the entire site</li>
+        <li class="fail">No <code>llms.txt</code> file for AI crawlers</li>
+        <li class="fail">Sitemap missing lastmod, changefreq, and priority attributes</li>
+        <li class="fail">No LocalBusiness or Organization schema</li>
+        <li class="fail">No breadcrumb navigation or BreadcrumbList schema</li>
+        <li class="fail">H1 errors on state pages (shows "KNowledge Hub" instead of state name)</li>
+    </ul>
+</div>
+
+<!-- 2. TECHNICAL SEO -->
+<div class="section" id="technical">
+    <h2>2. Technical SEO Issues</h2>
+
+    <table>
+        <tr>
+            <th>Issue</th>
+            <th>Priority</th>
+            <th>Pages Affected</th>
+            <th>Details</th>
+        </tr>
+        <tr>
+            <td><strong>Missing meta descriptions</strong></td>
+            <td><span class="badge badge-critical">Critical</span></td>
+            <td>All 515 pages</td>
+            <td>No meta description tags detected on any page audited. Google will auto-generate snippets, but they won't be optimized for CTR.</td>
+        </tr>
+        <tr>
+            <td><strong>No canonical URLs</strong></td>
+            <td><span class="badge badge-critical">Critical</span></td>
+            <td>All pages</td>
+            <td>No <code>&lt;link rel="canonical"&gt;</code> tags detected. Risk of duplicate content issues, especially with Webflow's default behavior.</td>
+        </tr>
+        <tr>
+            <td><strong>Missing viewport meta tag</strong></td>
+            <td><span class="badge badge-high">High</span></td>
+            <td>Needs verification</td>
+            <td>Could not confirm presence in page source. Webflow usually adds this, but should be verified.</td>
+        </tr>
+        <tr>
+            <td><strong>H1 tag errors</strong></td>
+            <td><span class="badge badge-high">High</span></td>
+            <td>State pages (3)</td>
+            <td>Washington DC state page has H1 of "KNowledge Hub" (with capitalization error) instead of a relevant H1 like "Property Management in Washington DC"</td>
+        </tr>
+        <tr>
+            <td><strong>Sitemap lacks metadata</strong></td>
+            <td><span class="badge badge-medium">Medium</span></td>
+            <td>sitemap.xml</td>
+            <td>All 515 URLs present but missing <code>&lt;lastmod&gt;</code>, <code>&lt;changefreq&gt;</code>, and <code>&lt;priority&gt;</code> attributes. Reduces crawl efficiency.</td>
+        </tr>
+        <tr>
+            <td><strong>robots.txt unverified</strong></td>
+            <td><span class="badge badge-medium">Medium</span></td>
+            <td>robots.txt</td>
+            <td>Could not fully parse robots.txt content. Should verify it's properly configured and includes AI crawler directives.</td>
+        </tr>
+        <tr>
+            <td><strong>No breadcrumb navigation</strong></td>
+            <td><span class="badge badge-medium">Medium</span></td>
+            <td>All inner pages</td>
+            <td>No visible breadcrumbs and no BreadcrumbList schema. Hurts both UX and search appearance.</td>
+        </tr>
+        <tr>
+            <td><strong>Tracking script load order</strong></td>
+            <td><span class="badge badge-low">Low</span></td>
+            <td>All pages</td>
+            <td>Google Analytics (G-7PLDBVRK89) and Hotjar (ID: 3837372) load on every page. Verify they're loaded asynchronously to not block rendering.</td>
+        </tr>
+    </table>
+</div>
+
+<!-- 3. ON-PAGE SEO -->
+<div class="section" id="onpage">
+    <h2>3. On-Page SEO Analysis</h2>
+
+    <h3>Page-by-Page Title Tag Review</h3>
+    <table>
+        <tr>
+            <th>Page</th>
+            <th>Current Title</th>
+            <th>Assessment</th>
+            <th>Recommended Title</th>
+        </tr>
+        <tr>
+            <td>Homepage</td>
+            <td>Real Estate Services in Washington DC | Gordon James Realty</td>
+            <td><span class="badge badge-medium">Medium</span></td>
+            <td>Property Management in Washington DC, VA & MD | Gordon James Realty</td>
+        </tr>
+        <tr>
+            <td>Residential PM</td>
+            <td>Residential Property Management | Gordon James Realty, Washington DC</td>
+            <td><span class="badge badge-low">Good</span></td>
+            <td>Residential Property Management in DC, MD & VA | Gordon James Realty</td>
+        </tr>
+        <tr>
+            <td>Commercial PM</td>
+            <td>Commercial Property Management | Gordon James Realty, Washington DC</td>
+            <td><span class="badge badge-low">Good</span></td>
+            <td>Commercial Property Management in DC, MD & VA | Gordon James Realty</td>
+        </tr>
+        <tr>
+            <td>Community Assoc.</td>
+            <td>Community Association Management | Gordon James Realty, Washington DC</td>
+            <td><span class="badge badge-low">Good</span></td>
+            <td>HOA & Community Association Management in DC | Gordon James Realty</td>
+        </tr>
+        <tr>
+            <td>About Us</td>
+            <td>About Us | Gordon James Realty</td>
+            <td><span class="badge badge-high">Weak</span></td>
+            <td>About Gordon James Realty | DC's Trusted Property Management Company</td>
+        </tr>
+        <tr>
+            <td>Georgetown Guide</td>
+            <td>Georgetown | Gordon James Realty</td>
+            <td><span class="badge badge-high">Weak</span></td>
+            <td>Georgetown DC Neighborhood Guide | Real Estate & Property Management</td>
+        </tr>
+    </table>
+
+    <h3>H1 Tag Issues</h3>
+    <ul class="checklist">
+        <li class="pass"><strong>Homepage:</strong> "Real Estate Services in Washington DC, VA and MD" — Good, includes location</li>
+        <li class="pass"><strong>Residential PM:</strong> "Residential Property Management" — Good</li>
+        <li class="pass"><strong>Commercial PM:</strong> "Commercial Property Management" — Good</li>
+        <li class="pass"><strong>Community Assoc.:</strong> "Community Association Management" — Good</li>
+        <li class="warn"><strong>About Us:</strong> "About Us" — Too generic, should include brand name</li>
+        <li class="fail"><strong>Washington DC State Page:</strong> "KNowledge Hub" — WRONG H1. Should be "Property Management in Washington DC" or similar</li>
+        <li class="warn"><strong>Georgetown Guide:</strong> "Georgetown" — Too minimal, should be "Georgetown DC Neighborhood Guide"</li>
+        <li class="warn"><strong>Knowledge Hub:</strong> "Knowledge Hub" — Not keyword-optimized</li>
+    </ul>
+
+    <h3>Meta Description Status</h3>
+    <div class="impact-box">
+        <strong>Critical Gap:</strong> No meta descriptions were detected on any page audited. Every single one of your 515 pages needs a unique, compelling meta description of 150-160 characters that includes target keywords and a call to action. In Webflow, these can be set per page and per CMS item in the SEO settings panel.
+    </div>
+</div>
+
+<!-- 4. SCHEMA & STRUCTURED DATA -->
+<div class="section" id="schema">
+    <h2>4. Schema & Structured Data (Critical Gap)</h2>
+    <p>This is your <strong>single biggest SEO opportunity</strong>. Currently, zero pages on your site have any schema markup. Implementing structured data will directly improve your visibility in both traditional search and AI-powered search.</p>
+
+    <h3>Required Schema Types</h3>
+    <table>
+        <tr>
+            <th>Schema Type</th>
+            <th>Where to Add</th>
+            <th>Impact</th>
+        </tr>
+        <tr>
+            <td><strong>LocalBusiness / RealEstateAgent</strong></td>
+            <td>Every page (in site-wide code)</td>
+            <td>Appears in local pack, Google Maps, AI answers about your business</td>
+        </tr>
+        <tr>
+            <td><strong>Organization</strong></td>
+            <td>Homepage, About page</td>
+            <td>Knowledge panel, brand recognition in AI systems</td>
+        </tr>
+        <tr>
+            <td><strong>FAQPage</strong></td>
+            <td>FAQ page, service pages with Q&A content</td>
+            <td>FAQ rich results in Google (expandable answers directly in search)</td>
+        </tr>
+        <tr>
+            <td><strong>Article / BlogPosting</strong></td>
+            <td>All 454+ Knowledge Hub articles</td>
+            <td>Article rich results, better AI citation, author authority</td>
+        </tr>
+        <tr>
+            <td><strong>BreadcrumbList</strong></td>
+            <td>All inner pages</td>
+            <td>Breadcrumb rich results, better site hierarchy understanding</td>
+        </tr>
+        <tr>
+            <td><strong>Review / AggregateRating</strong></td>
+            <td>Pages with testimonials</td>
+            <td>Star ratings in search results</td>
+        </tr>
+        <tr>
+            <td><strong>Service</strong></td>
+            <td>Service pages</td>
+            <td>Rich results for service offerings</td>
+        </tr>
+        <tr>
+            <td><strong>Person</strong></td>
+            <td>About page, blog author pages</td>
+            <td>E-E-A-T signals, author authority</td>
+        </tr>
+    </table>
+
+    <h3>Example: LocalBusiness Schema (Add Site-Wide)</h3>
+    <pre>&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "RealEstateAgent",
+  "name": "Gordon James Realty",
+  "image": "https://www.gordonjamesrealty.com/logo.png",
+  "url": "https://www.gordonjamesrealty.com",
+  "telephone": "(202) 800-2610",
+  "email": "contact@gordonjamesrealty.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1201 15th St NW #400",
+    "addressLocality": "Washington",
+    "addressRegion": "DC",
+    "postalCode": "20005",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.905935,
+    "longitude": -77.0362679
+  },
+  "areaServed": [
+    {"@type": "State", "name": "Washington, D.C."},
+    {"@type": "State", "name": "Maryland"},
+    {"@type": "State", "name": "Virginia"}
+  ],
+  "priceRange": "$$",
+  "openingHours": "Mo-Fr 09:00-17:00",
+  "sameAs": [
+    "https://www.facebook.com/gordonjamesrealty",
+    "https://www.linkedin.com/company/gordon-james-realty",
+    "https://twitter.com/gjrealty",
+    "https://www.pinterest.com/gordonjamesrealty"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Property Management Services",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Residential Property Management"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Commercial Property Management"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Community Association Management"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Real Estate Brokerage"}}
+    ]
+  }
+}
+&lt;/script&gt;</pre>
+
+    <h3>Example: FAQPage Schema (for your FAQ page)</h3>
+    <pre>&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are your property management fees?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our management fee is 8.5% of collected rent. Our leasing fee is 90% of one month's rent."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What areas do you serve?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We serve Washington DC, Maryland, and Virginia including neighborhoods like Georgetown, Capitol Hill, Arlington, Bethesda, and more."
+      }
+    }
+  ]
+}
+&lt;/script&gt;</pre>
+
+    <h3>Example: BlogPosting Schema (for Knowledge Hub articles)</h3>
+    <pre>&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "How HOA Boards Can Confidently Select the Right Vendors",
+  "datePublished": "2026-02-26",
+  "dateModified": "2026-02-26",
+  "author": {
+    "@type": "Organization",
+    "name": "Gordon James Realty",
+    "url": "https://www.gordonjamesrealty.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gordon James Realty",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.gordonjamesrealty.com/logo.png"
+    }
+  },
+  "description": "Learn how HOA boards can implement a transparent vendor selection process...",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.gordonjamesrealty.com/resources/knowledge-hub/how-hoa-boards-can-confidently-select-the-right-vendors"
+  }
+}
+&lt;/script&gt;</pre>
+</div>
+
+<!-- 5. AI SEO -->
+<div class="section" id="ai-seo">
+    <h2>5. AI SEO & LLM Optimization</h2>
+    <p>AI SEO is how your business appears in AI-generated answers from tools like ChatGPT, Google AI Overviews, Perplexity, Microsoft Copilot, and Claude. This is rapidly becoming as important as traditional SEO.</p>
+
+    <h3>Current AI SEO Status</h3>
+    <ul class="checklist">
+        <li class="fail"><strong>No llms.txt file:</strong> This is a new standard file (like robots.txt but for AI) that tells LLMs about your business. Returns 404.</li>
+        <li class="fail"><strong>No ai-plugin.json:</strong> No AI plugin manifest found at <code>/.well-known/ai-plugin.json</code></li>
+        <li class="fail"><strong>No structured data:</strong> AI systems rely heavily on schema.org markup to understand entities. Zero markup present.</li>
+        <li class="fail"><strong>No author attribution:</strong> Blog posts lack author names, reducing E-E-A-T signals that AI systems use for source credibility.</li>
+        <li class="warn"><strong>robots.txt AI directives:</strong> Could not verify if AI crawlers (GPTBot, Claude-Web, Google-Extended, CCBot) are allowed or blocked.</li>
+        <li class="pass"><strong>Content depth:</strong> 454+ articles provide substantial training material for AI systems to learn about your expertise.</li>
+        <li class="pass"><strong>Entity clarity:</strong> Business name, services, and location are consistently referenced across pages.</li>
+        <li class="pass"><strong>Topical authority:</strong> Strong content clusters around property management, HOA, and real estate investing.</li>
+    </ul>
+
+    <h3>Why AI SEO Matters for Gordon James</h3>
+    <div class="impact-box">
+        When someone asks ChatGPT or Google AI "Who is the best property management company in Washington DC?" or "What should I look for in a DC property manager?" — you want Gordon James to be cited. Right now, AI systems have limited structured signals to pull from your site, which means competitors with better structured data may be cited instead.
+    </div>
+
+    <h3>Action Item: Create llms.txt File</h3>
+    <p>Add this file at <code>https://www.gordonjamesrealty.com/llms.txt</code>. In Webflow, create this as a static page with plain text content:</p>
+    <pre># Gordon James Realty
+
+## About
+Gordon James Realty is a full-service property management and real estate
+brokerage firm based in Washington, DC. Founded with 30+ years of combined
+real estate experience, we serve property owners and investors across
+Washington DC, Maryland, and Virginia.
+
+## Services
+- Residential Property Management (single-family homes, condos, townhouses)
+- Commercial Property Management (office, retail, mixed-use)
+- Community Association Management (HOAs, condos, cooperatives)
+- Real Estate Brokerage (buying and selling)
+
+## Service Area
+Washington DC, Northern Virginia (Arlington, Alexandria, McLean, Falls Church),
+and Maryland (Bethesda, Silver Spring, Takoma Park, Hyattsville)
+
+## Contact
+- Address: 1201 15th St NW #400, Washington DC 20005
+- Phone: (202) 800-2610
+- Email: contact@gordonjamesrealty.com
+- Website: https://www.gordonjamesrealty.com
+
+## Key Differentiators
+- 99% client retention rate
+- 19 days average time on market
+- 15-minute average response time
+- Zero evictions track record
+- Licensed Property Managers and Realtors
+- Members of NARPM, NAR, CAMICB, BBB
+
+## Resources
+- Knowledge Hub: https://www.gordonjamesrealty.com/resources/knowledge-hub
+- FAQs: https://www.gordonjamesrealty.com/resources/faqs
+- Neighborhood Guides: https://www.gordonjamesrealty.com/buying-selling/neighborhood-guides
+- eBooks: https://www.gordonjamesrealty.com/resources/our-ebooks</pre>
+
+    <h3>AI SEO Content Strategy Recommendations</h3>
+    <table>
+        <tr>
+            <th>Strategy</th>
+            <th>Why It Matters for AI</th>
+            <th>Implementation</th>
+        </tr>
+        <tr>
+            <td><strong>Add author bios to blog posts</strong></td>
+            <td>AI systems weigh authored content higher for credibility</td>
+            <td>Create author CMS collection in Webflow, link to blog posts</td>
+        </tr>
+        <tr>
+            <td><strong>Add "About the Author" sections</strong></td>
+            <td>Establishes human expertise signals</td>
+            <td>Add at bottom of each Knowledge Hub article</td>
+        </tr>
+        <tr>
+            <td><strong>Include data/statistics in articles</strong></td>
+            <td>AI systems love citable facts and figures</td>
+            <td>Add DC market data, your own performance metrics</td>
+        </tr>
+        <tr>
+            <td><strong>Create definitive "What is" content</strong></td>
+            <td>AI systems cite definitional content frequently</td>
+            <td>Write "What is property management?" "What is an HOA?" pillar pages</td>
+        </tr>
+        <tr>
+            <td><strong>Optimize for question-based queries</strong></td>
+            <td>AI assistants answer questions — your content should too</td>
+            <td>Structure articles around common questions, use Q&A format</td>
+        </tr>
+        <tr>
+            <td><strong>Allow AI crawlers in robots.txt</strong></td>
+            <td>If blocked, AI systems can't index your content</td>
+            <td>Verify GPTBot, Claude-Web, Google-Extended are not blocked</td>
+        </tr>
+    </table>
+</div>
+
+<!-- 6. LOCAL SEO -->
+<div class="section" id="local">
+    <h2>6. Local SEO Analysis</h2>
+
+    <h3>NAP Consistency</h3>
+    <ul class="checklist">
+        <li class="pass"><strong>Business Name:</strong> "Gordon James Realty" — consistent across site</li>
+        <li class="pass"><strong>Address:</strong> "1201 15th St NW #400, Washington DC 20005" — consistent in footer</li>
+        <li class="pass"><strong>Phone:</strong> "(202) 800-2610" — consistent</li>
+        <li class="pass"><strong>Email:</strong> contact@gordonjamesrealty.com — present</li>
+        <li class="pass"><strong>Google Maps:</strong> Embedded with correct coordinates (38.905935, -77.0362679)</li>
+    </ul>
+
+    <h3>Local SEO Gaps</h3>
+    <ul class="checklist">
+        <li class="fail"><strong>No LocalBusiness schema:</strong> Google's local algorithm heavily relies on structured data</li>
+        <li class="fail"><strong>No GeoCoordinates schema:</strong> Map coordinates exist in JS but not in structured data</li>
+        <li class="fail"><strong>State pages have wrong H1:</strong> "KNowledge Hub" instead of location-relevant heading</li>
+        <li class="warn"><strong>Neighborhood guides are thin:</strong> Only 400-500 words each, need expansion</li>
+        <li class="warn"><strong>No Google Business Profile link:</strong> Should link to and reference GBP listing</li>
+        <li class="warn"><strong>No location-specific landing pages:</strong> Consider creating pages for "property management Arlington VA", "property management Bethesda MD" etc.</li>
+        <li class="info"><strong>Service area coverage:</strong> 27 neighborhoods covered across DC, MD, VA</li>
+    </ul>
+
+    <h3>Local SEO Recommendations</h3>
+    <ol>
+        <li><strong>Fix state page H1s immediately</strong> — Change from "KNowledge Hub" to "Property Management in Washington DC" (and similar for MD, VA)</li>
+        <li><strong>Add LocalBusiness schema site-wide</strong> (see schema section above)</li>
+        <li><strong>Expand neighborhood guides</strong> to 1,000-1,500+ words with local market data, school info, transit details</li>
+        <li><strong>Create city-level landing pages</strong> — "Property Management in Arlington VA", "Property Management in Bethesda MD" etc.</li>
+        <li><strong>Add review schema</strong> to testimonial sections</li>
+        <li><strong>Ensure Google Business Profile</strong> is claimed, optimized, and links to website</li>
+    </ol>
+</div>
+
+<!-- 7. CONTENT & KNOWLEDGE HUB -->
+<div class="section" id="content">
+    <h2>7. Content & Knowledge Hub Analysis</h2>
+
+    <h3>Content Volume (Strong)</h3>
+    <ul class="checklist">
+        <li class="pass">454+ Knowledge Hub articles published</li>
+        <li class="pass">5 content categories aligned to services</li>
+        <li class="pass">Regular publishing cadence through February 2026</li>
+        <li class="pass">Topics cover landlords, tenants, HOAs, investors, buyers</li>
+        <li class="pass">Mix of how-to guides, explainers, and actionable advice</li>
+    </ul>
+
+    <h3>Content Optimization Gaps</h3>
+    <ul class="checklist">
+        <li class="fail"><strong>No meta descriptions:</strong> All 454+ articles need unique meta descriptions</li>
+        <li class="fail"><strong>No BlogPosting schema:</strong> Missing on every article</li>
+        <li class="fail"><strong>No author attribution:</strong> No author names, bios, or Person schema</li>
+        <li class="fail"><strong>No datePublished schema:</strong> Dates visible but not structured</li>
+        <li class="fail"><strong>Missing image alt text:</strong> Article images (e.g., "shutterstock_2080057123.jpg") lack alt descriptions</li>
+        <li class="warn"><strong>No table of contents:</strong> Longer articles would benefit from jump links</li>
+        <li class="warn"><strong>Limited external citations:</strong> Articles rarely link to authoritative external sources</li>
+        <li class="warn"><strong>No related articles section:</strong> Cross-linking between related articles could be stronger</li>
+    </ul>
+
+    <h3>Content Strategy Recommendations</h3>
+    <table>
+        <tr>
+            <th>Content Type</th>
+            <th>Current State</th>
+            <th>Recommendation</th>
+        </tr>
+        <tr>
+            <td>Pillar Pages</td>
+            <td>Not present</td>
+            <td>Create comprehensive 3,000+ word guides for each service (e.g., "The Complete Guide to Residential Property Management in DC")</td>
+        </tr>
+        <tr>
+            <td>FAQ Content</td>
+            <td>FAQ page exists but no schema</td>
+            <td>Add FAQPage schema; also add FAQ sections to each service page</td>
+        </tr>
+        <tr>
+            <td>Local Market Reports</td>
+            <td>Not present</td>
+            <td>Publish quarterly DC/MD/VA rental market reports (highly citable by AI)</td>
+        </tr>
+        <tr>
+            <td>Comparison Content</td>
+            <td>Not present</td>
+            <td>"Gordon James vs. Self-Managing" or "What to Look for in a DC Property Manager" type content</td>
+        </tr>
+        <tr>
+            <td>Video Content</td>
+            <td>Not detected</td>
+            <td>Add video walkthroughs, testimonials — video schema boosts search visibility</td>
+        </tr>
+    </table>
+</div>
+
+<!-- 8. SITEMAP & CRAWLABILITY -->
+<div class="section" id="sitemap">
+    <h2>8. Sitemap & Crawlability</h2>
+
+    <h3>Sitemap Analysis</h3>
+    <ul class="checklist">
+        <li class="pass"><strong>Sitemap exists:</strong> <code>/sitemap.xml</code> is accessible</li>
+        <li class="pass"><strong>All pages included:</strong> 515 URLs listed</li>
+        <li class="pass"><strong>Clean URL structure:</strong> Descriptive, hyphenated slugs</li>
+        <li class="fail"><strong>No lastmod dates:</strong> Google can't tell which pages were recently updated</li>
+        <li class="fail"><strong>No changefreq:</strong> No update frequency hints for crawlers</li>
+        <li class="fail"><strong>No priority values:</strong> All pages treated equally by crawlers</li>
+    </ul>
+
+    <h3>Sitemap Recommendations</h3>
+    <div class="impact-box">
+        <strong>Webflow Note:</strong> Webflow auto-generates sitemaps but with limited control over <code>lastmod</code> and <code>priority</code>. When you update a page in Webflow, it should automatically update the <code>lastmod</code>. If it's not doing this, check your Webflow site settings under SEO > Sitemap. You may also want to submit your sitemap directly in Google Search Console.
+    </div>
+
+    <h3>URL Structure Assessment</h3>
+    <table>
+        <tr>
+            <th>URL Pattern</th>
+            <th>Count</th>
+            <th>Assessment</th>
+        </tr>
+        <tr>
+            <td><code>/services/[service-name]</code></td>
+            <td>5</td>
+            <td><span class="badge badge-low">Good</span> — Clear hierarchy</td>
+        </tr>
+        <tr>
+            <td><code>/resources/knowledge-hub/[article-slug]</code></td>
+            <td>454+</td>
+            <td><span class="badge badge-low">Good</span> — Descriptive slugs</td>
+        </tr>
+        <tr>
+            <td><code>/buying-selling/neighborhoods/[name]</code></td>
+            <td>27</td>
+            <td><span class="badge badge-low">Good</span> — Location-focused</td>
+        </tr>
+        <tr>
+            <td><code>/company-about/[page]</code></td>
+            <td>3</td>
+            <td><span class="badge badge-medium">OK</span> — Could be simpler (/about instead of /company-about/about-us)</td>
+        </tr>
+        <tr>
+            <td><code>/states/[state-name]</code></td>
+            <td>3</td>
+            <td><span class="badge badge-high">Weak</span> — H1 issues, thin content</td>
+        </tr>
+    </table>
+</div>
+
+<!-- 9. SOCIAL & SHARING -->
+<div class="section" id="social">
+    <h2>9. Social & Sharing Tags (Open Graph / Twitter)</h2>
+
+    <ul class="checklist">
+        <li class="fail"><strong>No Open Graph tags detected</strong> — When pages are shared on Facebook, LinkedIn, they won't have proper title, description, or image</li>
+        <li class="fail"><strong>No Twitter Card tags detected</strong> — Shared links on X/Twitter will lack rich previews</li>
+        <li class="fail"><strong>No og:image set</strong> — Social shares will either show no image or a random one</li>
+    </ul>
+
+    <h3>Required Open Graph Tags (Add to Every Page)</h3>
+    <pre>&lt;!-- Open Graph --&gt;
+&lt;meta property="og:type" content="website" /&gt;
+&lt;meta property="og:title" content="Residential Property Management in DC | Gordon James Realty" /&gt;
+&lt;meta property="og:description" content="Full-service residential property management..." /&gt;
+&lt;meta property="og:image" content="https://www.gordonjamesrealty.com/og-image.jpg" /&gt;
+&lt;meta property="og:url" content="https://www.gordonjamesrealty.com/services/residential-property-management" /&gt;
+&lt;meta property="og:site_name" content="Gordon James Realty" /&gt;
+
+&lt;!-- Twitter Card --&gt;
+&lt;meta name="twitter:card" content="summary_large_image" /&gt;
+&lt;meta name="twitter:title" content="Residential Property Management in DC | Gordon James Realty" /&gt;
+&lt;meta name="twitter:description" content="Full-service residential property management..." /&gt;
+&lt;meta name="twitter:image" content="https://www.gordonjamesrealty.com/og-image.jpg" /&gt;</pre>
+
+    <div class="impact-box">
+        <strong>Webflow Implementation:</strong> In Webflow, go to each page's settings > Open Graph Settings. You can set og:title, og:description, and og:image there. For CMS collection items (blog posts), you can set these dynamically using CMS fields. This is one of the easiest wins to implement.
+    </div>
+</div>
+
+<!-- 10. ACCESSIBILITY & IMAGE SEO -->
+<div class="section" id="accessibility">
+    <h2>10. Accessibility & Image SEO</h2>
+
+    <h3>Image Alt Text (Critical Issue)</h3>
+    <ul class="checklist">
+        <li class="fail"><strong>Widespread missing alt text:</strong> The majority of images across the site lack descriptive alt attributes</li>
+        <li class="fail"><strong>Stock photo filenames:</strong> Images like "shutterstock_2080057123.jpg" provide zero SEO value</li>
+        <li class="fail"><strong>Icon images:</strong> Service icons and UI elements lack proper alt text or aria-labels</li>
+        <li class="warn"><strong>Lazy loading:</strong> Could not confirm if images use loading="lazy" for performance</li>
+    </ul>
+
+    <div class="impact-box">
+        <strong>Why This Matters:</strong> Alt text serves double duty — it's required for ADA/WCAG accessibility compliance (legal risk for businesses), AND it's a significant SEO signal. Google Images is a major traffic source for real estate. Every property image, neighborhood photo, and service graphic should have descriptive alt text.
+    </div>
+
+    <h3>Image Alt Text Best Practices</h3>
+    <table>
+        <tr>
+            <th>Image Type</th>
+            <th>Bad Alt Text</th>
+            <th>Good Alt Text</th>
+        </tr>
+        <tr>
+            <td>Neighborhood photo</td>
+            <td><code>""</code> or <code>"image1"</code></td>
+            <td><code>"Row of historic townhouses on a tree-lined street in Georgetown, Washington DC"</code></td>
+        </tr>
+        <tr>
+            <td>Service icon</td>
+            <td><code>""</code></td>
+            <td><code>"Residential property management services icon"</code></td>
+        </tr>
+        <tr>
+            <td>Blog featured image</td>
+            <td><code>"shutterstock_2080057123"</code></td>
+            <td><code>"HOA board meeting discussing vendor selection process"</code></td>
+        </tr>
+        <tr>
+            <td>Team/office photo</td>
+            <td><code>""</code></td>
+            <td><code>"Gordon James Realty office at 1201 15th St NW, Washington DC"</code></td>
+        </tr>
+    </table>
+</div>
+
+<!-- 11. NEIGHBORHOOD GUIDES -->
+<div class="section" id="neighborhood">
+    <h2>11. Neighborhood Guides Analysis</h2>
+
+    <h3>Current State</h3>
+    <p>27 neighborhood guide pages covering DC, MD, and VA locations. These are a <strong>significant local SEO asset</strong> but are currently underoptimized.</p>
+
+    <h3>Issues Found</h3>
+    <ul class="checklist">
+        <li class="warn"><strong>Thin content:</strong> ~400-500 words per guide. Competitors may have 1,500-3,000 words.</li>
+        <li class="warn"><strong>Minimal H1s:</strong> Just the neighborhood name (e.g., "Georgetown") without location modifiers</li>
+        <li class="fail"><strong>No meta descriptions</strong></li>
+        <li class="fail"><strong>No schema markup</strong> (no Place, Neighborhood, or LocalBusiness schema)</li>
+        <li class="fail"><strong>Missing image alt text</strong></li>
+        <li class="warn"><strong>No local market data:</strong> Median rent, home prices, appreciation rates</li>
+        <li class="warn"><strong>No transit/school info:</strong> Missing practical relocation details</li>
+    </ul>
+
+    <h3>Recommendations to Dominate Local Neighborhood Searches</h3>
+    <ol>
+        <li><strong>Expand each guide to 1,500+ words</strong> covering:
+            <ul>
+                <li>Neighborhood overview and history</li>
+                <li>Average rent and home prices (update quarterly)</li>
+                <li>Best streets and blocks</li>
+                <li>Schools, parks, transit options</li>
+                <li>Dining and entertainment highlights</li>
+                <li>Investment potential and rental demand</li>
+                <li>Your property management experience in that area</li>
+            </ul>
+        </li>
+        <li><strong>Optimize H1s:</strong> "Georgetown DC Neighborhood Guide | Real Estate & Rentals"</li>
+        <li><strong>Add neighborhood-specific FAQ sections</strong> with FAQPage schema</li>
+        <li><strong>Embed maps</strong> with neighborhood boundaries</li>
+        <li><strong>Link to relevant Knowledge Hub articles</strong> about that area</li>
+    </ol>
+</div>
+
+<!-- 12. QUICK WINS -->
+<div class="section" id="quick-wins">
+    <h2>12. Quick Wins — Do These First</h2>
+    <p>These are high-impact, relatively low-effort changes you can make in Webflow immediately:</p>
+
+    <table>
+        <tr>
+            <th>#</th>
+            <th>Action</th>
+            <th>Effort</th>
+            <th>Impact</th>
+            <th>How in Webflow</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><strong>Add meta descriptions to all service pages</strong> (5 pages)</td>
+            <td>30 min</td>
+            <td><span class="badge badge-critical">Critical</span></td>
+            <td>Page Settings > SEO Settings > Meta Description</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><strong>Add Open Graph tags to all service pages</strong></td>
+            <td>30 min</td>
+            <td><span class="badge badge-high">High</span></td>
+            <td>Page Settings > Open Graph Settings</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><strong>Add LocalBusiness JSON-LD to site-wide custom code</strong></td>
+            <td>15 min</td>
+            <td><span class="badge badge-critical">Critical</span></td>
+            <td>Project Settings > Custom Code > Head Code</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><strong>Fix H1 on state pages</strong> ("KNowledge Hub" → proper heading)</td>
+            <td>10 min</td>
+            <td><span class="badge badge-high">High</span></td>
+            <td>Edit the CMS template or static page heading</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><strong>Add FAQPage schema to FAQ page</strong></td>
+            <td>30 min</td>
+            <td><span class="badge badge-critical">Critical</span></td>
+            <td>Page Settings > Custom Code > Before </body></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><strong>Create llms.txt page</strong></td>
+            <td>15 min</td>
+            <td><span class="badge badge-high">High</span></td>
+            <td>Create static page at /llms.txt or add as custom code page</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><strong>Set up BlogPosting schema template for Knowledge Hub</strong></td>
+            <td>45 min</td>
+            <td><span class="badge badge-critical">Critical</span></td>
+            <td>CMS Collection Page > Custom Code > use CMS fields dynamically</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><strong>Add meta descriptions to CMS blog template</strong></td>
+            <td>20 min</td>
+            <td><span class="badge badge-critical">Critical</span></td>
+            <td>CMS Collection Settings > SEO fields (use summary field)</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td><strong>Verify robots.txt allows AI crawlers</strong></td>
+            <td>5 min</td>
+            <td><span class="badge badge-high">High</span></td>
+            <td>Project Settings > SEO > check robots.txt settings</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><strong>Submit sitemap to Google Search Console</strong></td>
+            <td>5 min</td>
+            <td><span class="badge badge-medium">Medium</span></td>
+            <td>Go to Search Console > Sitemaps > submit URL</td>
+        </tr>
+    </table>
+</div>
+
+<!-- 13. FULL ROADMAP -->
+<div class="section" id="roadmap">
+    <h2>13. Full Implementation Roadmap</h2>
+
+    <h3>Phase 1: Foundation (Week 1-2) — Critical Technical Fixes</h3>
+    <ol>
+        <li>Add LocalBusiness/RealEstateAgent JSON-LD schema site-wide</li>
+        <li>Write and add meta descriptions to all 20 core pages (services, about, contact, etc.)</li>
+        <li>Add Open Graph and Twitter Card tags to all core pages</li>
+        <li>Fix H1 tags on state pages and other problematic pages</li>
+        <li>Add canonical URLs to all pages</li>
+        <li>Verify and fix robots.txt (allow AI crawlers)</li>
+        <li>Submit sitemap to Google Search Console</li>
+        <li>Create and publish llms.txt file</li>
+    </ol>
+
+    <h3>Phase 2: Schema Markup (Week 2-3)</h3>
+    <ol>
+        <li>Implement FAQPage schema on FAQ page (with all Q&As)</li>
+        <li>Create BlogPosting schema template for Knowledge Hub CMS</li>
+        <li>Add BreadcrumbList schema to all inner pages</li>
+        <li>Add Review/AggregateRating schema to testimonial sections</li>
+        <li>Add Service schema to service pages</li>
+        <li>Add Organization schema to homepage and about page</li>
+    </ol>
+
+    <h3>Phase 3: Content Optimization (Week 3-5)</h3>
+    <ol>
+        <li>Write meta descriptions for all 454+ blog posts (can use AI assistance for drafts)</li>
+        <li>Add alt text to all images across the site</li>
+        <li>Create author attribution system (Webflow CMS collection)</li>
+        <li>Add author bios and Person schema to blog posts</li>
+        <li>Optimize blog post title tags for target keywords</li>
+        <li>Add Open Graph images to all blog posts</li>
+    </ol>
+
+    <h3>Phase 4: Local SEO Enhancement (Week 5-7)</h3>
+    <ol>
+        <li>Expand all 27 neighborhood guides to 1,500+ words</li>
+        <li>Optimize neighborhood guide H1s and title tags</li>
+        <li>Add neighborhood-specific FAQ sections</li>
+        <li>Create city-level landing pages (Arlington VA, Bethesda MD, etc.)</li>
+        <li>Optimize Google Business Profile and link to website</li>
+        <li>Build local citations on real estate directories</li>
+    </ol>
+
+    <h3>Phase 5: AI SEO & Authority (Ongoing)</h3>
+    <ol>
+        <li>Publish quarterly DC rental market reports (highly citable)</li>
+        <li>Create definitive "What is..." pillar content pages</li>
+        <li>Build topical authority with content clusters and internal linking</li>
+        <li>Monitor AI search appearances (test queries in ChatGPT, Perplexity, Google AI)</li>
+        <li>Update llms.txt file as services/content evolve</li>
+        <li>Add video content with VideoObject schema</li>
+    </ol>
+</div>
+
+<!-- 14. WEBFLOW IMPLEMENTATION GUIDE -->
+<div class="section" id="webflow">
+    <h2>14. Webflow-Specific Implementation Guide</h2>
+
+    <h3>Where to Add Schema Markup in Webflow</h3>
+    <table>
+        <tr>
+            <th>Schema Type</th>
+            <th>Location in Webflow</th>
+        </tr>
+        <tr>
+            <td>LocalBusiness (site-wide)</td>
+            <td><strong>Project Settings → Custom Code → Head Code</strong><br>Paste the JSON-LD script. It will appear on every page.</td>
+        </tr>
+        <tr>
+            <td>FAQPage (specific page)</td>
+            <td><strong>Page Settings → Custom Code → Before &lt;/body&gt; tag</strong><br>Add the FAQPage JSON-LD script to just the FAQ page.</td>
+        </tr>
+        <tr>
+            <td>BlogPosting (CMS template)</td>
+            <td><strong>CMS Collection Page Settings → Custom Code → Before &lt;/body&gt;</strong><br>Use Webflow Embed elements with CMS field references to dynamically populate schema fields.</td>
+        </tr>
+        <tr>
+            <td>BreadcrumbList</td>
+            <td><strong>Page Settings → Custom Code</strong> for static pages, or use a Webflow Embed component in the page template.</td>
+        </tr>
+    </table>
+
+    <h3>Webflow SEO Settings Checklist</h3>
+    <ul class="checklist">
+        <li class="info"><strong>Project Settings → SEO:</strong> Enable auto-generated sitemap, set global meta title format</li>
+        <li class="info"><strong>Each Page → Settings → SEO:</strong> Set unique title tag, meta description</li>
+        <li class="info"><strong>Each Page → Settings → Open Graph:</strong> Set OG title, description, image</li>
+        <li class="info"><strong>CMS Collection → SEO fields:</strong> Ensure each collection item has SEO title, description, OG image fields</li>
+        <li class="info"><strong>Images:</strong> In the Asset Manager, add alt text to every uploaded image. For CMS images, add an "Alt Text" field to the collection.</li>
+        <li class="info"><strong>301 Redirects:</strong> Project Settings → Hosting → 301 Redirects (if you change any URLs)</li>
+    </ul>
+
+    <h3>Webflow Limitations to Be Aware Of</h3>
+    <ul>
+        <li><strong>robots.txt:</strong> Webflow auto-generates this with limited customization. You can add custom rules via Project Settings → SEO.</li>
+        <li><strong>Sitemap metadata:</strong> Webflow auto-generates the sitemap but <code>lastmod</code> only updates when you publish changes. <code>priority</code> and <code>changefreq</code> are not customizable.</li>
+        <li><strong>llms.txt:</strong> Webflow doesn't natively support a <code>/llms.txt</code> route. Workaround: Create a static page or use a 301 redirect from a custom path. Alternatively, host the file separately.</li>
+        <li><strong>Custom headers:</strong> Limited control over HTTP headers. Some advanced technical SEO (like security headers) may need Webflow Enterprise or a reverse proxy.</li>
+    </ul>
+
+    <h3>Regarding Webflow API Access</h3>
+    <div class="impact-box">
+        <strong>About your original question:</strong> While I don't currently have a Webflow MCP integration, a Webflow API key could be used to programmatically:
+        <ul style="margin-top: 0.5rem;">
+            <li>Bulk-update meta descriptions across all CMS items</li>
+            <li>Add alt text to CMS image fields</li>
+            <li>Update SEO fields on collection items</li>
+            <li>Audit CMS content programmatically</li>
+        </ul>
+        <p style="margin-top: 0.5rem;">If you want to set this up, you would need to create a custom MCP server for Webflow's API, or we could write scripts that use the Webflow API to make bulk updates. This would be especially valuable for updating meta descriptions and alt text across 454+ blog posts.</p>
+    </div>
+</div>
+
+<!-- Final Summary -->
+<div class="section" style="background: linear-gradient(135deg, #ebf8ff 0%, #e9d8fd 100%); border: 2px solid var(--accent);">
+    <h2>Summary: Top 5 Highest-Impact Actions</h2>
+    <ol>
+        <li><strong>Add LocalBusiness + Organization JSON-LD schema</strong> — Unlocks local pack, AI citations, and knowledge panel eligibility</li>
+        <li><strong>Write meta descriptions for all pages</strong> — Directly improves CTR from search results across 515 pages</li>
+        <li><strong>Implement FAQPage schema on FAQ page</strong> — Can generate rich results in Google immediately</li>
+        <li><strong>Add BlogPosting schema to Knowledge Hub template</strong> — Makes 454+ articles eligible for article rich results and AI citation</li>
+        <li><strong>Create llms.txt and verify AI crawler access</strong> — Positions you ahead of competitors for AI-powered search</li>
+    </ol>
+</div>
+
+</div>
+</body>
+</html>
