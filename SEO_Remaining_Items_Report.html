@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gordon James Realty — Remaining SEO Items Audit Report</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #1a1a2e; background: #f0f2f5; padding: 2rem; }
+  .container { max-width: 1100px; margin: 0 auto; }
+  h1 { font-size: 1.8rem; color: #16213e; margin-bottom: 0.5rem; }
+  h2 { font-size: 1.4rem; color: #16213e; margin: 2rem 0 1rem; border-bottom: 2px solid #0f3460; padding-bottom: 0.5rem; }
+  h3 { font-size: 1.1rem; color: #0f3460; margin: 1.5rem 0 0.5rem; }
+  .subtitle { color: #666; margin-bottom: 2rem; }
+  .card { background: #fff; border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+  .status-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; margin-bottom: 2rem; }
+  .status-card { padding: 1.2rem; border-radius: 8px; color: #fff; text-align: center; }
+  .status-card h3 { color: #fff; margin: 0 0 0.3rem; font-size: 2rem; }
+  .status-card p { margin: 0; font-size: 0.9rem; opacity: 0.9; }
+  .critical { background: linear-gradient(135deg, #e74c3c, #c0392b); }
+  .warning { background: linear-gradient(135deg, #f39c12, #e67e22); }
+  .good { background: linear-gradient(135deg, #27ae60, #2ecc71); }
+  .info { background: linear-gradient(135deg, #3498db, #2980b9); }
+  table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+  th, td { padding: 0.6rem 0.8rem; text-align: left; border-bottom: 1px solid #e0e0e0; }
+  th { background: #f8f9fa; font-weight: 600; color: #16213e; }
+  tr:hover { background: #f8f9fa; }
+  .tag { display: inline-block; padding: 0.15rem 0.5rem; border-radius: 4px; font-size: 0.75rem; font-weight: 600; }
+  .tag-critical { background: #fde8e8; color: #c0392b; }
+  .tag-warning { background: #fef3e2; color: #e67e22; }
+  .tag-ok { background: #e8f8f0; color: #27ae60; }
+  .tag-designer { background: #e8ecf8; color: #2980b9; }
+  .tag-code { background: #f0e8f8; color: #8e44ad; }
+  code { background: #f4f4f4; padding: 0.2rem 0.4rem; border-radius: 3px; font-size: 0.85rem; }
+  pre { background: #1a1a2e; color: #e0e0e0; padding: 1rem; border-radius: 6px; overflow-x: auto; font-size: 0.85rem; line-height: 1.5; margin: 1rem 0; }
+  pre code { background: none; padding: 0; color: inherit; }
+  .instruction-step { display: flex; gap: 1rem; margin: 0.8rem 0; align-items: flex-start; }
+  .step-number { background: #0f3460; color: #fff; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700; flex-shrink: 0; }
+  .step-text { flex: 1; }
+  .note { background: #fff3cd; border-left: 4px solid #ffc107; padding: 0.8rem 1rem; border-radius: 0 4px 4px 0; margin: 1rem 0; font-size: 0.9rem; }
+  .success-note { background: #d4edda; border-left: 4px solid #28a745; padding: 0.8rem 1rem; border-radius: 0 4px 4px 0; margin: 1rem 0; font-size: 0.9rem; }
+  ul { margin: 0.5rem 0 0.5rem 1.5rem; }
+  li { margin: 0.3rem 0; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Gordon James Realty — SEO Remaining Items Report</h1>
+<p class="subtitle">Audit Date: March 3, 2026 | Site: gordonjamesrealty.com</p>
+
+<!-- Summary Cards -->
+<div class="status-grid">
+  <div class="status-card critical">
+    <h3>11</h3>
+    <p>Heading Hierarchy Issues</p>
+  </div>
+  <div class="status-card warning">
+    <h3>60+</h3>
+    <p>Images Missing Alt Text</p>
+  </div>
+  <div class="status-card good">
+    <h3>OK</h3>
+    <p>Canonical URLs Present</p>
+  </div>
+  <div class="status-card info">
+    <h3>10-13</h3>
+    <p>Blocking Scripts Per Page</p>
+  </div>
+</div>
+
+<!-- ===================== 1. HEADING HIERARCHY ===================== -->
+<h2>1. Heading Hierarchy</h2>
+
+<div class="card">
+  <h3>Issues Found</h3>
+  <p>Improper heading levels hurt both SEO and accessibility. Search engines use heading hierarchy to understand content structure. Skipping levels (e.g., H2 → H5) signals disorganized content.</p>
+
+  <table>
+    <thead>
+      <tr><th>Page</th><th>Current</th><th>Text</th><th>Fix To</th><th>Method</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Homepage</td><td><span class="tag tag-critical">H4</span></td><td>Connect with an expert</td><td><span class="tag tag-ok">H2</span></td><td><span class="tag tag-designer">Designer</span></td></tr>
+      <tr><td>Homepage + About</td><td><span class="tag tag-critical">H5</span></td><td>Founded</td><td><span class="tag tag-ok">H3</span></td><td><span class="tag tag-designer">Designer</span></td></tr>
+      <tr><td>Homepage + About</td><td><span class="tag tag-critical">H5</span></td><td>Certifications</td><td><span class="tag tag-ok">H3</span></td><td><span class="tag tag-designer">Designer</span></td></tr>
+      <tr><td>Homepage + About</td><td><span class="tag tag-critical">H5</span></td><td>Areas Served</td><td><span class="tag tag-ok">H3</span></td><td><span class="tag tag-designer">Designer</span></td></tr>
+      <tr><td>Homepage + About</td><td><span class="tag tag-critical">H5</span></td><td>Our Performance</td><td><span class="tag tag-ok">H3</span></td><td><span class="tag tag-designer">Designer</span></td></tr>
+      <tr><td>Homepage + About</td><td><span class="tag tag-critical">H5</span></td><td>Commitment</td><td><span class="tag tag-ok">H3</span></td><td><span class="tag tag-designer">Designer</span></td></tr>
+      <tr><td>Contact Us</td><td><span class="tag tag-warning">H4</span></td><td>Contact Details:</td><td><span class="tag tag-ok">H2</span></td><td><span class="tag tag-designer">Designer</span></td></tr>
+      <tr><td>Contact Us</td><td><span class="tag tag-warning">H4</span></td><td>Property / Address:</td><td><span class="tag tag-ok">H2</span></td><td><span class="tag tag-designer">Designer</span></td></tr>
+      <tr><td>Contact Us</td><td><span class="tag tag-warning">H4</span></td><td>Services of Interest:</td><td><span class="tag tag-ok">H2</span></td><td><span class="tag tag-designer">Designer</span></td></tr>
+      <tr><td>Contact Us</td><td><span class="tag tag-warning">H4</span></td><td>Message Details:</td><td><span class="tag tag-ok">H2</span></td><td><span class="tag tag-designer">Designer</span></td></tr>
+      <tr><td>Contact Us</td><td><span class="tag tag-warning">H4</span></td><td>Want to skip the form...?</td><td><span class="tag tag-ok">H2</span></td><td><span class="tag tag-designer">Designer</span></td></tr>
+    </tbody>
+  </table>
+
+  <h3>How to Fix in Webflow Designer</h3>
+  <div class="instruction-step">
+    <div class="step-number">1</div>
+    <div class="step-text">Open the page in Webflow Designer (e.g., Homepage)</div>
+  </div>
+  <div class="instruction-step">
+    <div class="step-number">2</div>
+    <div class="step-text">Click on the heading element (e.g., "Connect with an expert")</div>
+  </div>
+  <div class="instruction-step">
+    <div class="step-number">3</div>
+    <div class="step-text">In the left panel under <strong>Settings</strong>, look for the <strong>Tag</strong> dropdown</div>
+  </div>
+  <div class="instruction-step">
+    <div class="step-number">4</div>
+    <div class="step-text">Change from H4/H5 to the correct level (H2 or H3 per the table above)</div>
+  </div>
+  <div class="instruction-step">
+    <div class="step-number">5</div>
+    <div class="step-text">The "At a Glance" stats section uses a <strong>Symbol</strong> — editing it once will fix it on both Homepage and About Us</div>
+  </div>
+
+  <div class="note">
+    <strong>Note:</strong> A JavaScript fallback has been created in <code>seo_fixes_custom_code.js</code> that fixes heading levels at runtime for accessibility. However, for full SEO impact, the Designer fix is essential since search engines primarily read the HTML source.
+  </div>
+</div>
+
+<!-- ===================== 2. IMAGE ALT TEXT ===================== -->
+<h2>2. Static Page Image Alt Text</h2>
+
+<div class="card">
+  <h3>Summary by Page</h3>
+  <table>
+    <thead>
+      <tr><th>Page</th><th>Total Images</th><th>Missing Alt</th><th>Key Missing Items</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Homepage</td><td>61</td><td>14</td><td>Testimonial hero, stat icons, quotation marks, footer icon</td></tr>
+      <tr><td>About Us</td><td>38</td><td>15</td><td>Team photo, testimonial hero, stat icons, quotation marks</td></tr>
+      <tr><td>Contact Us</td><td>13</td><td>8</td><td>Contact hero, service icons (all 5)</td></tr>
+      <tr><td>Software</td><td>27</td><td>22</td><td>ALL service feature icons + expand icons, hero image</td></tr>
+      <tr><td>Getting Started</td><td>8</td><td>3</td><td>Hero image, header logo, footer icon</td></tr>
+      <tr><td>Testimonials</td><td>348</td><td>139</td><td>137 quotation mark icons (decorative), hero, footer</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Unique Images Needing Alt Text</h3>
+  <p>After deduplication, here are the unique static images that need alt text. Decorative images should have <code>alt=""</code> and <code>role="presentation"</code>.</p>
+
+  <table>
+    <thead>
+      <tr><th>Image File</th><th>Recommended Alt Text</th><th>Type</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>GJLogo_Primary-01.svg</td><td>Gordon James Realty logo</td><td><span class="tag tag-warning">Functional</span></td></tr>
+      <tr><td>GJR-Images-What-Clients-Say.jpg</td><td>Gordon James Realty clients sharing their property management experience</td><td><span class="tag tag-warning">Content</span></td></tr>
+      <tr><td>GJR-Images-9.jpg (About)</td><td>Gordon James Realty team providing professional property management services</td><td><span class="tag tag-warning">Content</span></td></tr>
+      <tr><td>GJR-Images-Contact.jpg</td><td>Gordon James Realty office ready to assist property owners and tenants</td><td><span class="tag tag-warning">Content</span></td></tr>
+      <tr><td>GJR-Images-11.jpg (Getting Started)</td><td>Property owner getting started with Gordon James Realty management services</td><td><span class="tag tag-warning">Content</span></td></tr>
+      <tr><td>Icons-Founded.svg</td><td>Calendar icon representing founding year</td><td><span class="tag tag-warning">Content</span></td></tr>
+      <tr><td>Icons-Certifications.svg</td><td>Badge icon representing professional certifications</td><td><span class="tag tag-warning">Content</span></td></tr>
+      <tr><td>Icons-Areas.svg</td><td>Map pin icon representing service areas in DC, VA, and MD</td><td><span class="tag tag-warning">Content</span></td></tr>
+      <tr><td>Icons-Performance.svg</td><td>Chart icon representing performance metrics</td><td><span class="tag tag-warning">Content</span></td></tr>
+      <tr><td>Icons-Commitment.svg</td><td>Handshake icon representing commitment to clients</td><td><span class="tag tag-warning">Content</span></td></tr>
+      <tr><td>technology.png (Software)</td><td>Cloud technology platform for property management</td><td><span class="tag tag-warning">Content</span></td></tr>
+      <tr><td>speech-bubble.png</td><td>Customer communication and support portal</td><td><span class="tag tag-warning">Content</span></td></tr>
+      <tr><td>rent.png</td><td>Online rent payment processing</td><td><span class="tag tag-warning">Content</span></td></tr>
+      <tr><td>cashier.png</td><td>Financial transaction management</td><td><span class="tag tag-warning">Content</span></td></tr>
+      <tr><td>candidate.png</td><td>Tenant screening and application processing</td><td><span class="tag tag-warning">Content</span></td></tr>
+      <tr><td>salary.png</td><td>Owner disbursement and payment management</td><td><span class="tag tag-warning">Content</span></td></tr>
+      <tr><td>bars.png</td><td>Property performance analytics and reporting</td><td><span class="tag tag-warning">Content</span></td></tr>
+      <tr><td>budget.png</td><td>Budget planning and financial management</td><td><span class="tag tag-warning">Content</span></td></tr>
+      <tr><td>compliant.png</td><td>Regulatory compliance management</td><td><span class="tag tag-warning">Content</span></td></tr>
+      <tr><td>24-hours-service.png</td><td>24/7 emergency maintenance support</td><td><span class="tag tag-warning">Content</span></td></tr>
+      <tr><td>GJ_Icons-Residential-...(Contact)</td><td>Residential property management services icon</td><td><span class="tag tag-warning">Content</span></td></tr>
+      <tr><td>GJ_Icons-Commerical-...(Contact)</td><td>Commercial property management services icon</td><td><span class="tag tag-warning">Content</span></td></tr>
+      <tr><td>GJ_Icons-Community-...(Contact)</td><td>Community association management services icon</td><td><span class="tag tag-warning">Content</span></td></tr>
+      <tr><td>GJ_Icons-Selling-...(Contact)</td><td>Real estate brokerage services icon</td><td><span class="tag tag-warning">Content</span></td></tr>
+      <tr><td>GJ_Icons-Buying-...(Contact)</td><td>Property buying services icon</td><td><span class="tag tag-warning">Content</span></td></tr>
+      <tr><td>Icon-Quotation-Marks.svg</td><td><em>alt=""</em> (decorative)</td><td><span class="tag tag-ok">Decorative</span></td></tr>
+      <tr><td>Plus-Icon.svg</td><td><em>alt=""</em> (decorative)</td><td><span class="tag tag-ok">Decorative</span></td></tr>
+      <tr><td>White-Icon.svg (footer)</td><td><em>alt=""</em> (decorative)</td><td><span class="tag tag-ok">Decorative</span></td></tr>
+    </tbody>
+  </table>
+
+  <h3>How to Fix in Webflow Designer</h3>
+  <div class="instruction-step">
+    <div class="step-number">1</div>
+    <div class="step-text">Open the page in Webflow Designer</div>
+  </div>
+  <div class="instruction-step">
+    <div class="step-number">2</div>
+    <div class="step-text">Click on the image element</div>
+  </div>
+  <div class="instruction-step">
+    <div class="step-number">3</div>
+    <div class="step-text">In the right panel under <strong>Image Settings</strong>, find the <strong>Alt Text</strong> field</div>
+  </div>
+  <div class="instruction-step">
+    <div class="step-number">4</div>
+    <div class="step-text">Enter the recommended alt text from the table above</div>
+  </div>
+  <div class="instruction-step">
+    <div class="step-number">5</div>
+    <div class="step-text">For decorative images (quotation marks, plus icons, footer icon): enter empty alt text and check "Decorative" if available</div>
+  </div>
+
+  <div class="success-note">
+    <strong>Automated fallback:</strong> The <code>seo_fixes_custom_code.js</code> script adds alt text via JavaScript as an immediate accessibility fix. Paste it into Project Settings → Custom Code → Footer Code.
+  </div>
+</div>
+
+<!-- ===================== 3. CANONICAL URLs ===================== -->
+<h2>3. Canonical URL Settings</h2>
+
+<div class="card">
+  <h3>Current Status</h3>
+  <table>
+    <thead>
+      <tr><th>Page</th><th>Canonical URL</th><th>Status</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Homepage</td><td><code>https://www.gordonjamesrealty.com</code></td><td><span class="tag tag-ok">OK</span></td></tr>
+      <tr><td>About Us</td><td><code>https://www.gordonjamesrealty.com/company-about/about-us</code></td><td><span class="tag tag-ok">OK</span></td></tr>
+      <tr><td>Contact Us</td><td><code>https://www.gordonjamesrealty.com/contact-us</code></td><td><span class="tag tag-ok">OK</span></td></tr>
+      <tr><td>Software & Support</td><td><code>https://www.gordonjamesrealty.com/software-and-support-services</code></td><td><span class="tag tag-ok">OK</span></td></tr>
+      <tr><td>Getting Started</td><td><code>https://www.gordonjamesrealty.com/company-about/getting-started-with-gjr</code></td><td><span class="tag tag-ok">OK</span></td></tr>
+      <tr><td>Testimonials</td><td><code>https://www.gordonjamesrealty.com/company-about/what-our-customers-say</code></td><td><span class="tag tag-ok">OK</span></td></tr>
+    </tbody>
+  </table>
+
+  <div class="success-note">
+    <strong>All live pages have correct canonical URLs.</strong> Webflow auto-generates canonical tags from the page's published path. No action needed here.
+  </div>
+
+  <h3>Recommendation: Verify in Project Settings</h3>
+  <div class="instruction-step">
+    <div class="step-number">1</div>
+    <div class="step-text">Go to <strong>Project Settings → SEO</strong></div>
+  </div>
+  <div class="instruction-step">
+    <div class="step-number">2</div>
+    <div class="step-text">Confirm "Auto-generate canonical tag" is <strong>enabled</strong></div>
+  </div>
+  <div class="instruction-step">
+    <div class="step-number">3</div>
+    <div class="step-text">Confirm the default domain is set to <code>www.gordonjamesrealty.com</code> (not the bare domain)</div>
+  </div>
+
+  <div class="note">
+    <strong>Note:</strong> Some collection pages (Knowledge Hub, FAQs, Neighborhood Guides, eBooks) returned 404 at their expected slugs. These pages may use folder prefixes or may be configured differently. Verify these pages are published and accessible.
+  </div>
+</div>
+
+<!-- ===================== 4. SCRIPT OPTIMIZATION ===================== -->
+<h2>4. Third-Party Script Optimization</h2>
+
+<div class="card">
+  <h3>Current Script Loading Analysis (Homepage)</h3>
+  <table>
+    <thead>
+      <tr><th>Script</th><th>Current</th><th>Recommended</th><th>Action</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Google Analytics (gtag.js)</td>
+        <td><span class="tag tag-ok">async</span></td>
+        <td><span class="tag tag-ok">async</span></td>
+        <td>No change needed</td>
+      </tr>
+      <tr>
+        <td>Google Analytics (inline init) <strong>×2</strong></td>
+        <td><span class="tag tag-critical">DUPLICATE</span></td>
+        <td><span class="tag tag-ok">Single instance</span></td>
+        <td><span class="tag tag-designer">Remove duplicate in Head Code</span></td>
+      </tr>
+      <tr>
+        <td>Hotjar tracking</td>
+        <td><span class="tag tag-critical">Blocking</span></td>
+        <td><span class="tag tag-ok">async</span></td>
+        <td><span class="tag tag-code">Replace in Head Code</span></td>
+      </tr>
+      <tr>
+        <td>Google Maps JS API</td>
+        <td><span class="tag tag-critical">Blocking</span></td>
+        <td><span class="tag tag-ok">async defer</span></td>
+        <td><span class="tag tag-code">Replace in Homepage Code</span></td>
+      </tr>
+      <tr>
+        <td>Google Maps init (inline)</td>
+        <td><span class="tag tag-critical">Blocking</span></td>
+        <td><span class="tag tag-ok">Callback-based</span></td>
+        <td><span class="tag tag-code">Replace in Homepage Code</span></td>
+      </tr>
+      <tr>
+        <td>WebFont loader (webfont.js)</td>
+        <td><span class="tag tag-warning">Blocking</span></td>
+        <td><span class="tag tag-warning">Blocking</span></td>
+        <td>Webflow system script — cannot modify</td>
+      </tr>
+      <tr>
+        <td>jQuery 3.5.1</td>
+        <td><span class="tag tag-warning">Blocking</span></td>
+        <td><span class="tag tag-warning">Blocking</span></td>
+        <td>Webflow core dependency — must remain</td>
+      </tr>
+      <tr>
+        <td>Webflow bundles (×4)</td>
+        <td><span class="tag tag-warning">Blocking</span></td>
+        <td><span class="tag tag-warning">Blocking</span></td>
+        <td>Webflow core — cannot modify</td>
+      </tr>
+      <tr>
+        <td>LocalBusiness Schema (JSON-LD) <strong>×2</strong></td>
+        <td><span class="tag tag-critical">DUPLICATE</span></td>
+        <td><span class="tag tag-ok">Single instance</span></td>
+        <td><span class="tag tag-designer">Remove duplicate</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Issues to Fix</h3>
+
+  <h3>A. Duplicate Google Analytics Tags</h3>
+  <p>The homepage loads two separate GA tracking snippets with the same ID (<code>G-7PLDBVRK89</code>). This causes double-counting of pageviews and inflated analytics.</p>
+  <div class="instruction-step">
+    <div class="step-number">1</div>
+    <div class="step-text">Go to <strong>Project Settings → Custom Code → Head Code</strong></div>
+  </div>
+  <div class="instruction-step">
+    <div class="step-number">2</div>
+    <div class="step-text">Find the GA/gtag code blocks — there should be two pairs (async script + inline init)</div>
+  </div>
+  <div class="instruction-step">
+    <div class="step-number">3</div>
+    <div class="step-text">Remove one complete pair, keeping only a single instance</div>
+  </div>
+
+  <h3>B. Hotjar → Async</h3>
+  <p>Replace the blocking Hotjar snippet with the async version from <code>seo_head_code_optimizations.html</code>.</p>
+
+  <h3>C. Google Maps → Async Defer (Homepage Only)</h3>
+  <p>Replace the blocking Maps script with the callback-based async version from <code>homepage_maps_async_fix.html</code>.</p>
+
+  <h3>D. Duplicate LocalBusiness Schema</h3>
+  <p>Two identical <code>LocalBusiness</code> JSON-LD blocks exist on the homepage. Remove one.</p>
+  <div class="instruction-step">
+    <div class="step-number">1</div>
+    <div class="step-text">Check both <strong>Project Settings → Head Code</strong> and <strong>Homepage → Page Settings → Custom Code</strong></div>
+  </div>
+  <div class="instruction-step">
+    <div class="step-number">2</div>
+    <div class="step-text">Keep the <code>RealEstateAgent</code> schema in the site-wide Head Code</div>
+  </div>
+  <div class="instruction-step">
+    <div class="step-number">3</div>
+    <div class="step-text">Remove the duplicate <code>LocalBusiness</code> schema from whichever location has the extra copy</div>
+  </div>
+
+  <div class="note">
+    <strong>Automated fallback:</strong> The <code>seo_fixes_custom_code.js</code> script includes duplicate schema cleanup at runtime. Paste it into Footer Code for immediate effect while the manual cleanup is done.
+  </div>
+</div>
+
+<!-- ===================== FILES REFERENCE ===================== -->
+<h2>Files Created for Implementation</h2>
+
+<div class="card">
+  <table>
+    <thead>
+      <tr><th>File</th><th>Purpose</th><th>Where to Paste</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>seo_fixes_custom_code.js</code></td>
+        <td>JavaScript fixes for alt text, heading hierarchy, and duplicate schema cleanup</td>
+        <td>Project Settings → Custom Code → Footer Code (wrap in <code>&lt;script&gt;</code> tags)</td>
+      </tr>
+      <tr>
+        <td><code>seo_head_code_optimizations.html</code></td>
+        <td>Optimized GA, Hotjar (async), and single LocalBusiness schema</td>
+        <td>Project Settings → Custom Code → Head Code (replace existing)</td>
+      </tr>
+      <tr>
+        <td><code>homepage_maps_async_fix.html</code></td>
+        <td>Async Google Maps with callback</td>
+        <td>Homepage → Page Settings → Custom Code → Before &lt;/body&gt;</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ===================== PRIORITY ORDER ===================== -->
+<h2>Recommended Implementation Order</h2>
+
+<div class="card">
+  <table>
+    <thead>
+      <tr><th>Priority</th><th>Task</th><th>SEO Impact</th><th>Method</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td>Remove duplicate GA tags and LocalBusiness schema</td><td>High (analytics accuracy + schema conflicts)</td><td>Custom Code edit</td></tr>
+      <tr><td>2</td><td>Paste <code>seo_fixes_custom_code.js</code> into Footer Code</td><td>High (immediate alt text + accessibility fix)</td><td>Custom Code paste</td></tr>
+      <tr><td>3</td><td>Replace Hotjar with async version in Head Code</td><td>Medium (page speed)</td><td>Custom Code edit</td></tr>
+      <tr><td>4</td><td>Fix heading hierarchy in Designer</td><td>Medium-High (SEO structure)</td><td>Webflow Designer</td></tr>
+      <tr><td>5</td><td>Add alt text to images in Designer</td><td>Medium (SEO + accessibility in source)</td><td>Webflow Designer</td></tr>
+      <tr><td>6</td><td>Async Google Maps on homepage</td><td>Low-Medium (page speed, homepage only)</td><td>Custom Code paste</td></tr>
+      <tr><td>7</td><td>Verify canonical auto-generation is enabled</td><td>Low (already working)</td><td>Project Settings check</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<p style="text-align: center; color: #999; margin-top: 2rem; font-size: 0.85rem;">
+  Generated by SEO Audit Tool — Gordon James Realty — March 3, 2026
+</p>
+
+</div>
+</body>
+</html>

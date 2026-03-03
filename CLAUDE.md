@@ -43,8 +43,42 @@
 - Static page meta descriptions: Homepage, About Us, Software updated
 - About Us "out mission" typo fixed
 
-## Remaining SEO Items (require Webflow Designer or further API work)
-- Heading hierarchy on homepage (H4s should be H2/H3)
-- Static page hero/icon image alt tags (in page templates, not CMS)
-- Canonical URL settings (check Project Settings → SEO)
-- Third-party script defer/async optimization
+## Remaining SEO Items — Audited March 3, 2026
+
+### Status: Ready-to-paste code + Designer instructions created
+
+**Files created:**
+- `seo_fixes_custom_code.js` — JS injection for alt text, heading fixes, schema dedup (paste into Footer Code)
+- `seo_head_code_optimizations.html` — Optimized GA/Hotjar/schema for Head Code
+- `homepage_maps_async_fix.html` — Async Google Maps for homepage
+- `SEO_Remaining_Items_Report.html` — Full audit report with Designer instructions
+
+### 1. Heading Hierarchy (requires Webflow Designer)
+- Homepage: H4 "Connect with an expert" → H2
+- Homepage + About Us: H5 stats (Founded, Certifications, Areas Served, Our Performance, Commitment) → H3
+- Contact Us: 5 H4 form labels → H2
+- JS fallback included in `seo_fixes_custom_code.js`
+
+### 2. Static Page Image Alt Text (requires Webflow Designer)
+- 60+ images across 6 pages missing alt text
+- 28 unique images need alt text; 3 decorative types need role="presentation"
+- Software page worst (22/27 missing), Contact Us (8/13 missing)
+- JS fallback with complete alt text map in `seo_fixes_custom_code.js`
+
+### 3. Canonical URLs — COMPLETE (no action needed)
+- All live pages already have correct canonical tags
+- Webflow auto-generates them from published paths
+- Verify: Project Settings → SEO → "Auto-generate canonical tag" enabled
+
+### 4. Third-Party Script Optimization (requires Custom Code edit)
+- Duplicate GA tags (×2) — remove one pair
+- Duplicate LocalBusiness schema (×2) — remove one
+- Hotjar blocking → async version in `seo_head_code_optimizations.html`
+- Google Maps blocking → async version in `homepage_maps_async_fix.html`
+- WebFont/jQuery/Webflow bundles are core and cannot be modified
+
+## API Token Notes
+- Current token is a **legacy site API token** (v1 format)
+- Works for: Pages SEO, CMS items, Publishing
+- Does NOT work for: Custom Code API endpoints (requires OAuth app token)
+- Custom code changes must be done via Webflow Designer UI

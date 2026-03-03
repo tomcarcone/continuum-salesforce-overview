@@ -1,0 +1,35 @@
+<!--
+  Gordon James Realty — Homepage-only: Async Google Maps
+  Paste into: Homepage → Page Settings → Custom Code → Before </body> tag
+
+  This replaces the blocking Google Maps script with an async version.
+  IMPORTANT: Remove the existing blocking Google Maps <script> from the
+  homepage custom code first, then paste this.
+-->
+
+<!-- Google Maps — async loading with callback -->
+<script>
+  function initGJRMap() {
+    google.maps.event.addDomListener(window, 'load', function() {
+      var mapEl = document.querySelector('[data-widget-type="map"]') ||
+                  document.querySelector('.map-widget') ||
+                  document.querySelector('#map');
+      if (!mapEl) return;
+
+      var map = new google.maps.Map(mapEl, {
+        center: { lat: 38.9048, lng: -77.0344 },
+        zoom: 14,
+        styles: [{"featureType":"all","stylers":[{"saturation":-80}]}]
+      });
+
+      new google.maps.Marker({
+        position: { lat: 38.9048, lng: -77.0344 },
+        map: map,
+        title: 'Gordon James Realty'
+      });
+    });
+  }
+</script>
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCchodwtXtt9Gw3DfUZIAtEcqpGVb8dYz4&callback=initGJRMap">
+</script>
