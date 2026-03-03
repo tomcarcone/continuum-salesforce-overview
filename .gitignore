@@ -1,0 +1,11 @@
+# Credentials & MCP config (contains API keys) - never commit
+credentials/
+.mcp.json
+*.json.bak
+
+# Node
+node_modules/
+
+# Environment
+.env
+.env.*
