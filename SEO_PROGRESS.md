@@ -48,22 +48,26 @@ Strategy: Fix semantic HTML, add DC/VA/MD geo-references, add FAQ sections, opti
 
 ---
 
-## In Progress — Batch 3 (Next 15)
+## Completed — Batch 3 (15 articles)
 
-| # | Slug | Impressions | CTR | Position |
-|---|------|-------------|-----|----------|
-| c1 | `what-exactly-are-hoa-common-areas` | 7,752 | 0.28% | 9.95 |
-| c2 | `understanding-the-homeowner-assistance-fund-and-hoa-dues` | 7,299 | 0.85% | 4.06 |
-| c3 | `requirements-for-becoming-a-landlord-in-dc-and-northern-virginia` | 7,158 | 0.59% | 9.43 |
-| c4 | `frozen-pipes-in-rentals-what-landlords-should-do-next` | 9,456 | 1.94% | 4.15 |
-| c5 | `should-you-invest-in-rental-properties-with-an-hoa` | 5,402 | 0.85% | 5.77 |
-| c6 | `pros-and-cons-of-keyless-entry-for-rental-properties` | 5,461 | 0.82% | 12.95 |
-| c7 | `8-simple-ways-to-cozy-up-your-home` | 4,995 | 0.08% | 7.99 |
-| c8 | `evaluating-led-light-bulbs-for-your-rental-property-pros-cons` | 3,382 | 0.15% | 5.69 |
-| c9 | `hoa-budgeting-best-practices-for-board-success` | 5,444 | 0.17% | 20.90 |
-| c10 | `the-dc-homestead-deduction-how-to-save-on-your-property-tax-bill` | 3,760 | 0.59% | 7.29 |
-| c11 | `property-support-services-management-vs-maintenance` | 3,537 | 0.20% | 14.16 |
-| c12 | `understanding-the-role-of-an-hoa-vice-president` | 3,296 | 0.39% | 8.17 |
-| c13 | `understanding-the-legal-obligations-of-hoa-boards` | 3,247 | 0.15% | 10.19 |
-| c14 | `subletting-laws-for-the-dmv` | 3,234 | 0.59% | 7.48 |
-| c15 | `benefits-of-llc-ownership-for-rental-properties` | 5,043 | 0.30% | 24.96 |
+| # | Slug | Impressions | CTR | Changes |
+|---|------|-------------|-----|---------|
+| c1 | `what-exactly-are-hoa-common-areas` | 7,752 | 0.28% | Title + meta optimized; body already updated prior session |
+| c2 | `understanding-the-homeowner-assistance-fund-and-hoa-dues` | 7,299 | 0.85% | Title, meta (fixed 174→158 chars), HAF DC/VA/MD section, FAQ |
+| c3 | `requirements-for-becoming-a-landlord-in-dc-and-northern-virginia` | 7,158 | 0.59% | Title, meta, Maryland county licensing section added, FAQ |
+| c4 | `frozen-pipes-in-rentals-what-landlords-should-do-next` | 9,456 | 1.94% | Title, meta, DC/VA/MD frozen pipe law section, FAQ |
+| c5 | `should-you-invest-in-rental-properties-with-an-hoa` | 5,402 | 0.85% | Title, meta, H5→p, DC/VA/MD HOA market sections (Reston, Columbia, Navy Yard), FAQ |
+| c6 | `pros-and-cons-of-keyless-entry-for-rental-properties` | 5,461 | 0.82% | Title, meta, DC privacy law, VA VRLTA, MD building codes, FAQ |
+| c7 | `8-simple-ways-to-cozy-up-your-home` | 4,995 | 0.08% | Title, meta, DC/VA/MD regional decorating context, FAQ |
+| c8 | `evaluating-led-light-bulbs-for-your-rental-property-pros-cons` | 3,382 | 0.15% | Title, meta, Pepco/Dominion/BGE/DCSEU rebate programs, FAQ |
+| c9 | `hoa-budgeting-best-practices-for-board-success` | 5,444 | 0.17% | Title, meta, VA POAA, MD HOA Act, DC Condo Act budget reqs, FAQ |
+| c10 | `the-dc-homestead-deduction-how-to-save-on-your-property-tax-bill` | 3,760 | 0.59% | Title, meta, savings calculation ($714/yr), senior deduction, FAQ |
+| c11 | `property-support-services-management-vs-maintenance` | 3,537 | 0.20% | Title, meta, DC/VA/MD PM licensing (DLCP, DPOR, DLLR), FAQ |
+| c12 | `understanding-the-role-of-an-hoa-vice-president` | 3,296 | 0.39% | Title, meta, VA POAA, MD HOA Act, DC Condo Act VP duties, FAQ |
+| c13 | `understanding-the-legal-obligations-of-hoa-boards` | 3,247 | 0.15% | Title, meta, VA POAA, MD HOA Act, DC Consumer Protection Act, FAQ |
+| c14 | `subletting-laws-for-the-dmv` | 3,234 | 0.59% | Title, meta, DC/VA/MD subletting law citations updated, FAQ |
+| c15 | `benefits-of-llc-ownership-for-rental-properties` | 5,043 | 0.30% | Title, meta, DC/VA/MD LLC formation details (TOPA, series LLC, SDAT), FAQ |
+
+---
+
+## Total: 40 articles optimized across 3 batches (unpublished until user hits Publish)
