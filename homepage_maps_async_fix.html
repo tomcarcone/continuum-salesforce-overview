@@ -9,36 +9,49 @@
   3. Then paste this into Footer Code (Before </body> tag)
 -->
 
-<!-- Google Maps — async loading for performance -->
+<!-- Google Maps — async loading with AdvancedMarkerElement -->
 <script>
 (function() {
-    function init() {
+    async function init() {
         var mapElement = document.getElementById('map');
         if (!mapElement) return;
-        var mapOptions = {
+
+        var { Map } = await google.maps.importLibrary("maps");
+        var { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+
+        var center = { lat: 38.905935, lng: -77.0362679 };
+
+        var map = new Map(mapElement, {
             zoom: 13,
             scrollwheel: false,
             disableDefaultUI: true,
-            center: new google.maps.LatLng(38.905935, -77.0362679),
+            center: center,
+            mapId: 'gjr_homepage_map',
             styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":"0"},{"color":"#004a56"},{"lightness":"10"},{"gamma":"1.20"}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"off"}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#004a56"},{"lightness":"50"}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#004a56"},{"lightness":"40"},{"weight":0.6}]},{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"color":"#004a56"},{"lightness":"70"},{"gamma":"1.50"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"color":"#004a56"},{"lightness":"60"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#004a56"},{"lightness":"55"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#004a56"},{"lightness":"45"},{"weight":0.3}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#004a56"},{"lightness":"60"}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#004a56"},{"lightness":"50"},{"weight":0.2}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"color":"#004a56"},{"lightness":"62"}]},{"featureType":"road.local","elementType":"geometry.stroke","stylers":[{"color":"#004a56"},{"lightness":"55"},{"weight":0.2}]},{"featureType":"transit","elementType":"geometry.fill","stylers":[{"color":"#004a56"},{"lightness":"55"}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#004a56"},{"lightness":"-30"}]}]
-        };
-        var map = new google.maps.Map(mapElement, mapOptions);
-        var image = {
-            url: "https://cdn.prod.website-files.com/63eed95a136f38873b173eb9/6466f17685409ac9da82db0f_GJR-Map-Marker.png",
-            scaledSize: new google.maps.Size(150, 150)
-        };
-        var mapMarker = new google.maps.Marker({
-            position: new google.maps.LatLng(38.905935, -77.0362679),
+        });
+
+        // Custom marker image
+        var markerImg = document.createElement('img');
+        markerImg.src = "https://cdn.prod.website-files.com/63eed95a136f38873b173eb9/6466f17685409ac9da82db0f_GJR-Map-Marker.png";
+        markerImg.width = 150;
+        markerImg.height = 150;
+        markerImg.alt = "Gordon James Realty office location";
+        markerImg.style.cursor = "pointer";
+
+        var marker = new AdvancedMarkerElement({
+            position: center,
             map: map,
-            icon: image,
+            content: markerImg,
             title: 'Gordon James Realty'
         });
-        google.maps.event.addListener(mapMarker, 'click', function() {
+
+        marker.addListener('click', function() {
             window.open("https://www.google.com/maps/place/Gordon+James+Realty/@38.905935,-77.0362679,17z", '_blank');
         });
     }
+
     var s = document.createElement('script');
-    s.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyArTsVVR8WXfSw965-iafptmC1ZU0pk_-0&callback=initGJRMap';
+    s.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyArTsVVR8WXfSw965-iafptmC1ZU0pk_-0&callback=initGJRMap&loading=async';
     s.async = true;
     s.defer = true;
     document.head.appendChild(s);
