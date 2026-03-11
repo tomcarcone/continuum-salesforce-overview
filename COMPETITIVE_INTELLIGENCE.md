@@ -1,8 +1,26 @@
 # Competitive Intelligence: High-Performing Pages in DC-Area Property Management
 
 **Prepared for:** Gordon James Realty  
-**Date:** March 11, 2026  
-**Purpose:** Identify strategically valuable competitor pages to inform content strategy, service page development, geo-targeting, FAQ expansion, and AI SEO positioning.
+**Date:** March 11, 2026 (updated March 11, 2026)  
+**Purpose:** Identify strategically valuable competitor pages and translate each into an actionable execution brief for content production, service page planning, geo-page planning, FAQ development, and AI SEO strategy.
+
+---
+
+## How to Use This Document
+
+Every competitor page in Sections 1–4 now carries eight execution fields:
+
+| Field | What it tells you |
+|---|---|
+| **Business Value** | Money page, Authority page, AI SEO page, or Support page |
+| **Search Intent** | Core service/conversion, geo service/local conversion, FAQ/answer-engine, legal/compliance, decision-stage comparison, thought leadership, proof/portfolio/trust, or broad informational/awareness |
+| **Execution Priority** | High, Medium, or Low — based on commercial relevance, GJR service fit, geo relevance, SEO value, AI SEO value, and lead-generation potential |
+| **GJR Asset Type** | What Gordon James should build: core service page, geo service page, FAQ page, knowledge article, legal/compliance guide, comparison page, thought leadership article, proof/case study page, or glossary/definition page |
+| **Target Audience** | Rental property owner/landlord, HOA/condo board member, commercial owner/investor/manager, multifamily owner/operator/investor, or mixed-use owner/operator |
+| **GJR Angle** | The specific topic, intent, differentiation, and local/legal/operational angle GJR should use |
+| **Replication Strategy** | Directly replicate as a topic, adapt into a better local version, use as structural inspiration, or monitor only |
+
+Use Section 5 (Execution Queue) as the sequenced build list. Use Section 6 (Patterns) for structural decisions. Use the Appendix for URL reference.
 
 ---
 
@@ -51,496 +69,287 @@ This document catalogs the strongest-performing pages from competitors across fo
 
 ## Section 1: Residential Property Management
 
-### Bay Management Group — Top Competitive Model
+### Bay Management Group
 
-**Why they matter:** Largest organic traffic in the DC/MD/VA residential PM space. Their blog-driven strategy has built topical authority across hundreds of landlord/tenant queries.
+| Competitor Page | Business Value | Search Intent | Priority | GJR Asset Type | Target Audience | GJR Angle | Replication Strategy |
+|---|---|---|---|---|---|---|---|
+| **Property Management DC** (`/property-management-companies-washington-dc/`) | Money page | Core service / conversion | **High** | Core service page | Rental property owner / landlord | Build a DC residential PM page that leads with DC BBL licensing, TOPA, rent control, and GJR's 150-article legal depth as differentiators. Frame around "why DC landlords need a licensed manager." | Directly replicate as a topic |
+| **PM Northern Virginia** (`/property-management-company-in-northern-virginia/`) | Money page | Geo service / local conversion | **High** | Geo service page | Rental property owner / landlord | Create a NoVA hub page covering VRLTA, Fairfax/Arlington/Alexandria county-level licensing differences, and GJR's operational footprint. Use as parent linking to city sub-pages. | Directly replicate as a topic |
+| **PM Arlington** (`/property-management-company-in-arlington/`) | Money page | Geo service / local conversion | **High** | Geo service page | Rental property owner / landlord | Target "property management arlington va." Differentiate with Arlington-specific rental data, Metro proximity premium, military/Pentagon renter demand, and Arlington County licensing. | Directly replicate as a topic |
+| **PM Fairfax** (`/property-management-company-in-fairfax/`) | Money page | Geo service / local conversion | **High** | Geo service page | Rental property owner / landlord | Target "property management fairfax va." Lead with Fairfax County rental licensing, school district rental premiums, Tysons overflow demand, and single-family rental stock profile. | Directly replicate as a topic |
+| **PM Bethesda** (`/property-management-bethesda-maryland/`) | Money page | Geo service / local conversion | **High** | Geo service page | Rental property owner / landlord | Target "property management bethesda md." Lead with Montgomery County landlord licensing, NIH/Walter Reed renter demand, high-value property management needs, and MD security deposit rules. | Directly replicate as a topic |
+| **PM Potomac** (`/property-management-potomac-md/`) | Money page | Geo service / local conversion | **High** | Geo service page | Rental property owner / landlord | Target "property management potomac md." Position for luxury/estate property management. Emphasize high-value asset protection, executive tenant screening, and Montgomery County compliance. | Directly replicate as a topic |
+| **PM Georgetown** (`/property-management-companies-washington-dc/georgetown`) | Money page | Geo service / local conversion | **Medium** | Geo service page | Rental property owner / landlord | Target "property management georgetown dc." Lead with historic district maintenance requirements, rowhouse stock, Georgetown University renter demand, and premium rent positioning. | Adapt into a better local version |
+| **PM Baltimore** (`/property-management-in-baltimore/`) — 927 traffic, 194 keywords | Money page | Geo service / local conversion | **Low** | Monitor only | — | Outside GJR service area. Study the page structure (branded + generic keyword capture, 194 ranking keywords from one geo page) as a template for our DC/NoVA/MD pages. | Monitor only |
+| **How Much is a Security Deposit?** — 1,131 traffic, #2 | Authority page | Broad informational / awareness | **Medium** | Knowledge article | Rental property owner / landlord | GJR already covers this topic in blog. Strengthen existing article with DC 1-month cap (§ 42-3502.17), VA 2-month cap (VRLTA § 55.1-1226), and MD 2-month cap (§ 8-203) as the lead angle. No competitor localizes this topic as well as we can. | Adapt into a better local version |
+| **Move-Out Checklist** — 661 traffic, #2 | Authority page | Broad informational / awareness | **Medium** | Knowledge article | Rental property owner / landlord | GJR already covers this. Strengthen with DC 45-day deposit return timeline, VRLTA itemization requirements, and MD penalty structure. Add downloadable checklist PDF for link-building potential. | Adapt into a better local version |
+| **Leasing vs. Renting** — 677 traffic, #4 | AI SEO page | Decision-stage comparison | **Medium** | Comparison page | Rental property owner / landlord | Create a DC-specific "leasing vs. renting" page that addresses DC lease requirements (Tenant Bill of Rights attachment, lead paint disclosure, rent control registration) as the differentiating angle no national competitor covers. | Adapt into a better local version |
+| **What Is a Real Estate Holding Company?** — 780 traffic, #2 | Authority page | Broad informational / awareness | **Low** | Knowledge article | Rental property owner / landlord | Investor-focused content. GJR could create a DC-specific version covering DC/VA/MD LLC formation, series LLCs in Virginia, SDAT registration, and TOPA implications for entity ownership. Already partially covered in existing blog. | Adapt into a better local version |
+| **Landlord Harassment Examples** — 663 traffic, #2 | Authority page | Legal / compliance | **Low** | Knowledge article | Rental property owner / landlord | Already well-covered in GJR blog with DC-specific law citations. Monitor Bay Management's position but no urgent action needed. | Monitor only |
+| **How Old to Rent an Apartment?** — 1,250 traffic, #2 | Support page | Broad informational / awareness | **Low** | None | — | High traffic but low commercial relevance to GJR's owner/investor audience. Not a priority topic. | Monitor only |
 
-#### High-Performing Blog Content
+### Nomadic Real Estate
 
-| Page Title | URL | Type | Top Keyword | Monthly Traffic | Position | Why It's Strong |
-|---|---|---|---|---|---|---|
-| How Old Do You Have to Be to Rent an Apartment? | `/blog/how-old-do-you-have-to-be-to-rent-an-apartment/` | Blog | "can you get an apartment at 17" (350/mo) | 1,250 | #2 | High-volume tenant question; broad search intent capture |
-| How Much is a Security Deposit for an Apartment? | `/blog/how-much-is-a-security-deposit-for-an-apartment/` | Blog | "how much is a security deposit" (250/mo) | 1,131 | #2 | Core landlord-tenant question; trust-building content |
-| What Is a Real Estate Holding Company? | `/blog/real-estate-holding-company/` | Blog | "real estate holding company" (600/mo) | 780 | #2 | Investor-focused content; captures high-value audience |
-| Appraisal Higher Than Purchase Price | `/blog/appraisal-higher-than-purchase-price-what-it-means/` | Blog | "what happens if house appraises for more" (150/mo) | 742 | #1 | Clear FAQ-format question targeting; strong for AI answers |
-| Leasing vs. Renting an Apartment | `/blog/leasing-vs-renting-an-apartment/` | Blog | "leasing vs renting" (150/mo) | 677 | #4 | Comparison content performs well in AI overviews |
-| Examples of Landlord Harassment | `/blog/what-is-landlord-harassment/` | Blog | "examples of landlord harassment" (450/mo) | 663 | #2 | Tenant-side content builds trust; strong SERP feature potential |
-| Move-Out Checklist for Landlords | `/blog/move-out-checklist/` | Blog | "move out inspection checklist" (250/mo) | 661 | #2 | Process/checklist content; high utility for AI answers |
-| What Does Conditional Approval Mean? | `/blog/what-does-conditional-approval-mean-for-an-apartment/` | Blog | "conditionally approved" (1,900/mo) | 568 | #7 | Taps into adjacent rental/lending query space |
+| Competitor Page | Business Value | Search Intent | Priority | GJR Asset Type | Target Audience | GJR Angle | Replication Strategy |
+|---|---|---|---|---|---|---|---|
+| **Property Management DC** (`/property-management/`) — 215 traffic, #5 | Money page | Core service / conversion | **High** | Core service page | Rental property owner / landlord | Direct competitor for "washington dc property management." Our page must outperform theirs with stronger service detail, trust signals (150 articles, 95 FAQs, DC/VA/MD law expertise), and conversion elements. | Directly replicate as a topic |
+| **Self-Managing vs. Property Manager DC** (`/self-managing-vs-property-manager-dc/`) | Money page | Decision-stage comparison | **High** | Comparison page | Rental property owner / landlord | Create "Should You Self-Manage Your DC Rental Property?" Lead with DC BBL licensing requirement, TOPA compliance burden, rent control filing obligations, and time/cost analysis. This is bottom-of-funnel content that directly supports conversion. | Directly replicate as a topic |
+| **How Much Do Property Managers Charge?** (`/how-much-do-property-managers-charge/`) | Money page | Decision-stage comparison | **High** | Comparison page | Rental property owner / landlord | Create "Property Management Costs in Washington DC." Include GJR's 7-8.5% fee range, what's included vs. excluded, DC market benchmarks, and ROI calculation. High commercial intent; directly supports sales conversations. | Directly replicate as a topic |
+| **Locations Hub** (`/locations`) | Money page | Geo service / local conversion | **High** | Geo service page | Rental property owner / landlord | Build a GJR locations index page that links to all geo service pages. Essential for crawlability and user navigation. Model on Nomadic's hub but with cleaner IA. | Use as structural inspiration |
+| **What Is a Tenant?** (`/what-is-a-tenant/`) — 503 traffic, #6 for "tenant meaning" (11K/mo) | Authority page | Broad informational / awareness | **Medium** | Glossary / definition page | Rental property owner / landlord | Create a DC-specific "What Is a Tenant?" definition page that covers DC tenant rights (Tenant Bill of Rights, rent control protections, TOPA), VA tenant rights (VRLTA), and MD tenant rights. Head-term capture with local authority angle. | Adapt into a better local version |
+| **Sublet vs. Sublease** (`/5-sublet-vs-sublease-differences-you-should-know/`) — 129 traffic, #7 | AI SEO page | FAQ / answer-engine | **Medium** | Comparison page | Rental property owner / landlord | GJR already has subletting content. Ensure existing article covers DC subletting law, VA subletting provisions (VRLTA § 55.1-1228), and MD county-level rules. Strong AI answer candidate due to comparison format. | Adapt into a better local version |
+| **Unauthorized Pet Lease Violation** (`/unauthorized-pet-lease-violation/`) — 110 traffic, #1 | Authority page | Legal / compliance | **Low** | Knowledge article | Rental property owner / landlord | Niche topic. GJR could address in a broader "DC lease violations" or "DC landlord enforcement guide" rather than a standalone page. | Use as structural inspiration |
 
-#### Geo-Targeted Service Pages
+### Atlas Lane
 
-| Page Title | URL | Type | Top Keyword | Monthly Traffic | Why It's Strong |
-|---|---|---|---|---|---|
-| Property Management Baltimore | `/property-management-in-baltimore/` | Geo Landing | "bay management group baltimore" (300/mo) | 927 | City-level geo page with branded + generic keyword capture; 194 ranking keywords |
-| Property Management DC | `/property-management-companies-washington-dc/` | Geo Landing | "property management companies dc" | — | Targets primary DC market with service-focused content |
-| Property Management Northern Virginia | `/property-management-company-in-northern-virginia/` | Geo Landing | "property management northern virginia" | — | Regional-level NoVA page; hub for sub-city pages |
-| PM Arlington | `/property-management-company-in-arlington/` | Sub-Geo | "property management arlington va" | — | Neighborhood-level targeting within NoVA |
-| PM Fairfax | `/property-management-company-in-fairfax/` | Sub-Geo | "property management fairfax" | — | County/city-level sub-page |
-| PM Bethesda | `/property-management-bethesda-maryland/` | Sub-Geo | "property management bethesda" | — | High-value MD suburb targeting |
-| PM Potomac | `/property-management-potomac-md/` | Sub-Geo | "property management potomac" | — | Premium market sub-page |
-| PM Georgetown | `/property-management-companies-washington-dc/georgetown` | Sub-Geo | "property management georgetown dc" | — | DC neighborhood sub-page under city hub |
-
-**Strategic Takeaway for GJR:**
-- Bay Management has built a **hub-and-spoke geo page model**: Regional hub page → city/county sub-pages → neighborhood sub-pages
-- Their blog targets **universal landlord/tenant questions** that build topical authority, then their geo pages capture local intent
-- We need to replicate this structure with DC/NoVA/MD hub pages linking to neighborhood-level pages
-
----
-
-### Nomadic Real Estate — Closest Direct Competitor
-
-**Why they matter:** DC-based, similar service offering, strong DC-specific content strategy. Closest competitor to study for tactical replication.
-
-#### Top-Performing Content
-
-| Page Title | URL | Type | Top Keyword | Monthly Traffic | Position | Why It's Strong |
-|---|---|---|---|---|---|---|
-| What Is a Tenant? | `/what-is-a-tenant/` | Blog | "tenant meaning" (11,000/mo) | 503 | #6 | Head-term educational content; captures massive search volume |
-| Property Management Services DC | `/property-management/` | Service | "washington dc property management" (200/mo) | 215 | #5 | Core service page ranks for primary geo+service keyword |
-| Questions for Tenant References | `/questions-for-renters-personal-references/` | Blog | "questions to ask tenant references" (60/mo) | 164 | #1 | Long-tail landlord utility content |
-| How to Get Approved for an Apartment | `/how-to-get-approved-for-an-apartment/` | Blog | "apartment requirements" (200/mo) | 162 | #5 | Tenant-facing educational content |
-| Sublet vs. Sublease | `/5-sublet-vs-sublease-differences-you-should-know/` | Blog | "subletting vs subleasing" (700/mo) | 129 | #7 | Comparison/definition content; AI-answer friendly |
-| Unauthorized Pet Lease Violation | `/unauthorized-pet-lease-violation/` | Blog | "unauthorized pet lease violation" (200/mo) | 110 | #1 | Niche landlord legal question; #1 position |
-| How Much Do Property Managers Charge? | `/how-much-do-property-managers-charge/` | Blog | "property management costs" | — | — | High commercial intent; bottom-of-funnel |
-| Self-Managing vs. Property Manager DC | `/self-managing-vs-property-manager-dc/` | Blog | "self managing vs property manager dc" | — | — | Decision-stage content with DC-specific framing |
-
-#### Geo-Location Page Strategy
-
-Nomadic has built **location pages for individual neighborhoods** — a strategy we need to replicate:
-
-| Page | URL Pattern | Why It Matters |
-|---|---|---|
-| Locations Hub | `/locations` | Central hub linking to all neighborhood pages |
-| Kalorama DC | `/locations/property-management-kalorama-dc` | Premium DC neighborhood targeting |
-| Huntington VA | `/locations/property-management-huntington-va` | NoVA suburb targeting |
-
-**Strategic Takeaway for GJR:**
-- Nomadic's **"what is a tenant" page** captures 503 monthly visits from a single head-term article. We should target similar head terms: "what is property management," "what is an HOA," "what is a lease"
-- Their **self-managing vs. property manager** content is brilliant decision-stage content we should replicate for DC
-- Location pages follow pattern: `/locations/property-management-{neighborhood}-{state}`
-
----
-
-### Atlas Lane — Best Geo-Page Strategy for DC
-
-**Why they matter:** Despite a low DR (20), Atlas Lane has built the most comprehensive neighborhood-level geo page system of any DC PM company, ranking for competitive local terms.
-
-#### Content Strategy Pages
-
-| Page Title | URL | Type | Top Keyword | Monthly Traffic | Position | Why It's Strong |
-|---|---|---|---|---|---|---|
-| Loft vs. Studio Differences | `/post/loft-studio-differences-similarities-pros-cons` | Blog | "loft vs studio" (200/mo) | 637 | #2 | Head-term comparison content; strongest traffic page |
-| Best Suburbs of Washington DC | `/post/best-suburbs-washington-dc-comfortable-living` | Blog | "suburbs of washington dc" (200/mo) | 349 | #2 | Geo-intent listicle; attracts relocators and renters |
-| How to Lower Humidity in House | `/post/reduce-lower-humidity-house-apartpent-low-cost-most-efficient` | Blog | "how to lower humidity" (1,400/mo) | 256 | #6 | Adjacent topic targeting that captures broad audience |
-| Basement Apartment Ideas | `/post/basement-apartment-ideas-arrange-decorate-rent-out` | Blog | "basement apartment" (1,500/mo) | 198 | #6 | DC English basement relevance; local angle opportunity |
-| Cheapest DC Neighborhoods | `/post/best-affordable-areas-washington-dc` | Blog | "cheapest dc neighborhoods" (150/mo) | 122 | #1 | DC-specific geo content; #1 position |
-| English Basement in DC | `/post/english-basement-washington-dc` | Blog | "english basement" (700/mo) | 29 | #6 | Hyper-local DC content; unique to market |
-
-#### Geo-Page Architecture (Model to Replicate)
-
-Atlas Lane has built **50+ neighborhood-level geo pages** covering DC, NoVA, and MD:
-
-| Page Level | URL Pattern | Examples |
-|---|---|---|
-| Market Hub | `/markets/washington-dc` | Washington, DC market overview |
-| City Service Hub | `/dc-property-management` | Main DC PM service page |
-| Locations Index | `/locations` | All locations hub page |
-| DC Neighborhoods | `/locations/{neighborhood}-dc-property-management` | Capitol Hill, Petworth, NoMa, H Street, Bloomingdale, Columbia Heights, Dupont Circle, Foxhall, Tenleytown, The Wharf, Congress Heights |
-| NoVA Locations | `/locations/{location}-nova-property-management` | Lansdowne, West End, Rose Hill, Hamilton |
-
-**Ranking Example:**
-- `/locations/capitol-hill-dc-property-management` ranks #3 for "capitol hill property management" (200/mo volume)
-
-**Strategic Takeaway for GJR:**
-- Atlas Lane proves that even with low domain authority (DR 20), **neighborhood-level geo pages can rank** for local property management terms
-- Their URL structure (`/locations/{neighborhood}-{state}-property-management`) is clean and scalable
-- We should build geo pages for all our target markets: DC neighborhoods + Arlington + Fairfax + Tysons + Alexandria + Bethesda + Potomac
-- Their blog content strategy targets **DC-specific lifestyle topics** (suburbs of DC, cheapest neighborhoods, English basements) that attract local searchers
+| Competitor Page | Business Value | Search Intent | Priority | GJR Asset Type | Target Audience | GJR Angle | Replication Strategy |
+|---|---|---|---|---|---|---|---|
+| **DC Property Management** (`/dc-property-management`) | Money page | Core service / conversion | **High** | Core service page | Rental property owner / landlord | Direct competitor page. GJR's DC PM page must lead with licensing depth, legal compliance expertise, and multi-service breadth (residential + HOA + commercial) as differentiators Atlas Lane cannot match. | Directly replicate as a topic |
+| **Capitol Hill Geo Page** (`/locations/capitol-hill-dc-property-management`) — #3, 200/mo volume | Money page | Geo service / local conversion | **High** | Geo service page | Rental property owner / landlord | Target "capitol hill property management." Lead with Capitol Hill rowhouse stock, English basement regulations, historic preservation considerations, and Hill staffer/federal renter demand. | Directly replicate as a topic |
+| **Locations Hub** (`/locations`) | Support page | Geo service / local conversion | **High** | Geo service page | Rental property owner / landlord | Build a GJR locations index page. Essential IA asset. List all geo pages with brief market descriptions and internal links. | Use as structural inspiration |
+| **NoMa, Petworth, H Street, Bloomingdale, Dupont Circle, Columbia Heights, Tenleytown geo pages** | Money page | Geo service / local conversion | **High** | Geo service page | Rental property owner / landlord | Build neighborhood-level pages for all DC neighborhoods where GJR operates. Each page: 800-1,200 words with neighborhood rental data, property stock, renter demographics, regulatory notes, and GJR service positioning. | Directly replicate as a topic |
+| **NoVA geo pages** (Lansdowne, West End, Rose Hill, Hamilton) | Money page | Geo service / local conversion | **Medium** | Geo service page | Rental property owner / landlord | Adapt for GJR's priority NoVA markets (Arlington, Fairfax, Tysons, Alexandria) rather than Atlas Lane's specific neighborhoods. | Adapt into a better local version |
+| **Best Suburbs of Washington DC** — 349 traffic, #2 | Authority page | Broad informational / awareness | **Medium** | Thought leadership article | Rental property owner / landlord | Create "Best DC Suburbs for Rental Property Investors" — same geo-intent topic but framed for property owners instead of renters. Cover Arlington, Fairfax, Tysons, Alexandria, Bethesda, Potomac with rental yield and regulatory context. | Adapt into a better local version |
+| **Cheapest DC Neighborhoods** — 122 traffic, #1 | Authority page | Broad informational / awareness | **Medium** | Knowledge article | Rental property owner / landlord | Create "Most Affordable DC Neighborhoods for Rental Investment" — investor-focused version targeting the same search intent but aligned to GJR's audience. Include rental yield estimates and cap rate context by neighborhood. | Adapt into a better local version |
+| **English Basement in DC** — 29 traffic for "english basement" (700/mo) | AI SEO page | Broad informational / awareness | **Medium** | Knowledge article | Rental property owner / landlord | Create "Renting Out an English Basement in DC: Licensing, ADU Rules, and Income Potential." DC-specific, legally precise, investor-focused. Strong AI answer candidate because English basements are unique to the DC market. | Adapt into a better local version |
+| **Loft vs. Studio Differences** — 637 traffic, #2 | Support page | Broad informational / awareness | **Low** | None | — | High traffic but low relevance to GJR's owner audience. Useful only as a model for how comparison content can drive authority. | Monitor only |
+| **How to Lower Humidity** — 256 traffic, #6 | Support page | Broad informational / awareness | **Low** | None | — | Adjacent topic with minimal commercial relevance. Skip. | Monitor only |
 
 ---
 
 ## Section 2: HOA / Community Association Management
 
-### FirstService Residential — National HOA Authority Model
+### FirstService Residential
 
-**Why they matter:** Dominant national HOA management brand. Their content strategy has built massive topical authority around HOA concepts. Their regional structure (state-specific subfolders) is a model for geographic content scaling.
+| Competitor Page | Business Value | Search Intent | Priority | GJR Asset Type | Target Audience | GJR Angle | Replication Strategy |
+|---|---|---|---|---|---|---|---|
+| **What is an HOA?** — 6,801 traffic, #2 for "what is hoa" (18K/mo) | Authority page | FAQ / answer-engine | **High** | Glossary / definition page | HOA / condo board member | Create "What Is an HOA? A Guide for DC, Virginia, and Maryland Homeowners." FirstService's page is national and generic. GJR's version should lead with DC Condo Act, VA POAA, MD HOA Act jurisdiction-specific frameworks. This is the highest-volume AI SEO opportunity in our space. | Adapt into a better local version |
+| **HOA Fees: Everything You Need to Know** — 3,431 traffic, #2 for "hoa fees" (6.9K/mo) | Authority page | FAQ / answer-engine | **High** | Knowledge article | HOA / condo board member | Create "HOA Fees in DC, Virginia, and Maryland: What Boards and Owners Should Know." Include local fee benchmarks by property type, what fees typically cover, reserve fund requirements by jurisdiction, and how GJR manages budgets. Strong AI answer candidate. | Adapt into a better local version |
+| **Condo vs. Apartment** — 9,309 traffic, #2 for "condo vs apartment" (13K/mo) | Authority page | Decision-stage comparison | **Medium** | Comparison page | HOA / condo board member | Create "Condo vs. Apartment in DC: What Owners and Investors Need to Know." FirstService's version is generic. GJR's version should cover DC condo conversion rules, TOPA implications, HOA governance differences, and investment analysis for the DC market. | Adapt into a better local version |
+| **What is Property Management?** | Authority page | FAQ / answer-engine | **High** | Glossary / definition page | Rental property owner / landlord | Create "What Is Property Management? A Guide for DC, Virginia, and Maryland Property Owners." Target the head term with local authority. Cover residential PM, HOA management, and commercial PM — showing GJR's multi-service breadth. | Adapt into a better local version |
+| **DC Property Management Hub** (`/washington-dc/what-we-do/washington-dc-property-management`) | Money page | Core service / conversion | **High** | Core service page | HOA / condo board member | GJR needs a dedicated HOA/association management page for DC that outranks FirstService's generic state page. Lead with DC Condo Act § 42-1901, board governance depth, and 25-FAQ base. | Directly replicate as a topic |
+| **DC Condo Association Management** (`/washington-dc/.../condominium-association`) | Money page | Core service / conversion | **High** | Core service page | HOA / condo board member | Create a separate "Condo Association Management in Washington DC" page. Distinguish condo from HOA governance, cite DC Condo Act specifically, and address condo-specific issues (unit owner assessments, common element maintenance, condo resale certificates). | Directly replicate as a topic |
+| **Maryland HOA Management** (`/maryland/.../community-association-and-hoa`) | Money page | Geo service / local conversion | **High** | Geo service page | HOA / condo board member | Create "HOA Management in Maryland" targeting Bethesda, Potomac, and Montgomery County communities. Lead with MD HOA Act § 11B, reserve study requirements, and GJR's Montgomery County experience. | Directly replicate as a topic |
+| **Virginia Condo Management** (`/virginia/.../condominium-association`) | Money page | Geo service / local conversion | **High** | Geo service page | HOA / condo board member | Create "Condo and HOA Management in Northern Virginia" covering POAA, VA Condo Act, DPOR licensing, and Arlington/Fairfax/Alexandria community specifics. | Directly replicate as a topic |
+| **Bethesda Office Page** (`/maryland/offices/property-management-bethesda-md`) | Money page | Geo service / local conversion | **High** | Geo service page | HOA / condo board member | Create "HOA and Property Management in Bethesda, MD." Target both residential PM and HOA management for the Bethesda market on one page or parallel pages. | Directly replicate as a topic |
+| **Pros/Cons Self-Managed HOA (DC)** | AI SEO page | Decision-stage comparison | **High** | Comparison page | HOA / condo board member | Create "Self-Managed HOA vs. Professional Management in DC." Lead with DC Condo Act compliance burden, reserve study requirements, fiduciary liability, and cost analysis. Bottom-of-funnel HOA content that directly supports conversion. | Directly replicate as a topic |
+| **Role of Community Board Members** | Authority page | FAQ / answer-engine | **Medium** | Knowledge article | HOA / condo board member | Create "HOA Board Member Roles and Responsibilities in DC, VA, and MD." GJR already has blog content on this. Consolidate into a standalone resource page with jurisdiction-specific fiduciary duties and link to service pages. | Adapt into a better local version |
+| **Find My HOA Website** (utility tool) | Support page | Proof / portfolio / trust | **Low** | None | — | Utility tool page. Not replicable without a resident portal system. Monitor as a structural pattern. | Monitor only |
+| **Squatter's Rights by State** (series — 20K+ total traffic) | Authority page | Legal / compliance | **Medium** | Legal / compliance guide | HOA / condo board member | Create "Squatter's Rights in Washington DC" and "Squatter's Rights in Virginia" — two high-volume legal guides. DC is particularly valuable because of unique DC adverse possession rules and TOPA-related complications. FirstService doesn't have a DC version. | Adapt into a better local version |
+| **Maryland PM Basics** | Authority page | Broad informational / awareness | **Low** | Knowledge article | Rental property owner / landlord | Generic state-level PM education. GJR's existing blog content is already stronger on MD-specific topics. | Monitor only |
 
-#### High-Traffic Educational Content
+### TNWLC
 
-| Page Title | URL | Type | Top Keyword | Monthly Traffic | Position | Why It's Strong |
-|---|---|---|---|---|---|---|
-| 5 Key Differences Between Condos and Apartments | `/corporate/news-and-articles/articles/5-key-differences-between-condos-and-apartments/` | Article | "condo vs apartment" (13,000/mo) | 9,309 | #2 | Captures massive head-term with clear comparison format |
-| What is an HOA? | `/corporate/news-and-articles/articles/what-is-an-hoa/` | Article | "what is hoa" (18,000/mo) | 6,801 | #2 | Foundational topic; defines their entire category |
-| HOA Fees: Everything You Need to Know | `/corporate/news-and-articles/articles/what-is-an-hoa-fee-and-what-does-your-hoa-fee-cove/` | Article | "hoa fees" (6,900/mo) | 3,431 | #2 | Core HOA question; strong for AI-generated answers |
-| What is Property Management? | `/corporate/news-and-articles/articles/what-is-property-management` | Article | "what is property management" | — | — | Foundational definition content; AI answer candidate |
-| Role of Community Board Members | `/corporate/residents/roles-of-the-board-and-property-management-company` | Resource | "hoa board member roles" | — | — | Board-focused educational content |
-| Find My HOA Website | `/corporate/residents/find-my-community-website` | Tool | "find my hoa" | — | — | Utility tool page; captures navigational queries |
-
-#### State-Specific Legal Content (Squatter's Rights Series)
-
-This is FirstService's most successful content play — targeting **state + legal topic** queries:
-
-| Page Title | URL | Top Keyword | Monthly Traffic | Position |
-|---|---|---|---|---|
-| Squatters' Rights in New York | `/new-york/news-events/articles-and-news/squatters-rights-in-new-york/` | "squatters rights new york" (18,000/mo) | 5,008 | #7 |
-| Illinois Squatters' Rights Guide | `/illinois/news-events/articles/illinois-squatters-rights-2025-guide/` | "squatters rights illinois" (8,000/mo) | 3,726 | #2 |
-| Texas Squatters' Rights Guide | `/texas/news-events/articles/a-guide-to-texas-squatters-rights/` | "squatters rights texas" (11,000/mo) | 3,709 | #4 |
-| Squatters' Rights in Florida | `/florida/news-events/articles/squatters-rights-in-florida/` | "squatters rights" (54,000/mo) | 3,219 | #7 |
-| California Squatters' Rights | `/california/news-events/articles/squatters-rights-in-california/` | "squatters rights california" (2,900/mo) | 2,633 | #1 |
-
-#### DC/VA/MD Regional Structure
-
-| Page | URL | Type | Why It's Strong |
-|---|---|---|---|
-| Washington DC Property Management Hub | `/washington-dc/what-we-do/washington-dc-property-management` | Service Hub | State-level PM service page |
-| DC Condo Association Management | `/washington-dc/what-we-do/washington-dc-property-management/condominium-association` | Service Sub-Page | Condo-specific DC service page |
-| Maryland HOA Management | `/maryland/what-we-do/property-management/community-association-and-hoa` | Service Sub-Page | HOA-specific MD service page |
-| Virginia Condo Management | `/virginia/what-we-do/property-management/condominium-association` | Service Sub-Page | Condo-specific VA service page |
-| Maryland Condo Management | `/maryland/what-we-do/property-management/condominium-association` | Service Sub-Page | Condo-specific MD service page |
-| Property Management Bethesda | `/maryland/offices/property-management-bethesda-md` | Office/Geo Page | Local office page for Bethesda |
-| DC Resident Services | `/washington-dc/homeowners` | Resident Portal | Services page for existing residents |
-| Pros/Cons Self-Managed HOA (DC) | `/washington-dc/news-events/articles/pros-and-cons-of-self-managed-condo-associations` | Article | DC-specific decision-stage content |
-| Maryland Property Management Basics | `/maryland/news-events/articles/property-management-basics` | Article | State-specific PM education |
-| HOA Terms for MD Community Members | `/maryland/news-events/articles/important-terms-every-maryland-community-associati` | Article | MD-specific HOA glossary |
-
-**Strategic Takeaway for GJR:**
-- FirstService's **state subfolder structure** (`/washington-dc/`, `/maryland/`, `/virginia/`) creates massive topical authority by state
-- Their **"what is" content** strategy captures head terms (what is HOA, what is property management, what are HOA fees) that position them as the definitive answer source
-- The **squatter's rights series** shows how a single topic template can be replicated across geographies for massive traffic
-- We should create **DC/VA/MD versions** of foundational HOA content: "HOA laws in Virginia," "DC condo association requirements," "Maryland HOA management guide"
-- Their service page architecture separates by **property type** (condo, HOA, active adult) — we should do the same
-
----
-
-### TNWLC (The New Way Living Communities)
-
-**Why they matter:** DC-area HOA management firm with strong referring domain profile (1,210 RDs despite low traffic) suggesting strong local authority.
-
-| Observation | Detail |
-|---|---|
-| Domain Rating | 12 |
-| Referring Domains | 1,210 (very high for size — suggests strong local citations/directory presence) |
-| Traffic | 351/mo |
-| Strategy Note | Their backlink profile is disproportionately strong vs. their content. This suggests they've been cited in local directories, community associations, and local press — a link building model to study. |
-
-**Strategic Takeaway:** Build local citations and community association directory listings aggressively.
-
----
+| Competitor Page | Business Value | Search Intent | Priority | GJR Asset Type | Target Audience | GJR Angle | Replication Strategy |
+|---|---|---|---|---|---|---|---|
+| **Overall strategy** (1,210 referring domains despite minimal content) | Support page | Proof / portfolio / trust | **Medium** | None (link-building model) | — | TNWLC's disproportionate backlink profile suggests strong local citation and community association directory presence. GJR should pursue the same citation sources: CAI chapter directories, local HOA directories, community association portals, and DC/VA/MD business directories. | Use as structural inspiration |
 
 ### Legum & Norman
 
-**Why they matter:** Established HOA management firm in the DC metro. Low organic presence (DR 30, 182 traffic) but strong brand in the market.
-
-| Observation | Detail |
-|---|---|
-| Domain Rating | 30 |
-| Traffic | 182/mo |
-| Keywords | 15 |
-| Gap | Virtually no content strategy; relying entirely on brand and referral |
-
-**Strategic Takeaway:** Legum & Norman's weak organic presence represents an opportunity — we can outrank them on every HOA management query in the DC metro with targeted content.
+| Competitor Page | Business Value | Search Intent | Priority | GJR Asset Type | Target Audience | GJR Angle | Replication Strategy |
+|---|---|---|---|---|---|---|---|
+| **Overall strategy** (DR 30 but only 15 keywords, 182 traffic) | — | — | **Low** | None | — | Legum & Norman's weak organic presence is an opportunity, not a model. We can outrank them on every HOA management query in the DC metro with targeted content. No pages to replicate; use their market position as a gap to exploit. | Monitor only |
 
 ---
 
 ## Section 3: Commercial Property Management
 
-### Donohoe — DC Commercial PM Leader
+### Donohoe
 
-**Why they matter:** Established DC commercial real estate firm (#8 on WBJ's largest PM companies list). Strong brand but limited SEO content strategy.
+| Competitor Page | Business Value | Search Intent | Priority | GJR Asset Type | Target Audience | GJR Angle | Replication Strategy |
+|---|---|---|---|---|---|---|---|
+| **Commercial PM Service Page** (`/commercial-real-estate/property-management`) | Money page | Core service / conversion | **High** | Core service page | Commercial owner / investor / manager | Create a deep commercial PM service page. Donohoe's page is thin on content. GJR should lead with DC BEPS compliance expertise, NNN/gross/modified gross lease management, CAM reconciliation, tenant improvement coordination, and DC commercial licensing. | Adapt into a better local version |
+| **Leasing & Landlord Representation** (`/commercial-real-estate/leasing`) | Money page | Core service / conversion | **Medium** | Core service page | Commercial owner / investor / manager | GJR does not appear to offer CRE leasing. Use as structural inspiration for how to organize commercial service sub-pages. If GJR adds leasing services, replicate with DC office/retail market context. | Use as structural inspiration |
+| **Sustainability** (`/sustainability`) | Authority page | Thought leadership | **High** | Knowledge article | Commercial owner / investor / manager | Create "DC BEPS Compliance Guide for Commercial Property Owners." DC BEPS enforcement begins 2026 — this is a time-sensitive content opportunity no DC competitor is covering well. Include compliance timeline, penalty structure, DCSEU rebates, and GJR's energy management capabilities. | Adapt into a better local version |
+| **Homepage** (full-service positioning) | Support page | Proof / portfolio / trust | **Low** | None | — | Donohoe's brand authority comes from 100+ year history and WBJ recognition. GJR should pursue WBJ "Largest PM Companies" list submissions and local press coverage as authority signals. | Monitor only |
 
-#### Strategically Important Pages
+### JBG SMITH
 
-| Page Title | URL | Type | Traffic | Why It's Strong |
-|---|---|---|---|---|
-| Homepage | `/` | Homepage | 245 | Full-service positioning; ranks for branded terms |
-| Hospitality Services | `/hospitality/` | Service Page | 102 | Niche service differentiation |
-| Property Management Services | `/commercial-real-estate/property-management` | Service Page | — | Core commercial PM service page |
-| Leasing & Landlord Representation | `/commercial-real-estate/leasing` | Service Page | — | CRE leasing service page |
-| Project Management | `/commercial-real-estate/project-management` | Service Page | — | Asset repositioning/workplace transformation |
-| Brokerage Services | `/commercial-real-estate/brokerage` | Service Page | — | Investment sales brokerage |
-| Sustainability | `/sustainability` | Resource | — | ESG/sustainability positioning (relevant for BEPS) |
-
-**Strategic Takeaway for GJR:**
-- Donohoe has minimal content marketing — their traffic is almost entirely branded
-- Their service page structure (PM, Leasing, Brokerage, Project Management) is well-organized but lacks depth
-- Opportunity: create **deep commercial PM content** targeting DC office market, BEPS compliance, NNN lease structures, CAM reconciliation — topics Donohoe isn't covering
-- Their sustainability page is notable — as DC BEPS enforcement begins in 2026, sustainability/energy compliance content is an emerging content opportunity
-
----
-
-### JBG SMITH — DC Commercial/Mixed-Use REIT
-
-**Why they matter:** Major DC REIT (National Landing/Amazon HQ2) with DR 60 and strong branded search but minimal content strategy.
-
-#### Property Portfolio Pages
-
-| Page Title | URL | Type | Traffic | Why It's Strong |
-|---|---|---|---|---|
-| Homepage (DC REIT) | `/` | Homepage | 1,303 | Strong branded search "jbg smith" (1,700/mo) |
-| 8001 Woodmont (Bethesda retail) | `/property/retail/8001-WOODMONT/` | Property Page | 195 | Individual property pages rank for address queries |
-| 7200 Wisconsin Ave (Bethesda office) | `/property/office/7200-WISCONSIN-AVENUE/` | Property Page | 95 | Bethesda office address query capture |
-| RTC West (Reston) | `/property/office/RTC-WEST/` | Property Page | 82 | Reston Town Center property page |
-| 1550 Crystal Drive (National Landing) | `/property/office/1550-CRYSTAL-DRIVE/` | Property Page | 66 | Amazon HQ2/National Landing address query |
-
-**Strategic Takeaway for GJR:**
-- JBG SMITH's organic strategy is almost entirely **property portfolio pages** that capture address-based search queries
-- No educational content, no market analysis, no guide content — pure portfolio showcase
-- Opportunity: we can build **commercial market analysis content** (DC office market trends, NoVA submarket reports, Bethesda/Tysons commercial outlook) that JBG SMITH isn't creating
-- Their portfolio page structure shows that **individual property pages with address targeting** are viable for organic traffic
+| Competitor Page | Business Value | Search Intent | Priority | GJR Asset Type | Target Audience | GJR Angle | Replication Strategy |
+|---|---|---|---|---|---|---|---|
+| **Bethesda office property pages** (7200 Wisconsin, 8001 Woodmont, 4747 Bethesda Ave) | Support page | Proof / portfolio / trust | **Medium** | Thought leadership article | Commercial owner / investor / manager | JBG SMITH's pages rank for address queries but have zero educational content. GJR should create "Bethesda Commercial Real Estate Market Guide" — submarket analysis, office vacancy trends, rental rates, and BEPS implications for Bethesda building owners. | Adapt into a better local version |
+| **National Landing/Crystal Drive properties** | Support page | Proof / portfolio / trust | **Low** | None | — | Amazon HQ2/National Landing context is useful for NoVA commercial market articles but not a direct replication target. | Monitor only |
+| **Overall strategy** (DR 60, 1,124 RDs, minimal content) | — | — | **Medium** | Thought leadership article | Commercial owner / investor / manager | JBG SMITH proves that DC commercial real estate content is virtually uncontested. GJR should build "DC Office Market Trends," "NoVA Commercial Submarket Report," and "Tysons Commercial Real Estate Guide" to fill the gap. | Use as structural inspiration |
 
 ---
 
 ## Section 4: Multi-Family Property Management
 
-### Bozzuto — Dominant Multifamily Brand
+### Bozzuto
 
-**Why they matter:** Major DC-area multifamily developer/manager with DR 71 and massive branded search volume. Their apartment search and listing page architecture is best-in-class.
+| Competitor Page | Business Value | Search Intent | Priority | GJR Asset Type | Target Audience | GJR Angle | Replication Strategy |
+|---|---|---|---|---|---|---|---|
+| **Property Management Division** (`/property-management/`) — 1,058 traffic | Money page | Core service / conversion | **High** | Core service page | Multifamily owner / operator / investor | Create a dedicated "Multifamily Property Management in DC, Virginia, and Maryland" page. GJR does not currently have a multifamily-specific service page. Lead with NOI optimization, leasing velocity, tenant retention, preventive maintenance programs, and DC/VA/MD regulatory compliance for multifamily operators. | Adapt into a better local version |
+| **Maryland Apartments geo page** (`/apartments-for-rent/md/`) — 438 traffic | Money page | Geo service / local conversion | **Low** | None | — | Apartment listing pages are not relevant to GJR's business model. Monitor for geo-page IA patterns only. | Monitor only |
+| **Overall strategy** (branded search dominance — 11K/mo for "bozzuto") | Support page | Proof / portfolio / trust | **Low** | None | — | Bozzuto's strength is branded search built through offline reputation and portfolio scale. Not replicable through content alone. Focus on educational/advisory multifamily content where Bozzuto doesn't compete. | Monitor only |
 
-#### High-Performing Pages
+### WC Smith
 
-| Page Title | URL | Type | Top Keyword | Monthly Traffic | Why It's Strong |
+| Competitor Page | Business Value | Search Intent | Priority | GJR Asset Type | Target Audience | GJR Angle | Replication Strategy |
+|---|---|---|---|---|---|---|---|
+| **Property Management** (`/property-management/`) — 635 traffic, #2 for "property management companies dc" | Money page | Core service / conversion | **High** | Core service page | Rental property owner / landlord | WC Smith ranks #2 for our most important keyword. GJR's residential PM page must directly compete. Differentiate with multi-service breadth (residential + HOA + commercial), legal compliance depth (150 articles, 95 FAQs), and specific DC licensing/regulatory expertise. | Directly replicate as a topic |
+| **DC Apartments Search** (`/dc-apartments/`) — 2,744 traffic, #3 for "dc apartments" | Support page | Broad informational / awareness | **Low** | None | — | Apartment listing hub. Not relevant to GJR's service model. | Monitor only |
+| **Utilities Included / Tax Credit Apartments** | Support page | Broad informational / awareness | **Low** | None | — | Niche listing pages. Not relevant to GJR. Pattern shows that feature-specific listing pages can rank — potentially applicable if GJR builds property type-specific pages (rowhouse, condo, English basement). | Monitor only |
+
+### Paradigm Companies
+
+| Competitor Page | Business Value | Search Intent | Priority | GJR Asset Type | Target Audience | GJR Angle | Replication Strategy |
+|---|---|---|---|---|---|---|---|
+| **Property pages in target markets** (Gallery Place, Ballston, Courthouse, Eisenhower Station) | Support page | Proof / portfolio / trust | **Low** | Thought leadership article | Multifamily owner / operator / investor | Paradigm has properties in our target markets but minimal content. GJR should create submarket analysis content for Gallery Place/downtown DC, Ballston/Arlington, and Eisenhower/Alexandria that positions us as the market expert. | Use as structural inspiration |
+
+---
+
+## Section 5: Execution Queue
+
+Sequenced by priority. Each item specifies exactly what to build.
+
+### Tier 1: Build Immediately (Next 30 Days)
+
+| # | Asset | Type | Target Audience | Primary Keyword Target | Priority Rationale |
 |---|---|---|---|---|---|
-| Homepage | `/` | Homepage | "bozzuto" (11,000/mo) | 13,668 | Massive branded search; 1,408 ranking keywords |
-| Property Management Division | `/property-management/` | Service Page | "bozzuto management" (900/mo) | 1,058 | Core service page for PM division |
-| Apartments for Rent (Search) | `/apartments-for-rent/` | Search/Listings | "bozzuto apartments" | 576 | Apartment search hub page |
-| Maryland Apartments | `/apartments-for-rent/md/` | State Geo Page | "apartments maryland" (500/mo) | 438 | State-level apartment listing geo page |
-| Boston Metro Apartments | `/apartments-for-rent/metro/boston-metro/` | Metro Geo Page | "bozzuto apartments" | 515 | Metro-level listing page model |
+| 1 | **Residential PM in Washington DC** | Core service page | Landlord / owner | "property management companies dc" / "washington dc property management" | Direct money term; WC Smith ranks #2, Nomadic #5. Must compete. |
+| 2 | **HOA Management in Washington DC** | Core service page | HOA / condo board | "hoa management washington dc" / "community association management dc" | No strong local competitor owns this term. GJR has 25 HOA FAQs and 150 articles as backing authority. |
+| 3 | **Commercial PM in Washington DC** | Core service page | Commercial owner / investor | "commercial property management dc" / "commercial property management washington dc" | SERP is immature. Donohoe's page is thin. Fastest path to a new service-line ranking. |
+| 4 | **Property Management in Arlington VA** | Geo service page | Landlord / owner | "property management arlington va" | Named priority geo. Bay Management and Atlas Lane both have pages; GJR does not. |
+| 5 | **Property Management in Fairfax VA** | Geo service page | Landlord / owner | "property management fairfax va" | Named priority geo. Multiple competitors have pages. |
+| 6 | **Property Management in Tysons VA** | Geo service page | Landlord / owner | "property management tysons" / "property management tysons corner" | Named priority geo. Atlas Lane has a page. Under-served market. |
+| 7 | **Property Management in Alexandria VA** | Geo service page | Landlord / owner | "property management alexandria va" | Named priority geo. Nomadic and Atlas Lane have pages. |
+| 8 | **Property Management in Bethesda MD** | Geo service page | Landlord / owner | "property management bethesda md" | Named priority geo. Bay Management and FirstService have pages. |
+| 9 | **Property Management in Potomac MD** | Geo service page | Landlord / owner | "property management potomac md" | Named priority geo. Bay Management has a page. Luxury market positioning. |
+| 10 | **Locations Hub Page** | Geo service page | All audiences | Internal linking / navigation | Essential IA page. Atlas Lane and Nomadic both use this pattern. Enables crawlability for all geo pages. |
 
-**Strategic Takeaway for GJR:**
-- Bozzuto's strength is **branded search** — their brand name drives 11,000 monthly searches
-- Their apartment listing page structure (state → metro → individual property) is the multifamily equivalent of Bay Management's geo page strategy
-- For our multifamily content, focus on **educational/advisory content** rather than competing on listings — "multifamily property management costs in DC," "hiring a multifamily PM in DC," etc.
+### Tier 2: Build Within 30–60 Days
 
----
-
-### WC Smith — DC Multifamily Specialist
-
-**Why they matter:** DC-focused apartment operator with strong local search presence, particularly for bedroom-count and neighborhood-specific apartment searches.
-
-#### Top-Performing Pages
-
-| Page Title | URL | Type | Top Keyword | Monthly Traffic | Position | Why It's Strong |
-|---|---|---|---|---|---|---|
-| DC Apartments Search | `/dc-apartments/` | Listings Hub | "dc apartments" (3,000/mo) | 2,744 | #3 | #3 for "dc apartments" — one of the most competitive local terms |
-| Property Management | `/property-management/` | Service Page | "property management companies dc" (150/mo) | 635 | #2 | #2 for primary DC PM query |
-| Utilities Included Apartments | `/wc-smith-all-utilities-included-apartment-communities/` | Listings | "utilities included apartments dc" (300/mo) | 633 | #2 | Niche-specific listings page targeting unique apartment feature |
-| Tax Credit Apartments | `/wc-smith-tax-credit-apartment-communities-2/` | Listings | "tax credit apartments near me" (1,500/mo) | 437 | #5 | Affordable housing niche; growing demand |
-| 2BR DC Apartments | `/available-two-bedroom-washington-dc-apartments/` | Bedroom-Type | "2 bedroom apartments washington" (200/mo) | 292 | #1 | Bedroom-count specific listing page — #1 position |
-| Studio DC Apartments | `/available-washington-dc-studio-apartments/` | Bedroom-Type | "studio apartments dc" (450/mo) | 228 | #5 | Studio-specific page capturing apartment searchers |
-| 3BR DC Apartments | `/available-washington-dc-3-bedroom-apartments/` | Bedroom-Type | "3 bedroom apartments in dc" (250/mo) | 223 | #1 | 3BR-specific — #1 position |
-| 1BR DC Apartments | `/available-one-bedroom-washington-dc-apartments/` | Bedroom-Type | "one bedroom apartments in dc" (150/mo) | 175 | #1 | 1BR-specific — #1 position |
-
-**Strategic Takeaway for GJR:**
-- WC Smith's **property management page ranks #2** for "property management companies dc" — this is a page we need to directly compete with
-- Their **bedroom-count specific listing pages** (1BR, 2BR, 3BR, studio) are ranking #1 for multiple DC apartment queries — a content format we should note for rental listing page strategy
-- The **utilities-included** and **tax-credit** niche pages show how targeting specific apartment features/programs creates additional ranking opportunities
-
----
-
-### Paradigm Companies — DC/NoVA Multifamily
-
-**Why they matter:** Regional multifamily operator with properties in key DC/NoVA locations (Gallery Place, Ballston, Courthouse, Eisenhower Station).
-
-| Page Title | URL | Type | Top Keyword | Traffic | Why It's Strong |
+| # | Asset | Type | Target Audience | Primary Keyword Target | Priority Rationale |
 |---|---|---|---|---|---|
-| Homepage | `/` | Homepage | "paradigm companies" (200/mo) | 138 | Branded search hub |
-| Meridian on First Phase 2 | `/meridian-on-first-phase-2` | Property Page | "meridian on first" (800/mo) | 88 | Individual property page capturing building-name queries |
-| Parc Meridian at Eisenhower Station | `/parc-meridian-at-eisenhower-station` | Property Page | "parc meridian" (400/mo) | 28 | Alexandria/Eisenhower property page |
-| Meridian at Gallery Place | `/meridian-at-gallery-place` | Property Page | "meridian gallery place" (400/mo) | 10 | DC downtown property page |
-| Meridian at Ballston Commons | `/meridian-at-ballston-commons` | Property Page | "meridian at ballston" (100/mo) | 14 | Arlington property page |
-| Meridian at Courthouse Commons | `/meridian-at-courthouse-commons` | Property Page | "meridian courthouse" (600/mo) | 9 | Arlington/Courthouse property page |
+| 11 | **What Is an HOA?** | Glossary / definition page | HOA / condo board | "what is hoa" (18K/mo) | Highest-volume head term in our space. DC/VA/MD angle beats FirstService's generic national version. Strong AI answer candidate. |
+| 12 | **What Is Property Management?** | Glossary / definition page | Landlord / owner | "what is property management" (1K+/mo) | Foundational head term. DC-specific angle with licensing, TOPA, rent control context. |
+| 13 | **Self-Managing vs. Hiring a Property Manager in DC** | Comparison page | Landlord / owner | "self managing vs property manager" / "should I hire a property manager dc" | Decision-stage content. Nomadic has a version. GJR's should lead with DC compliance burden (BBL, TOPA, rent control) as the argument for professional management. |
+| 14 | **Property Management Costs in Washington DC** | Comparison page | Landlord / owner | "how much do property managers charge" / "property management fees dc" | High commercial intent. Include GJR's 7-8.5% fee range, DC market benchmarks, and value-vs-cost analysis. |
+| 15 | **HOA Self-Management vs. Professional Management in DC** | Comparison page | HOA / condo board | "self managed hoa" / "should hoa hire management company" | Decision-stage HOA content. FirstService has a DC-specific version. GJR should outcompete with deeper DC Condo Act and VA POAA citations. |
+| 16 | **Condo Association Management in DC** | Core service page | HOA / condo board | "condo association management dc" / "condo management washington dc" | Separate from HOA. FirstService segments these. DC Condo Act governs differently than VA POAA. |
+| 17 | **Multifamily Property Management** | Core service page | Multifamily owner / operator | "multifamily property management dc" | GJR has no multifamily-specific page. Bozzuto and WC Smith focus on listings, not advisory. Open content gap. |
+| 18 | **HOA Management in Arlington VA** | Geo service page | HOA / condo board | "hoa management arlington" | Keymont has this page. GJR's priority NoVA geo market for HOA. |
+| 19 | **HOA Management in Fairfax VA** | Geo service page | HOA / condo board | "hoa management fairfax" | Keymont has this page. GJR's priority NoVA geo market for HOA. |
+| 20 | **HOA Management in Bethesda MD** | Geo service page | HOA / condo board | "hoa management bethesda" | Keymont and EJF have pages. GJR's priority MD market for HOA. |
 
-**Strategic Takeaway for GJR:**
-- Paradigm has minimal SEO beyond property-name branded queries
-- Their properties in Gallery Place, Ballston, Courthouse, and Eisenhower Station are in our target markets
-- Opportunity to create **market analysis content** for these specific DC/NoVA submarkets that would also reference their properties
+### Tier 3: Build Within 60–120 Days
+
+| # | Asset | Type | Target Audience | Primary Keyword Target | Priority Rationale |
+|---|---|---|---|---|---|
+| 21 | **DC Landlord-Tenant Law Guide** | Legal / compliance guide | Landlord / owner | "dc landlord tenant law" / "dc rental laws" | Jurisdiction guide hub. GJR has the deepest statute citation library of any competitor. Consolidate into a standalone resource. Strong AI answer candidate. |
+| 22 | **Virginia Property Management Laws Guide** | Legal / compliance guide | Landlord / owner | "virginia property management laws" / "vrlta" | Nomadic has a Fairfax-specific version. GJR should build a comprehensive state-level guide covering VRLTA, DPOR licensing, and county variations. |
+| 23 | **Maryland HOA Law Guide** | Legal / compliance guide | HOA / condo board | "maryland hoa laws" / "md hoa act" | FirstService and TNWLC have versions. GJR's should be the most comprehensive, citing MD HOA Act § 11B, Condo Act § 11-101, and county-specific rules. |
+| 24 | **DC HOA and Condo Association Laws** | Legal / compliance guide | HOA / condo board | "dc hoa laws" / "dc condo act" | TNWLC has versions. GJR's should cover DC Condo Act § 42-1901, board fiduciary duties, assessment collection, and common element maintenance. |
+| 25 | **HOA Fees in DC, Virginia, and Maryland** | Knowledge article | HOA / condo board | "hoa fees dc" / "average hoa fees virginia" | FirstService ranks #2 nationally for "hoa fees" (6.9K/mo). GJR targets the local long-tail with DC/VA/MD-specific fee benchmarks and budget guidance. |
+| 26 | **DC BEPS Compliance Guide** | Legal / compliance guide | Commercial owner / investor | "dc beps" / "dc building energy performance standards" | Time-sensitive: BEPS enforcement begins 2026. No DC PM competitor has a strong BEPS page. First-mover advantage. |
+| 27 | **DC Squatter's Rights Guide** | Legal / compliance guide | Landlord / owner | "squatters rights dc" / "squatters rights washington dc" | FirstService's state series drives 20K+ traffic but has no DC version. GJR can own this term. |
+| 28 | **Suburbs of DC for Rental Investors** | Thought leadership article | Landlord / owner | "best dc suburbs" / "suburbs of washington dc" | Atlas Lane ranks #2 with renter-focused version. GJR's investor-focused version targets a higher-value audience. |
+| 29 | **English Basements in DC** | Knowledge article | Landlord / owner | "english basement" / "english basement dc" | DC-unique topic. Atlas Lane has a version. GJR should cover ADU regulations, DCRA permitting, BBL requirements, and rental income potential. |
+| 30 | **15–20 DC Neighborhood Geo Pages** | Geo service pages | Landlord / owner | "{neighborhood} property management" | Follow Atlas Lane model. Build for: Capitol Hill, Dupont Circle, Georgetown, Columbia Heights, Petworth, Logan Circle, Shaw, H Street, Navy Yard, Brookland, NoMa, Cleveland Park, Woodley Park, Tenleytown, Adams Morgan. |
+
+### Tier 4: Build Within 120–180 Days
+
+| # | Asset | Type | Target Audience | Primary Keyword Target | Priority Rationale |
+|---|---|---|---|---|---|
+| 31 | **DC/VA/MD Security Deposit Laws Guide** | Legal / compliance guide | Landlord / owner | "security deposit laws dc" / "security deposit virginia" | Bay Management ranks #2 nationally. GJR targets jurisdiction-specific versions. |
+| 32 | **DC/VA/MD Eviction Process Guides** | Legal / compliance guide | Landlord / owner | "eviction process dc" / "eviction process virginia" | High-value legal content. GJR has statute citations in existing blog; consolidate into guides. |
+| 33 | **Bethesda Commercial Real Estate Guide** | Thought leadership article | Commercial owner / investor | "bethesda commercial real estate" | JBG SMITH has portfolio pages but no educational content. GJR can own this. |
+| 34 | **Tysons Commercial Real Estate Guide** | Thought leadership article | Commercial owner / investor | "tysons commercial real estate" / "tysons corner commercial property" | Donohoe has a project page (VITA Tysons). GJR should build the definitive submarket guide. |
+| 35 | **NNN Lease Guide for DC Commercial Owners** | Knowledge article | Commercial owner / investor | "nnn lease" / "triple net lease dc" | No DC competitor covers this. High commercial intent for building owners evaluating lease structures. |
+| 36 | **How to Choose an HOA Management Company in DC** | Comparison page | HOA / condo board | "how to choose hoa management company" | Bottom-of-funnel HOA conversion content. Cover interview questions, contract terms, technology evaluation, and GJR's differentiators. |
+| 37 | **When Should Your HOA Switch Management Companies?** | Comparison page | HOA / condo board | "switch hoa management company" / "change property management company" | Bottom-of-funnel HOA acquisition content targeting boards unhappy with current managers. |
+| 38 | **Third-Party Multifamily PM: What Owners Need to Know** | Knowledge article | Multifamily owner / operator | "third party property management" | ROSS Companies has a version. GJR should create a DC-market-specific guide covering fee structures, reporting standards, and owner expectations. |
 
 ---
 
-## Section 5: Strategic Patterns & Actionable Insights
+## Section 6: Strategic Patterns
 
-### Pattern 1: Geo-Page Architecture (Highest Priority)
+### Pattern 1: Geo-Page Architecture
 
-**Who does it best:** Atlas Lane (neighborhoods), Bay Management Group (cities/counties), FirstService Residential (states)
+**Who does it best:** Atlas Lane (neighborhoods), Bay Management (cities/counties), FirstService (states)
 
-**The model:**
+**Recommended GJR structure:**
+
 ```
-/services/property-management (Hub)
-  → /property-management/washington-dc (City)
-    → /property-management/washington-dc/capitol-hill (Neighborhood)
-    → /property-management/washington-dc/dupont-circle
-    → /property-management/washington-dc/columbia-heights
-  → /property-management/arlington-va (City)
-  → /property-management/fairfax-va (City)  
-  → /property-management/tysons-va (City)
-  → /property-management/alexandria-va (City)
-  → /property-management/bethesda-md (City)
-  → /property-management/potomac-md (City)
+/services/residential-property-management (Service hub)
+  /property-management/washington-dc (City hub — residential)
+    /property-management/washington-dc/capitol-hill (Neighborhood)
+    /property-management/washington-dc/dupont-circle
+    /property-management/washington-dc/georgetown
+    ... (15+ neighborhoods)
+  /property-management/arlington-va
+  /property-management/fairfax-va
+  /property-management/tysons-va
+  /property-management/alexandria-va
+  /property-management/bethesda-md
+  /property-management/potomac-md
+
+/services/hoa-management (Service hub)
+  /hoa-management/washington-dc
+  /hoa-management/arlington-va
+  /hoa-management/fairfax-va
+  /hoa-management/bethesda-md
+
+/services/commercial-property-management (Service hub)
+  /commercial-property-management/washington-dc
+  /commercial-property-management/tysons-va
+  /commercial-property-management/bethesda-md
+
+/locations (Index/hub linking to all geo pages)
 ```
 
-**GJR Action Items:**
-- [ ] Build geo pages for all 7 primary markets (DC, Arlington, Fairfax, Tysons, Alexandria, Bethesda, Potomac)
-- [ ] Build DC neighborhood sub-pages (Capitol Hill, Dupont Circle, Georgetown, Columbia Heights, Petworth, Logan Circle, Shaw, H Street, Navy Yard, Brookland, NoMa, Cleveland Park, Woodley Park, Tenleytown, Adams Morgan)
-- [ ] Replicate for each service line: residential PM, HOA management, commercial PM
+### Pattern 2: AI SEO Content Cluster
 
-### Pattern 2: Head-Term Educational Content
+The strongest AI-answer-engine pattern across all competitors is a connected four-part system:
 
-**Who does it best:** FirstService Residential, Bay Management Group
+1. **Definition / glossary page** ("What is an HOA?") — captures head-term queries and AI definition answers
+2. **Jurisdiction law guide** ("DC HOA Laws") — captures legal queries and AI compliance answers
+3. **Comparison / decision page** ("Self-Managed vs. Professional HOA Management") — captures decision queries
+4. **Core service page** ("HOA Management in Washington DC") — captures conversion intent
 
-**Top head terms competitors own that GJR should target:**
+Internal linking between all four creates a topical cluster that signals authority to both traditional search and AI systems.
 
-| Head Term | Monthly Volume | Current Owner | Position | GJR Opportunity |
+GJR should build this cluster for each service line:
+- Residential PM: definition + DC landlord-tenant law + self-manage vs. hire PM + DC PM service page
+- HOA: definition + DC/VA/MD HOA law + self-manage vs. professional + HOA service page
+- Commercial PM: definition + DC BEPS guide + PM costs/comparison + commercial PM service page
+- Multifamily: definition + third-party PM guide + NOI/operations article + multifamily PM service page
+
+### Pattern 3: Content That GJR Already Owns Better Than Competitors
+
+GJR's 150 optimized blog articles with jurisdiction-specific statute citations are a competitive moat no competitor matches. The next step is to **elevate the best blog content into standalone resource pages** that serve as permanent authority assets rather than chronological blog posts:
+
+| Existing Blog Strength | Upgrade To | Why |
+|---|---|---|
+| 14+ articles with DC Code citations | DC Landlord-Tenant Law Hub | Consolidates authority; becomes linkable resource; AI systems prefer hub pages |
+| 25 HOA FAQs with POAA/DC Condo Act/MD HOA Act | HOA Laws by Jurisdiction Guides | Jurisdiction guides rank better than scattered FAQ items |
+| 14 Commercial PM FAQs | Commercial PM Service Page depth | FAQ content should feed into the service page, not live only on the FAQ page |
+| 150 articles with DC/VA/MD context | Internal linking to geo pages | Every existing article that mentions a specific jurisdiction should link to that jurisdiction's geo page |
+
+---
+
+## Section 7: Competitive Gap Analysis
+
+### Where GJR Is Behind
+
+| Gap | Competitors Ahead | Priority | Difficulty | Fix |
 |---|---|---|---|---|
-| "what is hoa" | 18,000 | FirstService Residential | #2 | Create DC-specific "What is an HOA" guide |
-| "condo vs apartment" | 13,000 | FirstService Residential | #2 | Create DC market-specific comparison |
-| "hoa fees" | 6,900 | FirstService Residential | #2 | Target "HOA fees in DC" / "average HOA fees Virginia" |
-| "property management companies dc" | 150 | WC Smith | #2 | Direct competition — improve service page |
-| "dc apartments" | 3,000 | WC Smith | #3 | Less relevant but adjacent |
-| "suburbs of washington dc" | 200 | Atlas Lane | #2 | Create comprehensive DC suburb guide |
-| "security deposit for apartment" | 250 | Bay Management | #2 | Already covered in blog; optimize for DC specifics |
-| "examples of landlord harassment" | 450 | Bay Management | #2 | Already covered in blog; optimize for DC law |
+| Geo/location pages | Atlas Lane, Bay Management, FirstService, Nomadic, Keymont, EJF | **Critical** | Medium | Build Tier 1 geo pages (items 1-10) |
+| Head-term definition content | FirstService ("what is hoa," "hoa fees," "condo vs apartment") | **High** | Medium | Build Tier 2 definition pages (items 11-12) |
+| Service-line specific pages | FirstService (condo vs HOA), Donohoe (PM/leasing/brokerage) | **High** | Low | Build Tier 2 service pages (items 16-17) |
+| Decision-stage content | Nomadic (self-manage vs PM), FirstService (self-managed HOA) | **High** | Low | Build Tier 2 comparison pages (items 13-15) |
+| Domain authority / backlinks | Everyone above DR 30 | **High** | High (long-term) | Citation building (TNWLC model), jurisdiction guides as linkable assets, WBJ/press |
+| Commercial PM content depth | Donohoe (service structure), JBG SMITH (portfolio presence) | **High** | Medium | Build BEPS guide, NNN lease guide, submarket analyses |
 
-### Pattern 3: Service-Line Segmentation
+### Where GJR Is Ahead
 
-**Who does it best:** FirstService Residential (condo vs. HOA vs. active adult), Donohoe (PM vs. leasing vs. brokerage vs. project management)
-
-**GJR should build dedicated service pages for:**
-1. Residential Property Management (exists but needs depth)
-2. HOA / Community Association Management (exists but needs expansion)
-3. Commercial Property Management (exists but needs depth)
-4. Condo Association Management (separate from HOA — FirstService does this)
-5. Multifamily Property Management (needs creation)
-6. Rental Leasing Services (needs creation or expansion)
-
-### Pattern 4: State/Jurisdiction Legal Content
-
-**Who does it best:** FirstService Residential (squatter's rights by state), Gordon James (already doing this well with blog content)
-
-**GJR Advantage:** We are already the strongest player in DC/VA/MD jurisdiction-specific legal content through our 150 optimized blog articles. This is our competitive moat.
-
-**Next Steps:**
-- Create standalone **jurisdiction guide pages** (not blog posts) for:
-  - "DC Landlord-Tenant Law Guide"
-  - "Virginia Property Management Laws"
-  - "Maryland HOA Law Guide"
-  - "DC HOA and Condo Association Laws"
-  - "Northern Virginia Rental Regulations by County"
-
-### Pattern 5: Decision-Stage Content
-
-**Who does it best:** Nomadic Real Estate ("self-managing vs. property manager"), Atlas Lane ("best affordable areas in DC")
-
-**Content types to create:**
-- "Should I Hire a Property Manager in DC?" (comparison/decision page)
-- "How to Choose an HOA Management Company in DC"
-- "Property Management Costs in Washington DC: What to Expect"
-- "Self-Managing Your Rental Property in DC vs. Hiring a PM"
-- "When Should Your HOA Switch Management Companies?"
-
-### Pattern 6: AI SEO / Answer Engine Optimization
-
-**Pages most likely to appear in AI-generated answers share these characteristics:**
-1. Clear question-and-answer format (FAQ structure)
-2. Definition-style content ("What is X?")
-3. Comparison content ("X vs. Y")
-4. Process/checklist content ("How to X")
-5. Local authority signals (jurisdiction citations, local law references)
-
-**GJR's advantage:** Our blog articles already include FAQ sections, jurisdiction-specific law citations (DC Code, VRLTA, MD statutes), and geo-specific context. This positions us well for AI answer inclusion.
-
-**AI SEO Priority Actions:**
-- [ ] Create "What is" definition pages for core topics (separate from blog posts — these should be authoritative resource pages)
-- [ ] Build comparison pages targeting "vs." queries
-- [ ] Ensure all service pages have FAQ schemas
-- [ ] Create a "DC Property Management Laws" resource hub that AI systems can reference
-
----
-
-## Section 6: Competitive Gap Analysis
-
-### Where GJR is Behind
-
-| Gap | Competitors Ahead | Priority | Difficulty |
-|---|---|---|---|
-| Geo/location pages | Atlas Lane, Bay Management, FirstService | **Critical** | Medium |
-| Head-term educational content | FirstService, Bay Management | **High** | Medium |
-| Service-line specific pages | FirstService, Donohoe | **High** | Low |
-| Domain authority / backlinks | Everyone above DR 30 | **High** | High (long-term) |
-| Apartment/rental listing pages | WC Smith, Bozzuto | Low | Not relevant to business model |
-
-### Where GJR is Ahead
-
-| Advantage | Detail |
-|---|---|
-| DC/VA/MD legal depth | 150 articles with jurisdiction-specific law citations — no competitor has this depth |
-| FAQ coverage | 95 FAQs across 4 service categories with full DC/VA/MD legal context |
-| Blog content quality | Articles include specific statute citations, fee benchmarks, and enforcement details |
-| Multi-service coverage | Covers residential + HOA + commercial — most competitors only cover 1-2 |
-
-### Where GJR is Equal
-
-| Area | Status |
-|---|---|
-| Service page structure | Exists but needs expansion and depth |
-| Blog article volume | Strong but many competitors have more |
-| Local SEO (GMB, citations) | Not evaluated in this analysis; needs separate audit |
-
----
-
-## Section 7: Priority Action Plan
-
-### Immediate (Next 30 Days)
-
-1. **Build 7 primary geo landing pages**
-   - DC, Arlington, Fairfax, Tysons, Alexandria, Bethesda, Potomac
-   - Each page: ~1,500-2,000 words, service overview + local market context + FAQ + trust signals
-   - Internal link from homepage and service pages
-
-2. **Create 3 foundational "What is" resource pages**
-   - "What is Property Management?" (targeting 1,000+ volume head term)
-   - "What is an HOA?" (targeting 18,000 volume head term with DC-specific angle)  
-   - "What is Community Association Management?" (targeting emerging query)
-
-3. **Expand service page depth**
-   - Split HOA management into HOA vs. Condo Association pages
-   - Create dedicated Multifamily Property Management page
-   - Deepen commercial PM page with BEPS, NNN lease, CAM content
-
-### Short-Term (30-90 Days)
-
-4. **Build DC neighborhood sub-pages** (15-20 neighborhoods)
-   - Follow Atlas Lane model: /property-management/{neighborhood}
-   - Each page: 800-1,200 words with neighborhood-specific market data, rental rates, and regulations
-
-5. **Create 5 decision-stage comparison pages**
-   - Self-managing vs. property manager in DC
-   - HOA self-management vs. professional management
-   - Property management costs in DC
-   - How to choose a property manager in DC
-   - When to switch your HOA management company
-
-6. **Build jurisdiction guide hub pages**
-   - DC Landlord-Tenant Law Guide
-   - Virginia Property Management Regulations
-   - Maryland HOA Law Guide
-
-### Medium-Term (90-180 Days)
-
-7. **Develop state-specific legal content series** (following FirstService model)
-   - DC squatter's rights guide
-   - DC/VA/MD security deposit laws guide
-   - DC/VA/MD eviction process guides
-
-8. **Build backlink acquisition strategy**
-   - Target local citations and community association directories (TNWLC model)
-   - Create linkable resources (DC rental law infographic, HOA management cost calculator)
-   - Pursue local press and WBJ mentions
-
-9. **Launch commercial PM content hub**
-   - DC office market analysis
-   - BEPS compliance guide for building owners
-   - NNN lease guide for DC commercial properties
+| Advantage | Detail | How to Leverage |
+|---|---|---|
+| DC/VA/MD legal depth | 150 articles with jurisdiction-specific statute citations — no competitor has this depth | Elevate to jurisdiction guide hub pages; use as internal linking backbone for geo pages |
+| FAQ coverage | 95 FAQs across 4 service categories with full DC/VA/MD legal context | Link FAQs into service pages and geo pages; ensure FAQ schema markup on all pages |
+| Multi-service coverage | Covers residential + HOA + commercial — most competitors only cover 1-2 | Create distinct service pages per line; cross-link between them for authority |
+| Blog content quality | Articles include specific statute citations, fee benchmarks, and enforcement details | Existing articles support AI answer inclusion; internal link them to new geo/service pages |
 
 ---
 
@@ -601,49 +410,23 @@ This is FirstService's most successful content play — targeting **state + lega
 - `/maryland/` — MD state hub
 - `/virginia/what-we-do/property-management` — VA PM hub
 - `/virginia/what-we-do/property-management/condominium-association` — VA condo service
-- `/new-york/news-events/articles-and-news/squatters-rights-in-new-york/` — State legal content
-- `/illinois/news-events/articles/illinois-squatters-rights-2025-guide/` — State legal content
-- `/texas/news-events/articles/a-guide-to-texas-squatters-rights/` — State legal content
-- `/florida/news-events/articles/squatters-rights-in-florida/` — State legal content
-- `/california/news-events/articles/squatters-rights-in-california/` — State legal content
 
 ### Nomadic Real Estate (nomadicrealestate.com)
 - `/` — Homepage
 - `/property-management/` — PM service page
 - `/leasing` — Leasing service page
-- `/about-nomadic` — About page
 - `/locations` — Locations hub
 - `/locations/property-management-kalorama-dc` — DC neighborhood geo
 - `/locations/property-management-huntington-va` — VA suburb geo
-- `/rentals/` — Rentals listings
-- `/current-clients` — Client portal
 - `/what-is-a-tenant/` — Head-term blog
-- `/questions-for-renters-personal-references/` — Landlord utility blog
-- `/how-to-get-approved-for-an-apartment/` — Tenant blog
-- `/5-sublet-vs-sublease-differences-you-should-know/` — Comparison blog
-- `/unauthorized-pet-lease-violation/` — Landlord legal blog
-- `/how-to-find-phone-numbers-of-property-owners-complete-guide/` — Utility blog
-- `/apartment-deposit-explained/` — Tenant blog
 - `/self-managing-vs-property-manager-dc/` — Decision-stage blog
 - `/how-much-do-property-managers-charge/` — Commercial intent blog
-- `/property-management-company` — Education blog
-- `/what-does-a-property-management-company-do` — Education blog
-- `/property-management-responsibilities` — Education blog
-- `/complaint-against-a-property-management-company` — Tenant blog
-- `/rental-property-maintenance` — Landlord blog
-- `/calculate-rental-property-cash-flow` — Investor blog
-- `/rental-property-tax-deductions` — Investor blog
-- `/smart-home-technology-for-rental-properties` — Technology blog
-- `/how-to-negotiate-rent` — Landlord blog
-- `/commercial-lease-agreement` — Commercial blog
-- `/how-much-can-you-make-on-airbnb` — Investor blog
-- `/2-percent-rule-in-real-estate` — Investor blog
-- `/tenant-move-out-checklist` — Process blog
+- `/unauthorized-pet-lease-violation/` — Landlord legal blog
+- `/5-sublet-vs-sublease-differences-you-should-know/` — Comparison blog
 
 ### Atlas Lane (atlaslane.com)
 - `/` — Homepage
 - `/dc-property-management` — DC service page
-- `/owners` — Owner services page
 - `/markets/washington-dc` — DC market page
 - `/locations` — Locations hub
 - `/locations/capitol-hill-dc-property-management` — Capitol Hill geo
@@ -653,78 +436,30 @@ This is FirstService's most successful content play — targeting **state + lega
 - `/locations/bloomingdale-dc-property-management` — Bloomingdale geo
 - `/locations/tenleytown-dc-property-management` — Tenleytown geo
 - `/locations/foxhall-dc-property-management` — Foxhall geo
-- `/locations/congress-heights-dc-property-management` — Congress Heights geo
-- `/locations/fort-lincoln-dc-property-management` — Fort Lincoln geo
-- `/locations/the-warf-dc-property-management` — The Wharf geo
 - `/locations/lansdowne-nova-property-management` — Lansdowne NoVA geo
-- `/locations/west-end-nova-property-management` — West End NoVA geo
-- `/locations/rose-hill-nova-property-management` — Rose Hill NoVA geo
-- `/locations/hamilton-nova-property-management` — Hamilton NoVA geo
-- `/post/loft-studio-differences-similarities-pros-cons` — Top blog
 - `/post/best-suburbs-washington-dc-comfortable-living` — DC geo blog
-- `/post/reduce-lower-humidity-house-apartpent-low-cost-most-efficient` — Lifestyle blog
-- `/post/basement-apartment-ideas-arrange-decorate-rent-out` — DC-relevant blog
 - `/post/best-affordable-areas-washington-dc` — DC geo blog
 - `/post/english-basement-washington-dc` — DC-specific blog
-- `/post/best-areas-washington-dc` — DC geo blog
-- `/post/floating-house-vs-houseboat-pros-cons` — Lifestyle blog
 
 ### Donohoe (donohoe.com)
-- `/` — Homepage
-- `/commercial-real-estate` — CRE division
 - `/commercial-real-estate/property-management` — PM service page
 - `/commercial-real-estate/leasing` — Leasing service page
 - `/commercial-real-estate/brokerage` — Brokerage service page
-- `/commercial-real-estate/project-management` — Project management page
-- `/commercial-real-estate/about-us` — CRE about page
-- `/commercial-real-estate/meet-our-team` — Team page
-- `/hospitality/` — Hospitality division
 - `/sustainability` — Sustainability page
-- `/history-milestones` — History page
 
 ### WC Smith (wcsmith.com)
-- `/` — Homepage
+- `/property-management/` — PM service page (#2 for "property management companies dc")
 - `/dc-apartments/` — DC apartments search hub
-- `/property-management/` — PM service page
-- `/wc-smith-all-utilities-included-apartment-communities/` — Niche listings
-- `/wc-smith-tax-credit-apartment-communities-2/` — Affordable housing
-- `/available-two-bedroom-washington-dc-apartments/` — 2BR listing page
-- `/available-washington-dc-studio-apartments/` — Studio listing page
-- `/available-washington-dc-3-bedroom-apartments/` — 3BR listing page
-- `/available-one-bedroom-washington-dc-apartments/` — 1BR listing page
 
 ### Bozzuto (bozzuto.com)
-- `/` — Homepage
 - `/property-management/` — PM division page
 - `/apartments-for-rent/` — Apartments search hub
-- `/apartments-for-rent/md/` — Maryland apartments
-- `/apartments-for-rent/metro/boston-metro/` — Metro geo page
-- `/the-bozzuto-experience/` — Brand experience page
-- `/resident-resources/` — Resident portal
-- `/careers/` — Careers hub
 
 ### JBG SMITH (jbgsmith.com)
-- `/` — Homepage
-- `/about/story` — Company story
-- `/careers` — Careers page
-- `/property/retail/8001-WOODMONT/` — Bethesda retail
 - `/property/office/7200-WISCONSIN-AVENUE/` — Bethesda office
-- `/property/office/RTC-WEST/` — Reston office
 - `/property/office/1550-CRYSTAL-DRIVE/` — National Landing
-- `/property/office/CHASE-TOWER/` — Bethesda office
 - `/property/office/4747-BETHESDA-AVENUE/` — Bethesda office
-
-### Paradigm Companies (paradigmcos.com)
-- `/` — Homepage
-- `/about-us` — About page
-- `/join-our-team` — Careers page
-- `/meridian-on-first-phase-2` — DC property
-- `/parc-meridian-at-eisenhower-station` — Alexandria property
-- `/meridian-at-mt-vernon-triangle-phase-2` — DC property
-- `/meridian-at-ballston-commons` — Arlington property
-- `/meridian-at-gallery-place` — DC property
-- `/meridian-at-courthouse-commons` — Arlington property
 
 ---
 
-*This document is a living resource. Update quarterly with fresh Ahrefs data and new competitor page discoveries.*
+*This document is a living resource. Update quarterly with fresh Ahrefs data and new competitor page discoveries. Use the Execution Queue (Section 5) as the active build list.*
