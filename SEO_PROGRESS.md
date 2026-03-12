@@ -519,3 +519,25 @@ Full content rewrite and republish of the first 50 articles from the remaining u
 - **Remaining unreviewed articles**: ~150 (200 original - 50 this batch)
 
 **Next:** Batch 27 — next 50 remaining unreviewed articles
+
+---
+
+## Claude Opus 4.6 Drafts — Competitive Intelligence-Informed Rewrites
+
+**Started:** March 11, 2026
+**Location:** `/drafts/claude-opus-4.6/`
+**Purpose:** Full article rewrites informed by COMPETITIVE_INTELLIGENCE.md and SEO_COMPETITOR_PAGE_LANDSCAPE.md, produced as review-ready drafts for side-by-side comparison.
+
+### Article 1: `how-to-choose-the-right-property-management-company`
+
+| Field | Detail |
+|---|---|
+| **Draft file** | `drafts/claude-opus-4.6/how-to-choose-the-right-property-management-company.md` |
+| **Category** | Residential Property Management |
+| **Target audience** | Rental property owner / landlord |
+| **Competitive intelligence inputs** | Bay Management "What to Look for When Hiring DC PM" (decision-stage comparison, High priority); Nomadic "Self-Managing vs PM DC" and "How Much Do PMs Charge" (decision-stage comparison, High priority); Columbia PM "Property Management FAQs" (FAQ/answer-engine, High priority); Atlas Lane DC PM page (core service, High priority) |
+| **Strategic alignment** | Maps to Execution Queue items #13 (Self-Managing vs. Hiring PM) and #14 (PM Costs in DC). Decision-stage comparison content that directly supports conversion. |
+| **What changed** | Complete rewrite from generic 10-point listicle to jurisdiction-specific evaluation guide. Original had zero law citations, no DC/VA/MD licensing specifics, no fee benchmarks, no screening process detail, and a blockquote promotional section. New version includes DC BBL/DLCP requirements, VA DPOR broker licensing (including Nov 2025 regulation updates), MD MREC/Montgomery County licensing, DC rent control § 42-3502, TOPA § 42-3404, security deposit § 42-3502.17, Tenant Bill of Rights § 42-3502.22, Fair Criminal Record Screening Act § 2-1402.68, source-of-income protections, fee structure benchmarks (7-8.5% management, 50-100% placement), turnover cost context ($3,000-8,000), eviction timeline context (6-12 months DC Superior Court), and 5-question FAQ section. |
+| **Internal links added** | Residential PM FAQs, tenant screening guide, DC rent control guide, PM fee comparison, DC licensing rules, transition to professional PM guide, top benefits of hiring PM, self-managing vs professional, residential PM service page |
+| **Geo references** | DC, Arlington, Fairfax, Tysons, Alexandria, Bethesda, Potomac, Dupont Circle, Montgomery County |
+| **Key observations** | The original article was one of the weakest on the site — a generic listicle with no local specificity, no law citations, no fee data, and a promotional blockquote that undermined credibility. This topic is directly contested by Bay Management, Nomadic, Columbia PM, and Atlas Lane, all of whom have stronger versions. The rewrite positions GJR as the most legally informed option in the market. This article should link to (and eventually be linked from) future decision-stage pages like "Self-Managing vs. Hiring a PM in DC" and "PM Costs in Washington DC." |
