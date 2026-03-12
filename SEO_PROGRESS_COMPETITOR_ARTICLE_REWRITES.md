@@ -47,14 +47,14 @@
 |---|---|---|---|---|---|---|---|---|---|---|
 | 1 | Bay / Nomadic / Atlas / WC Smith DC residential PM pages | Residential Property Management | Yes | `https://www.gordonjamesrealty.com/services/residential-property-management` | create new | Residential Property Management in Washington, DC | `property-management-washington-dc` | Published | 2026-03-12 | Published a new DC-specific money page rather than overwriting the broader residential service hub. Live URL: `https://www.gordonjamesrealty.com/services/property-management-washington-dc` |
 | 2 | TNWLC / FirstService / Keymont DC HOA pages | Community Association Management | Yes | `https://www.gordonjamesrealty.com/services/community-association-management` | create new | HOA Management in Washington, DC | `hoa-management-washington-dc` | Published | 2026-03-12 | Published a new DC-specific HOA page rather than replacing the broader community association service hub. Live URL: `https://www.gordonjamesrealty.com/services/hoa-management-washington-dc` |
-| 3 | Donohoe / Capitol / Rappaport commercial PM pages | Commercial Property Management | Yes | `https://www.gordonjamesrealty.com/services/commercial-property-management` | expand existing | Commercial Property Management in Washington, DC | `commercial-property-management-washington-dc` | Queued | 2026-03-16 | Turn the existing commercial service asset into a DC-specific owner page built around reporting, tenant retention, vendor oversight, and asset performance. |
+| 3 | Donohoe / Capitol / Rappaport commercial PM pages | Commercial Property Management | Yes | `https://www.gordonjamesrealty.com/services/commercial-property-management` | expand existing | Commercial Property Management in Washington, DC | `commercial-property-management-washington-dc` | Draft complete | 2026-03-13 | Staged a stronger draft on the existing commercial service page rather than creating a second DC-commercial URL. Draft now leans harder into reporting, lease administration, CAM visibility, vendor oversight, mixed-use operations, and DC compliance considerations. |
 | 4 | Bay / Atlas Arlington PM pages | Residential Property Management | No direct geo money page found | Related geo articles exist but no service page | create new | Property Management in Arlington, VA | `property-management-arlington-va` | Queued | 2026-03-17 | New geo service page for a named target market; differentiate with condo-heavy inventory, transit demand, and owner economics. |
 | 5 | Bay / Nomadic Fairfax PM pages | Residential Property Management | No direct geo money page found | Related Virginia content exists but no Fairfax service page | create new | Property Management in Fairfax, VA | `property-management-fairfax-va` | Queued | 2026-03-17 | New Fairfax money page tied to suburban rental stock, school-driven demand, and county-level operational detail. |
 | 6 | Atlas Tysons PM pages | Residential Property Management | No direct geo money page found | Related NoVA market content exists but no Tysons service page | create new | Property Management in Tysons, VA | `property-management-tysons-va` | Queued | 2026-03-18 | Treat Tysons as a distinct investor market with luxury condo, mixed-use, and corporate-renter framing. |
 | 7 | Nomadic / Atlas Alexandria PM pages | Residential Property Management | No direct geo money page found | Related Alexandria market content exists but no service page | create new | Property Management in Alexandria, VA | `property-management-alexandria-va` | Queued | 2026-03-18 | New Alexandria page should focus on Old Town, condo / townhouse stock, military / government renter demand, and owner pain points. |
 | 8 | Bay Bethesda PM pages | Residential Property Management | No direct geo money page found | Related Maryland articles exist but no Bethesda service page | create new | Property Management in Bethesda, MD | `property-management-bethesda-md` | Queued | 2026-03-19 | Bethesda is a named target geo and high-value owner market; emphasize Montgomery County licensing and premium asset expectations. |
 | 9 | Bay Potomac PM pages | Residential Property Management | No direct geo money page found | Related Maryland articles exist but no Potomac service page | create new | Property Management in Potomac, MD | `property-management-potomac-md` | Queued | 2026-03-19 | Potomac needs a differentiated luxury-owner angle rather than a generic Maryland PM page. |
-| 10 | Atlas / Nomadic location hubs | Cross-Site Geo IA | No | No existing locations hub identified | create new | Gordon James Realty Service Areas | `locations` | Queued | 2026-03-16 | IA asset that routes authority into DC, NoVA, Maryland, HOA, commercial, and future neighborhood pages. |
+| 10 | Atlas / Nomadic location hubs | Cross-Site Geo IA | Partial existing structure | Existing `States` and `Neighboring Areas` templates already exist in Webflow | create new | Gordon James Realty Service Areas | `locations` | Draft complete | 2026-03-13 | Created a first-pass static `locations` hub in Webflow draft mode to sit above the existing state and neighborhood structure instead of duplicating it. Initial version routes users into DC, Virginia, Maryland, and core service-line pages while future geo pages are added. |
 | 11 | FirstService / TNWLC "What is an HOA?" | Community Association Management | No confirmed live page; comparison drafts exist | Draft refs: `drafts/gpt-5.4/what-is-an-hoa-board-guide-dc-va-md.md`, `drafts/claude-opus-4.6/what-is-an-hoa-guide-for-dc-metro-board-members.md` | create new | What Is an HOA? A Guide for DC, Virginia, and Maryland Boards | `what-is-an-hoa-guide-for-dc-metro-board-members` | Queued | 2026-03-23 | Use existing draft work, but publish only one consolidated final version aimed at boards, not homeowners. |
 | 12 | FirstService "What is Property Management?" | Residential / Cross-Service | No direct definition page found | Related article: `key-considerations-before-venturing-into-property-management` | create new | What Is Property Management? A Guide for DC, Virginia, and Maryland Property Owners | `what-is-property-management-dc-va-md` | Queued | 2026-03-23 | Needs to define residential, HOA, commercial, and multifamily management in a way that supports service discovery without becoming generic. |
 | 13 | Nomadic "Self-Managing vs Property Manager DC" | Residential Property Management | Yes | `navigating-the-complexities-of-self-managing-rental-properties` | update existing | Self-Managing vs. Hiring a Property Manager in Washington, DC | `self-managing-vs-hiring-a-property-manager-in-washington-dc` | Queued | 2026-03-24 | Best handled by sharpening an existing self-management article into a true conversion comparison page rather than publishing a near-duplicate. |
@@ -100,19 +100,26 @@
 | 2026-03-12 | `https://www.baymgmtgroup.com/property-management-companies-washington-dc`, `https://www.nomadicrealestate.com/property-management/`, `https://www.atlaslane.com/`, `https://wcsmith.com/property-management/` | Created new DC-specific service page | `https://www.gordonjamesrealty.com/services/property-management-washington-dc` | Positioned as the new residential DC money page while keeping the broader residential service page intact. |
 | 2026-03-12 | `https://tnwlc.com/hoa-management-washington-dc`, `https://www.fsresidential.com/washington-dc/what-we-do/washington-dc-property-management`, `https://keymontcm.com/hoa-management-washington-dc` | Created new DC-specific HOA service page | `https://www.gordonjamesrealty.com/services/hoa-management-washington-dc` | Positioned as the new board-focused DC HOA conversion page while keeping the broader association management page intact. |
 
+### Staged For Next Publish Slot
+
+| Target Publish Date | Competitor Source URL(s) | Action Taken | Target URL | Notes |
+|---|---|---|---|---|
+| 2026-03-13 | `https://www.donohoe.com/commercial-real-estate/property-management`, `https://capitolcorp.com/services/commercial-management/`, `https://www.rappaportco.com/` | Expanded the existing commercial service page in Webflow draft mode | `https://www.gordonjamesrealty.com/services/commercial-property-management` | Kept the existing URL as the primary commercial money page and rewrote the draft around DC commercial-owner priorities: lease administration, vendor oversight, reporting, CAM visibility, mixed-use coordination, and compliance-aware operations. |
+| 2026-03-13 | `https://www.nomadicrealestate.com/locations/`, `https://www.atlaslane.com/locations` | Created a new static locations hub in Webflow draft mode | `https://www.gordonjamesrealty.com/locations` | Built as a clean IA layer above the existing `States` and neighborhood structure so future geo service pages have a central routing destination. |
+
 ---
 
 ## Batch 01 Status Summary
 
-- `Queued:` 23
+- `Queued:` 21
 - `In progress:` 0
-- `Draft complete:` 0
+- `Draft complete:` 2
 - `Ready for publish:` 0
 - `Published:` 2
 
 ### Remaining In Batch
 
-- `23` assets remain to be executed in Batch 01.
+- `23` assets remain to be executed in Batch 01, with `2` of those already staged in draft for the next publish slot.
 
 ### Important Batch 01 Observations
 
@@ -122,6 +129,7 @@
 - The `locations` hub is an IA dependency and should be completed early in the batch so subsequent geo pages have a clean internal-link target.
 - The HOA cluster performs best when written for `board members`, not homeowners. The residential cluster performs best when written for `owners / landlords`, not tenants.
 - Webflow already has `States` and `Neighboring Areas` collections that can support location architecture, so the locations section should be built to complement that existing structure rather than duplicate it.
+- The commercial service line is best handled as a strengthened primary URL first, because the current commercial page already targets Washington, DC and can be improved without creating avoidable cannibalization.
 
 ---
 
