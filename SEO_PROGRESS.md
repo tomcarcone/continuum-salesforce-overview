@@ -560,25 +560,28 @@ Full content rewrite and republish of the first 50 articles from the remaining u
 
 ---
 
-## Claude Opus 4.6 Drafts — Competitive Intelligence-Informed Rewrites
+## Claude Opus 4.6 Drafts — Controlled Model Comparison Test
 
 **Started:** March 11, 2026
 **Location:** `/drafts/claude-opus-4.6/`
-**Purpose:** Full article rewrites informed by COMPETITIVE_INTELLIGENCE.md and SEO_COMPETITOR_PAGE_LANDSCAPE.md, produced as review-ready drafts for side-by-side comparison.
+**Purpose:** Controlled model comparison test. 5 competitor pages were analyzed and used as strategic inputs to create original Gordon James Realty articles on the same topics. Articles are not copies or rewrites of competitors — they are original, market-specific content that covers the topic in a stronger, more useful way.
 
-### Article 1: `how-to-choose-the-right-property-management-company`
+| # | Competitor Page Reviewed | New GJR Article Created | Category | Notes / Observations |
+|---|---|---|---|---|
+| 1 | Bay Mgmt: What to Look for When Hiring Washington DC Property Manager | `how-to-choose-the-right-property-management-company` | Residential PM | Complete rewrite of existing GJR article. Transformed generic 10-point listicle into jurisdiction-specific evaluation guide with DC BBL/DLCP, VA DPOR, MD MREC licensing detail, fee benchmarks (7-8.5% management, 50-100% placement), TOPA/rent control context, tenant screening compliance (Fair Criminal Record Screening Act, source-of-income), and 5-question FAQ. Bay Mgmt competitor article had zero statute citations and relied on self-promotional framing. |
+| 2 | Bay Mgmt: How Much Is a Security Deposit for an Apartment on Average | `security-deposit-rules-dc-virginia-maryland-landlords` | Residential PM | Net-new article (no equivalent existed on GJR site). Bay Mgmt article was written for tenants with generic national averages and no statute citations. GJR version is written entirely for landlords, with statute-level detail for DC (§ 42-3502.17, 1-month cap, interest required, treble damages), VA (VRLTA § 55.1-1226, 2-month cap, no interest), MD (§ 8-203, 1-month cap as of Oct 2024, ≥1.5% interest). Includes jurisdiction comparison table, 5 most expensive deposit mistakes, and compliance guidance. |
+| 3 | TNWLC: Washington DC HOA Laws and Regulations | `hoa-condo-laws-dc-virginia-maryland-board-guide` | Community Association Management | Net-new article (GJR had no HOA law overview page). TNWLC article covers only DC and is structured as a law-firm statute listing with limited operational guidance. GJR version covers all three jurisdictions (DC Condominium Act + Horizontal Property Act + Nonprofit Corporation Act + DC Human Rights Act; VA POAA + Condominium Act; MD HOA Act + Condominium Act), translates each statute into operational board requirements, covers fiduciary duty with practical examples, and positions GJR's Boutique/Midsize and Large-Scale management teams. |
+| 4 | TNWLC: What Is HOA and What Does It Mean to Live In One? | `what-is-an-hoa-guide-for-dc-metro-board-members` | Community Association Management | Net-new article. TNWLC article targets homebuyers/residents wondering "what does HOA mean" — surface-level glossary explainer. GJR version targets board members: covers governance structure, HOA vs. condo distinction (with legal implications), board responsibilities (financial mgmt, vendor oversight, rule enforcement, compliance, insurance), fee structure and reserve planning, when professional management becomes necessary, and 6-question FAQ. Positions GJR's team structure as solution for communities of all sizes. |
+| 5 | Ross Companies: Third-Party Property Management: What You Need To Know | `third-party-property-management-dc-metro-guide` | Residential PM | Net-new article. Ross Companies article is a generic textbook-style explainer with no geographic specificity, no regulatory context, no fee benchmarks, and no evaluation framework. GJR version is DC-market-specific: covers three-jurisdiction regulatory complexity (BBL, DPOR, MREC, TOPA, rent stabilization, source-of-income, Fair Criminal Record Screening Act), provides concrete evaluation criteria (licensing verification, jurisdiction knowledge, fee transparency, communication standards, screening rigor, property type experience), addresses common misconceptions, and includes a financial decision framework for when outsourced management makes sense. |
 
-| Field | Detail |
-|---|---|
-| **Draft file** | `drafts/claude-opus-4.6/how-to-choose-the-right-property-management-company.md` |
-| **Category** | Residential Property Management |
-| **Target audience** | Rental property owner / landlord |
-| **Competitive intelligence inputs** | Bay Management "What to Look for When Hiring DC PM" (decision-stage comparison, High priority); Nomadic "Self-Managing vs PM DC" and "How Much Do PMs Charge" (decision-stage comparison, High priority); Columbia PM "Property Management FAQs" (FAQ/answer-engine, High priority); Atlas Lane DC PM page (core service, High priority) |
-| **Strategic alignment** | Maps to Execution Queue items #13 (Self-Managing vs. Hiring PM) and #14 (PM Costs in DC). Decision-stage comparison content that directly supports conversion. |
-| **What changed** | Complete rewrite from generic 10-point listicle to jurisdiction-specific evaluation guide. Original had zero law citations, no DC/VA/MD licensing specifics, no fee benchmarks, no screening process detail, and a blockquote promotional section. New version includes DC BBL/DLCP requirements, VA DPOR broker licensing (including Nov 2025 regulation updates), MD MREC/Montgomery County licensing, DC rent control § 42-3502, TOPA § 42-3404, security deposit § 42-3502.17, Tenant Bill of Rights § 42-3502.22, Fair Criminal Record Screening Act § 2-1402.68, source-of-income protections, fee structure benchmarks (7-8.5% management, 50-100% placement), turnover cost context ($3,000-8,000), eviction timeline context (6-12 months DC Superior Court), and 5-question FAQ section. |
-| **Internal links added** | Residential PM FAQs, tenant screening guide, DC rent control guide, PM fee comparison, DC licensing rules, transition to professional PM guide, top benefits of hiring PM, self-managing vs professional, residential PM service page |
-| **Geo references** | DC, Arlington, Fairfax, Tysons, Alexandria, Bethesda, Potomac, Dupont Circle, Montgomery County |
-| **Key observations** | The original article was one of the weakest on the site — a generic listicle with no local specificity, no law citations, no fee data, and a promotional blockquote that undermined credibility. This topic is directly contested by Bay Management, Nomadic, Columbia PM, and Atlas Lane, all of whom have stronger versions. The rewrite positions GJR as the most legally informed option in the market. This article should link to (and eventually be linked from) future decision-stage pages like "Self-Managing vs. Hiring a PM in DC" and "PM Costs in Washington DC." |
+### Model Comparison Test Observations (Claude Opus 4.6)
+
+- **Audience discipline:** All 5 articles strictly follow the audience rules — residential/rental content written for landlords/owners (not tenants), HOA content written for board members (not individual homeowners), and the third-party management piece written for property owners/investors.
+- **Jurisdiction depth:** Every article includes statute citations and specific compliance requirements for all three jurisdictions (DC, VA, MD) rather than treating the DC metro area as a single market. This is the primary structural advantage over every competitor page reviewed.
+- **Originality:** None of the 5 articles copy, closely imitate, or lightly reword the competitor content. Each approaches the topic from a different angle, with different structure, different emphasis, and different audience framing than the competitor page that inspired it.
+- **Practical utility:** Each article includes actionable compliance guidance, comparison tables, evaluation frameworks, or decision criteria — not just definitions or generic advice. The goal is to be the most practically useful article on the topic in this market.
+- **Internal linking:** Each article proactively links to relevant GJR FAQs, knowledge hub articles, and service pages, building the internal linking structure documented in COMPETITIVE_INTELLIGENCE.md.
+- **AI SEO:** Content is structured with clear headings, direct-answer subsections, FAQ schemas, and concise explanations designed for both traditional search and AI-generated answers.
 
 ---
 
@@ -674,3 +677,19 @@ The following articles were fully updated in the CMS but failed to publish via A
 
 Based on the original `remaining_articles.json` list, approximately **100 articles** remain to be reviewed (Batches 28 and 29).
 
+
+## Model Comparison Test Batch (Gemini 3.1 Pro)
+
+| # | Competitor Page Reviewed | New GJR Article Created | Category | Notes / Observations |
+|---|---|---|---|---|
+| 1 | Bay Mgmt: What to Look for When Hiring Washington DC Property Manager | `hiring-washington-dc-property-manager-guide` | Residential PM | Created DC-specific buyer guide leading with local compliance (BBL, TOPA, rent control) rather than generic advice. |
+| 2 | Bay Mgmt: How Much Is a Security Deposit for an Apartment on Average | `security-deposit-laws-dc-va-md-guide` | Residential PM | Built a DC/VA/MD specific guide around legal limits, timelines, and penalties. Much stronger local utility than the generic competitor page. |
+| 3 | TNWLC: Washington DC HOA Laws and Regulations | `dc-hoa-condo-laws-board-guide` | HOA | Created an operational guide for board members on the DC Condominium Act. Differentiated by including operational implications and when to involve counsel. |
+| 4 | TNWLC: What Is HOA and What Does It Mean to Live In One? | `what-is-an-hoa-guide-dc-va-md` | HOA | Wrote a definition page tailored for the DMV, leading with DC Condo Act, VA POAA, and MD HOA Act frameworks to capture answer-engine traffic. |
+| 5 | Ross Companies: Third-Party Property Management: What You Need To Know | `third-party-multifamily-property-management-dmv` | Multifamily PM | Created a DC-market-specific guide using operator language (NOI, occupancy, renewals, maintenance) to speak directly to investor buying intent. |
+
+### Model Comparison Test Observations (Gemini 3.1 Pro)
+- **Strategic Alignment:** All 5 articles were written specifically for the Gordon James target audience (owners, investors, board members) rather than tenants or general readers.
+- **Geo-Relevance:** Heavy emphasis was placed on DC, VA, and MD specific laws (TOPA, BBL, VRLTA, POAA) to ensure the content is highly localized and authoritative.
+- **AI SEO Optimization:** Content is structured with clear headings, bulleted lists, and direct answers to make it easily extractable by AI answer engines.
+- **Internal Linking:** Proactively integrated links to existing GJR service pages and knowledge hubs (e.g., DC Landlord-Tenant Law Guide, HOA FAQs).
