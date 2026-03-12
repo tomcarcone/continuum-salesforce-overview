@@ -522,19 +522,29 @@ Full content rewrite and republish of the first 50 articles from the remaining u
 
 ---
 
-## GPT 5.4 Draft Workflow — March 11, 2026
+## GPT 5.4 Drafts — Controlled Model Comparison Test
 
-### Drafts Created For Review
+**Started:** March 11, 2026  
+**Location:** `/drafts/gpt-5.4/`  
+**Purpose:** Original Gordon James Realty articles created from the 5 exact competitor topics assigned for the controlled comparison test. Competitor pages were used for strategic guidance only. Drafts are review-ready and not published.  
+**Model:** GPT 5.4  
+**Workflow:** Reviewed each assigned competitor page plus `COMPETITIVE_INTELLIGENCE.md` and `SEO_COMPETITOR_PAGE_LANDSCAPE.md`; wrote original market-specific Gordon James drafts; embedded internal links; added legal / technical verification notes where applicable.
 
-| Draft File | Topic | Hub | Audience | Work Completed | Notes |
+### Draft Log
+
+| Competitor Page Reviewed | Gordon James Draft File | Proposed Topic | Audience | What Was Completed | Notable Observations / Opportunities |
 |---|---|---|---|---|---|
-| `drafts/gpt-5.4/how-to-choose-the-right-property-management-company.md` | How to Choose the Right Property Management Company in DC, Virginia, and Maryland | Residential Property Management | Rental property owner / landlord | Created first GPT 5.4 review draft using `COMPETITIVE_INTELLIGENCE.md` and `SEO_COMPETITOR_PAGE_LANDSCAPE.md` as strategic inputs; added internal links, DC / VA / MD geo framing, compliance emphasis, and draft verification notes | Draft only; not published to website; positioned as decision-stage comparison content aligned to residential PM conversion goals |
+| Bay Management — What to Look for When Hiring Washington DC Property Manager | `drafts/gpt-5.4/how-to-choose-the-right-property-management-company.md` | How to Choose the Right Property Management Company in DC, Virginia, and Maryland | Rental property owner / landlord | Rebuilt the topic as a decision-stage owner guide focused on local compliance, portfolio fit, leasing process, maintenance systems, reporting, and fee transparency. Added internal links to residential PM resources and verification notes for DC licensing, TOPA, Virginia DPOR, and Montgomery County licensing context. | Strong conversion-support topic for residential PM. Natural next build around this cluster is a dedicated DC metro property management fee comparison page. |
+| Bay Management — How Much Is a Security Deposit for an Apartment on Average | `drafts/gpt-5.4/security-deposit-rules-dc-va-md-landlords.md` | Security Deposit Rules for Landlords in Washington, DC, Virginia, and Maryland | Rental property owner / landlord | Repositioned the topic away from tenant-oriented national averages and into a landlord compliance guide covering deposit caps, return timing, documentation, and common owner mistakes across DC / VA / MD. Added internal links to licensing and deposit-related resources plus verification notes. | High-value legal / compliance article with strong AI SEO potential. Could later spin into shorter FAQ snippets or jurisdiction-specific child pages. |
+| TNWLC — Washington DC HOA Laws and Regulations | `drafts/gpt-5.4/washington-dc-hoa-laws-board-guide.md` | Washington, DC HOA Laws: A Practical Guide for Condo and HOA Board Members | HOA or condo board member | Reframed the topic into an operating guide for boards rather than a general legal summary. Covered the DC Condominium Act, Horizontal Property Act, Nonprofit Corporation Act, governing documents, reserve planning, meeting process, records, and enforcement risk. Added HOA-related internal links and verification notes. | Strong law-guide anchor for HOA topical authority. Clear follow-on opportunity for separate Virginia and Maryland board law guides. |
+| TNWLC — What Is HOA and What Does It Mean to Live In One? | `drafts/gpt-5.4/what-is-an-hoa-board-guide-dc-va-md.md` | What Is an HOA? A Practical Guide for DC, Virginia, and Maryland Boards | HOA or condo board member | Rebuilt the head-term topic as a board education piece instead of a homeowner explainer. Clarified HOA vs condo association, board responsibilities, fee purpose, governing authority, and jurisdiction differences across DC / VA / MD. Added internal links to board-duty, budgeting, and service resources. | Good glossary / definition asset for AI SEO and internal linking. Should funnel readers into legal guides, budgeting, reserve funding, and management-service pages. |
+| ROSS Companies — Third-Party Property Management: What You Need To Know | `drafts/gpt-5.4/third-party-property-management-dc-metro-owners.md` | Third-Party Property Management: What DC Metro Multifamily Owners Need to Know | Multifamily owner / operator / investor | Built an owner-facing multifamily article focused on NOI, leasing, retention, maintenance operations, reporting, and DC metro execution differences rather than generic outsourcing language. Added internal links to existing Gordon James commercial / owner resources and notes on positioning. | Strong entry point for a future multifamily content cluster. Natural follow-ons include multifamily service-page work, preventive maintenance, and resident-retention articles. |
 
-### Observations
+### Key Observations
 
-- This topic maps cleanly to the `decision-stage comparison` opportunity identified in both research documents.
-- The strongest differentiator for Gordon James is local legal and operational specificity, especially around DC licensing, rent control, TOPA, Virginia DPOR / VRLTA context, and Montgomery County licensing awareness.
-- This draft workflow should continue in GitHub under `drafts/gpt-5.4/` for side-by-side model review before any CMS publishing.
+- The highest-leverage difference for Gordon James is not broader coverage. It is stronger market fit: DC / VA / MD specificity, clearer audience targeting, and more operational depth.
+- The HOA topics perform best when they are written for boards, not homeowners. That shift materially improves conversion fit and internal-linking usefulness.
+- The residential and multifamily topics show a clear pattern: decision-stage and compliance content can support both traditional search and AI answer visibility if the structure stays direct and jurisdiction-aware.
 
 ---
 
