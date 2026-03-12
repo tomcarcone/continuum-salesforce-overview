@@ -868,3 +868,97 @@ Based on the original `remaining_articles.json` list, approximately **100 articl
 - **All articles include:** geo-specific DC metro references, internal links to FAQs, service pages, and related knowledge hub articles, Gordon James Realty service CTA
 - **Neighborhood guides now cover:** All major DC, Northern Virginia, and Maryland submarkets including the full Arlington Metro corridor (Ballston, Clarendon, Courthouse, East Falls Church, Rosslyn, Shirlington), key DC neighborhoods (Georgetown, Dupont Circle, Adams Morgan, U Street, Columbia Heights, Shaw, NoMa, Penn Quarter, Union Station, Eastern Market, Southwest Waterfront, H Street, Lincoln Park, Tenleytown), and Old Town Alexandria
 
+
+---
+
+## Batch 29: Articles 151-200 of Remaining Unreviewed Articles (COMPLETED)
+**Date:** March 6, 2026
+**Total Articles:** 50
+**Successfully Published via API:** 45
+**Flagged for Manual Publishing (Webflow API ValidationError):** 5
+
+### Articles Updated (50/50):
+
+**151.** `should-you-hire-a-property-management-company-for-your-real-estate-portfolio` → **Should You Hire a Property Management Company for Your DC Metro Real Estate Portfolio?** (Residential PM)
+**152.** `silver-line-phase-2-increases-demand-for-property-management-in-loudoun-and-fairfax` → **Silver Line Phase 2: What the Expansion Means for Landlords and Investors in Loudoun and Fairfax** (Residential PM)
+**153.** `smart-financial-strategies-for-hoa-boards` → **Smart Financial Strategies for HOA Boards: A Guide for Community Association Boards in DC, Virginia, and Maryland** (HOA)
+**154.** `smart-home-security-for-dc-area-rental-properties` → **Smart Home Security for DC Metro Rental Properties: What Landlords Should Know** (Residential PM)
+**155.** `standard-lease-agreements-across-different-states` → **Lease Agreement Requirements in Washington, DC, Virginia, and Maryland: A Landlord's Compliance Guide** (Residential PM)
+**156.** `should-you-buy-a-fixer-upper-rental-property-or-a-rehabbed-house` → **Fixer-Upper vs. Turnkey Rental Property in DC, Virginia, and Maryland: What Investors Need to Know** (Investing)
+**157.** `smart-home-technology-can-help-keep-tenants-happy` → **Smart Home Technology for DC Metro Rental Properties: What Landlords Should Install** (Residential PM)
+**158.** `smart-water-management-strategies-for-hoas-and-community-associations` → **Smart Water Management Strategies for HOAs and Community Associations** (HOA)
+**159.** `starting-with-gordon-james-realty` → **How to Get Started with Gordon James Realty: DC Metro Property Management Onboarding** (Residential PM)
+**160.** `storm-damage-to-your-rental-property` → **Storm Damage Response for DC Metro Landlords: Steps to Restore Your Rental Property** (Residential PM)
+**161.** `strategies-for-identifying-quality-tenants` → **How to Identify Quality Tenants for Your DC Metro Rental Property** (Residential PM)
+**162.** `strategies-for-managing-commercial-properties-efficiently` → **Strategies for Managing Commercial Properties Efficiently in DC, Virginia, and Maryland** (Commercial PM)
+**163.** `subletting-vs-lease-assignment-whats-the-difference` → **Subletting vs. Lease Assignment in DC, Virginia, and Maryland: What Landlords Need to Know** (Residential PM)
+**164.** `successful-commercial-property-management` → **Successful Commercial Property Management in DC, Virginia, and Maryland** (Commercial PM)
+**165.** `sustainable-property-management-green-building-standards` → **Sustainable Property Management: Green Building Standards for DC Metro Landlords and HOAs** (Residential PM)
+**166.** `tax-benefits-for-real-estate-investors` → **Tax Benefits for DC Metro Real Estate Investors: What Landlords and Property Owners Need to Know** (Investing)
+**167.** `tech-titans-transform-nycs-commercial-landscape` → **Technology's Impact on DC Metro Commercial Real Estate: What Property Owners Need to Know** (Commercial PM — *repurposed from NYC to DC market*)
+**168.** `tenant-move-out-checklist` → **Tenant Move-Out Checklist for DC Metro Landlords: What to Inspect and Document** (Residential PM)
+**169.** `the-art-of-community-building-creating-a-sense-of-belonging-in-hoas` → **Building Community in Your HOA: Strategies for Association Boards in DC, Virginia, and Maryland** (HOA)
+**170.** `the-benefits-of-energy-efficient-upgrades-for-your-dc-rental` → **Energy-Efficient Upgrades for DC Metro Rental Properties: Benefits for Landlords and Tenants** (Residential PM)
+**171.** `the-essential-spring-maintenance-guide-for-hoa-properties` → **Essential Spring Maintenance Guide for HOA Properties in DC, Virginia, and Maryland** (HOA)
+**172.** `the-pros-and-cons-of-renting-to-students` → **Renting to Students in DC Metro: Pros, Cons, and Best Practices for Landlords** (Residential PM)
+**173.** `top-activities-to-enjoy-in-washington-dc-in-spring-and-summer` → **Spring and Summer in Washington, DC: What Renters Love About Living in the Region** (Residential PM — *repurposed to support rental listings*)
+**174.** `top-benefits-of-hiring-a-property-management-company` → **Top Benefits of Hiring a Professional Property Management Company in DC, Virginia, and Maryland** (Residential PM)
+**175.** `top-hoa-management-companies-in-virginia` → **How to Choose the Right HOA Management Company in Virginia: A Board Member's Guide** (HOA)
+**176.** `transitioning-self-managed-hoa-to-professional-management` → **Transitioning Your HOA from Self-Management to Professional Management: A Board's Guide** (HOA)
+**177.** `understanding-association-fees-and-their-impact-on-community-living` → **Understanding HOA and Condo Association Fees: A Guide for Board Members in DC, Virginia, and Maryland** (HOA)
+**178.** `understanding-commercial-lease-types` → **Understanding Commercial Lease Types in DC, Virginia, and Maryland: A Property Owner's Guide** (Commercial PM)
+**179.** `understanding-dc-tenant-laws` → **Understanding DC Tenant Laws: What Every DC Landlord Must Know** (Residential PM)
+**180.** `understanding-fair-housing-laws-a-guide-for-landlords-in-dc-virginia-and-maryland` → **Fair Housing Laws for DC Metro Landlords: A Compliance Guide for Washington DC, Virginia, and Maryland** (Residential PM)
+**181.** `uber-and-real-estate-firm-advocate-for-car-free-urban-living` → **Transit-Oriented Living in DC Metro: What Landlords Should Know About Car-Free Renters** (Residential PM — *repurposed*)
+**182.** `understanding-hoa-flag-rules-and-community-enforcement` → **HOA Flag Rules and Community Enforcement: A Guide for Association Boards** (HOA)
+**183.** `understanding-the-desires-of-the-dc-rental-market` → **What DC Metro Renters Want: A Landlord's Market Intelligence Guide** (Residential PM)
+**184.** `understanding-the-legalities-and-best-practices-for-landlords-entering-rental-properties-a-comprehensive-guide` → **Landlord Right of Entry in DC, Virginia, and Maryland: What Property Owners Need to Know** (Residential PM)
+**185.** `unlocking-property-success-with-expert-management` → **Why Professional Property Management Is the Key to Investment Success in DC Metro** (Residential PM — *repurposed from Commercial*)
+**186.** `unlocking-tax-savings-a-guide-for-rental-property-owners` → **Tax Savings for DC Metro Rental Property Owners: A Landlord's Guide** (Residential PM)
+**187.** `what-renters-in-washington-dc-and-arlington-va-want` → **Top Amenities DC Metro Renters Want — And What Landlords Should Provide** (Residential PM)
+**188.** `what-rights-does-a-property-manager-have-when-it-comes-to-evicting-tenants` → **Eviction Rights and the Eviction Process for DC Metro Landlords** (Residential PM)
+**189.** `what-to-do-if-your-dc-area-tenant-refuses-to-pay` → **What to Do If Your DC Metro Tenant Stops Paying Rent** (Residential PM)
+**190.** `what-to-look-for-when-choosing-a-property-management-company` → **How to Choose the Right Property Management Company in DC Metro** (Residential PM)
+**191.** `what-you-need-to-know-about-u-s-mortgage-rates` → **Mortgage Rates and DC Metro Real Estate Investment: What Landlords Need to Know** (Investing — *repurposed from general homebuyer to investor focus*)
+**192.** `when-is-it-time-to-hire-a-property-manager` → **When Is It Time to Hire a Property Manager? A DC Metro Landlord's Guide** (Residential PM)
+**193.** `why-clarendon-is-the-ideal-investment-or-living-destination` → **Clarendon, Arlington: A Landlord and Investor's Guide to DC Metro's Urban Core** (Investing — *repurposed from "living destination" to investor/landlord focus*)
+**194.** `why-every-hoa-should-consider-workers-compensation-insurance` → **HOA Workers' Compensation Insurance: What Community Association Boards Need to Know** (HOA)
+**195.** `why-hiring-a-property-manager-is-a-smart-decision-for-landlords` → **Why Hiring a Property Manager Is a Smart Investment Decision for DC Metro Landlords** (Residential PM)
+**196.** `why-invest-in-arlington-va-rental-properties` → **Why Arlington, VA Rental Properties Are a Top DC Metro Investment** (Investing)
+**197.** `why-landlords-should-adopt-a-mobile-first-strategy` → **Digital Communication Strategies for DC Metro Landlords: Tenant Portals, Text, and Mobile-First Management** (Residential PM)
+**198.** `why-trust-gordon-james-to-manage-your-multi-home-portfolio` → **Managing a Multi-Property Rental Portfolio in DC Metro: Why Professional Management Matters** (Residential PM — *category corrected from HOA to Residential PM*)
+**199.** `why-you-should-invest-in-property-in-arlington-virginia` → **Investing in Arlington, Virginia Real Estate: A Complete Guide for Property Investors** (Investing)
+**200.** `your-essential-spring-property-maintenance-checklist` → **Spring Property Maintenance Checklist for DC Metro Landlords** (Residential PM)
+
+### Flagged for Manual Publishing (Persistent Webflow API ValidationError):
+- **156.** `should-you-buy-a-fixer-upper-rental-property-or-a-rehabbed-house` (ID: 65011e9ddabf1eae4bea2a26)
+- **167.** `tech-titans-transform-nycs-commercial-landscape` (ID: 65025ab598141408bf4eea6d)
+- **173.** `top-activities-to-enjoy-in-washington-dc-in-spring-and-summer` (ID: 6502250e2372e2a9da7f745e)
+- **193.** `why-clarendon-is-the-ideal-investment-or-living-destination` (ID: 64f92e73c9076d529640b3a1)
+- **200.** `your-essential-spring-property-maintenance-checklist` (ID: 64d8f333332fc805f1a379b9)
+
+Content updates were saved successfully to all 5 articles — only the API publish step failed. Publish manually from the Webflow Designer.
+
+### Batch 29 Patterns and Notes:
+- **Category corrections:** Several articles were originally miscategorized (e.g., multi-home portfolio tagged as HOA, Clarendon guide tagged as Commercial) — corrected to appropriate categories during rewrite
+- **Repurposed articles:** Multiple articles were repurposed from general/NYC/renter perspective to DC metro landlord/investor focus, including the mortgage rates guide, Clarendon guide, NYC tech article (→ DC commercial real estate tech), spring activities guide (→ lifestyle support for DC rental listings), and urban car-free living (→ landlord transit-oriented rental strategy)
+- **All articles published-date updated** to 2026-03-06T00:00:00.000Z for substantially rewritten content
+- **All articles include:** geo-specific DC metro references (DC, Arlington, Alexandria, Fairfax, Bethesda, Potomac), internal links to FAQs, service pages, and related knowledge hub articles, Gordon James Realty service CTA
+- **Article 200 completes the full review** of all remaining unreviewed articles on the site
+
+---
+
+## 🎉 ALL ARTICLES REVIEWED AND UPDATED
+
+**Total Articles Reviewed Across All Batches:** 200+ articles
+**Completion Date:** March 6, 2026
+
+All articles on the Gordon James Realty website have now been reviewed and updated across Batches 1-29. Every article has been:
+- Aligned with the correct hub/category (Residential PM, HOA, Commercial PM, Investing)
+- Written for the correct target audience (landlords/owners, HOA board members, commercial property stakeholders)
+- Updated with geo-specific DC metro references (Washington DC, Arlington, Alexandria, Fairfax, Tysons, Bethesda, Potomac)
+- Optimized for SEO and AI SEO with improved headings, structure, and keyword usage
+- Internally linked to relevant FAQs, related articles, and service pages
+- Connected to Gordon James Realty services and value proposition
+- Updated with current published-date (2026-03-06) for substantially rewritten content
+
