@@ -566,7 +566,99 @@ Full content rewrite and republish of the first 50 articles from the remaining u
 
 ### Article 1: `what-to-look-for-in-a-dc-property-manager`
 
-*In progress — see draft file for completed article.*
+| Field | Detail |
+|---|---|
+| **Draft file** | `drafts/claude-sonnet-4.6/article-01-what-to-look-for-in-a-dc-property-manager.md` |
+| **Competitor source** | Bay Management Group — "What to Look for When Hiring Washington DC Property Manager" |
+| **Category** | Residential Property Management |
+| **Target audience** | Rental property owners / landlords |
+| **Word count** | ~2,000 words |
+| **What makes this version stronger** | Bay Management's article is generic and non-DC-specific despite the DC title (3 points: reputation, fees, full service). GJR's article builds an evaluation framework around DC's actual regulatory requirements: BBL verification, rent stabilization, TOPA, Tenant Bill of Rights, Fair Criminal Record Screening Act, lead paint, and fee structure analysis. Includes red flags section and DC-specific FAQ. |
+| **Legal citations** | DC Code § 47-2851.03, § 42-3501 et seq., § 42-3404, § 2-1402.68; 14 DCMR § 308.1 |
+
+---
+
+### Article 2: `security-deposit-rules-dc-virginia-maryland-landlords`
+
+| Field | Detail |
+|---|---|
+| **Draft file** | `drafts/claude-sonnet-4.6/article-02-security-deposit-rules-dc-virginia-maryland.md` |
+| **Competitor source** | Bay Management Group — "How Much Is a Security Deposit for an Apartment on Average" |
+| **Category** | Residential PM — Legal / Compliance |
+| **Target audience** | Rental property owners / landlords |
+| **Word count** | ~2,100 words |
+| **What makes this version stronger** | Bay Management's article is generic, partly written for tenants, with minimal jurisdiction-specific content. GJR's version is written exclusively for landlords with specific legal requirements for DC (1-month cap, 14 DCMR § 308.1; interest; 45-day return), Virginia (VRLTA § 55.1-1226; 2-month cap), and Maryland (Real Property § 8-203; 2-month cap; triple-damages penalty). Includes common landlord mistakes and FAQ. |
+| **Legal citations** | 14 DCMR § 308.1; VRLTA § 55.1-1226; VA Code § 55.1-1214; MD Real Property § 8-203, § 8-211 |
+
+---
+
+### Article 3: `washington-dc-hoa-laws-regulations-board-guide`
+
+| Field | Detail |
+|---|---|
+| **Draft file** | `drafts/claude-sonnet-4.6/article-03-washington-dc-hoa-laws-board-guide.md` |
+| **Competitor source** | TNWLC — "Washington DC HOA Laws and Regulations" |
+| **Category** | HOA / Community Association Management — Legal / Compliance |
+| **Target audience** | HOA and condo board members |
+| **Word count** | ~2,200 words |
+| **What makes this version stronger** | TNWLC's article summarizes DC law accurately but reads as a general legal overview. GJR's version is written for board members and goes deeper on: fiduciary duties (duty of care, loyalty, business judgment rule, D&O insurance); assessment collection and lien rights (§ 42-1903.13); governing document hierarchy; reserve fund obligations; seller disclosure obligations; and when to involve professional management or counsel. |
+| **Legal citations** | DC Code § 42-1901 et seq., § 42-1903.08, § 42-1903.13; DC Code Title 29 Ch 4 (Nonprofit Corp Act); DC Code Title 42 Ch 20 (Horizontal Property Act) |
+
+---
+
+### Article 4: `what-is-an-hoa-board-member-guide-dc-virginia-maryland`
+
+| Field | Detail |
+|---|---|
+| **Draft file** | `drafts/claude-sonnet-4.6/article-04-what-is-an-hoa-board-member-guide.md` |
+| **Competitor source** | TNWLC — "What Is HOA and What Does It Mean to Live In One?" |
+| **Category** | HOA / Community Association Management — Glossary / Definition |
+| **Target audience** | HOA and condo board members |
+| **Word count** | ~2,300 words |
+| **What makes this version stronger** | TNWLC's article is written for prospective homeowners/residents. GJR's version reframes entirely for board members — covering fiduciary obligations, HOA vs. condo association distinctions with DC/VA/MD-specific legal frameworks, reserve funding as a board responsibility, GJR's Boutique & Large-Scale management team structure, and board-member FAQ. The audience reframing is the primary differentiator. |
+| **Legal citations** | DC Code § 42-1901 et seq.; VA POAA § 55.1-1800 et seq.; VA Condo Act § 55.1-1900 et seq.; MD HOA Act Real Property § 11B; MD Condo Act § 11-101 |
+
+---
+
+### Article 5: `third-party-multifamily-property-management-dc-virginia-maryland`
+
+| Field | Detail |
+|---|---|
+| **Draft file** | `drafts/claude-sonnet-4.6/article-05-third-party-multifamily-property-management.md` |
+| **Competitor source** | ROSS Companies — "Third-Party Property Management: What You Need To Know" |
+| **Category** | Multifamily Property Management — Decision-Stage Comparison |
+| **Target audience** | Multifamily property owners / operators / investors |
+| **Word count** | ~2,200 words |
+| **What makes this version stronger** | ROSS Companies is a national operator; their content takes a broad national perspective. GJR's version anchors every section in DC/VA/MD context: DC rent stabilization compliance, BBL licensing, VRLTA multifamily implications for Northern Virginia, Maryland county-level regulatory overlays. Includes self-management vs. in-house vs. third-party framework, detailed fee structure breakdown (management fee, leasing fees, maintenance markups), key performance metrics, and evaluation framework for selecting a third-party PM company. |
+| **Legal citations** | DC Code § 47-2851.03, § 42-3501 et seq., § 42-3404; VRLTA general reference; 14 DCMR general reference |
+
+---
+
+### Batch Summary — Claude Sonnet 4.6 (Controlled Model Comparison)
+
+| | |
+|---|---|
+| **Articles completed** | 5 |
+| **Competitor pages reviewed** | 5 (Bay Management x2, TNWLC x2, ROSS Companies x1) |
+| **Total estimated word count** | ~10,800 words |
+| **Categories covered** | Residential PM (2), HOA (2), Multifamily PM (1) |
+| **Execution queue items addressed** | Tier 2 #11, Tier 3 #24, Tier 4 #31, Tier 4 #38; plus residential PM decision-stage content |
+| **Geo-targeting** | DC, Arlington, Fairfax, Tysons, Alexandria, Bethesda, Potomac, Montgomery County, Prince George's County, Northern Virginia |
+| **Legal citations verified** | Yes — all 5 articles |
+
+**Key strategic observations:**
+- Board-member audience framing for HOA content is a clear differentiation from all competitors in this batch
+- DC regulatory specificity (BBL, rent stabilization, TOPA, Fair Criminal Record Screening Act) is GJR's primary competitive moat across residential and multifamily content
+- Maryland detail (triple-damages security deposit penalty, county licensing overlays) is consistently underserved by competitors
+- GJR team structure (Boutique & Large-Scale) introduced in Article 4 — should carry into future HOA content
+- Multifamily content (Article 5) is the first dedicated multifamily asset in this project; a multifamily service page is the logical next build
+
+**Next priorities:**
+- HOA management in Washington DC (core HOA service page — Tier 1 #2)
+- Multifamily PM service page (Tier 2 #17)
+- HOA self-management vs. professional management (Tier 2 #15)
+- DC Condominium Act guide for boards (TNWLC competitor topic)
+- What is property management? (Tier 2 #12)
 
 ---
 
