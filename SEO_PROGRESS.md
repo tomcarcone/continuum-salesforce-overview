@@ -795,3 +795,76 @@ Based on the original `remaining_articles.json` list, approximately **100 articl
 - **Geo-Relevance:** Heavy emphasis was placed on DC, VA, and MD specific laws (TOPA, BBL, VRLTA, POAA) to ensure the content is highly localized and authoritative.
 - **AI SEO Optimization:** Content is structured with clear headings, bulleted lists, and direct answers to make it easily extractable by AI answer engines.
 - **Internal Linking:** Proactively integrated links to existing GJR service pages and knowledge hubs (e.g., DC Landlord-Tenant Law Guide, HOA FAQs).
+
+---
+
+## Batch 28: Articles 101-150 of Remaining Unreviewed Articles (COMPLETED)
+**Date:** March 6, 2026
+**Total Articles:** 50
+**Successfully Published via API:** 47
+**Flagged for Manual Publishing (Webflow API ValidationError):** 3
+
+### Articles Updated (50/50):
+
+**101.** `mastering-rental-property-investments-with-a-property-manager` → **Mastering Rental Property Investments in the DC Metro Area with a Property Manager** (Residential PM)
+**102.** `mastering-rental-property-management-a-comprehensive-guide` → **Mastering Rental Property Management in the DC Metro Area: A Landlord's Guide** (Residential PM)
+**103.** `mastering-seo-a-guide-for-property-managers` → **How DC Metro Landlords Can Market Their Rental Properties Online for Maximum Visibility** (Residential PM — *repurposed from SEO guide*)
+**104.** `mastering-your-home-buying-budget-a-comprehensive-guide` → **Budgeting for a DC Metro Rental Property Investment** (Investing — *repurposed*)
+**105.** `maximize-profitability-10-proven-rental-property-strategies` → **10 Proven Rental Property Strategies to Maximize Profitability in DC, Virginia, and Maryland** (Residential PM)
+**106.** `maximize-roi-with-gordon-james-5-property-management-benefits` → **5 Property Management Benefits That Maximize ROI for DC Metro Property Owners** (Residential PM)
+**107.** `maximizing-property-value-with-novas-silver-line` → **Maximizing Rental Property Value Along NoVA's Silver Line Corridor** (Residential PM)
+**108.** `millennials-choose-d-c-heres-why` → **Why DC Metro's Millennial Renter Base Is a Long-Term Advantage for Landlords and Investors** (Residential PM — *repurposed*)
+**109.** `national-survey-reveals-decrease-in-investment-home-sales` → **DC Metro Rental Investment Outlook: What Landlords and Investors Need to Know Now** (Investing — *updated for 2026*)
+**110.** `navigating-commercial-real-estate-leases-a-comprehensive-guide` → **Navigating Commercial Real Estate Leases in DC, Virginia, and Maryland: A Landlord's Guide** (Commercial PM)
+**111.** `navigating-group-houses-in-dc-pros-and-cons-for-landlords` → **Navigating Group Houses in DC: What Landlords Need to Know** (Residential PM)
+**112.** `navigating-landlord-tenant-disputes-5-things-you-need-to-know-about-mediation` → **Navigating Landlord-Tenant Disputes in DC, Virginia, and Maryland: 5 Things to Know About Mediation** (Residential PM)
+**113.** `navigating-single-family-home-property-management` → **Single-Family Home Property Management in DC, Virginia, and Maryland: A Complete Guide** (Residential PM)
+**114.** `navigating-the-complexities-of-self-managing-rental-properties` → **Why Self-Managing Rental Properties in DC, Virginia, and Maryland Is Harder Than You Think** (Residential PM)
+**115.** `navigating-the-decision-renting-vs-selling-your-property` → **Should You Rent or Sell Your DC Metro Property? A Landlord's Decision Guide** (Residential PM — *repurposed*)
+**116.** `navigating-the-home-inspection-process-for-real-estate-investors` → **Navigating the Home Inspection Process When Buying DC Metro Investment Properties** (Residential PM)
+**117.** `navigating-the-refinancing-process-for-your-dc-home` → **Refinancing Your DC Metro Rental Property: A Landlord's and Investor's Guide** (Residential PM — *repurposed*)
+**118.** `navigating-the-tenant-eviction-process-a-comprehensive-guide` → **Navigating the Tenant Eviction Process in DC, Virginia, and Maryland: What Landlords Must Know** (Residential PM)
+**119.** `optimizing-storage-solutions-in-the-growing-dc-market` → **Storage Solutions and Amenities That Add Value to DC Metro Rental Properties** (Residential PM — *repurposed*)
+**120.** `preventing-landlord-nightmares-with-property-management` → **Preventing Landlord Nightmares: How Professional Property Management Protects DC Metro Owners** (Residential PM)
+**121.** `proactive-summer-maintenance-for-multifamily-communities` → **Proactive Summer Maintenance for Multifamily Communities in DC, Virginia, and Maryland** (Residential PM)
+**122.** `professional-property-management-for-long-distance-rentals` → **Out-of-State and Long-Distance Property Management in DC, Virginia, and Maryland** (Residential PM)
+**123.** `professional-property-management-services-for-investors` → **Gordon James Realty: Professional Property Management Services for DC Metro Investors** (Residential PM)
+**124.** `promoting-tenant-care-of-your-rental-property` → **How to Encourage Tenant Care of Your Rental Property in DC, Virginia, and Maryland** (Residential PM)
+**125.** `property-management-app-design-features-testing-guide` → **Technology Tools Every DC Metro Landlord Should Use: Property Management Software Guide** (Residential PM — *repurposed*)
+**126.** `property-management-for-foreign-service-members` → **Property Management in DC, Virginia, and Maryland for Foreign Service and Military Families** (Residential PM)
+**127.** `property-management-in-arlington-va-living-in-ballston` → **Property Management in Arlington VA: Ballston Rental Market Guide for Landlords** (Residential PM — *repurposed renter→landlord*)
+**128.** `property-management-in-arlington-va-living-in-clarendon` → **Property Management in Arlington VA: Clarendon Rental Market Guide for Landlords** (Residential PM — *repurposed*)
+**129.** `property-management-in-arlington-va-living-in-courthouse` → **Property Management in Arlington VA: Courthouse Rental Market Guide for Landlords** (Residential PM — *repurposed*)
+**130.** `property-management-in-arlington-va-living-in-east-falls-church` → **Property Management in Arlington VA: East Falls Church Rental Market Guide for Landlords** (Residential PM — *repurposed*)
+**131.** `property-management-in-arlington-va-living-in-rosslyn` → **Property Management in Arlington VA: Rosslyn Rental Market Guide for Landlords** (Residential PM — *repurposed*)
+**132.** `property-management-in-arlington-va-living-in-shirlington` → **Property Management in Arlington VA: Shirlington Rental Market Guide for Landlords** (Residential PM — *repurposed*)
+**133.** `property-management-in-dc-living-in-southwest-waterfront` → **Property Management in DC: Southwest Waterfront Rental Market Guide for Landlords** (Residential PM — *repurposed*)
+**134.** `property-management-in-dc-living-in-the-eastern-market-area` → **Property Management in DC: Eastern Market Rental Market Guide for Landlords** (Residential PM — *repurposed*)
+**135.** `property-management-in-dc-living-in-the-u-street-area` → **Property Management in DC: U Street Rental Market Guide for Landlords** (Residential PM — *repurposed*)
+**136.** `property-management-in-dc-living-in-the-union-station-area` → **Property Management in DC: Union Station / NoMa-Gallaudet Rental Market Guide for Landlords** (Residential PM — *repurposed*)
+**137.** `property-management-in-virginia-living-in-old-town-alexandria` → **Property Management in Virginia: Old Town Alexandria Rental Market Guide for Landlords** (Residential PM — *repurposed*)
+**138.** `property-management-in-washington-dc-living-in-adams-morgan` → **Property Management in Washington DC: Adams Morgan Rental Market Guide for Landlords** (Residential PM — *repurposed*)
+**139.** `property-management-in-washington-dc-living-in-columbia-heights` → **Property Management in Washington DC: Columbia Heights Rental Market Guide for Landlords** (Residential PM — *repurposed*)
+**140.** `property-management-in-washington-dc-living-in-dupont-circle` → **Property Management in Washington DC: Dupont Circle Rental Market Guide for Landlords** (Residential PM — *repurposed*)
+**141.** `property-management-in-washington-dc-living-in-georgetown` → **Property Management in Washington DC: Georgetown Rental Market Guide for Landlords** (Residential PM — *repurposed*)
+**142.** `property-management-in-washington-dc-living-in-lincoln-park` → **Property Management in Washington DC: Lincoln Park / Capitol Hill East Rental Market Guide for Landlords** (Residential PM — *repurposed*)
+**143.** `property-management-in-washington-dc-living-in-noma` → **Property Management in Washington DC: NoMa Rental Market Guide for Landlords** (Residential PM — *repurposed*)
+**144.** `property-management-in-washington-dc-living-in-penn-quarter` → **Property Management in Washington DC: Penn Quarter / Chinatown Rental Market Guide for Landlords** (Residential PM — *repurposed*)
+**145.** `property-management-in-washington-dc-living-in-tenleytown` → **Property Management in Washington DC: Tenleytown Rental Market Guide for Landlords** (Residential PM — *repurposed*)
+**146.** `property-management-in-washington-dc-living-in-the-h-street-area` → **Property Management in Washington DC: H Street Corridor Rental Market Guide for Landlords** (Residential PM — *repurposed*)
+**147.** `rental-property-checklist-post-purchase-tips` → **Post-Purchase Rental Property Checklist: What DC Metro Landlords Should Do First** (Residential PM)
+**148.** `renters-vote-arlington-one-of-the-best-places-to-live-in-the-us` → **Why Arlington, Virginia Is One of the Best Markets for Rental Property Investment** (Residential PM — *repurposed renter→investor*)
+**149.** `revamp-your-workspace-innovative-trends-and-ideas` → **Home Office Upgrades That Add Rental Value to DC Metro Properties** (Residential PM — *repurposed*)
+**150.** `revitalizing-shaw-the-transformative-impact-of-citymarket-at-o` → **Shaw, Washington DC: An Urban Revitalization Success Story and Rental Investment Market Guide** (Residential PM — *repurposed*)
+
+### Flagged for Manual Publishing (Persistent Webflow API ValidationError):
+- **133.** `property-management-in-dc-living-in-southwest-waterfront` (ID: 64f885af7a24e7a6edb009c6)
+- **134.** `property-management-in-dc-living-in-the-eastern-market-area` (ID: 64f8eb19984ac7cba3d36597)
+- **135.** `property-management-in-dc-living-in-the-u-street-area` (ID: 64f879def7c07bb9358ae415)
+
+### Batch 28 Patterns and Notes:
+- **Largest category of work:** 20 neighborhood guide articles (127-150) were repurposed from renter/homebuyer perspective to landlord/investor perspective — a major content alignment improvement
+- **All articles published-date updated** to 2026-03-06T00:00:00.000Z for substantially rewritten content
+- **All articles include:** geo-specific DC metro references, internal links to FAQs, service pages, and related knowledge hub articles, Gordon James Realty service CTA
+- **Neighborhood guides now cover:** All major DC, Northern Virginia, and Maryland submarkets including the full Arlington Metro corridor (Ballston, Clarendon, Courthouse, East Falls Church, Rosslyn, Shirlington), key DC neighborhoods (Georgetown, Dupont Circle, Adams Morgan, U Street, Columbia Heights, Shaw, NoMa, Penn Quarter, Union Station, Eastern Market, Southwest Waterfront, H Street, Lincoln Park, Tenleytown), and Old Town Alexandria
+
