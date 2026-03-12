@@ -538,122 +538,25 @@ Full content rewrite and republish of the first 50 articles from the remaining u
 
 ---
 
-## Claude Sonnet 4.6 Drafts — Competitive Intelligence-Informed Rewrites
+## Claude Sonnet 4.6 Drafts — Controlled Model Comparison Test
 
 **Started:** March 12, 2026  
 **Location:** `/drafts/claude-sonnet-4.6/`  
-**Purpose:** Full article rewrites and new article drafts informed by COMPETITIVE_INTELLIGENCE.md and SEO_COMPETITOR_PAGE_LANDSCAPE.md, produced as review-ready drafts for side-by-side comparison against other model outputs.  
+**Purpose:** Original Gordon James Realty articles written from 5 specific competitor pages as strategic inputs. Produced as review-ready drafts for side-by-side model comparison. Articles are not published. All content is original — competitor pages used for intent, structure, and topic guidance only.  
 **Model:** claude-sonnet-4.6  
-**Workflow:** Research-first (both competitive intelligence documents reviewed in full before writing). Drafts are not published. All content is original — not copied or closely adapted from competitor pages. Internal links added directly. DC/VA/MD legal citations verified.
+**Workflow:** Each competitor page read and analyzed first. Both COMPETITIVE_INTELLIGENCE.md and SEO_COMPETITOR_PAGE_LANDSCAPE.md reviewed. Articles written to be original, stronger, and more market-specific than the competitor source. Internal links embedded directly. DC/VA/MD legal citations verified.  
+**Competitor pages assigned:**
+1. Bay Management — What to Look for When Hiring a DC Property Manager
+2. Bay Management — How Much Is a Security Deposit for an Apartment on Average
+3. TNWLC — Washington DC HOA Laws and Regulations
+4. TNWLC — What Is HOA and What Does It Mean to Live In One?
+5. ROSS Companies — Third-Party Property Management: What You Need To Know
 
 ---
 
-### Article 1: `how-to-choose-a-property-manager-dc`
+### Article 1: `what-to-look-for-in-a-dc-property-manager`
 
-| Field | Detail |
-|---|---|
-| **Draft file** | `drafts/claude-sonnet-4.6/article-01-how-to-choose-a-property-manager-dc.md` |
-| **Category** | Residential Property Management |
-| **Target audience** | Rental property owner / landlord |
-| **Word count** | ~1,850 words |
-| **Competitive intelligence inputs** | Bay Management "What to Look for When Hiring DC PM" (decision-stage, High priority); Nomadic "Self-Managing vs PM DC" (High priority); Columbia PM FAQs (High priority); Atlas Lane DC service page (High priority) |
-| **Strategic alignment** | Maps to Execution Queue Tier 2 items #13 and #14. Decision-stage comparison content that directly supports residential PM conversion. Addresses a query type with strong buyer intent. |
-| **What makes this version stronger** | Leads with DC BBL licensing as the non-negotiable filter — a framing no competitor uses as the primary qualifier. Includes a full eight-point evaluation rubric specific to DC metro: licensing verification, DC legal obligations (TOPA, rent control, Tenant Bill of Rights, Fair Criminal Record Screening Act), transparent fee structure analysis, leasing process, maintenance vendor setup, communication standards, tenant screening compliance, and reference checking. Includes red flags section and direct GJR service context. FAQ section covers BBL verification, TOPA, security deposit law, management agreement review. |
-| **Internal links added** | Residential PM service page, Residential PM FAQ page (anchor link) |
-| **Geo references** | Washington DC (Capitol Hill, Columbia Heights, Petworth, Dupont Circle, Logan Circle, Adams Morgan, Georgetown), Arlington VA, Fairfax VA, Tysons VA, Alexandria VA, Bethesda MD, Potomac MD |
-| **Legal citations** | DC Code § 47-2851.03, § 42-3502.17, § 42-3404, § 42-3502.22, § 42-3502.05, § 2-1402.21, § 2-1402.68; VRLTA § 55.1-1220; MD Real Property § 8-211; DCMR Title 14 |
-| **Key observations** | Decision-stage content is the highest commercial-intent content category in residential PM. This article should eventually be cross-linked with the self-managing comparison article and the fees article to form a decision-cluster. GJR's legal depth and DC compliance expertise are positioned as concrete differentiators, not generic trust claims. |
-
----
-
-### Article 2: `what-is-an-hoa-dc-va-md-guide`
-
-| Field | Detail |
-|---|---|
-| **Draft file** | `drafts/claude-sonnet-4.6/article-02-what-is-an-hoa-dc-va-md-guide.md` |
-| **Category** | HOA / Community Association Management |
-| **Target audience** | HOA and condo board members |
-| **Word count** | ~2,050 words |
-| **Competitive intelligence inputs** | FirstService Residential "What is an HOA?" (18K/mo volume, #2 nationally, generic national page — Adapt into better local version, High priority); TNWLC DC HOA management; EJF Real Estate HOA management |
-| **Strategic alignment** | Maps to Execution Queue Tier 2 item #11. Highest-volume head term in the HOA space. Strong AI SEO candidate — definitional, structured, jurisdiction-specific. Builds topical authority at the top of the funnel and feeds board members toward service and FAQ pages. |
-| **What makes this version stronger** | Goes significantly deeper than FirstService's generic national page by: (1) targeting HOA board members specifically rather than homeowners or residents, (2) providing a full DC/VA/MD jurisdictional breakdown (DC Condo Act, VA POAA + VA Condo Act, MD HOA Act + MD Condo Act), (3) explaining fiduciary obligations in plain language (duty of care, duty of loyalty, business judgment rule, D&O insurance), (4) differentiating HOA from condo association with legal precision, (5) covering reserve studies and why they matter legally in all three jurisdictions, (6) explaining GJR's Boutique & Large-Scale management team structure as a service differentiator. |
-| **Internal links added** | HOA/community association management service page, Community Association FAQ page (anchor link) |
-| **Geo references** | Washington DC (Capitol Hill, Navy Yard, NoMa, National Landing), Arlington VA, Fairfax VA, Alexandria VA, Bethesda MD, Potomac MD, Montgomery County MD, Prince George's County MD |
-| **Legal citations** | DC Code § 42-1901 et seq., § 42-1903.09, § 42-1903.13; VA POAA § 55.1-1800, § 55.1-1815, § 55.1-1816, § 55.1-1825, § 55.1-1833; VA Condo Act § 55.1-1900, § 55.1-1964; MD HOA Act § 11B, § 11B-111, § 11B-112, § 11B-117; MD Condo Act § 11-101; FCC OTARD rule |
-| **Key observations** | This article should become one of the top HOA content assets on the site. It competes directly against FirstService's highest-traffic page but with a 3x deeper jurisdictional framework. The board member audience framing is a clear differentiation. The article ties to GJR's team structure (Boutique/Large-Scale) — the first time that differentiator is featured in a draft. Should be internally linked from all other HOA articles on the site. |
-
----
-
-### Article 3: `property-management-fees-washington-dc`
-
-| Field | Detail |
-|---|---|
-| **Draft file** | `drafts/claude-sonnet-4.6/article-03-property-management-fees-washington-dc.md` |
-| **Category** | Residential Property Management |
-| **Target audience** | Rental property owners and landlords |
-| **Word count** | ~1,900 words |
-| **Competitive intelligence inputs** | Nomadic Real Estate "How Much Do Property Managers Charge" (decision-stage comparison, High priority); Bay Management "Security Deposit" article as model for transparency; COMPETITOR_SEO_PAGE_STRATEGY.md notes on Nomadic and Bay Management performance metrics as trust signals |
-| **Strategic alignment** | Maps to Execution Queue Tier 2 item #14 (Property Management Costs in Washington DC). High commercial intent. Directly supports sales conversations and service page conversion. |
-| **What makes this version stronger** | Four-component fee structure breakdown (monthly management fee, leasing fee, lease renewal fee, maintenance coordination fees) with DC metro-specific dollar examples. Includes an actual annual cost model ($2,888/year for a $2,800/month Arlington condo — concrete, verifiable). Addresses the "collected vs. scheduled rent" distinction that catches owners off guard. Explains DC regulatory compliance value (BBL, rent control, TOPA, Tenant Bill of Rights) as a component of what professional management is actually worth. Includes a comparison checklist for evaluating competing proposals. Explicitly states GJR's 7–8.5% fee range and no-markup maintenance policy. |
-| **Internal links added** | Residential PM service page, Residential PM FAQ page (anchor link) |
-| **Geo references** | Washington DC (Columbia Heights, Capitol Hill, Petworth, Dupont Circle), Arlington VA, Fairfax VA, Tysons VA, Alexandria VA, Bethesda MD, Potomac MD |
-| **Legal citations** | DC Code § 47-2851.03, § 42-3501, § 42-3404, § 42-3502.22, § 42-3505.53; VRLTA § 55.1-1200 et seq.; DCMR Title 14 |
-| **Key observations** | Fee transparency is a competitive edge GJR can own. Most competitors either bury fee information or speak in ranges without specifics. This draft leads with the actual GJR fee range as a trust signal. The annual cost model is a novel feature — no DC competitor presents fees as a modeled annual ownership cost. The "what is included vs. what is not" section should become a repeatable element on GJR's service pages. |
-
----
-
-### Article 4: `self-managing-vs-hiring-property-manager-dc`
-
-| Field | Detail |
-|---|---|
-| **Draft file** | `drafts/claude-sonnet-4.6/article-04-self-managing-vs-hiring-property-manager-dc.md` |
-| **Category** | Residential Property Management |
-| **Target audience** | Rental property owners and landlords (specifically those actively weighing the decision) |
-| **Word count** | ~2,100 words |
-| **Competitive intelligence inputs** | Nomadic Real Estate "Self-Managing vs Property Manager DC" (decision-stage comparison, High priority — Directly replicate as a topic); Bay Management decision content; FirstService HOA self-management comparison (structural model) |
-| **Strategic alignment** | Maps to Execution Queue Tier 2 item #13 (Self-Managing vs. Hiring a Property Manager in DC). Bottom-of-funnel comparison content with direct conversion intent. Nomadic has a version; GJR's should outcompete it with DC compliance depth. |
-| **What makes this version stronger** | Leads with DC's compliance environment as the decisive factor — the "compliance stack" framing (BBL, rent control, TOPA, Tenant Bill of Rights, lead paint, Fair Criminal Record Screening, DCMR Title 14) is original and has no equivalent in any DC competitor article. Includes a time-cost analysis with real DC rent numbers to make the fee ROI argument concrete. Covers specific self-management failure scenarios (security deposit errors, habitability failures, eviction process missteps, lease compliance gaps) with DC law citations for each. Honestly addresses when self-management works — which builds credibility and avoids the pure sales approach competitors use. FAQ section directly addresses the most common owner objections. |
-| **Internal links added** | Residential PM service page, Residential PM FAQ page (anchor link) |
-| **Geo references** | Washington DC (Capitol Hill, Columbia Heights, Petworth, Dupont Circle, H Street, Logan Circle, Adams Morgan), Arlington VA, Fairfax VA, Tysons VA, Alexandria VA, Bethesda MD, Potomac MD, Montgomery County MD |
-| **Legal citations** | DC Code § 47-2851.03, § 42-3501, § 42-3502.05, § 42-3404, § 42-3502.22, § 42-3502.17, § 2-1402.21, § 2-1402.68; VRLTA § 55.1-1200; DCMR Title 14 |
-| **Key observations** | This article is positioned to become the strongest decision-stage page on the GJR site for residential PM. The "compliance stack" framing is genuinely original — no DC property management competitor leads with this approach, and it is the most persuasive argument for professional management that a DC-specific competitor can make. The article should be linked from the fees article, the how-to-choose article, and the DC residential PM service page to form a decision-stage cluster. |
-
----
-
-### Batch Summary — Claude Sonnet 4.6
-
-| | |
-|---|---|
-| **Articles completed** | 4 |
-| **Total word count** | ~7,900 words |
-| **Categories covered** | Residential PM (3 articles), HOA (1 article) |
-| **Article types** | Decision-stage comparison (3), Glossary/definition/FAQ (1) |
-| **Execution queue items addressed** | Tier 2 items #11, #13, #14; partial groundwork for #12 and #15 |
-| **Internal links included** | Yes (directly embedded, not suggested) |
-| **Geo-targeting** | DC, Arlington, Fairfax, Tysons, Alexandria, Bethesda, Potomac, Montgomery County, multiple DC neighborhoods |
-| **Legal citations** | Verified across all 4 articles |
-
-### Content Opportunities Identified in This Batch
-
-1. **Decision-cluster architecture:** Articles 1, 3, and 4 form a natural decision-stage cluster for residential PM. Once all three are published, they should cross-link to each other and to the DC residential PM service page. This cluster directly competes with Nomadic and Bay Management's decision-stage content.
-
-2. **GJR team structure as a differentiator:** The Boutique & Midsize vs. Large-Scale Community Management team distinction was introduced in Article 2 (HOA). This framing should be carried into HOA geo pages and the HOA FAQ page as a recurring positioning element.
-
-3. **Compliance stack as unique positioning:** The "DC compliance stack" concept developed in Article 4 (self-managing vs. hiring) is a genuinely original framing that should be adapted for the main DC residential PM service page, the how-to-choose article, and potentially as a visual asset (infographic or table) on the site.
-
-4. **Annual cost modeling:** Article 3's annual cost model ($2,888/year on a $2,800/month property) is a format that should be replicated for other markets (Arlington, Bethesda, Fairfax) as geo-specific versions of the fees article are built.
-
-5. **HOA board member framing:** Article 2 establishes the board-member-first voice for HOA content that should be replicated across all HOA articles, FAQ rewrites, and HOA geo pages. Board members are the economic decision-makers for HOA management contracts.
-
-### Outstanding Content Priorities for Next Drafts
-
-Based on the Execution Queue and research documents, the next highest-priority drafts should be:
-
-- **HOA management in Washington DC** (Execution Queue Tier 1 item #2 — core HOA service page)
-- **DC HOA laws and regulations** (Execution Queue Tier 3 item #24 — legal compliance guide for boards; TNWLC has a version GJR should surpass)
-- **Unenforceable HOA rules in Virginia** (SEO Competitor Page Landscape — Keymont has this, High priority)
-- **What is property management?** (Execution Queue Tier 2 item #12 — glossary/definition page, supports residential PM authority)
-- **DC rental business license guide** (Execution Queue Tier 3 item — Columbia PM has a version; High priority AI SEO topic)
+*In progress — see draft file for completed article.*
 
 ---
 
@@ -676,51 +579,6 @@ Based on the Execution Queue and research documents, the next highest-priority d
 | **Internal links added** | Residential PM FAQs, tenant screening guide, DC rent control guide, PM fee comparison, DC licensing rules, transition to professional PM guide, top benefits of hiring PM, self-managing vs professional, residential PM service page |
 | **Geo references** | DC, Arlington, Fairfax, Tysons, Alexandria, Bethesda, Potomac, Dupont Circle, Montgomery County |
 | **Key observations** | The original article was one of the weakest on the site — a generic listicle with no local specificity, no law citations, no fee data, and a promotional blockquote that undermined credibility. This topic is directly contested by Bay Management, Nomadic, Columbia PM, and Atlas Lane, all of whom have stronger versions. The rewrite positions GJR as the most legally informed option in the market. This article should link to (and eventually be linked from) future decision-stage pages like "Self-Managing vs. Hiring a PM in DC" and "PM Costs in Washington DC." |
-
-### Article 2: `what-is-an-hoa-dc-va-md-board-guide`
-
-| Field | Detail |
-|---|---|
-| **Draft file** | `drafts/claude-opus-4.6/what-is-an-hoa-dc-va-md-board-guide.md` |
-| **Category** | Community Association Management |
-| **Target audience** | HOA / condo board member |
-| **Type** | Net-new article (no existing equivalent on the site) |
-| **Competitive intelligence inputs** | Maps to Execution Queue item #11 — highest-volume head term in the HOA space. Competitors like FirstService Residential, CAMP, and Vanguard Management all have foundational "What Is an HOA?" content. GJR had no equivalent. |
-| **Strategic alignment** | Foundation piece for HOA content cluster. This article serves as the top-of-funnel entry point for board members and homeowners searching for HOA fundamentals, and links downward into the existing HOA knowledge base (reserve funding, budgeting, legal obligations, common areas, rule enforcement). |
-| **What it covers** | HOA structure and governance, CC&Rs/bylaws/articles of incorporation, what fees cover, board responsibilities and fiduciary duty, DC Condominium Act (§ 42-1901 et seq.) including super-lien provisions, Virginia POAA (§ 55.1-1800 et seq.) including reserve study mandate, Maryland HOA Act (§ 11B-101 et seq.), HOA vs. condo association distinctions, when to consider professional management, 6-question FAQ section. |
-| **Internal links added** | Community Association Management FAQs, reserve funding guide, HOA budgeting best practices, legal obligations of HOA boards, HOA common areas, HOA rule enforcement guide, community association management service page |
-| **Geo references** | DC, Arlington, Fairfax, Tysons, Alexandria, Bethesda, Potomac, Dupont Circle, Montgomery County, Prince George's County, Reston, Fairfax County |
-| **Key observations** | This is the single most important missing page in GJR's HOA content strategy. "What is an HOA" is the highest-volume informational query in the community association space, and GJR had no page targeting it. The article positions GJR's Boutique & Midsize and Large-Scale management teams, includes jurisdiction-specific legal frameworks for all three jurisdictions, and creates the anchor node for the HOA content cluster. |
-
-### Article 3: `property-management-fees-washington-dc`
-
-| Field | Detail |
-|---|---|
-| **Draft file** | `drafts/claude-opus-4.6/property-management-fees-washington-dc.md` |
-| **Category** | Residential Property Management |
-| **Target audience** | Rental property owner / landlord |
-| **Existing article** | Rewrite of `comparing-property-management-and-hoa-fees` — refocused from a broad PM-vs-HOA comparison to a specific, decision-stage cost guide |
-| **Competitive intelligence inputs** | Maps to Execution Queue item #14 (PM Costs in DC). Nomadic "How Much Do Property Managers Charge in DC?" is the primary competitor page — a high-traffic, decision-stage comparison article. Bay Management and Columbia PM also compete on this topic. |
-| **Strategic alignment** | Decision-stage pricing content that directly supports conversion. Owners researching PM costs are actively evaluating whether to hire a manager — this is bottom-funnel content. |
-| **What changed** | Complete rewrite from a PM-vs-HOA comparison article (which diluted both topics) into a focused PM fee guide. New version covers: percentage vs. flat fee models with DC/VA/MD-specific ranges (DC 8-10%, VA/MD 7-9%), leasing fees (50-100% of one month's rent), renewal fees ($0-$300), three maintenance fee models (markup, in-house, per-work-order), vacancy fees, eviction fees with DC Superior Court timeline context (6-12 months), early termination fees, setup fees, a total-annual-cost comparison table, a "what you should expect for your fees" checklist, and 5-question FAQ section. |
-| **Internal links added** | Residential PM FAQs, how to choose PM, top benefits of hiring PM, self-managing vs professional PM, DC licensing rules, residential PM service page |
-| **Geo references** | DC, Arlington, Fairfax, Tysons, Alexandria, Bethesda, Potomac, Montgomery County |
-| **Key observations** | The original article tried to cover both PM fees and HOA fees in one page, which diluted effectiveness for both audiences. The rewrite focuses entirely on PM fees for rental property owners — the decision-stage audience that matters most. Includes a total-annual-cost comparison table that no competitor currently offers, positioning GJR as the most transparent option in the market. The HOA fee topic should eventually get its own standalone article. |
-
-### Article 4: `self-managing-vs-hiring-property-manager-dc`
-
-| Field | Detail |
-|---|---|
-| **Draft file** | `drafts/claude-opus-4.6/self-managing-vs-hiring-property-manager-dc.md` |
-| **Category** | Residential Property Management |
-| **Target audience** | Rental property owner / landlord |
-| **Existing article** | Rewrite of `navigating-the-complexities-of-self-managing-rental-properties` — transformed from generic overview to structured decision-stage comparison |
-| **Competitive intelligence inputs** | Maps to Execution Queue item #13 (Self-Managing vs. Hiring PM). Nomadic "Self-Managing vs. Hiring a PM in DC" is the primary competitor page — a high-traffic, decision-stage comparison article. Bay Management and Columbia PM also address this topic. |
-| **Strategic alignment** | Decision-stage comparison content that directly supports conversion. Owners debating self-management are actively deciding whether to hire — this is bottom-funnel content that maps directly to the residential PM service page. |
-| **What changed** | Complete rewrite from a vague, generic 2022 article with no law citations, no cost data, no jurisdiction-specific detail, and no decision framework. Original was ~800 words of generic pros/cons. New version is a comprehensive decision-stage comparison (~3,500 words) with: honest case for self-management (control, cost savings, learning), real costs of self-management (time estimates of 8-15 hrs/month stable + 30-60 hrs during turnover, vacancy cost modeling at $700/week, detailed legal/regulatory risk inventory for DC/VA/MD with statute citations), tenant screening quality comparison, maintenance quality comparison, the case for hiring (distance, multiple properties, DC properties, time-value calculation showing $18.67/hour break-even, portfolio scaling), a 7-point decision framework, and 5-question FAQ section. |
-| **Internal links added** | Residential PM FAQs, how to choose PM, PM fees guide, top benefits of hiring PM, transition to professional PM guide, tenant screening guide, DC licensing rules, residential PM service page |
-| **Geo references** | DC, Arlington, Fairfax, Tysons, Alexandria, Bethesda, Potomac, Montgomery County |
-| **Key observations** | The original article was one of the weakest decision-stage pages on the site — a 2022 article with no local specificity, no cost data, no law citations, and a tone that read more like a college essay than a business resource. The rewrite includes an explicit time-value-of-money calculation ($18.67/hour break-even) that no competitor currently offers, a 7-point decision framework, and comprehensive DC/VA/MD regulatory risk inventory. This article, combined with the PM fees guide and the how-to-choose guide, completes a 3-article decision-stage cluster that covers the full evaluation journey for prospective PM clients. |
 
 ---
 
