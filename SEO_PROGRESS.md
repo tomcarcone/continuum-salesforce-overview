@@ -522,6 +522,125 @@ Full content rewrite and republish of the first 50 articles from the remaining u
 
 ---
 
+## Claude Sonnet 4.6 Drafts — Competitive Intelligence-Informed Rewrites
+
+**Started:** March 12, 2026  
+**Location:** `/drafts/claude-sonnet-4.6/`  
+**Purpose:** Full article rewrites and new article drafts informed by COMPETITIVE_INTELLIGENCE.md and SEO_COMPETITOR_PAGE_LANDSCAPE.md, produced as review-ready drafts for side-by-side comparison against other model outputs.  
+**Model:** claude-sonnet-4.6  
+**Workflow:** Research-first (both competitive intelligence documents reviewed in full before writing). Drafts are not published. All content is original — not copied or closely adapted from competitor pages. Internal links added directly. DC/VA/MD legal citations verified.
+
+---
+
+### Article 1: `how-to-choose-a-property-manager-dc`
+
+| Field | Detail |
+|---|---|
+| **Draft file** | `drafts/claude-sonnet-4.6/article-01-how-to-choose-a-property-manager-dc.md` |
+| **Category** | Residential Property Management |
+| **Target audience** | Rental property owner / landlord |
+| **Word count** | ~1,850 words |
+| **Competitive intelligence inputs** | Bay Management "What to Look for When Hiring DC PM" (decision-stage, High priority); Nomadic "Self-Managing vs PM DC" (High priority); Columbia PM FAQs (High priority); Atlas Lane DC service page (High priority) |
+| **Strategic alignment** | Maps to Execution Queue Tier 2 items #13 and #14. Decision-stage comparison content that directly supports residential PM conversion. Addresses a query type with strong buyer intent. |
+| **What makes this version stronger** | Leads with DC BBL licensing as the non-negotiable filter — a framing no competitor uses as the primary qualifier. Includes a full eight-point evaluation rubric specific to DC metro: licensing verification, DC legal obligations (TOPA, rent control, Tenant Bill of Rights, Fair Criminal Record Screening Act), transparent fee structure analysis, leasing process, maintenance vendor setup, communication standards, tenant screening compliance, and reference checking. Includes red flags section and direct GJR service context. FAQ section covers BBL verification, TOPA, security deposit law, management agreement review. |
+| **Internal links added** | Residential PM service page, Residential PM FAQ page (anchor link) |
+| **Geo references** | Washington DC (Capitol Hill, Columbia Heights, Petworth, Dupont Circle, Logan Circle, Adams Morgan, Georgetown), Arlington VA, Fairfax VA, Tysons VA, Alexandria VA, Bethesda MD, Potomac MD |
+| **Legal citations** | DC Code § 47-2851.03, § 42-3502.17, § 42-3404, § 42-3502.22, § 42-3502.05, § 2-1402.21, § 2-1402.68; VRLTA § 55.1-1220; MD Real Property § 8-211; DCMR Title 14 |
+| **Key observations** | Decision-stage content is the highest commercial-intent content category in residential PM. This article should eventually be cross-linked with the self-managing comparison article and the fees article to form a decision-cluster. GJR's legal depth and DC compliance expertise are positioned as concrete differentiators, not generic trust claims. |
+
+---
+
+### Article 2: `what-is-an-hoa-dc-va-md-guide`
+
+| Field | Detail |
+|---|---|
+| **Draft file** | `drafts/claude-sonnet-4.6/article-02-what-is-an-hoa-dc-va-md-guide.md` |
+| **Category** | HOA / Community Association Management |
+| **Target audience** | HOA and condo board members |
+| **Word count** | ~2,050 words |
+| **Competitive intelligence inputs** | FirstService Residential "What is an HOA?" (18K/mo volume, #2 nationally, generic national page — Adapt into better local version, High priority); TNWLC DC HOA management; EJF Real Estate HOA management |
+| **Strategic alignment** | Maps to Execution Queue Tier 2 item #11. Highest-volume head term in the HOA space. Strong AI SEO candidate — definitional, structured, jurisdiction-specific. Builds topical authority at the top of the funnel and feeds board members toward service and FAQ pages. |
+| **What makes this version stronger** | Goes significantly deeper than FirstService's generic national page by: (1) targeting HOA board members specifically rather than homeowners or residents, (2) providing a full DC/VA/MD jurisdictional breakdown (DC Condo Act, VA POAA + VA Condo Act, MD HOA Act + MD Condo Act), (3) explaining fiduciary obligations in plain language (duty of care, duty of loyalty, business judgment rule, D&O insurance), (4) differentiating HOA from condo association with legal precision, (5) covering reserve studies and why they matter legally in all three jurisdictions, (6) explaining GJR's Boutique & Large-Scale management team structure as a service differentiator. |
+| **Internal links added** | HOA/community association management service page, Community Association FAQ page (anchor link) |
+| **Geo references** | Washington DC (Capitol Hill, Navy Yard, NoMa, National Landing), Arlington VA, Fairfax VA, Alexandria VA, Bethesda MD, Potomac MD, Montgomery County MD, Prince George's County MD |
+| **Legal citations** | DC Code § 42-1901 et seq., § 42-1903.09, § 42-1903.13; VA POAA § 55.1-1800, § 55.1-1815, § 55.1-1816, § 55.1-1825, § 55.1-1833; VA Condo Act § 55.1-1900, § 55.1-1964; MD HOA Act § 11B, § 11B-111, § 11B-112, § 11B-117; MD Condo Act § 11-101; FCC OTARD rule |
+| **Key observations** | This article should become one of the top HOA content assets on the site. It competes directly against FirstService's highest-traffic page but with a 3x deeper jurisdictional framework. The board member audience framing is a clear differentiation. The article ties to GJR's team structure (Boutique/Large-Scale) — the first time that differentiator is featured in a draft. Should be internally linked from all other HOA articles on the site. |
+
+---
+
+### Article 3: `property-management-fees-washington-dc`
+
+| Field | Detail |
+|---|---|
+| **Draft file** | `drafts/claude-sonnet-4.6/article-03-property-management-fees-washington-dc.md` |
+| **Category** | Residential Property Management |
+| **Target audience** | Rental property owners and landlords |
+| **Word count** | ~1,900 words |
+| **Competitive intelligence inputs** | Nomadic Real Estate "How Much Do Property Managers Charge" (decision-stage comparison, High priority); Bay Management "Security Deposit" article as model for transparency; COMPETITOR_SEO_PAGE_STRATEGY.md notes on Nomadic and Bay Management performance metrics as trust signals |
+| **Strategic alignment** | Maps to Execution Queue Tier 2 item #14 (Property Management Costs in Washington DC). High commercial intent. Directly supports sales conversations and service page conversion. |
+| **What makes this version stronger** | Four-component fee structure breakdown (monthly management fee, leasing fee, lease renewal fee, maintenance coordination fees) with DC metro-specific dollar examples. Includes an actual annual cost model ($2,888/year for a $2,800/month Arlington condo — concrete, verifiable). Addresses the "collected vs. scheduled rent" distinction that catches owners off guard. Explains DC regulatory compliance value (BBL, rent control, TOPA, Tenant Bill of Rights) as a component of what professional management is actually worth. Includes a comparison checklist for evaluating competing proposals. Explicitly states GJR's 7–8.5% fee range and no-markup maintenance policy. |
+| **Internal links added** | Residential PM service page, Residential PM FAQ page (anchor link) |
+| **Geo references** | Washington DC (Columbia Heights, Capitol Hill, Petworth, Dupont Circle), Arlington VA, Fairfax VA, Tysons VA, Alexandria VA, Bethesda MD, Potomac MD |
+| **Legal citations** | DC Code § 47-2851.03, § 42-3501, § 42-3404, § 42-3502.22, § 42-3505.53; VRLTA § 55.1-1200 et seq.; DCMR Title 14 |
+| **Key observations** | Fee transparency is a competitive edge GJR can own. Most competitors either bury fee information or speak in ranges without specifics. This draft leads with the actual GJR fee range as a trust signal. The annual cost model is a novel feature — no DC competitor presents fees as a modeled annual ownership cost. The "what is included vs. what is not" section should become a repeatable element on GJR's service pages. |
+
+---
+
+### Article 4: `self-managing-vs-hiring-property-manager-dc`
+
+| Field | Detail |
+|---|---|
+| **Draft file** | `drafts/claude-sonnet-4.6/article-04-self-managing-vs-hiring-property-manager-dc.md` |
+| **Category** | Residential Property Management |
+| **Target audience** | Rental property owners and landlords (specifically those actively weighing the decision) |
+| **Word count** | ~2,100 words |
+| **Competitive intelligence inputs** | Nomadic Real Estate "Self-Managing vs Property Manager DC" (decision-stage comparison, High priority — Directly replicate as a topic); Bay Management decision content; FirstService HOA self-management comparison (structural model) |
+| **Strategic alignment** | Maps to Execution Queue Tier 2 item #13 (Self-Managing vs. Hiring a Property Manager in DC). Bottom-of-funnel comparison content with direct conversion intent. Nomadic has a version; GJR's should outcompete it with DC compliance depth. |
+| **What makes this version stronger** | Leads with DC's compliance environment as the decisive factor — the "compliance stack" framing (BBL, rent control, TOPA, Tenant Bill of Rights, lead paint, Fair Criminal Record Screening, DCMR Title 14) is original and has no equivalent in any DC competitor article. Includes a time-cost analysis with real DC rent numbers to make the fee ROI argument concrete. Covers specific self-management failure scenarios (security deposit errors, habitability failures, eviction process missteps, lease compliance gaps) with DC law citations for each. Honestly addresses when self-management works — which builds credibility and avoids the pure sales approach competitors use. FAQ section directly addresses the most common owner objections. |
+| **Internal links added** | Residential PM service page, Residential PM FAQ page (anchor link) |
+| **Geo references** | Washington DC (Capitol Hill, Columbia Heights, Petworth, Dupont Circle, H Street, Logan Circle, Adams Morgan), Arlington VA, Fairfax VA, Tysons VA, Alexandria VA, Bethesda MD, Potomac MD, Montgomery County MD |
+| **Legal citations** | DC Code § 47-2851.03, § 42-3501, § 42-3502.05, § 42-3404, § 42-3502.22, § 42-3502.17, § 2-1402.21, § 2-1402.68; VRLTA § 55.1-1200; DCMR Title 14 |
+| **Key observations** | This article is positioned to become the strongest decision-stage page on the GJR site for residential PM. The "compliance stack" framing is genuinely original — no DC property management competitor leads with this approach, and it is the most persuasive argument for professional management that a DC-specific competitor can make. The article should be linked from the fees article, the how-to-choose article, and the DC residential PM service page to form a decision-stage cluster. |
+
+---
+
+### Batch Summary — Claude Sonnet 4.6
+
+| | |
+|---|---|
+| **Articles completed** | 4 |
+| **Total word count** | ~7,900 words |
+| **Categories covered** | Residential PM (3 articles), HOA (1 article) |
+| **Article types** | Decision-stage comparison (3), Glossary/definition/FAQ (1) |
+| **Execution queue items addressed** | Tier 2 items #11, #13, #14; partial groundwork for #12 and #15 |
+| **Internal links included** | Yes (directly embedded, not suggested) |
+| **Geo-targeting** | DC, Arlington, Fairfax, Tysons, Alexandria, Bethesda, Potomac, Montgomery County, multiple DC neighborhoods |
+| **Legal citations** | Verified across all 4 articles |
+
+### Content Opportunities Identified in This Batch
+
+1. **Decision-cluster architecture:** Articles 1, 3, and 4 form a natural decision-stage cluster for residential PM. Once all three are published, they should cross-link to each other and to the DC residential PM service page. This cluster directly competes with Nomadic and Bay Management's decision-stage content.
+
+2. **GJR team structure as a differentiator:** The Boutique & Midsize vs. Large-Scale Community Management team distinction was introduced in Article 2 (HOA). This framing should be carried into HOA geo pages and the HOA FAQ page as a recurring positioning element.
+
+3. **Compliance stack as unique positioning:** The "DC compliance stack" concept developed in Article 4 (self-managing vs. hiring) is a genuinely original framing that should be adapted for the main DC residential PM service page, the how-to-choose article, and potentially as a visual asset (infographic or table) on the site.
+
+4. **Annual cost modeling:** Article 3's annual cost model ($2,888/year on a $2,800/month property) is a format that should be replicated for other markets (Arlington, Bethesda, Fairfax) as geo-specific versions of the fees article are built.
+
+5. **HOA board member framing:** Article 2 establishes the board-member-first voice for HOA content that should be replicated across all HOA articles, FAQ rewrites, and HOA geo pages. Board members are the economic decision-makers for HOA management contracts.
+
+### Outstanding Content Priorities for Next Drafts
+
+Based on the Execution Queue and research documents, the next highest-priority drafts should be:
+
+- **HOA management in Washington DC** (Execution Queue Tier 1 item #2 — core HOA service page)
+- **DC HOA laws and regulations** (Execution Queue Tier 3 item #24 — legal compliance guide for boards; TNWLC has a version GJR should surpass)
+- **Unenforceable HOA rules in Virginia** (SEO Competitor Page Landscape — Keymont has this, High priority)
+- **What is property management?** (Execution Queue Tier 2 item #12 — glossary/definition page, supports residential PM authority)
+- **DC rental business license guide** (Execution Queue Tier 3 item — Columbia PM has a version; High priority AI SEO topic)
+
+---
+
 ## Claude Opus 4.6 Drafts — Competitive Intelligence-Informed Rewrites
 
 **Started:** March 11, 2026
@@ -541,3 +660,98 @@ Full content rewrite and republish of the first 50 articles from the remaining u
 | **Internal links added** | Residential PM FAQs, tenant screening guide, DC rent control guide, PM fee comparison, DC licensing rules, transition to professional PM guide, top benefits of hiring PM, self-managing vs professional, residential PM service page |
 | **Geo references** | DC, Arlington, Fairfax, Tysons, Alexandria, Bethesda, Potomac, Dupont Circle, Montgomery County |
 | **Key observations** | The original article was one of the weakest on the site — a generic listicle with no local specificity, no law citations, no fee data, and a promotional blockquote that undermined credibility. This topic is directly contested by Bay Management, Nomadic, Columbia PM, and Atlas Lane, all of whom have stronger versions. The rewrite positions GJR as the most legally informed option in the market. This article should link to (and eventually be linked from) future decision-stage pages like "Self-Managing vs. Hiring a PM in DC" and "PM Costs in Washington DC." |
+
+---
+
+## Batch 27 — Articles 51–100 of Remaining Unreviewed Articles (Complete)
+
+**Completed:** March 12, 2026  
+**Articles reviewed and updated:** 50  
+**Published successfully:** 41 (82%)  
+**Flagged for manual publish from Webflow Designer:** 9 (persistent Webflow API ValidationError — content is live in CMS)  
+**Published-date:** Updated to `2026-03-06T00:00:00.000Z` for all substantially rewritten or repurposed articles in this batch.
+
+### Articles Requiring Manual Publish (Webflow Designer)
+
+The following articles were fully updated in the CMS but failed to publish via API (persistent Webflow ValidationError — known platform bug):
+
+| # | Slug | New Title |
+|---|------|-----------|
+| 56 | `how-to-choose-the-right-property-management-company` | How to Choose the Right Property Management Company in DC, Virginia, and Maryland |
+| 60 | `how-to-increase-tenant-retention-in-dc-commercial-properties` | How to Increase Tenant Retention in DC Metro Commercial Properties |
+| 21 | `investment-guide-evaluating-real-estate-prospects-part-1` | Investment Guide: Evaluating DC Metro Real Estate Prospects (Part 1) |
+| 23 | `is-a-fixer-upper-a-good-investment-opportunity` | Is a Fixer-Upper a Good Investment in the DC Metro Market? |
+| 32 | `landlord-101-how-to-market-your-rental-property-part-4` | Landlord 101: How to Market Your DC Metro Rental Property (Part 4) |
+| 38 | `landlords-spring-maintenance-guide-for-rental-properties` | Spring Rental Property Maintenance Guide for DC Metro Landlords |
+| 40 | `luxury-rental-property-amenities-to-attract-high-end-tenants` | Luxury Rental Property Amenities to Attract High-End Tenants in the DC Metro Market |
+| 42 | `manage-your-future-fixing-and-flipping-houses-part-3` | Fix and Flip Real Estate in the DC Metro Market: What Investors Need to Know (Part 3) |
+| 43 | `manage-your-future-investing-in-commercial-real-estate-part-2` | Investing in DC Metro Commercial Real Estate: What Every Investor Should Know (Part 2) |
+
+### Batch 27 Full Article Log
+
+| # | Slug | Old Name (approximate) | New Name | Category | Notes |
+|---|------|------------------------|----------|----------|-------|
+| 51 | `homeownership-a-pathway-to-long-term-wealth-accumulation` | Homeownership: A Pathway to Long-Term Wealth | DC Metro Rental Property Investing: Build Long-Term Wealth Through Real Estate | Residential PM | Repurposed from homeownership to rental investment |
+| 52 | `how-to-attract-quality-tenants-to-your-investment-property` | How to Attract Quality Tenants | How to Attract Quality Tenants to Your DC Metro Rental Property | Residential PM | Updated with DC metro specifics |
+| 53 | `how-to-be-a-great-tenant-tips-for-renting-success` | How to Be a Great Tenant | What DC Metro Landlords Should Look for in Quality Tenants | Residential PM | Repurposed: tenant advice → landlord screening guide |
+| 54 | `how-to-boost-your-rental-property-value` | How to Boost Your Rental Property Value | How to Boost Your DC Metro Rental Property Value and Command Higher Rents | Residential PM | Updated with DC metro market specifics |
+| 55 | `how-to-choose-the-right-hoa-management-company` | How to Choose the Right HOA Management Company | How to Choose the Right HOA Management Company in DC, Virginia, and Maryland | HOA | Updated for DC metro HOA boards, GJR Boutique/Large-Scale team structure |
+| 56 | `how-to-choose-the-right-property-management-company` | How to Choose the Right Property Management Company | How to Choose the Right Property Management Company in DC, Virginia, and Maryland | Residential PM | Fully rewritten; **manual publish required** |
+| 57 | `how-to-communicate-hoa-rules-to-residents-effectively` | How to Communicate HOA Rules | How to Communicate HOA Rules and Policies to Residents Effectively | HOA | Updated for HOA board member audience |
+| 58 | `how-to-conduct-effective-hoa-meetings` | How to Conduct Effective HOA Meetings | How to Conduct Effective HOA Board Meetings in DC, Virginia, and Maryland | HOA | Updated with DC metro HOA governance context |
+| 59 | `how-to-create-an-effective-hoa-newsletter` | How to Create an Effective HOA Newsletter | How to Create an Effective HOA Newsletter for Your DC Metro Community | HOA | Updated for HOA board member audience |
+| 60 | `how-to-increase-tenant-retention-in-dc-commercial-properties` | How to Increase Tenant Retention in DC Commercial Properties | How to Increase Tenant Retention in DC Metro Commercial Properties | Commercial PM | Updated; **manual publish required** |
+| 61 | `how-to-handle-an-hoa-special-assessment` | How to Handle an HOA Special Assessment | How to Handle an HOA Special Assessment: A Guide for DC Metro Boards | HOA | Updated with DC metro HOA special assessment context |
+| 62 | `how-to-handle-noise-complaints-in-an-hoa-community` | How to Handle Noise Complaints in HOA | How to Handle Noise Complaints in Your HOA Community | HOA | Updated for HOA board member perspective |
+| 63 | `how-to-handle-tenant-abandonment-of-rental-property` | How to Handle Tenant Abandonment | How DC Metro Landlords Should Handle Tenant Abandonment of Rental Property | Residential PM | Updated with DC/VA/MD abandonment law specifics |
+| 64 | `how-to-minimize-hoa-violations-in-your-community` | How to Minimize HOA Violations | How to Minimize HOA Violations in Your DC Metro Community | HOA | Updated for HOA board member audience |
+| 65 | `how-to-prepare-your-rental-for-a-new-tenant` | How to Prepare Your Rental for a New Tenant | How DC Metro Landlords Should Prepare a Rental Property for a New Tenant | Residential PM | Updated with DC metro rental market context |
+| 66 | `how-to-secure-the-return-of-your-security-deposit` | How to Secure the Return of Your Security Deposit | Security Deposit Best Practices for DC Metro Landlords: How to Handle Returns and Disputes | Residential PM | Repurposed from tenant guide to landlord guide |
+| 67 | `how-to-smoothly-transition-to-professional-property-management` | Transition to Professional Property Management | How DC Metro Landlords Can Smoothly Transition to Professional Property Management | Residential PM | Updated with DC metro-specific transition guidance |
+| 68 | `how-to-spot-mold-in-your-rental-property-early-wvpwk` | How to Spot Mold in Your Rental Property Early | Mold in DC Metro Rental Properties: Early Signs Every Landlord Should Know | Residential PM | Updated with DC metro climate and landlord obligations |
+| 19 | `investing-in-the-college-rental-market-in-virginia` | Investing in the College Rental Market in Virginia | Investing in the Virginia College Rental Market: A Guide for DC Metro Landlords | Residential PM | Updated with GMU, NOVA, Marymount, VA Tech Innovation Campus |
+| 20 | `investing-in-washington-dcs-h-street-corridor` | Investing in DC's H Street Corridor | Investing in Washington DC's H Street Corridor: What Landlords and Investors Should Know | Residential PM | Updated with current revitalization context |
+| 21 | `investment-guide-evaluating-real-estate-prospects-part-1` | Investment Guide: Evaluating Real Estate Prospects (Part 1) | Investment Guide: Evaluating DC Metro Real Estate Prospects (Part 1) | Residential PM | **Manual publish required** |
+| 22 | `investment-guide-excel-investment-analysis-with-cash-financing` | Investment Guide: Cash vs. Financing Analysis | Investment Guide: Analyzing DC Metro Rental Property Returns (Cash vs. Financing) | Residential PM | Updated with DC metro financial metrics |
+| 23 | `is-a-fixer-upper-a-good-investment-opportunity` | Is a Fixer-Upper a Good Investment? | Is a Fixer-Upper a Good Investment in the DC Metro Market? | Residential PM | **Manual publish required** |
+| 24 | `is-investing-in-a-rental-property-a-wise-decision` | Is Investing in a Rental Property a Wise Decision? | Is Investing in a DC Metro Rental Property a Wise Decision? | Residential PM | Updated with DC metro investment case |
+| 25 | `is-vacant-home-insurance-necessary-for-property-owners` | Is Vacant Home Insurance Necessary? | Vacant Home Insurance for DC Metro Landlords: What Property Owners Need to Know | Residential PM | Updated with DC metro vacant property context |
+| 26 | `join-gordon-james-realtys-agent-referral-program` | Agent Referral Program | Gordon James Realty Agent Referral Program: Earn Referral Fees for Property Management Leads | Other | Updated for DC metro real estate agent audience |
+| 27 | `key-considerations-before-venturing-into-property-management` | Key Considerations Before Property Management | Key Considerations Before Starting or Expanding a DC Metro Property Management Business | Residential PM | Updated with DC/VA/MD licensing requirements |
+| 28 | `key-considerations-when-viewing-a-rental-property` | Key Considerations When Viewing a Rental Property | What DC Metro Landlords Should Look For When Evaluating a Rental Property | Residential PM | Repurposed from tenant viewing guide to landlord evaluation guide |
+| 29 | `key-factors-to-consider-when-leasing-office-space` | Key Factors When Leasing Office Space | Key Factors to Consider When Leasing Office Space in the DC Metro Area | Commercial PM | Updated with DC metro office market specifics |
+| 30 | `key-qualities-every-successful-hoa-board-member-should-possess` | Key Qualities of Successful HOA Board Members | Key Qualities Every Successful HOA Board Member Should Have | HOA | Updated with DC metro HOA board context |
+| 31 | `landlord-101-how-much-rent-to-charge-part-3` | Landlord 101: How Much Rent to Charge (Part 3) | Landlord 101: How Much Rent to Charge in the DC Metro Market (Part 3) | Residential PM | Updated with DC metro rent market context |
+| 32 | `landlord-101-how-to-market-your-rental-property-part-4` | Landlord 101: How to Market Your Rental Property (Part 4) | Landlord 101: How to Market Your DC Metro Rental Property (Part 4) | Residential PM | **Manual publish required** |
+| 33 | `landlord-101-maintaining-good-landlord-tenant-relations-part-6` | Landlord 101: Landlord-Tenant Relations (Part 6) | Landlord 101: Maintaining Good Landlord-Tenant Relations in DC, Virginia, and Maryland (Part 6) | Residential PM | Updated with DC metro regulatory context |
+| 34 | `landlord-101-making-the-decision-to-become-a-landlord-part-1` | Landlord 101: Making the Decision to Become a Landlord (Part 1) | Landlord 101: Making the Decision to Become a Landlord in DC, Virginia, and Maryland (Part 1) | Residential PM | Updated with DC metro financial and regulatory reality |
+| 35 | `landlord-101-next-steps-to-becoming-a-landlord-part-2` | Landlord 101: Next Steps to Becoming a Landlord (Part 2) | Landlord 101: Next Steps to Becoming a Landlord in DC, Virginia, and Maryland (Part 2) | Residential PM | Updated with DC/VA/MD registration/licensing requirements |
+| 36 | `landlord-101-what-you-need-to-know-about-rental-agreements` | Landlord 101: Rental Agreements (Part 5) | Landlord 101: What DC Metro Landlords Need to Know About Rental Agreements (Part 5) | Residential PM | Updated with DC/VA/MD lease law specifics |
+| 37 | `landlord-insurance-protect-your-rental-property-investment` | Landlord Insurance | Landlord Insurance: Protecting Your DC Metro Rental Property Investment | Residential PM | Updated with DC metro insurance specifics (flood zones, condo walls-in coverage) |
+| 38 | `landlords-spring-maintenance-guide-for-rental-properties` | Spring Maintenance Guide | Spring Rental Property Maintenance Guide for DC Metro Landlords | Residential PM | Updated with DC metro climate considerations; **manual publish required** |
+| 39 | `landscaping-for-hoa-communities` | Landscaping for HOA Communities | Landscaping for HOA Communities: Standards, Planning, and Management | HOA | Updated for HOA board member audience with DC metro climate |
+| 40 | `luxury-rental-property-amenities-to-attract-high-end-tenants` | Luxury Rental Property Amenities | Luxury Rental Property Amenities to Attract High-End Tenants in the DC Metro Market | Residential PM | Updated with DC metro luxury rental context; **manual publish required** |
+| 41 | `making-arlington-your-new-home-a-neighborhood-guide` | Making Arlington Your New Home | Arlington, VA Rental Property Investment: A Landlord's Neighborhood Guide | Residential PM | Repurposed from home-buyer/renter guide to landlord/investor guide |
+| 42 | `manage-your-future-fixing-and-flipping-houses-part-3` | Manage Your Future: Fix and Flip (Part 3) | Fix and Flip Real Estate in the DC Metro Market: What Investors Need to Know (Part 3) | Residential PM | Updated with DC metro flip dynamics; **manual publish required** |
+| 43 | `manage-your-future-investing-in-commercial-real-estate-part-2` | Manage Your Future: Commercial RE (Part 2) | Investing in DC Metro Commercial Real Estate: What Every Investor Should Know (Part 2) | Commercial PM | Updated with DC metro commercial market context; **manual publish required** |
+| 44 | `manage-your-future-investing-in-residential-real-estate-part-1` | Manage Your Future: Residential RE (Part 1) | Investing in DC Metro Residential Real Estate: A Landlord's Starting Guide (Part 1) | Residential PM | Updated with DC metro residential investment context |
+| 45 | `manage-your-future-investing-in-vacation-property-part-4` | Manage Your Future: Vacation Property (Part 4) | Investing in Vacation Rental Property in the DC Metro Region: What Owners Need to Know (Part 4) | Residential PM | Updated with DC metro STR regulations (DC primary-residence-only rule) |
+| 46 | `managing-a-property-in-dc-time-commitment-you-need-to-consider` | Managing a Property in DC: Time Commitment | Managing a Rental Property in DC: The Time Commitment Landlords Need to Plan For | Residential PM | Updated with current DC leasing and compliance context |
+| 47 | `managing-late-payments-from-tenants-strategies-and-tips` | Managing Late Payments from Tenants | Managing Late Rent Payments: Strategies for DC Metro Landlords | Residential PM | Updated with DC/VA/MD late fee rules and eviction procedures |
+| 48 | `managing-your-long-distance-rental-property-with-confidence` | Managing Your Long-Distance Rental Property | Managing Your DC Metro Rental Property from a Distance: A Long-Distance Landlord's Guide | Residential PM | Updated with DC regulatory complexity for long-distance landlords |
+| 49 | `mastering-due-diligence-for-commercial-real-estate-investments` | Mastering Due Diligence for Commercial RE | Mastering Due Diligence for Commercial Real Estate Investments in the DC Metro Area | Commercial PM | Updated with DC metro CRE due diligence specifics |
+| 50 | `mastering-lease-writing-essentials-2` | Mastering Lease Writing Essentials | Mastering Lease Writing Essentials for DC Metro Landlords | Residential PM | Updated with DC/VA/MD jurisdiction-specific lease requirements |
+
+### Batch 27 Observations
+
+- **Landlord 101 series** (Parts 1–6) was a major focus of this batch, transforming a generic landlord education series into a DC metro-specific resource with regulatory depth for each jurisdiction (DC RLTA, Virginia VRLTA, Maryland law)
+- **Manage Your Future investment series** (Parts 1–4) was updated with DC metro market context, accurate financial metrics, and current investment dynamics
+- **Repurposed articles in this batch:** Articles 53 (tenant advice → landlord screening guide), 66 (tenant deposit guide → landlord guide), 28 (tenant viewing guide → landlord evaluation guide), 41 (home-buyer neighborhood guide → investor/landlord neighborhood guide)
+- **DC short-term rental regulations** accurately addressed in Article 45: DC only permits primary-residence STR; investor-owned STRs are prohibited — important regulatory accuracy for a frequently misunderstood topic
+- **Key cluster built:** Landlord 101 Parts 1–6 now cross-link to each other and to related articles, forming a coherent educational series for new and prospective DC metro landlords
+- **Commercial PM content strengthened:** Articles 43 and 49 now form a commercial investment and due diligence cluster linking to commercial PM FAQs and service pages
+
+### Remaining Unreviewed Articles
+
+Based on the original `remaining_articles.json` list, approximately **100 articles** remain to be reviewed (Batches 28 and 29).
+
