@@ -63,6 +63,15 @@ This document tracks assistant-authored SEO, content, and Webflow changes so the
 - Narrowed the law-guide draft to Washington, DC board intent and updated its slug, title, summary, publish date, and jurisdiction targeting.
 - Updated `SEO_PROGRESS_COMPETITOR_ARTICLE_REWRITES.md` so both March 22 assets are tracked as `Draft complete` and the DC law topic is now correctly marked as `update existing`.
 
+### DC and Virginia legal-guide tranche
+
+- Reworked the existing DC landlord article `first-time-landlord-a-comprehensive-dc-rental-guide` into the new draft `dc-landlord-tenant-law-guide-for-rental-property-owners`.
+- Consolidated DC landlord-law coverage around licensing, rent control, TOPA, deposits, lease compliance, maintenance duties, and documentation discipline instead of creating another overlapping legal explainer.
+- Created the new draft article `virginia-property-management-laws-guide`.
+- Positioned the Virginia guide around VRLTA, notices, deposits, maintenance obligations, lease structure, screening discipline, and the local operating realities that matter in Arlington, Fairfax, and Alexandria.
+- Updated `SEO_PROGRESS_COMPETITOR_ARTICLE_REWRITES.md` so both March 23 legal-guide assets are tracked as `Draft complete`.
+- Tightened the batch-summary wording in the main tracker so the staged-draft count remains accurate without relying on a brittle publish-slot reference.
+
 ## Working Rule
 
 - Keep this log limited to assistant-authored changes that are safe to commit independently.
