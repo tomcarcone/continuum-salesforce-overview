@@ -80,6 +80,14 @@ This document tracks assistant-authored SEO, content, and Webflow changes so the
 - Updated `SEO_PROGRESS_COMPETITOR_ARTICLE_REWRITES.md` so the final queued Batch 01 asset is now tracked as `Draft complete`.
 - Updated the main tracker summary so Batch 01 now shows all remaining non-published assets staged in Webflow, with only publish sequencing left.
 
+### Batch 02 planning tranche
+
+- Audited the strongest remaining competitor opportunities against existing Gordon James content before defining the next queue.
+- Converted the Batch 01 summary language in `SEO_PROGRESS_COMPETITOR_ARTICLE_REWRITES.md` from "remaining to be executed" to "remaining in the publish queue" so the tracker better reflects the current staged state.
+- Added a full `Batch 02 Scope` section to the main tracker covering the next `25` assets, category mix, recommended actions, and staggered publish dates from `2026-03-25` through `2026-04-06`.
+- Set Batch 02 to rely more heavily on `update existing`, `merge / consolidate`, and `expand existing` where Gordon James already has adjacent canonicals for legal, comparison, reserve-study, and lease-structure topics.
+- Defined the next priority clusters as Northern Virginia / neighborhood geo pages, remaining HOA geo gaps, residential legal canonicals, and the commercial / multifamily authority buildout.
+
 ## Working Rule
 
 - Keep this log limited to assistant-authored changes that are safe to commit independently.

@@ -140,7 +140,7 @@
 
 ### Remaining In Batch
 
-- `22` assets remain to be executed in Batch 01, and all `22` are now staged in Webflow, with `8` of those already fully publish-ready with supporting dynamic content in place.
+- `22` assets remain in the Batch 01 publish queue, and all `22` are now staged in Webflow, with `8` of those already fully publish-ready with supporting dynamic content in place.
 
 ### Important Batch 01 Observations
 
@@ -154,13 +154,92 @@
 
 ---
 
+## Batch 02 Scope
+
+**Batch size:** 25 assets  
+**Batch objective:** Build the next wave of regional hub pages, second-wave HOA geo pages, residential legal / comparison canonicals, and commercial / multifamily authority assets while using existing Gordon James articles as canonical bases wherever overlap already exists.  
+**Primary source documents used for batch selection:** `COMPETITIVE_INTELLIGENCE.md` Section 5 Execution Queue, `SEO_COMPETITOR_PAGE_LANDSCAPE.md` Immediate Build-First Queue, and `docs/gpt_5.4_model_article_routing.md` for overlap-aware routing.
+
+### Batch 02 Category Mix
+
+- `5` Residential geo / market service assets
+- `8` HOA geo / glossary / governance assets
+- `5` Residential legal / comparison assets
+- `4` Commercial authority assets
+- `3` Multifamily authority assets
+
+---
+
+## Batch 02 Tracker
+
+| Priority | Competitor Topic / Page Reviewed | Hub / Category | Similar Existing Gordon James Asset? | Existing Asset URL / Slug | Action | Final Proposed Title | Suggested Slug | Status | Recommended Publish Date | Differentiation / Notes |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | Atlas / Bay / Nomadic Northern Virginia PM pages | Residential Property Management | Partial overlap | Existing Arlington, Fairfax, Tysons, and Alexandria geo service drafts; no NoVA hub page | create new | Property Management in Northern Virginia | `property-management-northern-virginia` | Queued | 2026-03-25 | Create the regional owner hub that connects Arlington, Fairfax, Tysons, and Alexandria instead of leaving the NoVA cluster fragmented across city pages only. |
+| 2 | Keymont Alexandria HOA page | Community Association Management | No direct geo money page found | Generic association service page exists; Arlington / Fairfax / Bethesda HOA drafts already staged | create new | HOA Management in Alexandria, VA | `hoa-management-alexandria-va` | Queued | 2026-03-25 | Position Alexandria around older condo stock, townhouse communities, reserve pressure, and owner communication needs that differ from Arlington and Fairfax. |
+| 3 | EJF Potomac association page | Community Association Management | No direct geo money page found | Generic association service page exists; no Potomac HOA geo page found | create new | HOA Management in Potomac, MD | `hoa-management-potomac-md` | Queued | 2026-03-26 | Build a Potomac board-facing page around larger communities, premium service expectations, vendor standards, and reserve discipline. |
+| 4 | FirstService Northern Virginia association page | Community Association Management | No regional HOA hub found | Existing Arlington / Fairfax HOA drafts; generic association service page exists | create new | HOA Management in Northern Virginia | `hoa-management-northern-virginia` | Queued | 2026-03-26 | Add a NoVA association hub that routes boards into Arlington, Fairfax, and Alexandria while framing the region around Virginia governance and operating realities. |
+| 5 | FirstService Maryland HOA management page | Community Association Management | Partial overlap | Bethesda HOA draft staged; no Maryland-wide HOA landing page found | create new | HOA Management in Maryland | `hoa-management-maryland` | Queued | 2026-03-27 | Use a Maryland statewide page to support Bethesda and Potomac board intent without forcing all Maryland demand into one local page. |
+| 6 | Columbia PM DC rental business license page | Residential Property Management | Yes | `requirements-for-becoming-a-landlord-in-dc-and-northern-virginia`, `must-know-rental-licensing-rules-for-landlords`, `dc-landlord-tenant-law-guide-for-rental-property-owners` | merge / consolidate | DC Rental Business License Guide for Landlords | `dc-rental-business-license-guide-for-landlords` | Queued | 2026-03-27 | Consolidate scattered licensing coverage into one DC-first compliance page focused on BBL requirements, timing, enforcement risk, and related inspection steps. |
+| 7 | Bay security deposit rules article | Residential Property Management | Yes | `how-to-secure-the-return-of-your-security-deposit`, `landlords-guide-to-security-deposits-and-tenant-damage-charges` | merge / consolidate | Security Deposit Rules for Landlords in Washington, DC, Virginia, and Maryland | `security-deposit-rules-dc-virginia-maryland-landlords` | Queued | 2026-03-28 | Repurpose existing deposit coverage into one owner-facing jurisdiction guide built around caps, timelines, penalties, documentation, and common landlord errors. |
+| 8 | Existing DC rent increase competitor cluster | Residential Property Management | Yes | `understanding-the-rent-increase-laws-in-washington-dc` | update existing | Washington DC Rent Increase Laws: Caps, Notice Requirements, and Rent Control | `understanding-the-rent-increase-laws-in-washington-dc` | Queued | 2026-03-28 | Keep the existing canonical URL but rebuild it as the stronger DC-first rent-increase authority page tied to notice timing, exemptions, filings, and compliance risk. |
+| 9 | FAS / adjacent owner comparison content | Residential Property Management | Yes | `property-support-services-management-vs-maintenance` | update existing | Property Management vs. Maintenance: What DC Metro Owners Need to Know | `property-support-services-management-vs-maintenance` | Queued | 2026-03-29 | Reposition the existing comparison around owner decision intent, clarifying scope, vendor coordination, budgeting, compliance, and when management is more than maintenance. |
+| 10 | Bay "choosing a DC property manager" article | Residential Property Management | Yes | `how-to-choose-the-right-property-management-company`, `what-to-look-for-when-choosing-a-property-management-company` | update existing | How to Choose the Right Property Management Company in DC, Virginia, and Maryland | `how-to-choose-the-right-property-management-company` | Queued | 2026-03-29 | Use the strongest existing canonical instead of creating another buyer-guide URL, and sharpen it around compliance depth, reporting, maintenance process, and portfolio fit. |
+| 11 | HOA management glossary gap across competitors | Community Association Management | Partial overlap | Broader service pages and FAQs exist; no dedicated HOA-management definition page found | create new | What Is HOA Management? A Guide for DC, Virginia, and Maryland Boards | `what-is-hoa-management-dc-va-md` | Queued | 2026-03-30 | Build a clear answer-engine page that defines the service, explains scope, and routes readers into law, fees, and board-support pages. |
+| 12 | Reserve-study answer-engine cluster | Community Association Management | Yes | `why-every-hoa-needs-a-reserve-study` | update existing | What Is a Reserve Study? A Guide for DC, Virginia, and Maryland Boards | `why-every-hoa-needs-a-reserve-study` | Queued | 2026-03-30 | Repurpose the existing reserve-study article into a more direct definition-plus-governance page without losing the existing canonical authority. |
+| 13 | Keymont unenforceable-hoa-rules page | Community Association Management | Yes | `unenforceable-hoa-rules-a-comprehensive-guide` | expand existing | Unenforceable HOA Rules in Virginia: What Boards Cannot Enforce | `unenforceable-hoa-rules-a-comprehensive-guide` | Queued | 2026-03-31 | Narrow the strongest existing rule-enforcement article into a Virginia-led board-intent guide rather than publishing another overlapping unenforceable-rules page. |
+| 14 | Condo-association glossary gap across competitors | Community Association Management | Partial overlap | Existing HOA definition article and DC condo-association service page exist; no dedicated condo-association explainer found | create new | What Is a Condo Association? A Guide for DC, Virginia, and Maryland Boards | `what-is-a-condo-association-dc-va-md` | Queued | 2026-03-31 | Differentiate condo governance from broader HOA language and route readers into condo service, law, and fee resources. |
+| 15 | Donohoe sustainability / BEPS gap | Commercial Property Management | Partial overlap | `sustainable-dc-plans-progress-what-it-means-for-property-owners` | create new | DC BEPS Compliance Guide for Commercial Property Owners | `dc-beps-compliance-guide-commercial-property-owners` | Queued | 2026-04-01 | Treat BEPS as a commercial-owner problem, not a general sustainability topic, with timelines, penalties, planning steps, and owner-operating implications. |
+| 16 | JBG / Bethesda office-market proof gap | Commercial Property Management | No direct geo authority page found | No Bethesda-specific commercial guide found | create new | Bethesda Commercial Real Estate Guide for Owners and Investors | `bethesda-commercial-real-estate-guide` | Queued | 2026-04-01 | Use Bethesda as the first submarket commercial guide focused on owner economics, office / mixed-use realities, and local operating context rather than generic market commentary. |
+| 17 | Donohoe / Tysons project-page gap | Commercial Property Management | No direct geo authority page found | No Tysons-specific commercial guide found | create new | Tysons Commercial Real Estate Guide for Owners and Investors | `tysons-commercial-real-estate-guide` | Queued | 2026-04-02 | Build a Tysons guide around Class A inventory, mixed-use operations, investor expectations, and regional demand drivers tied to the Silver Line and major employers. |
+| 18 | Commercial lease-structure competitor gap | Commercial Property Management | Yes | `a-new-tenants-guide-to-dc-commercial-leases`, `navigating-commercial-real-estate-leases-a-comprehensive-guide` | merge / consolidate | NNN Lease Guide for Washington, DC Commercial Property Owners | `nnn-lease-guide-washington-dc-commercial-owners` | Queued | 2026-04-02 | Consolidate existing commercial lease content into one owner-facing guide focused on triple-net structure, CAM, reconciliation, and risk allocation. |
+| 19 | ROSS third-party management page | Multifamily Property Management | Partial overlap | Existing article work tracked in `SEO_PROGRESS.md`; live-canonical status should be confirmed before staging | update existing | Third-Party Multifamily Property Management: What DC Metro Owners Need to Know | `third-party-property-management-dc-metro-guide` | Queued | 2026-04-03 | Use the strongest existing third-party-management canonical and tighten it around multifamily owner evaluation, reporting standards, fees, and market-specific execution. |
+| 20 | Multifamily maintenance operator cluster | Multifamily Property Management | Partial overlap | `proactive-summer-maintenance-for-multifamily-communities` | expand existing | Multifamily Preventive Maintenance Strategies for DC, Virginia, and Maryland Communities | `proactive-summer-maintenance-for-multifamily-communities` | Queued | 2026-04-03 | Expand a seasonal maintenance article into a broader preventive-maintenance operations resource for multifamily owners and operators. |
+| 21 | Multifamily retention / operator cluster | Multifamily Property Management | Partial overlap | Residential retention article exists; no dedicated multifamily operator retention page found | create new | Multifamily Tenant Retention Strategies for DC Metro Owners and Operators | `multifamily-tenant-retention-strategies-dc-metro` | Queued | 2026-04-04 | Build an operator-facing multifamily retention page tied to renewals, resident experience, maintenance execution, and NOI preservation. |
+| 22 | Atlas / Columbia Ward-style neighborhood geo pages | Residential Property Management | Partial overlap | Existing neighborhood knowledge articles exist; no dedicated Capitol Hill service page found | create new | Capitol Hill Property Management in Washington, DC | `property-management-capitol-hill-dc` | Queued | 2026-04-04 | Create the first DC neighborhood service page around rowhouses, English basements, Hill staff / federal renter demand, and older-housing operations. |
+| 23 | Atlas Georgetown geo page | Residential Property Management | Partial overlap | Existing Georgetown knowledge article exists; no dedicated Georgetown service page found | create new | Georgetown Property Management in Washington, DC | `property-management-georgetown-dc` | Queued | 2026-04-05 | Position Georgetown around historic-housing complexity, premium rents, university demand, and owner expectations for older high-value homes. |
+| 24 | Atlas Dupont geo page | Residential Property Management | Partial overlap | Existing Dupont Circle knowledge article exists; no dedicated Dupont service page found | create new | Dupont Circle Property Management in Washington, DC | `property-management-dupont-circle-dc` | Queued | 2026-04-05 | Use Dupont Circle to target denser condo inventory, renter turnover, walkability-driven demand, and premium maintenance expectations. |
+| 25 | Atlas / existing NoMa neighborhood content | Residential Property Management | Partial overlap | Existing NoMa / Union Station knowledge articles exist; no dedicated NoMa service page found | create new | NoMa Property Management in Washington, DC | `property-management-noma-dc` | Queued | 2026-04-06 | Treat NoMa as a distinct owner market tied to newer inventory, amenity expectations, transit access, and faster leasing cycles. |
+
+---
+
+## Batch 02 Publishing Cadence
+
+**Cadence rule:** no more than `2` assets published per day.
+
+| Date | Assets Scheduled |
+|---|---|
+| 2026-03-25 | `property-management-northern-virginia`, `hoa-management-alexandria-va` |
+| 2026-03-26 | `hoa-management-potomac-md`, `hoa-management-northern-virginia` |
+| 2026-03-27 | `hoa-management-maryland`, `dc-rental-business-license-guide-for-landlords` |
+| 2026-03-28 | `security-deposit-rules-dc-virginia-maryland-landlords`, `understanding-the-rent-increase-laws-in-washington-dc` |
+| 2026-03-29 | `property-support-services-management-vs-maintenance`, `how-to-choose-the-right-property-management-company` |
+| 2026-03-30 | `what-is-hoa-management-dc-va-md`, `why-every-hoa-needs-a-reserve-study` |
+| 2026-03-31 | `unenforceable-hoa-rules-a-comprehensive-guide`, `what-is-a-condo-association-dc-va-md` |
+| 2026-04-01 | `dc-beps-compliance-guide-commercial-property-owners`, `bethesda-commercial-real-estate-guide` |
+| 2026-04-02 | `tysons-commercial-real-estate-guide`, `nnn-lease-guide-washington-dc-commercial-owners` |
+| 2026-04-03 | `third-party-property-management-dc-metro-guide`, `proactive-summer-maintenance-for-multifamily-communities` |
+| 2026-04-04 | `multifamily-tenant-retention-strategies-dc-metro`, `property-management-capitol-hill-dc` |
+| 2026-04-05 | `property-management-georgetown-dc`, `property-management-dupont-circle-dc` |
+| 2026-04-06 | `property-management-noma-dc` |
+
+### Important Batch 02 Observations
+
+- Batch 02 should lean more heavily on `update existing` and `merge / consolidate` than Batch 01 because many of the highest-value remaining legal and comparison topics already exist on the site in adjacent form.
+- The next strongest service opportunity after Batch 01 is regional and neighborhood structure, especially `Northern Virginia` as a parent hub and the first DC neighborhood-level service pages.
+- The next strongest HOA opportunity is the `remaining geo gap + glossary gap` combination: Alexandria, Potomac, Maryland, Northern Virginia, reserve-study terminology, and Virginia unenforceable-rules intent.
+- The commercial opening remains largest on `local authority pages` such as BEPS, Bethesda, Tysons, and NNN / CAM education, where the local SERP is still relatively weak.
+- Multifamily content should stay owner / operator-facing and avoid drifting into renter-facing apartment content or generic lifestyle coverage.
+
+---
+
 ## Next Execution Steps
 
-1. Execute Batch 01 in priority order.
-2. For each asset, re-check overlap against the live site before drafting or editing.
-3. Add direct internal links to service pages, FAQs, and related knowledge-hub pages during drafting.
-4. Verify any legal, regulatory, or technical claims before finalizing content.
-5. Update this tracker after each completed asset with:
+1. Publish through the remaining Batch 01 cadence without exceeding `2` assets per day.
+2. Start Batch 02 in priority order, beginning with the NoVA regional page and the remaining HOA geo service gaps.
+3. For each asset, re-check overlap against the live site before drafting or editing.
+4. Add direct internal links to service pages, FAQs, and related knowledge-hub pages during drafting.
+5. Verify any legal, regulatory, or technical claims before finalizing content.
+6. Update this tracker after each completed asset with:
    - final action taken
    - work completed
    - final publish readiness
