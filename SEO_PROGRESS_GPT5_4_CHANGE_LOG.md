@@ -24,6 +24,15 @@ This document tracks assistant-authored SEO, content, and Webflow changes so the
 - Reassigned and published related Knowledge Hub articles to support both new service pages.
 - Updated `SEO_PROGRESS_COMPETITOR_ARTICLE_REWRITES.md` so both March 17 assets are marked `Ready for publish`.
 
+### Definition-page tranche
+
+- Found an existing canonical HOA definition article already live at `what-is-an-hoa-guide-for-dc-metro-board-members`.
+- Rewrote that canonical HOA article to target board members rather than a mixed homeowner audience.
+- Consolidated the HOA definition topic onto the existing canonical URL instead of creating a duplicate article.
+- Created a new draft article `what-is-property-management-dc-va-md`.
+- Positioned the property-management article as a cross-service definition asset spanning residential, association, commercial, and multifamily contexts.
+- Updated `SEO_PROGRESS_COMPETITOR_ARTICLE_REWRITES.md` so the HOA definition topic is tracked as an updated published asset and the property-management definition topic is tracked as a staged draft.
+
 ## Working Rule
 
 - Keep this log limited to assistant-authored changes that are safe to commit independently.
