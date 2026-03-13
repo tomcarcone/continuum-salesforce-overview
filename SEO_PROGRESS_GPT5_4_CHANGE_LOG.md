@@ -166,6 +166,21 @@ This document tracks assistant-authored SEO, content, and Webflow changes so the
 - Created the new draft article `suburbs-of-washington-dc-for-rental-property-investors`.
 - Updated `SEO_PROGRESS_COMPETITOR_ARTICLE_REWRITES.md` so Batch 03 now shows `Draft complete: 17` and `Queued: 8`.
 
+### Batch 03 final HOA, commercial, and multifamily tranche
+
+- Created the new draft article `hoa-condo-board-faqs-dc-va-md`.
+- Created the new draft article `what-is-cam-dc-commercial-property-owners`.
+- Created the new draft article `commercial-property-management-faqs-dc-metro-owners`.
+- Created the new draft service page `multifamily-property-management-northern-virginia`.
+- Confirmed the new Northern Virginia multifamily service draft keeps `show-in-primary-nav` turned off so it does not expand the live services dropdown.
+- Created the new draft article `multifamily-property-management-faqs-dc-metro`.
+- Created the new draft article `how-to-choose-hoa-management-company-washington-dc`.
+- Created the new draft article `when-should-your-hoa-switch-management-companies`.
+- Repurposed the existing management-contract canonical into `why-every-hoa-needs-a-strong-management-contract`.
+- Reframed the contract article around scope clarity, fee transparency, KPI expectations, termination rights, and transition obligations for boards in DC, Virginia, and Maryland.
+- Updated `SEO_PROGRESS_COMPETITOR_ARTICLE_REWRITES.md` so Batch 03 now shows `Draft complete: 25` and `Queued: 0`.
+- Updated the main tracker's next steps so execution now shifts from staging into Batch 03 publish-readiness and Batch 04 planning with an HOA-geo bias where board-intent demand supports separate pages.
+
 ## Working Rule
 
 - Keep this log limited to assistant-authored changes that are safe to commit independently.
