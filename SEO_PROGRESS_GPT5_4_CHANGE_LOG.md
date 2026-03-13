@@ -72,6 +72,14 @@ This document tracks assistant-authored SEO, content, and Webflow changes so the
 - Updated `SEO_PROGRESS_COMPETITOR_ARTICLE_REWRITES.md` so both March 23 legal-guide assets are tracked as `Draft complete`.
 - Tightened the batch-summary wording in the main tracker so the staged-draft count remains accurate without relying on a brittle publish-slot reference.
 
+### Maryland board-law tranche
+
+- Created the new draft article `maryland-hoa-condo-law-guide-for-board-members`.
+- Positioned the Maryland guide around the Maryland Homeowners Association Act, Maryland Condominium Act, records access, budgets, reserves, hearings, enforcement, and board-risk reduction.
+- Tied the guide’s framing to the board-intent needs of Bethesda and Potomac communities rather than writing it as a generic homeowner explainer.
+- Updated `SEO_PROGRESS_COMPETITOR_ARTICLE_REWRITES.md` so the final queued Batch 01 asset is now tracked as `Draft complete`.
+- Updated the main tracker summary so Batch 01 now shows all remaining non-published assets staged in Webflow, with only publish sequencing left.
+
 ## Working Rule
 
 - Keep this log limited to assistant-authored changes that are safe to commit independently.
