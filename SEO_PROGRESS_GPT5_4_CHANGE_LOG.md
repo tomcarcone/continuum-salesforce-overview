@@ -54,6 +54,15 @@ This document tracks assistant-authored SEO, content, and Webflow changes so the
 - Corrected the main batch tracker totals while updating the new HOA geo pages so staged-draft and remaining-batch counts stay accurate.
 - Updated `SEO_PROGRESS_COMPETITOR_ARTICLE_REWRITES.md` so both March 21 HOA geo assets are tracked as `Draft complete`.
 
+### Bethesda HOA and DC law tranche
+
+- Created the new draft service page `hoa-management-bethesda-md`.
+- Positioned Bethesda around affluent condo communities, reserve-aware planning, premium owner expectations, and board communication standards.
+- Found an existing live tri-state HOA law guide already published in Webflow under `hoa-condo-laws-dc-virginia-maryland-board-guide`.
+- Reworked that live article into the new draft `dc-hoa-condo-association-laws-board-guide` instead of creating a second overlapping law guide.
+- Narrowed the law-guide draft to Washington, DC board intent and updated its slug, title, summary, publish date, and jurisdiction targeting.
+- Updated `SEO_PROGRESS_COMPETITOR_ARTICLE_REWRITES.md` so both March 22 assets are tracked as `Draft complete` and the DC law topic is now correctly marked as `update existing`.
+
 ## Working Rule
 
 - Keep this log limited to assistant-authored changes that are safe to commit independently.
