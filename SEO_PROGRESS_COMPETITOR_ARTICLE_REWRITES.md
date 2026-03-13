@@ -174,8 +174,8 @@
 
 | Priority | Competitor Topic / Page Reviewed | Hub / Category | Similar Existing Gordon James Asset? | Existing Asset URL / Slug | Action | Final Proposed Title | Suggested Slug | Status | Recommended Publish Date | Differentiation / Notes |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 1 | Atlas / Bay / Nomadic Northern Virginia PM pages | Residential Property Management | Partial overlap | Existing Arlington, Fairfax, Tysons, and Alexandria geo service drafts; no NoVA hub page | create new | Property Management in Northern Virginia | `property-management-northern-virginia` | Queued | 2026-03-25 | Create the regional owner hub that connects Arlington, Fairfax, Tysons, and Alexandria instead of leaving the NoVA cluster fragmented across city pages only. |
-| 2 | Keymont Alexandria HOA page | Community Association Management | No direct geo money page found | Generic association service page exists; Arlington / Fairfax / Bethesda HOA drafts already staged | create new | HOA Management in Alexandria, VA | `hoa-management-alexandria-va` | Queued | 2026-03-25 | Position Alexandria around older condo stock, townhouse communities, reserve pressure, and owner communication needs that differ from Arlington and Fairfax. |
+| 1 | Atlas / Bay / Nomadic Northern Virginia PM pages | Residential Property Management | Partial overlap | Existing Arlington, Fairfax, Tysons, and Alexandria geo service drafts; no NoVA hub page | create new | Property Management in Northern Virginia | `property-management-northern-virginia` | Draft complete | 2026-03-25 | Created a new Northern Virginia residential service draft in Webflow that acts as the parent NoVA owner hub, connecting Arlington, Fairfax, Tysons, and Alexandria while differentiating how each submarket behaves. |
+| 2 | Keymont Alexandria HOA page | Community Association Management | No direct geo money page found | Generic association service page exists; Arlington / Fairfax / Bethesda HOA drafts already staged | create new | HOA Management in Alexandria, VA | `hoa-management-alexandria-va` | Draft complete | 2026-03-25 | Created a new Alexandria HOA service draft in Webflow focused on older condo stock, neighborhood-specific operating pressure, reserve planning, vendor coordination, and board communication. |
 | 3 | EJF Potomac association page | Community Association Management | No direct geo money page found | Generic association service page exists; no Potomac HOA geo page found | create new | HOA Management in Potomac, MD | `hoa-management-potomac-md` | Queued | 2026-03-26 | Build a Potomac board-facing page around larger communities, premium service expectations, vendor standards, and reserve discipline. |
 | 4 | FirstService Northern Virginia association page | Community Association Management | No regional HOA hub found | Existing Arlington / Fairfax HOA drafts; generic association service page exists | create new | HOA Management in Northern Virginia | `hoa-management-northern-virginia` | Queued | 2026-03-26 | Add a NoVA association hub that routes boards into Arlington, Fairfax, and Alexandria while framing the region around Virginia governance and operating realities. |
 | 5 | FirstService Maryland HOA management page | Community Association Management | Partial overlap | Bethesda HOA draft staged; no Maryland-wide HOA landing page found | create new | HOA Management in Maryland | `hoa-management-maryland` | Queued | 2026-03-27 | Use a Maryland statewide page to support Bethesda and Potomac board intent without forcing all Maryland demand into one local page. |
@@ -229,6 +229,14 @@
 - The next strongest HOA opportunity is the `remaining geo gap + glossary gap` combination: Alexandria, Potomac, Maryland, Northern Virginia, reserve-study terminology, and Virginia unenforceable-rules intent.
 - The commercial opening remains largest on `local authority pages` such as BEPS, Bethesda, Tysons, and NNN / CAM education, where the local SERP is still relatively weak.
 - Multifamily content should stay owner / operator-facing and avoid drifting into renter-facing apartment content or generic lifestyle coverage.
+
+### Batch 02 Status Summary
+
+- `Queued:` 23
+- `In progress:` 0
+- `Draft complete:` 2
+- `Ready for publish:` 0
+- `Published:` 0
 
 ---
 

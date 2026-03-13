@@ -88,6 +88,15 @@ This document tracks assistant-authored SEO, content, and Webflow changes so the
 - Set Batch 02 to rely more heavily on `update existing`, `merge / consolidate`, and `expand existing` where Gordon James already has adjacent canonicals for legal, comparison, reserve-study, and lease-structure topics.
 - Defined the next priority clusters as Northern Virginia / neighborhood geo pages, remaining HOA geo gaps, residential legal canonicals, and the commercial / multifamily authority buildout.
 
+### Batch 02 first staging tranche
+
+- Created the new draft service page `property-management-northern-virginia`.
+- Positioned Northern Virginia as the regional residential owner hub connecting Arlington, Fairfax, Tysons, and Alexandria while preserving submarket-specific context.
+- Created the new draft service page `hoa-management-alexandria-va`.
+- Positioned Alexandria around older condo stock, reserve pressure, vendor coordination, and board communication for neighborhood-specific communities.
+- Updated `SEO_PROGRESS_COMPETITOR_ARTICLE_REWRITES.md` so the first two Batch 02 assets are now tracked as `Draft complete`.
+- Added a `Batch 02 Status Summary` block to the main tracker so the new batch can be managed with the same visibility as Batch 01.
+
 ## Working Rule
 
 - Keep this log limited to assistant-authored changes that are safe to commit independently.
