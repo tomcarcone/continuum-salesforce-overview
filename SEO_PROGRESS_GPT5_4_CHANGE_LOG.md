@@ -133,6 +133,25 @@ This document tracks assistant-authored SEO, content, and Webflow changes so the
 - Updated the main competitor tracker so `Batch 02 Status Summary` now reads `Queued: 0` and `Draft complete: 25`.
 - Shifted the main tracker next steps away from drafting and toward publish sequencing, QA, and supporting content readiness.
 
+### Batch 03 planning and DC neighborhood staging tranche
+
+- Audited the strongest remaining competitor opportunities against existing Gordon James coverage before defining the next `25`-asset queue.
+- Added a full `Batch 03 Scope` section to the main tracker covering the next `25` assets, category mix, recommended actions, and staggered publish dates from `2026-04-07` through `2026-04-19`.
+- Defined Batch 03 around the remaining DC neighborhood service-page buildout plus the next residential legal, HOA conversion, FAQ-hub, commercial glossary, and multifamily geo support topics.
+- Created the new draft service page `property-management-columbia-heights-dc`.
+- Created the new draft service page `property-management-petworth-dc`.
+- Created the new draft service page `property-management-logan-circle-dc`.
+- Created the new draft service page `property-management-shaw-dc`.
+- Created the new draft service page `property-management-h-street-ne-dc`.
+- Created the new draft service page `property-management-navy-yard-dc`.
+- Created the new draft service page `property-management-brookland-dc`.
+- Created the new draft service page `property-management-cleveland-park-dc`.
+- Created the new draft service page `property-management-woodley-park-dc`.
+- Created the new draft service page `property-management-tenleytown-dc`.
+- Created the new draft service page `property-management-adams-morgan-dc`.
+- Positioned the new neighborhood pages around distinct local operating realities instead of repeating generic DC service copy, including premium-rent neighborhoods, corridor growth areas, newer amenity-driven submarkets, and rowhouse-heavy residential zones.
+- Updated `SEO_PROGRESS_COMPETITOR_ARTICLE_REWRITES.md` so the first `11` Batch 03 assets are tracked as `Draft complete` and the remaining `14` are now queued behind them.
+
 ## Working Rule
 
 - Keep this log limited to assistant-authored changes that are safe to commit independently.

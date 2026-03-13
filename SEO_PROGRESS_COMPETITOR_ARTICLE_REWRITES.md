@@ -240,11 +240,99 @@
 
 ---
 
+## Batch 03 Scope
+
+**Batch size:** 25 assets  
+**Batch objective:** Extend the DC neighborhood service-page system while building the next residential legal, HOA conversion, FAQ-hub, commercial glossary, and multifamily geo support layer from the remaining competitor queue.  
+**Primary source documents used for batch selection:** `COMPETITIVE_INTELLIGENCE.md` Section 5 Execution Queue, `SEO_COMPETITOR_PAGE_LANDSCAPE.md` Immediate Build-First Queue, and `docs/gpt_5.4_model_article_routing.md` for overlap-aware routing.
+
+### Batch 03 Category Mix
+
+- `11` Residential neighborhood geo service assets
+- `6` Residential authority / legal / investor assets
+- `4` HOA board FAQ / conversion / contract assets
+- `2` FAQ-hub assets for commercial and multifamily audiences
+- `1` Commercial glossary asset
+- `1` Multifamily geo service asset
+
+---
+
+## Batch 03 Tracker
+
+| Priority | Competitor Topic / Page Reviewed | Hub / Category | Similar Existing Gordon James Asset? | Existing Asset URL / Slug | Action | Final Proposed Title | Suggested Slug | Status | Recommended Publish Date | Differentiation / Notes |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | Atlas / Columbia Ward-style neighborhood pages | Residential Property Management | Partial overlap | Existing Columbia Heights neighborhood article exists; no dedicated service page found | create new | Columbia Heights Property Management in Washington, DC | `property-management-columbia-heights-dc` | Draft complete | 2026-04-07 | Created a new Columbia Heights service draft in Webflow focused on dense urban inventory, Metro-driven demand, and the faster response standards that matter in a high-comparison neighborhood. |
+| 2 | Atlas / neighborhood geo expansion gap | Residential Property Management | Partial overlap | No dedicated Petworth service page found | create new | Petworth Property Management in Washington, DC | `property-management-petworth-dc` | Draft complete | 2026-04-07 | Created a new Petworth service draft in Webflow focused on rowhouses, lower-level rentals, practical maintenance coordination, and neighborhood-scale owner support. |
+| 3 | Atlas / neighborhood geo expansion gap | Residential Property Management | Partial overlap | No dedicated Logan Circle service page found | create new | Logan Circle Property Management in Washington, DC | `property-management-logan-circle-dc` | Draft complete | 2026-04-08 | Created a new Logan Circle service draft in Webflow focused on premium walkable inventory, higher-rent expectations, and the cleaner execution premium assets require. |
+| 4 | Atlas / Shaw-style neighborhood positioning | Residential Property Management | Partial overlap | Existing Shaw neighborhood article exists; no dedicated service page found | create new | Shaw Property Management in Washington, DC | `property-management-shaw-dc` | Draft complete | 2026-04-08 | Created a new Shaw service draft in Webflow focused on mixed inventory, walkable urban demand, and the need for stronger leasing and maintenance follow-through. |
+| 5 | Atlas / H Street corridor geo gap | Residential Property Management | Partial overlap | Existing H Street corridor articles exist; no dedicated service page found | create new | H Street NE Property Management in Washington, DC | `property-management-h-street-ne-dc` | Draft complete | 2026-04-09 | Created a new H Street NE service draft in Webflow focused on corridor growth, mixed housing stock, and urban owner operations near a changing rental corridor. |
+| 6 | Atlas / Navy Yard neighborhood geo gap | Residential Property Management | Partial overlap | No dedicated Navy Yard service page found | create new | Navy Yard Property Management in Washington, DC | `property-management-navy-yard-dc` | Draft complete | 2026-04-09 | Created a new Navy Yard service draft in Webflow focused on newer inventory, amenity-driven renter expectations, and faster leasing / maintenance-response standards. |
+| 7 | Atlas / Brookland neighborhood geo gap | Residential Property Management | Partial overlap | No dedicated Brookland service page found | create new | Brookland Property Management in Washington, DC | `property-management-brookland-dc` | Draft complete | 2026-04-10 | Created a new Brookland service draft in Webflow focused on neighborhood residential stock, institutional-adjacent demand, and steadier owner operations for homes and condos. |
+| 8 | Atlas / premium neighborhood geo gap | Residential Property Management | Partial overlap | No dedicated Cleveland Park service page found | create new | Cleveland Park Property Management in Washington, DC | `property-management-cleveland-park-dc` | Draft complete | 2026-04-10 | Created a new Cleveland Park service draft in Webflow focused on quieter premium demand, older inventory, and maintenance discipline for neighborhood residential assets. |
+| 9 | Atlas / premium neighborhood geo gap | Residential Property Management | Partial overlap | No dedicated Woodley Park service page found | create new | Woodley Park Property Management in Washington, DC | `property-management-woodley-park-dc` | Draft complete | 2026-04-11 | Created a new Woodley Park service draft in Webflow focused on premium neighborhood positioning, older buildings, and stronger resident-experience execution. |
+| 10 | Atlas / Tenleytown neighborhood geo gap | Residential Property Management | Partial overlap | Existing Tenleytown neighborhood article exists; no dedicated service page found | create new | Tenleytown Property Management in Washington, DC | `property-management-tenleytown-dc` | Draft complete | 2026-04-11 | Created a new Tenleytown service draft in Webflow focused on neighborhood residential demand, school-adjacent housing, and steadier operations for condos and homes. |
+| 11 | Atlas / Adams Morgan neighborhood geo gap | Residential Property Management | Partial overlap | Existing Adams Morgan neighborhood article exists; no dedicated service page found | create new | Adams Morgan Property Management in Washington, DC | `property-management-adams-morgan-dc` | Draft complete | 2026-04-12 | Created a new Adams Morgan service draft in Webflow focused on dense walkable demand, nightlife-adjacent rentals, and the faster turnover patterns of the submarket. |
+| 12 | FirstService state legal-content pattern / squatter gap | Residential Property Management | No direct squatter guide found | Adjacent eviction and landlord-rights articles exist; no squatter-rights page found | create new | DC Squatter's Rights Guide for Landlords | `dc-squatters-rights-guide-for-landlords` | Queued | 2026-04-12 | Build a DC-first owner guide around adverse-possession myths, actual removal process, notice and court realities, and why illegal self-help creates more risk. |
+| 13 | Existing eviction competitor cluster / internal legal overlap | Residential Property Management | Yes | `navigating-the-tenant-eviction-process-a-comprehensive-guide`, `what-rights-does-a-property-manager-have-when-it-comes-to-evicting-tenants` | merge / consolidate | Eviction Process Guide for Landlords in Washington, DC, Virginia, and Maryland | `navigating-the-tenant-eviction-process-a-comprehensive-guide` | Queued | 2026-04-13 | Consolidate overlapping eviction articles into one landlord-facing authority page centered on notices, timelines, courts, self-help prohibitions, and jurisdiction-specific risk. |
+| 14 | Bay move-out checklist article | Residential Property Management | Yes | `comprehensive-move-out-checklist-landlord-and-tenant-essentials` | update existing | Move-Out Checklist for Landlords in Washington, DC, Virginia, and Maryland | `comprehensive-move-out-checklist-landlord-and-tenant-essentials` | Queued | 2026-04-13 | Repurpose the existing move-out checklist into an owner-first process guide built around inspections, deposit accounting, damage documentation, and turnover cost control. |
+| 15 | Atlas / DC-unique English basement gap | Residential Property Management | No direct English-basement guide found | Existing DC landlord-law and licensing guides can support internal linking | create new | Renting Out an English Basement in Washington, DC: Licensing, ADU Rules, and Income Potential | `renting-out-an-english-basement-in-washington-dc` | Queued | 2026-04-14 | Build a DC-specific answer-engine page around basement-unit legality, licensing, occupancy, layout constraints, and the income upside when owners structure the rental correctly. |
+| 16 | Columbia PM FAQ hub / answer-engine gap | Residential Property Management | Partial overlap | Existing FAQ anchor page exists at `resources/faqs#Residential-Property-Management`; no standalone answer-engine hub found | create new | Residential Property Management FAQs for DC, Virginia, and Maryland Owners | `residential-property-management-faqs-dc-va-md-owners` | Queued | 2026-04-14 | Create a search-friendly owner FAQ hub that routes into service pages, law guides, cost pages, and leasing / maintenance resources rather than relying only on the shared FAQ page. |
+| 17 | Atlas suburbs article / investor-angle gap | Residential Property Management | Partial overlap | Multiple local market articles exist; no unified investor suburbs guide found | create new | Suburbs of Washington, DC for Rental Property Investors | `suburbs-of-washington-dc-for-rental-property-investors` | Queued | 2026-04-15 | Build an investor-facing regional guide comparing Arlington, Alexandria, Fairfax, Bethesda, Potomac, and other close-in markets through rentability, asset type, and operating complexity. |
+| 18 | Keymont FAQ pattern / existing board library | Community Association Management | Partial overlap | Existing FAQ anchor page exists at `resources/faqs#Community-Association-Management`; no standalone board FAQ hub found | create new | HOA and Condo Board FAQs for DC, Virginia, and Maryland | `hoa-condo-board-faqs-dc-va-md` | Queued | 2026-04-15 | Build a board-first FAQ hub around meetings, reserves, dues, violations, contracts, and recordkeeping so the HOA cluster has a stronger answer-engine layer. |
+| 19 | FirstService glossary / commercial answer gap | Commercial Property Management | No direct CAM glossary found | Existing commercial PM guide and NNN content can support internal linking | create new | What Is CAM? A Guide for DC Commercial Property Owners | `what-is-cam-dc-commercial-property-owners` | Queued | 2026-04-16 | Create a commercial-owner glossary page that defines common-area maintenance, distinguishes CAM from broader NNN cost structure, and routes into lease and management guidance. |
+| 20 | Commercial FAQ / answer-engine gap across competitors | Commercial Property Management | Partial overlap | Existing FAQ anchor page exists at `resources/faqs#Commercial-Property-Management`; no standalone FAQ hub found | create new | Commercial Property Management FAQs for DC Metro Owners and Investors | `commercial-property-management-faqs-dc-metro-owners` | Queued | 2026-04-16 | Build a commercial-owner FAQ hub around reporting, CAM, vendor oversight, budgeting, lease administration, and building operations to support both SEO and commercial conversions. |
+| 21 | ROSS Northern Virginia geo page | Multifamily Property Management | No NoVA multifamily geo page found | Existing regional multifamily service draft exists; no Northern Virginia variant found | create new | Multifamily Property Management in Northern Virginia | `multifamily-property-management-northern-virginia` | Queued | 2026-04-17 | Create a NoVA multifamily page that connects Arlington, Alexandria, Fairfax, and Tysons through occupancy, turnover, maintenance, and owner-reporting priorities. |
+| 22 | Multifamily FAQ / answer-engine gap | Multifamily Property Management | Partial overlap | Existing FAQ anchor page exists at `resources/faqs#Multifamily-Property-Management`; no standalone multifamily FAQ hub found | create new | Multifamily Property Management FAQs for DC Metro Owners and Operators | `multifamily-property-management-faqs-dc-metro` | Queued | 2026-04-17 | Build a multifamily FAQ hub around renewals, maintenance systems, staffing expectations, reporting, and resident-retention execution to strengthen the multifamily cluster. |
+| 23 | FirstService / Keymont bottom-funnel HOA buying-intent gap | Community Association Management | Partial overlap | `why-every-hoa-needs-a-strong-management-contract`, `self-managed-hoa-vs-professional-management-washington-dc` | create new | How to Choose an HOA Management Company in Washington, DC | `how-to-choose-hoa-management-company-washington-dc` | Queued | 2026-04-18 | Build a board-intent comparison page around interview questions, reporting standards, contract review, technology expectations, and what boards should verify before hiring. |
+| 24 | HOA switch-management competitor gap | Community Association Management | Partial overlap | Existing management-contract and self-management articles can support internal linking; no direct switch-management page found | create new | When Should Your HOA Switch Management Companies? | `when-should-your-hoa-switch-management-companies` | Queued | 2026-04-18 | Create a board-intent acquisition page focused on service failures, reporting gaps, transition planning, record transfer, and how boards should evaluate timing and risk. |
+| 25 | Existing management-contract authority article | Community Association Management | Yes | `why-every-hoa-needs-a-strong-management-contract` | expand existing | HOA Management Contract Guide for DC, Virginia, and Maryland Boards | `why-every-hoa-needs-a-strong-management-contract` | Queued | 2026-04-19 | Expand the existing contract article into a broader board resource covering scope, fees, termination rights, KPIs, transition obligations, and the contract terms that most often create community risk. |
+
+---
+
+## Batch 03 Publishing Cadence
+
+**Cadence rule:** no more than `2` assets published per day.
+
+| Date | Assets Scheduled |
+|---|---|
+| 2026-04-07 | `property-management-columbia-heights-dc`, `property-management-petworth-dc` |
+| 2026-04-08 | `property-management-logan-circle-dc`, `property-management-shaw-dc` |
+| 2026-04-09 | `property-management-h-street-ne-dc`, `property-management-navy-yard-dc` |
+| 2026-04-10 | `property-management-brookland-dc`, `property-management-cleveland-park-dc` |
+| 2026-04-11 | `property-management-woodley-park-dc`, `property-management-tenleytown-dc` |
+| 2026-04-12 | `property-management-adams-morgan-dc`, `dc-squatters-rights-guide-for-landlords` |
+| 2026-04-13 | `navigating-the-tenant-eviction-process-a-comprehensive-guide`, `comprehensive-move-out-checklist-landlord-and-tenant-essentials` |
+| 2026-04-14 | `renting-out-an-english-basement-in-washington-dc`, `residential-property-management-faqs-dc-va-md-owners` |
+| 2026-04-15 | `suburbs-of-washington-dc-for-rental-property-investors`, `hoa-condo-board-faqs-dc-va-md` |
+| 2026-04-16 | `what-is-cam-dc-commercial-property-owners`, `commercial-property-management-faqs-dc-metro-owners` |
+| 2026-04-17 | `multifamily-property-management-northern-virginia`, `multifamily-property-management-faqs-dc-metro` |
+| 2026-04-18 | `how-to-choose-hoa-management-company-washington-dc`, `when-should-your-hoa-switch-management-companies` |
+| 2026-04-19 | `why-every-hoa-needs-a-strong-management-contract` |
+
+### Important Batch 03 Observations
+
+- The strongest remaining geo opportunity is the unfinished `DC neighborhood service` layer, especially neighborhoods where Gordon James already has supporting knowledge content but no conversion-focused service page.
+- The residential authority opportunity now shifts toward `process + compliance + investor-intent` content, especially squatter myths, eviction procedure, move-out handling, English basements, and suburb selection.
+- The next best HOA conversion openings are `management-company selection`, `switch timing`, `contract structure`, and a stronger board FAQ hub that routes readers into the legal and service cluster.
+- FAQ hubs should be written as `answer-engine pages` with direct links into service pages and canonical guides, not as thin duplicate shells of the existing shared FAQ page.
+- Multifamily should keep moving toward `regional operator language`, with Northern Virginia as the next geo support layer after the broader DMV multifamily service page.
+
+### Batch 03 Status Summary
+
+- `Queued:` 14
+- `In progress:` 0
+- `Draft complete:` 11
+- `Ready for publish:` 0
+- `Published:` 0
+
+---
+
 ## Next Execution Steps
 
 1. Publish through the remaining Batch 01 cadence without exceeding `2` assets per day.
 2. Publish through the staged Batch 02 cadence without exceeding `2` assets per day.
 3. Re-check each staged Batch 02 draft before publish for internal links, legal / technical accuracy, and final formatting.
-4. Add any remaining supporting dynamic content or publish-readiness dependencies required by the service-page templates.
-5. Update this tracker after each publish or substantive revision with final readiness and scheduling notes.
+4. Continue staging the remaining queued Batch 03 assets, starting with the residential legal cluster and the HOA conversion pages.
+5. Add any remaining supporting dynamic content or publish-readiness dependencies required by the service-page templates.
+6. Update this tracker after each publish or substantive revision with final readiness and scheduling notes.
 
