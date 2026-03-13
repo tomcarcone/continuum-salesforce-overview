@@ -152,6 +152,20 @@ This document tracks assistant-authored SEO, content, and Webflow changes so the
 - Positioned the new neighborhood pages around distinct local operating realities instead of repeating generic DC service copy, including premium-rent neighborhoods, corridor growth areas, newer amenity-driven submarkets, and rowhouse-heavy residential zones.
 - Updated `SEO_PROGRESS_COMPETITOR_ARTICLE_REWRITES.md` so the first `11` Batch 03 assets are tracked as `Draft complete` and the remaining `14` are now queued behind them.
 
+### Batch 03 residential authority tranche
+
+- Created the new draft article `dc-squatters-rights-guide-for-landlords`.
+- Framed the squatter-rights article around adverse-possession myths, unauthorized-occupant realities, and why DC owners should avoid self-help.
+- Repurposed the existing eviction canonical into the draft `navigating-the-tenant-eviction-process-a-comprehensive-guide`.
+- Repositioned the eviction article around process discipline, jurisdiction-sensitive notice handling, and the documentation mistakes that create longer possession delays.
+- Repurposed the existing move-out checklist canonical into the draft `comprehensive-move-out-checklist-landlord-and-tenant-essentials`.
+- Shifted the move-out article away from tenant-facing checklist language and toward landlord inspection, deposit, and turnover execution.
+- Created the new draft article `renting-out-an-english-basement-in-washington-dc`.
+- Positioned the English-basement article around legal-use questions, licensing, occupancy treatment, lower-level operating tradeoffs, and realistic income potential.
+- Created the new draft article `residential-property-management-faqs-dc-va-md-owners`.
+- Created the new draft article `suburbs-of-washington-dc-for-rental-property-investors`.
+- Updated `SEO_PROGRESS_COMPETITOR_ARTICLE_REWRITES.md` so Batch 03 now shows `Draft complete: 17` and `Queued: 8`.
+
 ## Working Rule
 
 - Keep this log limited to assistant-authored changes that are safe to commit independently.
