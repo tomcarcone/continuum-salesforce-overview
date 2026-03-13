@@ -192,6 +192,12 @@ This document tracks assistant-authored SEO, content, and Webflow changes so the
 - Confirmed the representative standalone FAQ and glossary drafts retain clean heading structure, intact internal-link patterns, and no obvious formatting defects in the staged HTML.
 - Identified a tracker-state discrepancy: several earlier residential geo pages show as already published in Webflow while `SEO_PROGRESS_COMPETITOR_ARTICLE_REWRITES.md` still lists them as `Ready for publish`, so the tracker should be reconciled before it is used as the sole publish-state source of truth.
 
+### Tracker publish-state reconciliation tranche
+
+- Reconciled the Batch 01 tracker against current Webflow state for the earlier residential geo service pages.
+- Updated `property-management-arlington-va`, `property-management-fairfax-va`, `property-management-tysons-va`, `property-management-alexandria-va`, `property-management-bethesda-md`, and `property-management-potomac-md` from `Ready for publish` to `Published`.
+- Revised the corresponding tracker notes so those entries now reflect that Webflow already shows the pages live instead of presenting them as still waiting in the publish queue.
+
 ## Working Rule
 
 - Keep this log limited to assistant-authored changes that are safe to commit independently.
