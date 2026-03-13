@@ -97,6 +97,16 @@ This document tracks assistant-authored SEO, content, and Webflow changes so the
 - Updated `SEO_PROGRESS_COMPETITOR_ARTICLE_REWRITES.md` so the first two Batch 02 assets are now tracked as `Draft complete`.
 - Added a `Batch 02 Status Summary` block to the main tracker so the new batch can be managed with the same visibility as Batch 01.
 
+### Batch 02 HOA regional staging tranche
+
+- Created the new draft service page `hoa-management-potomac-md`.
+- Positioned Potomac around premium communities, larger footprints, vendor standards, reserve discipline, and higher owner expectations.
+- Created the new draft service page `hoa-management-northern-virginia`.
+- Positioned Northern Virginia as the regional HOA hub connecting Arlington, Fairfax, and Alexandria while preserving local governance and operating differences.
+- Created the new draft service page `hoa-management-maryland`.
+- Positioned Maryland as the statewide HOA hub that supports Bethesda and Potomac board intent without collapsing both markets into one local page.
+- Updated `SEO_PROGRESS_COMPETITOR_ARTICLE_REWRITES.md` so all three new HOA regional assets are now tracked as `Draft complete`.
+
 ## Working Rule
 
 - Keep this log limited to assistant-authored changes that are safe to commit independently.
