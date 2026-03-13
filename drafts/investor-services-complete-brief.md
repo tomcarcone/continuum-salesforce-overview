@@ -1,12 +1,27 @@
-# Investor Services — New Page Draft
+# Investor Services — Complete Implementation Brief
 
 **Status:** DRAFT — For review before Webflow implementation
 **Prepared:** 2026-03-13
+**Nothing in this document is live. All content requires human review before Webflow build.**
+
+---
+
+## Table of Contents
+
+1. [Part 1 — New Investor Services Page](#part-1--new-investor-services-page)
+2. [Part 2 — Residential Property Management Page Updates](#part-2--residential-property-management-page-updates)
+3. [Part 3 — Internal Linking Plan](#part-3--internal-linking-plan)
+4. [Part 4 — Future Specialty Page Roadmap (Internal Only)](#part-4--future-specialty-page-roadmap-internal-only)
+5. [Part 5 — Content Accuracy Attestation](#part-5--content-accuracy-attestation)
+6. [Part 6 — Items Requiring Human Review](#part-6--items-requiring-human-review)
+
+---
+
+# Part 1 — New Investor Services Page
+
 **Recommended URL:** `/services/investor-services`
 **Nav label:** Investor Services (under Property Management dropdown)
 **Nav placement:** After Residential Property Management in the services dropdown
-
----
 
 ## SEO Metadata
 
@@ -83,7 +98,7 @@ If your investment includes office, retail, or flex space, our [Commercial Prope
 
 **Section heading:** What We Do for Investors — and Why It Matters
 
-> **Implementation note:** Use the existing tabbed content component (like "Why Choose Gordon James?" / "Marketing and Leasing" / "Management Services" / "Who we serve" tabs on the residential page) or a stacked section layout.
+> **Implementation note:** Use the existing tabbed content component (like the residential page tabs) or a stacked section layout.
 
 ### Increase Rent Performance and Reduce Vacancy
 
@@ -179,34 +194,32 @@ Once onboarded, we manage the property day to day — leasing, maintenance, comp
 
 ## Section 8 — Testimonials
 
-> **Implementation note:** Reuse the existing testimonial carousel component. The testimonials below are already published on the live residential property management page and are verified.
-
-**Preferred testimonials for investor relevance:**
+> **Implementation note:** Reuse the existing testimonial carousel component. All testimonials below are already published on the live residential property management page.
 
 **Danielle Koschil** — Residential Property Management
 > "It's not easy to have customers like me that live overseas, but they manage my property well. Without them, it would be impossible to keep my property while away."
 
-*Why this is relevant: directly speaks to overseas / remote investors*
+*Investor relevance: directly speaks to overseas / remote investors*
 
 **Sergejs Saksonovs** — Residential Property Management
 > "They have helped me find two tenants, advised me on the regulatory requirements in D.C. and, crucially, suggested adequate market prices for my property."
 
-*Why this is relevant: speaks to tenant placement, compliance guidance, and pricing — core investor concerns*
+*Investor relevance: tenant placement, compliance guidance, and pricing — core investor concerns*
 
 **Justin O'Friel** — Residential Property Management
 > "I highly recommend Gordon James Realty and have worked with them for almost 10 years now. They have been a reliable property management company."
 
-*Why this is relevant: long-term trust — investors value retention and consistency*
+*Investor relevance: long-term trust — investors value retention and consistency*
 
 **Ming Hu** — Residential Property Management
 > "The staff is always responsive to my inquiries, and they take care of any maintenance issues promptly. They also do a great job of screening tenants."
 
-*Why this is relevant: responsiveness, maintenance, and tenant screening — the three things investors ask about first*
+*Investor relevance: responsiveness, maintenance, and tenant screening — the three things investors ask about first*
 
 **AJ Brown** — Residential Property Management
 > "This team has done an incredible job of managing our property. They are extremely responsive and organized, and have always resolved issues quickly and expertly."
 
-*Why this is relevant: organized, responsive, fast issue resolution — what portfolio-minded owners need*
+*Investor relevance: organized, responsive, fast issue resolution — what portfolio-minded owners need*
 
 ---
 
@@ -216,7 +229,7 @@ Once onboarded, we manage the property day to day — leasing, maintenance, comp
 
 **Subheading:** Explore guides and analysis from the Gordon James Knowledge Hub — written for rental property investors in the DC metro area.
 
-> **Implementation note:** If the Webflow CMS supports filtering Knowledge Hub articles by category or tag, use a dynamic collection list filtered to investor-relevant content. If not, manually link the articles below. Use the existing resource card component from the bottom of the residential and commercial pages.
+> **Implementation note:** If Webflow CMS supports filtering by category/tag, use a dynamic collection list. If not, manually link the articles below using the existing resource card component.
 
 | Article | URL |
 |---------|-----|
@@ -250,7 +263,7 @@ Once onboarded, we manage the property day to day — leasing, maintenance, comp
 
 ## Inline FAQ Section
 
-> **Implementation note:** Match the FAQ format used on the residential and commercial pages. Add FAQ structured data markup in Webflow.
+> **Implementation note:** Match the FAQ format on residential and commercial pages. Add FAQ structured data markup in Webflow.
 
 ### How much does investor property management cost with Gordon James Realty?
 
@@ -279,29 +292,255 @@ Yes. We manage properties across all three jurisdictions and stay current on the
 [View All FAQs →](/resources/faqs#Residential-Property-Management)
 
 ---
+---
 
-## Content Accuracy Attestation
+# Part 2 — Residential Property Management Page Updates
 
-Every claim on this page is sourced from content already published on gordonjamesrealty.com or verified in the repo:
+**Target page:** `/services/residential-property-management`
+**Purpose:** Add a distinct investor-focused section and tighten existing copy to better serve investor visitors, then link prominently to the new Investor Services page.
 
-- **30+ years combined experience** — published on residential page
-- **19-day average time on market** — published on residential page stats strip
-- **17 hours from tenant confirmation to signed lease** — published on residential page stats strip
-- **15-minute average response time** — published on residential page stats strip
-- **0 successful evictions** — published on residential page stats strip
-- **7% to 8.5% management fee, no fee during vacancy** — published on residential page
-- **13+ marketing platforms** — published on residential page
-- **24/7 emergency maintenance** — published on residential page
-- **24/7 owner portal on Salesforce** — published on residential page
-- **TransUnion screening** — published on residential page
-- **In-house maintenance staff + vetted vendors** — published on residential page
-- **Custom inspection software** — published on residential page
-- **90% of one month's rent leasing fee** — published on residential page
-- **$400 partial leasing package** — published on residential page
-- **No forced one-year contract** — published on residential page
-- **60-day pre-lease-end renewal contact** — published on residential page
-- **Tenants placed in as few as 5 days** — published on residential page
-- **All testimonials** — published on the live residential property management page
-- **All article links** — published in the Knowledge Hub
+---
 
-No new claims, stats, guarantees, institutional relationships, or legal assertions were invented for this page.
+## Change 1 — Add Investor-Focused Section
+
+### Placement
+
+Insert a new section **after the "Who we serve" tab content** and **before the "What our clients say" testimonial section**.
+
+### New Section Content
+
+**Eyebrow:** Investor Services
+
+**Headline:** Own a rental as an investment, not just a home?
+
+**Body copy:**
+
+If you are building long-term wealth through real estate, managing a property from out of state, or growing from one unit to a small portfolio, our investor-focused service path gives you clearer reporting, stronger local execution, and less day-to-day burden.
+
+Gordon James Realty helps investors across Washington DC, Northern Virginia, and Maryland reduce vacancy, protect compliance, and maintain full visibility into property performance — whether you own a single rental or a growing portfolio.
+
+**Primary CTA:** Explore Investor Services → `/services/investor-services`
+**Secondary CTA:** Get a Free Rental Analysis → `/contact-us`
+
+### Design Notes
+
+- Use a full-width section consistent with the existing page's alternating background pattern
+- Similar layout to the "Ready to make the switch?" CTA band — heading, body text, and CTA buttons
+- Keep it concise — this is a routing section, not a full service description
+
+---
+
+## Change 2 — Tighten "Who we serve" Tab Copy
+
+### Current Copy (Live)
+
+> We manage properties for many types of clients, from seasoned property investors who own dozens of properties or mixed use commercial properties to individual homeowners moving away for a finite period of time. We work for property owners living all over the world as members of the military or foreign service and for local clients who simply want to shed the time-consuming work of managing their rentals.
+>
+> Our property management clients own single-family homes, multi-family homes and condominium units in the DC metro area, including the district, Arlington, Alexandria and Silver Spring, MD. All of our clients are looking for help with the burden of managing a property on their own and they look to Gordon James as their trusted advisor throughout the partnership.
+
+### Suggested Updated Copy
+
+> We manage properties for many types of clients — from seasoned investors who own multiple properties to individual homeowners renting their home for the first time. Our clients include property owners living overseas as members of the military or foreign service, remote owners managing from out of state, portfolio-minded investors growing across DC, Virginia, and Maryland, and local owners who want to stop carrying the operational burden themselves.
+>
+> Our property management clients own single-family homes, condominiums, small multifamily properties, and mixed-use assets in the DC metro area, including Washington DC, Arlington, Alexandria, Fairfax, Tysons, Bethesda, Potomac, and Silver Spring. Whether you own one rental or several, Gordon James serves as your trusted management partner throughout the relationship.
+>
+> **Looking for investor-specific management support?** [Explore our Investor Services →](/services/investor-services)
+
+### What Changed
+
+- Added "portfolio-minded investors growing across DC, Virginia, and Maryland"
+- Added "remote owners managing from out of state"
+- Broadened property types to explicitly include "small multifamily properties" and "mixed-use assets"
+- Expanded the geo list to include Fairfax, Tysons, Bethesda, and Potomac
+- Added a clear inline link to the new Investor Services page
+- Did not remove any existing audience segments
+- Did not change the core positioning as an owner-facing service page
+
+---
+
+## Change 3 — Tighten "Why Choose Gordon James?" Tab Copy
+
+### Current Copy (Live, Paragraph 1)
+
+> Our customized approach, local expertise, and responsive communication mean you can maximize your investment returns with confidence — while we handle everything else.
+
+### Suggested Updated Copy
+
+> Our customized approach, local expertise, and responsive communication help property owners and investors maximize returns with confidence — while we handle the leasing, maintenance, compliance, and reporting.
+
+### What Changed
+
+- Added "investors" alongside "property owners"
+- Made "we handle everything else" more concrete with "leasing, maintenance, compliance, and reporting"
+
+---
+
+## Change 4 — Add Investor Services Link to FAQ
+
+### Current FAQ: "What types of properties does Gordon James Realty manage in DC?"
+
+**Current last sentence:**
+> Our portfolio spans owner-occupied rentals, investment properties, and overseas owner properties.
+
+**Suggested updated last sentence:**
+> Our portfolio spans owner-occupied rentals, investment properties, and overseas owner properties. If you own investment property and want specialized investor management support, [explore our Investor Services](/services/investor-services).
+
+---
+
+## Change 5 — No Changes to SEO Metadata
+
+The residential page's existing title tag, meta description, and OG tags should remain unchanged. The page's primary SEO target is "residential property management Washington DC," and that should not be diluted. The new Investor Services page carries its own SEO target.
+
+---
+---
+
+# Part 3 — Internal Linking Plan
+
+## Link Summary
+
+| From | To | Count |
+|------|----|-------|
+| Residential PM | Investor Services | 3 |
+| Investor Services | Residential PM | 2 |
+| Investor Services | Commercial PM | 1 |
+| Commercial PM | Investor Services | 1 |
+| Investor Services | Knowledge Hub articles | 10 |
+| Investor Services | FAQs | 1 |
+| Investor Services | Contact | 4 |
+| **Total new internal links** | | **22** |
+
+---
+
+### Residential PM → Investor Services (3 links)
+
+| Location | Link Text | Destination |
+|----------|-----------|-------------|
+| New investor section (after "Who we serve") | Explore Investor Services | `/services/investor-services` |
+| "Who we serve" tab — new final sentence | Explore our Investor Services → | `/services/investor-services` |
+| FAQ: "What types of properties does Gordon James manage?" | explore our Investor Services | `/services/investor-services` |
+
+### Investor Services → Residential PM (2 links)
+
+| Location | Link Text | Destination |
+|----------|-----------|-------------|
+| Section 4, Compliance subsection | residential property management | `/services/residential-property-management` |
+| FAQ: "What types of investment properties..." | residential property management services | `/services/residential-property-management` |
+
+### Investor Services → Commercial PM (1 link)
+
+| Location | Link Text | Destination |
+|----------|-----------|-------------|
+| Section 3, Card 5 — Commercial Investors | Commercial Property Management | `/services/commercial-property-management` |
+
+### Commercial PM → Investor Services (1 link)
+
+**Current copy ("Who this page is for" tab, last bullet):**
+> small portfolios that need more disciplined reporting and vendor oversight
+
+**Suggested update:**
+> small portfolios that need more disciplined reporting and vendor oversight. If your portfolio includes residential investment properties, explore our [Investor Services](/services/investor-services) for investor-focused residential management support.
+
+### Knowledge Hub Articles → Investor Services (Future, Low Priority)
+
+These existing articles could get an inline or end-of-article link to Investor Services in a later pass:
+
+- `how-to-choose-the-best-property-manager-for-your-investment`
+- `buying-a-rental-property-cash-vs-financing-explained`
+- `foreclosure-investing-for-beginners`
+- `the-ultimate-guide-to-renting-out-your-house`
+- `third-party-property-management-dc-metro-guide`
+- `how-to-conduct-due-diligence-on-your-real-estate-investments`
+
+---
+---
+
+# Part 4 — Future Specialty Page Roadmap (Internal Only)
+
+**This section is NOT for publication. Strategy recommendations only.**
+
+| Priority | Page | Readiness | Next Step |
+|----------|------|-----------|-----------|
+| 1 | Small Multifamily / Third-Party Management | Medium | Confirm active multifamily portfolio; gather testimonial; draft page |
+| 2 | Acquisition / Management Transition | Medium | Document transition process; identify transition testimonials |
+| 3 | Commercial Landlords & Investors | Low-Medium | Evaluate whether existing commercial page can be strengthened instead |
+| 4 | Institutional / Portfolio Investors | Low | Wait for portfolio growth; do not publish without 10+ door proof |
+| 5 | REO / Bank-Owned / Lender Services | Low | Do not publish unless actual REO operations exist |
+
+### 1. Small Multifamily / Third-Party Management
+
+- **Why it may fit:** Residential page already references multi-family; Knowledge Hub has third-party management content; competitor gap exists
+- **Why it may NOT fit:** No dedicated multifamily testimonials or case studies; no unit-level reporting detail published
+- **What's needed:** Confirm 2+ active multifamily properties; get testimonial; define multifamily-specific service differentiators
+
+### 2. Acquisition / Management Transition
+
+- **Why it may fit:** Commercial page already has "Management Transition" service card; "switching property management" is a real search query
+- **Why it may NOT fit:** No documented transition process or timeline; no specific transition testimonials
+- **What's needed:** Document the transition checklist; identify testimonial (Ava Rodriguez could be a candidate); confirm repeatable process
+
+### 3. Commercial Landlords & Investors
+
+- **Why it may fit:** Commercial page already uses investor language throughout; commercial SEO competition is weaker
+- **Why it may NOT fit:** Existing commercial page already covers most of this; separate page risks SEO cannibalization
+- **What's needed:** Clear differentiation from existing commercial PM page; 2–3 commercial investor testimonials
+
+### 4. Institutional / Portfolio Investors
+
+- **Why it may fit:** Competitors have institutional pages that rank; multi-property investors have different needs
+- **Why it may NOT fit:** No published institutional content; brand voice doesn't match institutional language; credibility risk
+- **What's needed:** 10+ door portfolio under management; portfolio-level reporting capabilities; legal review
+
+### 5. REO / Bank-Owned / Lender Services
+
+- **Why it may fit:** Knowledge Hub has foreclosure investing content; REO is a distinct search vertical
+- **Why it may NOT fit:** No published REO content; requires specialized operations not documented; high compliance risk
+- **What's needed:** Active REO contracts or lender relationships; property preservation capabilities; legal review
+
+---
+---
+
+# Part 5 — Content Accuracy Attestation
+
+Every claim in Part 1 (the new page) is sourced from content already published on gordonjamesrealty.com:
+
+| Claim | Source |
+|-------|--------|
+| 30+ years combined experience | Residential PM page |
+| 19-day average time on market | Residential PM page stats strip |
+| 17 hours from tenant confirmation to signed lease | Residential PM page stats strip |
+| 15-minute average response time | Residential PM page stats strip |
+| 0 successful evictions | Residential PM page stats strip |
+| 7% to 8.5% management fee, no fee during vacancy | Residential PM page |
+| 13+ marketing platforms | Residential PM page |
+| 24/7 emergency maintenance | Residential PM page |
+| 24/7 owner portal on Salesforce | Residential PM page |
+| TransUnion screening | Residential PM page |
+| In-house maintenance staff + vetted vendors | Residential PM page |
+| Custom inspection software | Residential PM page |
+| 90% of one month's rent leasing fee | Residential PM page |
+| $400 partial leasing package | Residential PM page |
+| No forced one-year contract | Residential PM page |
+| 60-day pre-lease-end renewal contact | Residential PM page |
+| Tenants placed in as few as 5 days | Residential PM page |
+| All testimonials | Live residential PM page |
+| All article links | Live Knowledge Hub |
+
+**No new claims, stats, guarantees, institutional relationships, or legal assertions were invented for any part of this document.**
+
+---
+---
+
+# Part 6 — Items Requiring Human Review
+
+Before Webflow implementation, the following items need human review:
+
+- [ ] **Stats accuracy** — Verify all stats (19-day vacancy, 0 evictions, etc.) are still current and approved
+- [ ] **Testimonial permissions** — Confirm these clients are comfortable being featured on an investor-focused page
+- [ ] **CTA language** — "Talk to an Investor Specialist" — confirm this matches how the team wants to position inbound investor leads
+- [ ] **Marketing review** — Full copy review by marketing before Webflow build
+- [ ] **Legal review** — Ensure compliance-related copy is brand-safe
+- [ ] **Nav placement** — Confirm "Investor Services" belongs under Property Management dropdown, after Residential PM
+- [ ] **Webflow implementation approach** — Static page vs. CMS-managed page
+- [ ] **Resource section** — Use Webflow CMS dynamic collection list or manual article links for Section 9
+- [ ] **Commercial PM cross-link** — Approve the one-sentence addition to the commercial page's "Who this page is for" section
+- [ ] **Future roadmap** — Review Part 4 recommendations and confirm which, if any, should be prioritized
