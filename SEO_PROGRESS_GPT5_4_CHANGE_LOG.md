@@ -1,4 +1,4 @@
-# gpt5.4 SEO and Webflow Change Log
+# Chat GPT 5.4 SEO and Webflow Change Log
 
 This document tracks assistant-authored SEO, content, and Webflow changes so they can be committed independently of unrelated repository work.
 
@@ -32,6 +32,18 @@ This document tracks assistant-authored SEO, content, and Webflow changes so the
 - Created a new draft article `what-is-property-management-dc-va-md`.
 - Positioned the property-management article as a cross-service definition asset spanning residential, association, commercial, and multifamily contexts.
 - Updated `SEO_PROGRESS_COMPETITOR_ARTICLE_REWRITES.md` so the HOA definition topic is tracked as an updated published asset and the property-management definition topic is tracked as a staged draft.
+
+## 2026-03-13
+
+### HOA decision-stage tranche
+
+- Converted the existing self-managed HOA article into the new draft `self-managed-hoa-vs-professional-management-washington-dc`.
+- Consolidated overlapping HOA decision-stage themes from the existing self-management and hire-a-manager articles into one stronger DC board-focused comparison page.
+- Reframed the page around volunteer workload, governance continuity, operational strain, and the point where professional management becomes the lower-risk operating model.
+- Expanded the existing budgeting article into the new draft `hoa-fees-dc-virginia-maryland`.
+- Shifted that repurposed article from budget mechanics to fee-intent search behavior: what dues cover, why fees vary, reserve funding, and why low fees often hide bigger association risk.
+- Corrected a carryover internal-link issue in the repurposed HOA-fees draft so it no longer points back to its former slug.
+- Updated `SEO_PROGRESS_COMPETITOR_ARTICLE_REWRITES.md` so both March 20 board-intent assets are tracked as `Draft complete`.
 
 ## Working Rule
 
