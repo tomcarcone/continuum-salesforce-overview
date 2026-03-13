@@ -107,6 +107,32 @@ This document tracks assistant-authored SEO, content, and Webflow changes so the
 - Positioned Maryland as the statewide HOA hub that supports Bethesda and Potomac board intent without collapsing both markets into one local page.
 - Updated `SEO_PROGRESS_COMPETITOR_ARTICLE_REWRITES.md` so all three new HOA regional assets are now tracked as `Draft complete`.
 
+### Batch 02 bulk article staging tranche
+
+- Repurposed the existing residential licensing canonical into the draft `dc-rental-business-license-guide-for-landlords`.
+- Repurposed the strongest existing deposit, rent-increase, property-management-comparison, reserve-study, unenforceable-rules, and third-party-management canonicals so they now align to the Batch 02 routing and publish queue.
+- Created new Knowledge Hub drafts for `what-is-hoa-management-dc-va-md`, `what-is-a-condo-association-dc-va-md`, `dc-beps-compliance-guide-commercial-property-owners`, `bethesda-commercial-real-estate-guide`, `tysons-commercial-real-estate-guide`, and `multifamily-tenant-retention-strategies-dc-metro`.
+- Consolidated existing commercial lease content into the new owner-facing draft `nnn-lease-guide-washington-dc-commercial-owners`.
+- Expanded the seasonal multifamily maintenance article into the broader preventive-maintenance draft `proactive-summer-maintenance-for-multifamily-communities`.
+- Updated `SEO_PROGRESS_COMPETITOR_ARTICLE_REWRITES.md` so the full article / authority portion of Batch 02 is now tracked as `Draft complete`.
+
+### Batch 02 DC neighborhood service staging tranche
+
+- Created the new draft service page `property-management-capitol-hill-dc`.
+- Positioned Capitol Hill around rowhouses, English basement rentals, older-housing operations, and neighborhood-aware leasing support.
+- Created the new draft service page `property-management-georgetown-dc`.
+- Positioned Georgetown around historic housing, premium rents, and the tighter maintenance discipline required for high-value rentals.
+- Created the new draft service page `property-management-dupont-circle-dc`.
+- Positioned Dupont Circle around dense condo inventory, walkability-driven demand, and faster urban turnover patterns.
+- Created the new draft service page `property-management-noma-dc`.
+- Positioned NoMa around newer inventory, amenity-driven renter expectations, transit access, and the faster response rhythm common in newer DC submarkets.
+- Updated `SEO_PROGRESS_COMPETITOR_ARTICLE_REWRITES.md` so all remaining Batch 02 service assets are now tracked as `Draft complete`.
+
+### Batch 02 fully staged status
+
+- Updated the main competitor tracker so `Batch 02 Status Summary` now reads `Queued: 0` and `Draft complete: 25`.
+- Shifted the main tracker next steps away from drafting and toward publish sequencing, QA, and supporting content readiness.
+
 ## Working Rule
 
 - Keep this log limited to assistant-authored changes that are safe to commit independently.
