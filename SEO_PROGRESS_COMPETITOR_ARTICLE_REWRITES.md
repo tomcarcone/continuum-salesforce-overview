@@ -336,6 +336,7 @@
 4. Publish through the staged Batch 03 cadence without exceeding `2` assets per day.
 5. Re-check each staged Batch 03 draft before publish for internal links, legal / technical accuracy, and final formatting.
 6. Add any remaining supporting dynamic content or publish-readiness dependencies required by the service-page templates.
-7. Begin Batch 04 planning with an HOA-geo bias where separate board-intent pages are justified by search demand and service fit.
-8. Update this tracker after each publish or substantive revision with final readiness and scheduling notes.
+7. Reconcile earlier residential geo entries against current Webflow publish state before using this tracker as the sole source of truth for what is still waiting to go live.
+8. Begin Batch 04 planning with an HOA-geo bias where separate board-intent pages are justified by search demand and service fit.
+9. Update this tracker after each publish or substantive revision with final readiness and scheduling notes.
 

@@ -181,6 +181,17 @@ This document tracks assistant-authored SEO, content, and Webflow changes so the
 - Updated `SEO_PROGRESS_COMPETITOR_ARTICLE_REWRITES.md` so Batch 03 now shows `Draft complete: 25` and `Queued: 0`.
 - Updated the main tracker's next steps so execution now shifts from staging into Batch 03 publish-readiness and Batch 04 planning with an HOA-geo bias where board-intent demand supports separate pages.
 
+### Batch 03 publish-readiness QA tranche
+
+- Audited representative staged residential, HOA / condo, multifamily, and knowledge-hub drafts for internal-linking, formatting, and support-dependency issues before publication.
+- Confirmed the draft-only service pages reviewed still keep `show-in-primary-nav` turned off, so the services dropdown will not expand from these staged assets.
+- Found that the staged residential, HOA / condo, and multifamily service drafts were still using the older shared FAQ anchor URLs instead of the newer standalone FAQ hubs created later in the batch process.
+- Updated the draft-only residential service pages to use `residential-property-management-faqs-dc-va-md-owners` as the structured FAQ support target.
+- Updated the draft-only HOA / condo service pages to use `hoa-condo-board-faqs-dc-va-md` as the structured FAQ support target.
+- Updated the draft-only multifamily service pages to use `multifamily-property-management-faqs-dc-metro` as the structured FAQ support target.
+- Confirmed the representative standalone FAQ and glossary drafts retain clean heading structure, intact internal-link patterns, and no obvious formatting defects in the staged HTML.
+- Identified a tracker-state discrepancy: several earlier residential geo pages show as already published in Webflow while `SEO_PROGRESS_COMPETITOR_ARTICLE_REWRITES.md` still lists them as `Ready for publish`, so the tracker should be reconciled before it is used as the sole publish-state source of truth.
+
 ## Working Rule
 
 - Keep this log limited to assistant-authored changes that are safe to commit independently.
