@@ -45,6 +45,15 @@ This document tracks assistant-authored SEO, content, and Webflow changes so the
 - Corrected a carryover internal-link issue in the repurposed HOA-fees draft so it no longer points back to its former slug.
 - Updated `SEO_PROGRESS_COMPETITOR_ARTICLE_REWRITES.md` so both March 20 board-intent assets are tracked as `Draft complete`.
 
+### HOA geo service tranche
+
+- Created the new draft service page `hoa-management-arlington-va`.
+- Positioned Arlington around condo-heavy and denser associations that need faster vendor response, stronger board support, and better owner communication.
+- Created the new draft service page `hoa-management-fairfax-va`.
+- Positioned Fairfax around broader suburban associations that need reserve-aware budgeting, recurring vendor coordination, and clearer operational process.
+- Corrected the main batch tracker totals while updating the new HOA geo pages so staged-draft and remaining-batch counts stay accurate.
+- Updated `SEO_PROGRESS_COMPETITOR_ARTICLE_REWRITES.md` so both March 21 HOA geo assets are tracked as `Draft complete`.
+
 ## Working Rule
 
 - Keep this log limited to assistant-authored changes that are safe to commit independently.
